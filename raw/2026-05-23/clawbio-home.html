@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🦖 ClawBio — Bioinformatics AI Agent Skills</title>
+  <meta name="description" content="ClawBio is where biological AI gets its skills: a curated, reproducible, open repository any agent can call.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ClawBio">
+  <meta property="og:title" content="🦖 ClawBio — Bioinformatics AI Agent Skills">
+  <meta property="og:description" content="ClawBio is where biological AI gets its skills: a curated, reproducible, open repository any agent can call.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ClawBio/ClawBio/main/img/clawbio-social-preview.png">
+  <meta property="og:url" content="https://clawbio.ai">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@manuelcorpas">
+  <meta name="twitter:title" content="🦖 ClawBio — Bioinformatics AI Agent Skills">
+  <meta name="twitter:description" content="ClawBio is where biological AI gets its skills: a curated, reproducible, open repository any agent can call.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/ClawBio/ClawBio/main/img/clawbio-social-preview.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96.png">
+  <link rel="apple-touch-icon" href="/img/clawbio-logo.jpeg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117;
+      --bg2: #161b22;
+      --bg3: #21262d;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #3fb950;
+      --accent2: #58a6ff;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav-logo { display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--text); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .hero { text-align: center; padding: 6rem 2rem 5rem; background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(63,185,80,0.12) 0%, transparent 70%); }
+    .hero-badge { display: inline-block; background: rgba(63,185,80,0.15); border: 1px solid rgba(63,185,80,0.4); color: var(--accent); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 999px; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.2rem; letter-spacing: -0.02em; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p { font-size: clamp(1rem, 2vw, 1.25rem); color: var(--text-muted); max-width: 640px; margin: 0 auto 2.5rem; }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.4rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.2s; }
+    .btn-primary { background: var(--accent); color: #0d1117; }
+    .btn-primary:hover { background: #56d364; transform: translateY(-1px); }
+    .btn-secondary { background: var(--bg3); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: var(--bg2); border-color: var(--text-muted); transform: translateY(-1px); }
+    .hero-pills { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+    .pill { background: var(--bg3); border: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem; padding: 0.25rem 0.75rem; border-radius: 999px; }
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    .section-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    .section-sub { color: var(--text-muted); max-width: 600px; margin-bottom: 3rem; font-size: 1.05rem; }
+    .problem-bg { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    @media (max-width: 700px) { .problem-grid { grid-template-columns: 1fr; } }
+    .code-block { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; font-family: 'Fira Code', 'Cascadia Code', monospace; font-size: 0.85rem; line-height: 1.7; overflow-x: auto; }
+    .code-block .comment { color: #8b949e; }
+    .code-block .cmd { color: var(--accent2); }
+    .code-block .success { color: var(--accent); font-weight: 600; }
+    .code-block .error { color: #f85149; }
+    .pain-list { list-style: none; margin-top: 1rem; }
+    .pain-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); color: var(--text-muted); display: flex; gap: 0.6rem; }
+    .pain-list li:last-child { border-bottom: none; }
+    .pain-list .x { color: #f85149; }
+    .skills-grid { display: grid; gap: 1rem; }
+    .skill-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; transition: border-color 0.2s; }
+    .skill-card:hover { border-color: var(--accent); }
+    .skill-name { font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem; }
+    .skill-desc { color: var(--text-muted); font-size: 0.9rem; }
+    .skill-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px; }
+    .badge-mvp { background: rgba(63,185,80,0.15); color: var(--accent); border: 1px solid rgba(63,185,80,0.4); }
+    .badge-planned { background: rgba(139,148,158,0.15); color: var(--text-muted); border: 1px solid var(--border); }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .feature-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; }
+    .feature-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .feature-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; }
+    .feature-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+    .showcase-card { display: grid; grid-template-columns: 120px 1fr; gap: 2rem; align-items: center; background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; max-width: 800px; margin: 0 auto; }
+    .showcase-avatar { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); object-fit: cover; }
+    .showcase-name { font-weight: 700; font-size: 1.15rem; margin-bottom: 0.3rem; }
+    .showcase-role { color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem; }
+    .showcase-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+    .showcase-skills { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
+    .showcase-skill { background: rgba(63,185,80,0.12); border: 1px solid rgba(63,185,80,0.3); color: var(--accent); font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 999px; }
+    @media (max-width: 600px) { .showcase-card { grid-template-columns: 1fr; text-align: center; justify-items: center; } }
+    .community-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .community-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; }
+    .cta-section { text-align: center; background: radial-gradient(ellipse 80% 60% at 50% 110%, rgba(63,185,80,0.1) 0%, transparent 70%); border-top: 1px solid var(--border); }
+    .cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 1rem; }
+    .cta-section p { color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem; }
+    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="#"><span>🦖</span> ClawBio</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#why">Why ClawBio</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="/benchmarks.html" style="color:var(--accent);font-weight:600;">Benchmarks</a></li>
+      <li><a href="#marketplace" style="color:var(--accent);font-weight:600;">Marketplace</a></li>
+      <li><a href="https://docs.clawbio.ai" target="_blank" style="color:var(--accent2);font-weight:600;">Docs</a></li>
+      <li><a href="https://docs.clawbio.ai/research/" target="_blank">Research</a></li>
+      <li><a href="https://github.com/ClawBio/ClawBio" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+  <a href="/benchmarks.html" style="display:block;background:linear-gradient(90deg,#238636,#1f6feb);color:#fff;text-align:center;padding:0.7rem 1rem;font-size:0.95rem;font-weight:600;text-decoration:none;">📊 Public Benchmark Leaderboard | 168/182 passing (92.3%) | Up from 80/140 (57.1%) at original audit | Every failure documented &rarr;</a>
+  <section class="hero">
+    <div class="hero-badge">📊 Publicly benchmarked · 862 stars · 67 skills · 27 contributors · 1,756 tests</div>
+    <h1>The first <em>bioinformatics-native</em><br>AI agent skill library</h1>
+    <p>ClawBio is where biological AI gets its skills: a curated, reproducible, open repository any agent can call.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://github.com/ClawBio/ClawBio" target="_blank">⭐ View on GitHub</a>
+      <a class="btn btn-primary" href="/benchmarks.html" style="background:var(--accent2);color:#0d1117;">📊 Leaderboard · 168/182</a>
+      <a class="btn btn-secondary" href="https://github.com/ClawBio/ClawBio/blob/main/CONTRIBUTING.md" target="_blank">🧬 Submit a Skill</a>
+      <a class="btn btn-secondary" href="https://t.me/RoboTerri_bot" target="_blank">🤖 Try RoboTerri</a>
+    </div>
+    <div class="hero-pills">
+      <span class="pill">bioinformatics</span><span class="pill">genomics</span><span class="pill">reproducibility</span><span class="pill">population-genetics</span><span class="pill">equity</span><span class="pill">ai-agents</span><span class="pill">local-first</span><span class="pill">openclaw</span>
+    </div>
+  </section>
+  <section style="padding:3rem 2rem;text-align:center;">
+    <div style="max-width:800px;margin:0 auto;">
+      <video controls preload="metadata" style="width:100%;border-radius:10px;border:1px solid var(--border);" poster="https://raw.githubusercontent.com/ClawBio/ClawBio/main/img/clawbio-social-preview.png">
+        <source src="https://github.com/ClawBio/ClawBio/releases/download/v0.2.0/david-nutrigx-demo.mp4" type="video/mp4">
+      </video>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:0.75rem;">NutriGx Advisor — community-contributed skill running locally on raw genetic data</p>
+    </div>
+  </section>
+  <section class="problem-bg">
+    <div class="section-inner">
+      <div class="section-label">The Problem</div>
+      <div class="section-title">Reproducing bioinformatics analyses is broken</div>
+      <div class="problem-grid">
+        <div>
+          <div class="code-block">

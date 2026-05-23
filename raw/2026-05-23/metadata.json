@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-23",
+  "sources": [
+    {
+      "file": "nora-readme.md",
+      "title": "NORA (Night Owl Research Agent) README",
+      "source": "https://github.com/GRIND-Lab-Core/night_owl_research_agent",
+      "type": "github-readme",
+      "notes": "Claude Code skill-based research agent for GIS."
+    },
+    {
+      "file": "agentskills-home.html",
+      "title": "Agent Skills Overview",
+      "source": "https://agentskills.io/home",
+      "type": "webpage",
+      "notes": "Core specification site for standardized agent skills."
+    },
+    {
+      "file": "veto-agent-authorization-readme.md",
+      "title": "Veto — Authorization Kernel for AI Agents",
+      "source": "https://github.com/PlawIO/veto",
+      "type": "github-readme",
+      "notes": "Rules/authorization layer for agent tool calls (block, allow, escalate)."
+    },
+    {
+      "file": "tool-use-firewall-readme.md",
+      "title": "Tool-Use Firewall",
+      "source": "https://github.com/reaatech/tool-use-firewall",
+      "type": "github-readme",
+      "notes": "Policy enforcement proxy between agents and MCP tools."
+    },
+    {
+      "file": "agent-audit-readme.md",
+      "title": "Agent Audit — Static Security Scanner for LLM Agents",
+      "source": "https://github.com/HeadyZhang/agent-audit",
+      "type": "github-readme",
+      "notes": "Security and validation framework for LLM agents."
+    },
+    {
+      "file": "schimatos-shacl-readme.md",
+      "title": "Schimatos — SHACL Knowledge Graph Editor",
+      "source": "https://github.com/schimatos/schimatos.org",
+      "type": "github-readme",
+      "notes": "SHACL validation + KG editing."
+    }
+  ]
+}
