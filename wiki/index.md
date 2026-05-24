@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-05-23 (Iteration 5)  
-**Status:** Active research — 9 examples documented
+**Last Updated:** 2026-05-23 (Iteration 6)
+**Status:** Active research — 14 examples documented
 
 ## Overview
 
@@ -11,12 +11,23 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
-  - [2026-05-23 (Iteration 5)](daily-digests/2026-05-23.md)
+  - [2026-05-23 (Iteration 6)](daily-digests/2026-05-23-iter6.md)
 - [Documented Examples](examples/)
+- [Concepts](concepts/)
 - [Metrics](metrics.md)
 
-## Current Status (After Iteration 5)
+## Current Status (After Iteration 6)
 
-Five full research iterations completed. The project has good coverage on **rules** and **ontology** layers. SHACL and SSSOM remain the most challenging categories to find in the current agent skills ecosystem.
+Six full research iterations completed. Major expansion in **governance/verification** patterns with NVIDIA's model (OpenSSF signing, SkillSpector scanning, SKILLCARD.yaml metadata). Platform skill systems (OpenAI Codex, VS Code Copilot, Anthropic) all implement the agentskills.io standard with progressive disclosure.
 
-A synthesis document ("Current State of Skill Bundles Research") was created in this iteration.
+SHACL validation coverage improved from 1 to 3 examples. SSSOM remains at zero.
+
+## Iteration History
+
+| Iteration | Date | Focus | New Examples |
+| 1 | — | Bootstrap | Initial seed |
+| 2 | — | Expansion | NORA, Agent Skills Spec |
+| 3 | — | Deep dive | Ontologizer, OpenClaw PKB |
+| 4 | — | Rules & validation | Veto, Tool-Use Firewall, Schimatos |
+| 5 | — | Synthesis | Research state document |
+| **6** | **2026-05-23** | **Governance & platforms** | **NVIDIA Verified, NVIDIA Repo, Codex, VS Code, RDF Ontologies** |

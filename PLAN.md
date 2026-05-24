@@ -129,9 +129,20 @@ Current date: [TODAY]
    - "How do successful bundles handle rule integration?"
 2. Linting pass for consistency, missing context elements, and new research questions.
 
-### Phase 5: Tooling & Automation (as needed)
+### Phase 5: Tooling, Report & Git
 - Vibe-code small scripts in `scripts/` when repeated tasks become painful.
 - Update `PLAN.md` only after validating improvements.
+- Diff changes since last run.
+- Use the terminal tool to execute: git add . && git commit -m "Daily update $(date +%Y-%m-%d)" && git push
+- Final report: New bundles discovered? Key patterns surfaced? Send summary to Discord (cron already delivers there).
+
+Verify:
+```bash
+ls -1 raw/ | wc -l
+ls -1 wiki/*.md
+git status
+git log --oneline -3
+```
 
 ---
 
