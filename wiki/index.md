@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-05-23 (Iteration 7 — Manual seed: SSSOM/Mapping)
-**Status:** Active research — 16 examples documented
+**Last Updated:** 2026-05-24 (Iteration 8)
+**Status:** Active research — 20 examples documented
 
 ## Overview
 
@@ -11,16 +11,18 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-05-24 (Iteration 8)](daily-digests/2026-05-24.md)
+  - [2026-05-23 (Iteration 7)](daily-digests/2026-05-23-iter7-manual.md)
   - [2026-05-23 (Iteration 6)](daily-digests/2026-05-23-iter6.md)
 - [Documented Examples](examples/)
 - [Concepts](concepts/)
 - [Metrics](metrics.md)
 
-## Current Status (After Iteration 6)
+## Current Status (After Iteration 8)
 
-Six full research iterations completed. Major expansion in **governance/verification** patterns with NVIDIA's model (OpenSSF signing, SkillSpector scanning, SKILLCARD.yaml metadata). Platform skill systems (OpenAI Codex, VS Code Copilot, Anthropic) all implement the agentskills.io standard with progressive disclosure.
+Eight full research iterations completed. Major expansion in **SHACL validation** (3 → 6 examples), **supply chain/provenance** (new category), and **explainable validation** patterns. The [[xpshacl-explainable-shacl]] paper's Violation KG caching mechanism (99.48% hit rate) is a breakthrough pattern for making SHACL validation practical. [[graphguard-os-guardrails]] provides an enterprise-ready guardrail pattern.
 
-SHACL validation coverage improved from 1 to 3 examples. SSSOM remains at zero.
+SSSOM mapping coverage at 2 (spec + algorithm). [[claude-skills-ecosystem-1116]] revealed 754 MITRE/NIST-mapped cybersecurity skills — largest taxonomy-driven bundle.
 
 ## Iteration History
 
@@ -32,3 +34,12 @@ SHACL validation coverage improved from 1 to 3 examples. SSSOM remains at zero.
 | 5 | — | Synthesis | Research state document |
 | **6** | **2026-05-23** | **Governance & platforms** | **NVIDIA Verified, NVIDIA Repo, Codex, VS Code, RDF Ontologies** |
 | **7** | **2026-05-23** | **SSSOM/Mapping seed** | **Open Ontologies (paper + GitHub) — ontology alignment, stable matching, MCP tools** |
+| **8** | **2026-05-24** | **SHACL deep + supply chain + ecosystem** | **GraphGuard OS, xpSHACL, gh skill, SHACL Data Quality, SSSOM Protocol, Claude Skills Ecosystem** |
+
+## Tomorrow Priority Searches
+
+1. "SSSOM agent skills" OR "SSSOM mapping tool" MCP implementation
+2. "MITRE ATT&CK agent skills" OR "NIST cybersecurity skills" bundle details
+3. SHACL + rules engine for non-semantic domains
+4. Skill provenance tracking systems beyond GitHub CLI
+5. Ontology alignment tools beyond Open Ontologies (e.g., LogMap, AgreementMaker)
