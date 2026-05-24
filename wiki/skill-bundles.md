@@ -18,6 +18,8 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - OpenClaw PKB Skill — Personal knowledge base
 - RDF Ontologies — SHACL + SPARQL integration
 - Open Ontologies MCP — Full ontology lifecycle (43 tools, SHACL validation, 32 stored ontologies)
+- **Open Ontologies Paper — Stable matching alignment algorithm for ontology mapping (OAEI F1=0.832, P=0.963)** ← NEW SSSOM/MAPPING SEED
+- **Open Ontologies GitHub — Production Rust MCP server with onto_align tool, marketplace of 32 standard ontologies** ← NEW SSSOM/MAPPING SEED
 
 ### Validation & Rules
 - Veto — Authorization Kernel
@@ -37,16 +39,19 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 ### Specification
 - Agent Skills Specification — The open standard (agentskills.io)
 
-## State of Research (Iteration 6)
+## State of Research (After Iteration 7)
 
-After six iterations, **Governance/Verification** and **Ontology** layers now show the strongest adoption. **Rules & Authorization** remain well-covered. **SHACL validation** has grown from 1 to 3 examples. Formal semantic mapping (**SSSOM**) remains the only category with zero examples.
+After seven iterations (including manual seed for SSSOM/mapping), **Open Ontologies** (Rovai) provides the first strong example combining agent skills with formal mapping/alignment. The `onto_align` tool implements six-signal similarity scoring + stable matching — directly addressing the SSSOM mapping gap. The marketplace's 32 standard ontologies (Schema.org, BFO, SKOS, FOAF) plus clinical crosswalks (ICD-10, SNOMED, MeSH) provide ready-made vocabularies and taxonomies for cross-ontology mapping.
+
+SSSOM is no longer at zero — we now have a production mapping engine example.
 
 See the dedicated state document: [[skill-bundles-research-state]]
 
 ## Emerging Patterns
 
 1. **Skills + Declarative Context Files** (most common across all platforms)
-2. **Skills + Ontology** (growing — 5 examples)
+2. **Skills + Ontology** (growing — 7 examples)
+3. **Skills + Mapping/Alignment** (emerging — 1 example, Open Ontologies)
 3. **Skills + Rules/Governance** (emerging strongly — 4 examples)
 4. **Skills + SHACL Validation** (still rare but present — 3 examples)
 5. **Skills + Governance Pipeline** (NVIDIA model: signing, scanning, metadata)
@@ -61,4 +66,4 @@ See the dedicated state document: [[skill-bundles-research-state]]
 | YAML Configuration | 8+ | Ubiquitous |
 | SHACL Validation | 3 | Emerging |
 | MCP Dependencies | 2 | Emerging |
-| SSSOM Mapping | 0 | None |
+| SSSOM Mapping | 1 | Emerging — **Open Ontologies** (stable matching + LLM adjudication) |

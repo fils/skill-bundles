@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-05-23 (Iteration 6)
-**Status:** Active research — 14 examples documented
+**Last Updated:** 2026-05-23 (Iteration 7 — Manual seed: SSSOM/Mapping)
+**Status:** Active research — 16 examples documented
 
 ## Overview
 
@@ -31,3 +31,4 @@ SHACL validation coverage improved from 1 to 3 examples. SSSOM remains at zero.
 | 4 | — | Rules & validation | Veto, Tool-Use Firewall, Schimatos |
 | 5 | — | Synthesis | Research state document |
 | **6** | **2026-05-23** | **Governance & platforms** | **NVIDIA Verified, NVIDIA Repo, Codex, VS Code, RDF Ontologies** |
+| **7** | **2026-05-23** | **SSSOM/Mapping seed** | **Open Ontologies (paper + GitHub) — ontology alignment, stable matching, MCP tools** |
