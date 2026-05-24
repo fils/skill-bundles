@@ -144,12 +144,15 @@ Current date: [TODAY]
 4. "skill catalog" OR "agentskills.io" OR "agent skills specification"
 5. NORA OR "night owl research" skills
 6. "agents at conferences" skills OR bundles
+7. DSPy OR dspy (skills OR "agent skills" OR bundles OR "skill bundle") github
+8. "dspy-agent-skills" OR "dspy skills" OR DSPy agent framework skills
 
 **High-Priority Sources:**
 - https://agentskills.io/ and related GitHub org
 - https://github.com/GRIND-Lab-Core/night_owl_research_agent
 - https://github.com/cecat/agents-at-conferences
 - https://clawbio.ai/
+- https://github.com/intertwine/dspy-agent-skills (example DSPy-based agent skills bundle — prime target for discovery)
 - arXiv papers on agent skills, tool-use formalization, semantic agent frameworks
 - GitHub searches for `skills/` directories containing validation, mapping, or ontology files
 
