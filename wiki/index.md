@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-05-24 (Iteration 8)
-**Status:** Active research — 20 examples documented
+**Last Updated:** 2026-05-24 (Iteration 9)
+**Status:** Active research — 28 examples documented
 
 ## Overview
 
@@ -11,6 +11,7 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+- [2026-05-24 (Iteration 9)](daily-digests/2026-05-24-iter9.md)
   - [2026-05-24 (Iteration 8)](daily-digests/2026-05-24.md)
   - [2026-05-23 (Iteration 7)](daily-digests/2026-05-23-iter7-manual.md)
   - [2026-05-23 (Iteration 6)](daily-digests/2026-05-23-iter6.md)
@@ -34,7 +35,8 @@ SSSOM mapping coverage at 2 (spec + algorithm). [[claude-skills-ecosystem-1116]]
 | 5 | — | Synthesis | Research state document |
 | **6** | **2026-05-23** | **Governance & platforms** | **NVIDIA Verified, NVIDIA Repo, Codex, VS Code, RDF Ontologies** |
 | **7** | **2026-05-23** | **SSSOM/Mapping seed** | **Open Ontologies (paper + GitHub) — ontology alignment, stable matching, MCP tools** |
-| **8** | **2026-05-24** | **SHACL deep + supply chain + ecosystem** | **GraphGuard OS, xpSHACL, gh skill, SHACL Data Quality, SSSOM Protocol, Claude Skills Ecosystem** |
+| **8** | **2026-05-24** | **SHACL deep + supply chain + ecosystem** | **GraphGuard OS, xpSHACL, gh skill, SHACL DQ, SSSOM Protocol, Claude Ecosystem** |
+| **9** | **2026-05-24** | **DSPy + Security + Benchmarking + Constraint Rules** | **DSPy Agent Skills, Superpowers, Mondoo Security, Graph of Skills, SkillsBench, Anthropic Official** |
 
 ## Tomorrow Priority Searches
 
