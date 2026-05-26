@@ -8,6 +8,8 @@
 - Agent Skills specification — https://agentskills.io/
 - Agents at Conferences patterns
 - ClawBio-style domain research agents
+- **"The (R)evolution of Scientific Workflows in the Agentic AI Era"** (ACM SC '25) — state-machine framework for autonomous science, agent composition patterns (Single→Pipeline→Hierarchical→Mesh→Swarm)
+- **"The Beginning of scAInce"** (Frontiers in AI, PMC12426084) — agentic models + lab automation, co-pilot→lab-pilot transition, skill taxonomy for scientific workflows
 
 **Core Idea:** Use LLMs to discover, ingest, and synthesize examples of *skill bundles* — reusable, composable collections of agent skills plus the surrounding formal artifacts (SHACL shapes, SSSOM mappings, rules, controlled vocabularies, taxonomies, and ontologies) that give those skills reliable context and guardrails.
 
@@ -164,7 +166,11 @@ git log --oneline -3
 - https://github.com/cecat/agents-at-conferences
 - https://clawbio.ai/
 - https://github.com/intertwine/dspy-agent-skills (example DSPy-based agent skills bundle — prime target for discovery)
-- arXiv papers on agent skills, tool-use formalization, semantic agent frameworks
+- **Seeded Papers (manually added):**
+- https://dl.acm.org/doi/full/10.1145/3731599.3767580 — "The (R)evolution of Scientific Workflows in the Agentic AI Era" (SC '25 Workshops): state-machine framework for autonomous science, agent composition patterns
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/ — "The Beginning of scAInce" (Frontiers in AI, 2025): agentic models + lab automation, co-pilot→lab-pilot transition
+
+**arXiv papers on agent skills, tool-use formalization, semantic agent frameworks**
 - GitHub searches for `skills/` directories containing validation, mapping, or ontology files
 
 ---
