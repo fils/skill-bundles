@@ -1,7 +1,12 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-05-26",
-  "daily_sources": 7,
-  "total_sources": 55,
-  "iteration": 11
+  "date": "2026-05-27",
+  "daily_sources": 3,
+  "total_sources": 58,
+  "iteration": 12,
+  "new_today": [
+    "addyosmani/agent-skills",
+    "heilcheng/awesome-agent-skills",
+    "addyosmani.com/blog/agent-skills"
+  ]
 }
