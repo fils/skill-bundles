@@ -64,6 +64,31 @@
 
 ## 3. Daily Workflow (Run Every 24h)
 
+### Pre-flight (always run first, before Phase 1)
+
+**Mandatory.** Do not skip. Output these four lines at the top of every run report.
+
+```bash
+cd /home/hermes/projects/skill-bundles
+git status -sb                              # any untracked / modified files?
+ls -la raw/$(date +%Y-%m-%d)/               # does today's raw dir exist? has content?
+git log --oneline -5                        # what was the last commit?
+ls wiki/daily-digests/ | tail -3            # are daily digests current?
+```
+
+**Rules derived from the pre-flight:**
+- If `git status` shows uncommitted `raw/<old-date>/` content from a previous run, **process it first** as part of today's Phase 2–4. Do not leave it for a future run.
+- If today's `raw/$(date +%Y-%m-%d)/` does not exist, Phase 1 must create it.
+- If the most recent `wiki/daily-digests/` entry is older than 48 hours, the previous run(s) failed; flag this and prioritize closing the gap.
+
+**When is [SILENT] allowed?**
+Only when ALL of these are simultaneously true:
+  (a) `git status -sb` shows a clean working tree, AND
+  (b) `raw/$(date +%Y-%m-%d)/` exists with ≥1 file committed today, AND
+  (c) `wiki/daily-digests/$(date +%Y-%m-%d).md` exists and is committed.
+
+Otherwise, you MUST proceed through Phases 1–5 and push, even if it is a small run. A 1-source day is better than a silent no-op.
+
 ### Phase 1: Discovery & Ingestion (45–75 min)
 **Goal:** Find fresh, high-signal examples of skill bundles.
 
@@ -131,20 +156,38 @@ Current date: [TODAY]
    - "How do successful bundles handle rule integration?"
 2. Linting pass for consistency, missing context elements, and new research questions.
 
-### Phase 5: Tooling, Report & Git
-- Vibe-code small scripts in `scripts/` when repeated tasks become painful.
-- Update `PLAN.md` only after validating improvements.
-- Diff changes since last run.
-- Use the terminal tool to execute: git add . && git commit -m "Daily update $(date +%Y-%m-%d)" && git push
-- Final report: New bundles discovered? Key patterns surfaced? Send summary to Discord (cron already delivers there).
+### Phase 5: Tooling, Report & Git — **MANDATORY, UNCONDITIONAL**
 
-Verify:
+**This phase runs every single day, including maintenance days and days with zero new sources. Skipping it is the failure mode that lost us 3 days of pushes in late May 2026. Do not skip.**
+
+1. Vibe-code small scripts in `scripts/` when repeated tasks become painful.
+2. Update `PLAN.md` only after validating improvements.
+3. Diff changes since last run.
+4. **Always run exactly one of these terminal commands:**
+
+```bash
+# Normal case: there are file changes
+git add . && git commit -m "Daily update $(date +%Y-%m-%d): <short summary>" && git push origin master
+
+# Maintenance case: no file changes (zero new sources, all clean)
+git add . && git commit --allow-empty -m "Daily research $(date +%Y-%m-%d): maintenance run (no new sources)" && git push origin master
+```
+
+5. **Report section is mandatory** and must include:
+   - "Pre-flight:" line (from the pre-flight section above)
+   - "Phases 1–5:" summary of what ran, including source count
+   - "Git & Delivery:" with the commit hash AND `git log --oneline origin/master..HEAD` output (should be empty after a successful push), e.g. `Pushed: 5477a86..bbcb67f master -> master`
+   - Any errors must be reported explicitly, not silently swallowed
+
+Verify (always run before writing the report):
 ```bash
 ls -1 raw/ | wc -l
 ls -1 wiki/*.md
-git status
+git status -sb
 git log --oneline -3
 ```
+
+**Hard rule:** if `git push` fails for any reason (auth, network, non-fast-forward, etc.), report the exact error in the report and do NOT mark the run as successful. A failed push is a critical alert.
 
 ---
 

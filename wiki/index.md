@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-05-26 (Iteration 11)
-**Status:** Active research — 40 examples documented
+**Last Updated:** 2026-06-01 (Iteration 13)
+**Status:** Active research — 45 examples documented
 
 ## Overview
 
@@ -11,6 +11,8 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-06-01 (Iteration 13)](daily-digests/2026-06-01.md)
+  - [2026-05-28 (Iteration 12)](daily-digests/2026-05-28.md)
   - [2026-05-26 (Iteration 11)](daily-digests/2026-05-26.md)
   - [2026-05-25 (Iteration 10)](daily-digests/2026-05-25.md)
   - [2026-05-24 (Iteration 9)](daily-digests/2026-05-24-iter9.md)
@@ -22,18 +24,21 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Metrics](metrics.md)
 - [Q&A](qa/)
 
-## Current Status (After Iteration 11)
+## Current Status (After Iteration 13)
 
-Eleven full research iterations completed. Iteration 11 marks a **qualitative shift** — the addition of formal security governance frameworks ([[owasp-agentic-skills-top-10]], [[agentic-trust-framework-csa]]) and a comprehensive academic survey ([[arxiv-agent-skills-survey]]) moves the catalog from empirical observation to formalized governance.
+Thirteen full research iterations completed. Iteration 13 establishes **two new architectural patterns**:
 
-Three new categories emerge:
-- **Security Governance Frameworks** — OWASP AST10 (10-class vulnerability taxonomy + Universal Skill Format), ATF (4-level Zero Trust maturity model), and the arXiv survey (26.1% vulnerability finding)
-- **Enterprise Platform Implementations** — [[microsoft-agent-framework-skills]] (.NET/Python) and [[spring-ai-agent-skills]] (Java) signal enterprise readiness with DI support, script approval, and multi-source composition
-- **Distribution & Marketplaces** — [[chris-ayers-plugin-ecosystem]] (Skills→Plugins→Marketplaces) and the Agensi marketplace landscape (8-marketplace comparison with consolidation trends)
+- **[[three-layer-validation-stack|Three-Layer Validation Stack]]** — Convergence on pre-commit (skill-validator CLI) → CI/CD (Validate Skill GitHub Action) → Registry (agentskill.sh 12-category threat scanner) pattern. Mirrors the mature software supply chain three-layer model.
+- **[[bidirectional-shacl-llm-bridge|Bidirectional SHACL↔LLM Bridge]]** — Forward (text2shacl multi-agent SHACL generation) + Reverse (xpSHACL natural-language explanation) complete the loop: requirements → shapes → validation → explanation → refined requirements.
 
-**Key convergence:** The arXiv survey's composition patterns (single→pipeline→hierarchical→mesh→swarm) mirror the SC '25 paper's framework — confirming cross-domain convergence. Chris Ayers' cross-tool compatibility matrix proves SKILL.md works identically across 5 major tools.
+Five new examples added (45 total):
+- **[[ai4curation-curation-skills]]** — Chris Mungall's ontology/biocuration bundle (7 skills, production users: Mondo, CL, Uberon, EFO)
+- **[[skill-validator-cli]]** — Go CLI validator with LLM-as-judge, 13 platform pre-commit hooks (151 stars)
+- **[[agentskill-sh-ags-security-scoring]]** — Registry with 12-category threat taxonomy, 100k+ skills scanned
+- **[[validate-skill-github-action]]** — CI/CD layer of the validation stack
+- **[[text2shacl-multi-agent-shacl]]** — Multi-agent LangGraph SHACL generation from text (forward direction of the bridge)
 
-See the [[skill-security-governance]] concept article for the complete governance stack synthesis.
+**Convergence signal:** Three independent projects (skill-validator, validate-skill, ags) emerged to fill the three validation layers in 2026 — strong evidence the pattern is now stable.
 
 ## Iteration History
 
@@ -50,12 +55,14 @@ See the [[skill-security-governance]] concept article for the complete governanc
 | **9** | **2026-05-24** | **DSPy + Security + Benchmarking + Constraint Rules** | **DSPy Agent Skills, Superpowers, Mondoo Security, Graph of Skills, SkillsBench, Anthropic Official** |
 | **10** | **2026-05-25** | **SSSOM lifecycle + Supply chain risk + CLI catalogs** | **OxO2, DSPy v0.2.3, PurpleBox, Onto-LLM-Mapping, Awesome OpenClaw, Ylang Labs** |
 | **11** | **2026-05-26** | **Security governance + Enterprise platforms + Distribution** | **OWASP AST10, ATF, arXiv Survey, Microsoft, Spring AI, Chris Ayers Plugins** |
+| **12** | **2026-05-28** | **Agent Skills ecosystem** | **agentskills.io overview** (raw only, integration pending) |
+| **13** | **2026-06-01** | **Three-layer validation + SHACL bridge + ontology skills** | **ai4curation, skill-validator CLI, agentskill.sh ags, validate-skill Action, text2shacl** |
 
 ## Tomorrow Priority Searches
 
-1. OWASP AST10 AST01-AST06 detailed write-ups (due Q2 2026)
-2. Actual marketplace consolidation events (acquisitions, shutdowns)
-3. NVIDIA SkillSpector and OpenSSF signing implementation details
-4. A2A (Agent-to-Agent) protocol specification and skill integration
-5. Skill dependency resolution at scale (beyond Graph of Skills)
-6. Snowflake Cortex Code and Databricks Genie Code skill implementations
+1. SLSA / in-toto attestation for skill bundles (provenance chain across validation layers)
+2. Bundle-level interaction effects (2+ skills installed together — privilege accumulation, version skew)
+3. A2A (Agent-to-Agent) protocol skill integration (carried from last week)
+4. SHACL round-trip evaluation studies (empirical text → shapes → text fidelity)
+5. ai-blame deep-dive (Mungall's line-level attribution for AI-assisted ontology edits)
+6. Monorepo SKILL.md / Claude Plugin Marketplace consolidation events
