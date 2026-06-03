@@ -31,12 +31,13 @@ Thirteen full research iterations completed. Iteration 13 establishes **two new 
 - **[[three-layer-validation-stack|Three-Layer Validation Stack]]** — Convergence on pre-commit (skill-validator CLI) → CI/CD (Validate Skill GitHub Action) → Registry (agentskill.sh 12-category threat scanner) pattern. Mirrors the mature software supply chain three-layer model.
 - **[[bidirectional-shacl-llm-bridge|Bidirectional SHACL↔LLM Bridge]]** — Forward (text2shacl multi-agent SHACL generation) + Reverse (xpSHACL natural-language explanation) complete the loop: requirements → shapes → validation → explanation → refined requirements.
 
-Five new examples added (45 total):
+Six new examples added (46 total):
 - **[[ai4curation-curation-skills]]** — Chris Mungall's ontology/biocuration bundle (7 skills, production users: Mondo, CL, Uberon, EFO)
 - **[[skill-validator-cli]]** — Go CLI validator with LLM-as-judge, 13 platform pre-commit hooks (151 stars)
 - **[[agentskill-sh-ags-security-scoring]]** — Registry with 12-category threat taxonomy, 100k+ skills scanned
 - **[[validate-skill-github-action]]** — CI/CD layer of the validation stack
 - **[[text2shacl-multi-agent-shacl]]** — Multi-agent LangGraph SHACL generation from text (forward direction of the bridge)
+- **[[genesis-skills-osti]]** — OSTI Genesis lab-scale bundle: 74 skills across HPC, plasma, scientific computing + Superpowers re-packaging (NEW)
 
 **Convergence signal:** Three independent projects (skill-validator, validate-skill, ags) emerged to fill the three validation layers in 2026 — strong evidence the pattern is now stable.
 
