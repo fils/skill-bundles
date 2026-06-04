@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-**Last Updated:** 2026-06-01 (Iteration 13)
-**Status:** Active research — 45 examples documented
+|**Last Updated:** 2026-06-04 (Iteration 14)
+|**Status:** Active research — 50 examples documented (est.)
 
 ## Overview
 
@@ -11,6 +11,8 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-06-04 (Iteration 14)
+  - [2026-06-04 (Iteration 14)](daily-digests/2026-06-04.md)
   - [2026-06-01 (Iteration 13)](daily-digests/2026-06-01.md)
   - [2026-05-28 (Iteration 12)](daily-digests/2026-05-28.md)
   - [2026-05-26 (Iteration 11)](daily-digests/2026-05-26.md)
