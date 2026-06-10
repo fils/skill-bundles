@@ -1,15 +1,18 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-01",
-  "daily_sources": 5,
-  "total_sources": 63,
-  "iteration": 13,
+  "date": "2026-06-09",
+  "daily_sources": 8,
+  "total_sources": 71,
+  "iteration": 14,
   "new_today": [
-    "ai4curation/curation-skills",
-    "agent-ecosystem/skill-validator",
-    "agentskill-sh/ags",
-    "Flash-Brew-Digital/validate-skill",
-    "citiususc/text2shacl"
+    "intertwine/dspy-agent-skills",
+    "ClawBio/ClawBio",
+    "agentskills/agentskills (specification)",
+    "VoltAgent/awesome-agent-skills",
+    "addyosmani/agent-skills",
+    "GRIND-Lab-Core/night_owl_research_agent (NORA)",
+    "cecat/agents-at-conferences",
+    "Seeded papers: SC25 revolution + scAInce"
   ],
-  "notes": "Iteration 13: Three new validator/scanner classes (CLI, Action, marketplace), one high-signal ontology skill bundle from Chris Mungall (ai4curation), one multi-agent SHACL generator (text2shacl)."
+  "notes": "Iteration 14: Major skill bundles discovered - DSPy agent skills (5 skills + validation harness + GEPA optimization), ClawBio bioinformatics library (88 skills + reproducibility bundles + reference genome), Agent Skills specification (canonical standard), VoltAgent curated catalog (1400+ skills with quality gates), Addy Osmani production-grade engineering skills (23 skills + personas + checklists), NORA harness-engineered research agent (21 domain skills + harness framework), Agents at Conferences infrastructure (6-component protocol + capability schema), plus two seeded foundational papers on autonomous scientific workflows and scAInce paradigm."
 }
