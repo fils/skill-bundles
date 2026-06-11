@@ -1,18 +1,13 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-09",
-  "daily_sources": 8,
-  "total_sources": 71,
-  "iteration": 14,
+  "date": "2026-06-11",
+  "daily_sources": 3,
+  "total_sources": 74,
+  "iteration": 15,
   "new_today": [
-    "intertwine/dspy-agent-skills",
-    "ClawBio/ClawBio",
-    "agentskills/agentskills (specification)",
-    "VoltAgent/awesome-agent-skills",
     "addyosmani/agent-skills",
-    "GRIND-Lab-Core/night_owl_research_agent (NORA)",
-    "cecat/agents-at-conferences",
-    "Seeded papers: SC25 revolution + scAInce"
+    "anthropics/skills",
+    "heilcheng/awesome-agent-skills"
   ],
-  "notes": "Iteration 14: Major skill bundles discovered - DSPy agent skills (5 skills + validation harness + GEPA optimization), ClawBio bioinformatics library (88 skills + reproducibility bundles + reference genome), Agent Skills specification (canonical standard), VoltAgent curated catalog (1400+ skills with quality gates), Addy Osmani production-grade engineering skills (23 skills + personas + checklists), NORA harness-engineered research agent (21 domain skills + harness framework), Agents at Conferences infrastructure (6-component protocol + capability schema), plus two seeded foundational papers on autonomous scientific workflows and scAInce paradigm."
+  "notes": "Iteration 15: 3 new sources focused on Agent Skills standard and ecosystem. addyosmani (24 engineering skills + personas + verification), anthropics (official 149k-star reference + document skills + agentskills.io spec), heilcheng/awesome (curated catalog + quality standards). No new SHACL/SSSOM hits. Maintenance run with daily digest only."
 }
