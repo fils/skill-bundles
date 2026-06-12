@@ -100,3 +100,5 @@ Randomly sampled 4 claims from today's new wiki entries:
 4. ai4curation/curation-skills "7 skills, production users Mondo + Cell Ontology + Uberon + EFO" → Verified in repo + ai4curation.io/aidocs/examples ✅
 
 Match rate: 4/4 (100%)
+
+**2026-06-12 Update:** +3 raw sources (addyosmani, anthropics, agentskills.io). 1 daily-digest created. Total raw sources now 77. Focus: Agent Skills ecosystem and lifecycle bundles. No new SHACL/SSSOM examples today.

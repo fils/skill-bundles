@@ -1,13 +1,13 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-11",
+  "date": "2026-06-12",
   "daily_sources": 3,
-  "total_sources": 74,
-  "iteration": 15,
+  "total_sources": 77,
+  "iteration": 16,
   "new_today": [
     "addyosmani/agent-skills",
     "anthropics/skills",
-    "heilcheng/awesome-agent-skills"
+    "agentskills.io/home"
   ],
-  "notes": "Iteration 15: 3 new sources focused on Agent Skills standard and ecosystem. addyosmani (24 engineering skills + personas + verification), anthropics (official 149k-star reference + document skills + agentskills.io spec), heilcheng/awesome (curated catalog + quality standards). No new SHACL/SSSOM hits. Maintenance run with daily digest only."
+  "notes": "Iteration 16: 3 new sources on Agent Skills standard and engineering bundles (addyosmani 24-skill lifecycle, anthropics official spec+docs, agentskills.io overview). Focused on context packaging via SKILL.md + checklists/personas. No SHACL/SSSOM hits. Created daily-digest. Maintenance-style run with raw ingestion."
 }
