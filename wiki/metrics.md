@@ -1,6 +1,6 @@
 # Skill Bundles — Metrics & Progress
 
-**Last Updated:** 2026-06-01 (Iteration 13)
+**Last Updated: 2026-06-13 (Iteration 14) (Iteration 13)
 
 ## KPIs
 
@@ -102,3 +102,5 @@ Randomly sampled 4 claims from today's new wiki entries:
 Match rate: 4/4 (100%)
 
 **2026-06-12 Update:** +3 raw sources (addyosmani, anthropics, agentskills.io). 1 daily-digest created. Total raw sources now 77. Focus: Agent Skills ecosystem and lifecycle bundles. No new SHACL/SSSOM examples today.
+
+**2026-06-13 Update:** +4 raw sources (agentskills.io spec, addyosmani production bundle, anthropics official, VoltAgent awesome catalog). 1 daily-digest created. Total raw sources now 81. Focus: Convergence on SKILL.md standard + vendor catalogs. Context element coverage unchanged (no new SHACL/SSSOM hits). Maintenance run on metrics + daily digest only.

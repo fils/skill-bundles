@@ -1,0 +1,16 @@
+{
+  "date": "2026-06-13",
+  "sources_ingested": 4,
+  "files": [
+    "agentskills-io-overview.md",
+    "addyosmani-agent-skills.md",
+    "anthropics-skills.md",
+    "voltagent-awesome-agent-skills.md"
+  ],
+  "queries_used": [
+    "agent skills OR \"skill bundle\" OR \"claude skills\" OR agentskills.io github",
+    "SHACL (agent OR skills OR \"claude code\" OR bundle)",
+    "SSSOM (agent OR skills OR mapping) github"
+  ],
+  "notes": "Strong focus on Agent Skills standard and major catalogs (addyosmani, anthropics, VoltAgent). Limited new SHACL/SSSOM + agent skills hits today. These sources represent high-signal skill bundle examples and catalogs."
+}
