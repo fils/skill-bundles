@@ -1,13 +1,15 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-12",
-  "daily_sources": 3,
-  "total_sources": 77,
-  "iteration": 16,
+  "date": "2026-06-14",
+  "daily_sources": 5,
+  "total_sources": 82,
+  "iteration": 17,
   "new_today": [
     "addyosmani/agent-skills",
     "anthropics/skills",
-    "agentskills.io/home"
+    "01clauding/claude-ontology-skill",
+    "heilcheng/awesome-agent-skills",
+    "uxr-claude-skills-bundle"
   ],
-  "notes": "Iteration 16: 3 new sources on Agent Skills standard and engineering bundles (addyosmani 24-skill lifecycle, anthropics official spec+docs, agentskills.io overview). Focused on context packaging via SKILL.md + checklists/personas. No SHACL/SSSOM hits. Created daily-digest. Maintenance-style run with raw ingestion."
+  "notes": "Iteration 17: 5 new sources on Agent Skills bundles (addyosmani 24-skill lifecycle with personas/checklists, anthropics official spec+template, 01clauding ontology+TS mappings+Zod validation (strong context elements), heilcheng awesome index, UXR 52-skill commercial bundle with workflows). Good coverage of composition patterns and validation layers. No direct SHACL/SSSOM but ontology/validation examples strong. Created daily-digest."
 }
