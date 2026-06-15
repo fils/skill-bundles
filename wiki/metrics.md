@@ -1,6 +1,6 @@
 # Skill Bundles — Metrics & Progress
 
-**Last Updated: 2026-06-14 (Iteration 17)**
+**Last Updated: 2026-06-15 (Iteration 18 — Maintenance)**
 
 ## KPIs
 
@@ -10,7 +10,7 @@
 | Raw Sources (total) | 82 | 77 | +5 |
 | Wiki Articles | 57 | 56 | +1 (daily digest) |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | 11 | 10 | +1 (2026-06-14.md) |
+| Daily Digests | 12 | 11 | +1 (2026-06-15.md maintenance) |
 | Q&A Passes | 2 | 2 | Unchanged |
 | Context Element Types Covered | 20 | 20 | Unchanged |
 | Governance / Verification Coverage | 9 | 9 | Unchanged |
@@ -34,3 +34,8 @@
 - Strong ontology + validation signal from 01clauding (Gruber + Ontology 101 + Zod/TS/SQL layers).
 - No new SHACL/SSSOM direct hits but ontology context is excellent proxy.
 - Daily digest produced; full example synthesis planned for next iteration.
+## Velocity Notes (2026-06-15)
+- Maintenance run: 0 new sources (repeated prior high-signal repos only).
+- Created raw/2026-06-15/ (empty) and wiki/daily-digests/2026-06-15.md.
+- Wiki link validation passed (no new broken links).
+- Schedule preserved via --allow-empty commit.
