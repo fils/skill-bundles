@@ -1,14 +1,13 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-16",
-  "daily_sources": 4,
-  "total_sources": 86,
-  "iteration": 18,
+  "date": "2026-06-17",
+  "daily_sources": 3,
+  "total_sources": 89,
+  "iteration": 19,
   "new_today": [
-    "addyosmani/agent-skills",
-    "anthropics/skills",
     "heilcheng/awesome-agent-skills",
+    "anthropics/skills",
     "vercel-labs/agent-skills"
   ],
-  "notes": "Iteration 18: 4 sources (re-ingested core repos with fresh extracts). Strong lifecycle and platform examples but still no direct SHACL/SSSOM + skills bundles found. Created daily-digest 2026-06-16.md. Maintenance run focused on continuity."
+  "notes": "Iteration 19: 3 high-signal Agent Skills catalog sources ingested. Focus on official repos demonstrating skill packaging, frontmatter standards, and composition patterns. No new SHACL/SSSOM examples today."
 }
