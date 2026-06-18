@@ -1,13 +1,14 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-17",
-  "daily_sources": 3,
-  "total_sources": 89,
-  "iteration": 19,
+  "date": "2026-06-18",
+  "daily_sources": 4,
+  "total_sources": 93,
+  "iteration": 20,
   "new_today": [
-    "heilcheng/awesome-agent-skills",
+    "agentskills.io/spec",
     "anthropics/skills",
-    "vercel-labs/agent-skills"
+    "addyosmani/agent-skills",
+    "heilcheng/awesome-agent-skills"
   ],
-  "notes": "Iteration 19: 3 high-signal Agent Skills catalog sources ingested. Focus on official repos demonstrating skill packaging, frontmatter standards, and composition patterns. No new SHACL/SSSOM examples today."
+  "notes": "Iteration 20: 4 high-signal Agent Skills sources (spec + official Anthropic + production engineering bundle + awesome list). Strong lifecycle + verification context in addyosmani example. No new SHACL/SSSOM direct bundles today."
 }
