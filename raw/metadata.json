@@ -1,14 +1,14 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-19",
+  "date": "2026-06-22",
   "daily_sources": 4,
-  "total_sources": 97,
-  "iteration": 21,
+  "total_sources": 101,
+  "iteration": 22,
   "new_today": [
     "addyosmani/agent-skills",
-    "agentskills.io/spec",
-    "anthropics/skills",
-    "heilcheng/awesome-agent-skills"
+    "agentskills.io",
+    "heilcheng/awesome-agent-skills",
+    "mapping-commons/sssom"
   ],
-  "notes": "Iteration 21: 4 high-signal Agent Skills sources (production engineering lifecycle bundle from addyosmani + official spec + Anthropic reference + awesome catalog). Strong emphasis on lifecycle taxonomy, verification gates, and cross-agent portability. SHACL/SSSOM coverage remains low in agent-skills domain."
+  "notes": "Iteration 22: 4 high-signal sources focused on Agent Skills bundles + formal context elements. addyosmani production lifecycle bundle (24 skills + personas + checklists), official agentskills.io spec, awesome catalog (1000+ examples), and SSSOM ontology mapping standard (exemplar for SSSOM/SHACL-style context in bundles). Strong coverage of lifecycle taxonomies, verification rules, and cross-agent portability. Gap: SHACL adoption in agent skills remains low."
 }

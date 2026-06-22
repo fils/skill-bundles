@@ -39,3 +39,9 @@
 - Created raw/2026-06-15/ (empty) and wiki/daily-digests/2026-06-15.md.
 - Wiki link validation passed (no new broken links).
 - Schedule preserved via --allow-empty commit.
+
+## 2026-06-22 Update (Iteration 22)
+- Raw sources: +4 (total 101)
+- Daily digests: +1 (2026-06-22.md)
+- Focus: addyosmani production bundle, agentskills.io spec, awesome catalog, SSSOM context element
+- Notes: Strong lifecycle taxonomy and verification patterns; SSSOM integration opportunity identified. SHACL coverage still low in agent-skills domain.
