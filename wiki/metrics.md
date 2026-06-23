@@ -45,3 +45,10 @@
 - Daily digests: +1 (2026-06-22.md)
 - Focus: addyosmani production bundle, agentskills.io spec, awesome catalog, SSSOM context element
 - Notes: Strong lifecycle taxonomy and verification patterns; SSSOM integration opportunity identified. SHACL coverage still low in agent-skills domain.
+
+
+## 2026-06-23 Run Notes
+- Iteration 23: Pre-flight clean tree. Phase 1: 8 new ecosystem sources (addyosmani, anthropics, agentskills.io, heilcheng, VoltAgent, Google/skills, VS Code, discussions). raw/2026-06-23/ created + discovery-summary.md + metadata.json updated (total_sources=109).
+- Phase 2: wiki/daily-digests/2026-06-23.md generated.
+- Full Phases 1-5 executed unconditionally per rules. No new examples compiled today (scan phase); focus on ingestion.
+- Daily sources: 8 | Wiki articles: +1 (digest) | Total raw: 109

@@ -1,14 +1,18 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-22",
-  "daily_sources": 4,
-  "total_sources": 101,
-  "iteration": 22,
+  "date": "2026-06-23",
+  "daily_sources": 8,
+  "total_sources": 109,
+  "iteration": 23,
   "new_today": [
     "addyosmani/agent-skills",
+    "anthropics/skills",
     "agentskills.io",
     "heilcheng/awesome-agent-skills",
-    "mapping-commons/sssom"
+    "VoltAgent/awesome-agent-skills",
+    "google/skills",
+    "VS Code Agent Skills",
+    "community discussions"
   ],
-  "notes": "Iteration 22: 4 high-signal sources focused on Agent Skills bundles + formal context elements. addyosmani production lifecycle bundle (24 skills + personas + checklists), official agentskills.io spec, awesome catalog (1000+ examples), and SSSOM ontology mapping standard (exemplar for SSSOM/SHACL-style context in bundles). Strong coverage of lifecycle taxonomies, verification rules, and cross-agent portability. Gap: SHACL adoption in agent skills remains low."
+  "notes": "Iteration 23: Strong ecosystem day - official repos (Anthropic, Google, addyosmani production skills), awesome lists (heilcheng, VoltAgent), spec (agentskills.io), VS Code integration. Focus on Agent Skills bundles/portability. Limited SHACL/SSSOM direct hits today."
 }
