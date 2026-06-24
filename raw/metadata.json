@@ -1,18 +1,19 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "daily_sources": 8,
-  "total_sources": 109,
-  "iteration": 23,
+  "total_sources": 117,
+  "iteration": 24,
   "new_today": [
+    "SHACL 1.2 Core (W3C)",
+    "SHACL rules engine for agentic AI (Kurt Cagle)",
+    "Constraint Checking of Skills using SHACL (IEEE)",
     "addyosmani/agent-skills",
     "anthropics/skills",
-    "agentskills.io",
+    "agentskills.io + VS Code",
     "heilcheng/awesome-agent-skills",
     "VoltAgent/awesome-agent-skills",
-    "google/skills",
-    "VS Code Agent Skills",
-    "community discussions"
+    "mapping-commons/sssom"
   ],
-  "notes": "Iteration 23: Strong ecosystem day - official repos (Anthropic, Google, addyosmani production skills), awesome lists (heilcheng, VoltAgent), spec (agentskills.io), VS Code integration. Focus on Agent Skills bundles/portability. Limited SHACL/SSSOM direct hits today."
+  "notes": "Iteration 24: Discovery day focused on SHACL-agent integration (new 1.2 properties, rules engine pattern) + SSSOM mapping standard + continued Agent Skills ecosystem (official + awesome lists). No new full bundle examples documented; daily digest + metadata updated. Schedule preserved."
 }

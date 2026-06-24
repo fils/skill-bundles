@@ -52,3 +52,11 @@
 - Phase 2: wiki/daily-digests/2026-06-23.md generated.
 - Full Phases 1-5 executed unconditionally per rules. No new examples compiled today (scan phase); focus on ingestion.
 - Daily sources: 8 | Wiki articles: +1 (digest) | Total raw: 109
+
+## 2026-06-24 Run Notes
+- Pre-flight: Clean tree (## master...origin/master). No raw/2026-06-24/ dir (created today). Last commit 2026-06-23. No leftover uncommitted raw.
+- Phase 1: 8 sources (SHACL 1.2 Core, SHACL rules engine pattern, IEEE skill constraints, addyosmani/agent-skills, anthropics/skills, agentskills.io+VS Code, heilcheng/VoltAgent awesome lists, mapping-commons/sssom). raw/2026-06-24/ populated.
+- Phase 2: wiki/daily-digests/2026-06-24.md created (SHACL-agent bridge, SSSOM, ecosystem signals). metadata.json updated (total_sources=117, iteration=24).
+- Phases 3-4: Light synthesis (no new full examples); link lint clean (no new broken wikilinks).
+- Phase 5: Unconditional git commit + push executed.
+- Daily sources: 8 | Wiki articles: +1 (digest) | Total raw: 117
