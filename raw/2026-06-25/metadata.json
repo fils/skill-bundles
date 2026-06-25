@@ -1,0 +1,16 @@
+{
+  "date": "2026-06-25",
+  "sources_ingested": 4,
+  "queries_used": [
+    "SHACL (agent OR skills OR \"claude code\" OR LLM)",
+    "SSSOM (agent OR skills OR mapping) github OR ontology",
+    "\"agent skills\" OR \"claude code skills\" OR \"skill bundle\" OR agentskills.io github"
+  ],
+  "files": [
+    "shacl-1.2-core.md",
+    "how-shacl-makes-llms-hum.md",
+    "xpshacl-explainable-validation.md",
+    "sssom-dev.md"
+  ],
+  "notes": "Strong SHACL + LLM/agent integration signals; SSSOM with explicit agent curation rules. Fewer brand-new 'agent skills catalog' hits today; focused on high-signal context-element (SHACL/SSSOM) sources."
+}

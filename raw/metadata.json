@@ -1,9 +1,9 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-24",
-  "daily_sources": 8,
-  "total_sources": 117,
-  "iteration": 24,
+  "date": "2026-06-25",
+  "daily_sources": 4,
+  "total_sources": 121,
+  "iteration": 25,
   "new_today": [
     "SHACL 1.2 Core (W3C)",
     "SHACL rules engine for agentic AI (Kurt Cagle)",

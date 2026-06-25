@@ -1,16 +1,16 @@
 # Skill Bundles — Metrics & Progress
 
-**Last Updated: 2026-06-17 (Iteration 19)**
+**Last Updated: 2026-06-25 (Iteration 25)**
 
 ## KPIs
 
 | Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 45 | 45 | +0 (ingestion focus) |
-| Raw Sources (total) | 82 | 77 | +5 |
+|| Documented Examples | 45 | 45 | +0 (ingestion focus) |
+|| Raw Sources (total) | 121 | 117 | +4 |
 | Wiki Articles | 57 | 56 | +1 (daily digest) |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | 12 | 11 | +1 (2026-06-15.md maintenance) |
+|| Daily Digests | 13 | 12 | +1 (2026-06-25.md) |
 | Q&A Passes | 2 | 2 | Unchanged |
 | Context Element Types Covered | 20 | 20 | Unchanged |
 | Governance / Verification Coverage | 9 | 9 | Unchanged |
