@@ -1,14 +1,15 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-27",
-  "daily_sources": 4,
-  "total_sources": 125,
-  "iteration": 27,
+  "date": "2026-06-28",
+  "daily_sources": 5,
+  "total_sources": 130,
+  "iteration": 28,
   "new_today": [
-    "SHACL 1.2 Core (W3C) + LLM/agent input property",
-    "Kurt Cagle: SHACL as rules engine for agents",
-    "Agent Skills ecosystem (claude-skills 337, GitHub CLI, VoltAgent awesome, VS Code)",
-    "SSSOM toolkit + arXiv browser updates (mapping-commons)"
+    "SkillFortify: Formal analysis & supply chain security for agentic AI skills (arXiv:2603.00195)",
+    "AgentVerify: Compositional formal verification of AI agent safety via LTL model checking (Preprints.org, April 2026)",
+    "SSL Representation: Scheduling-Structural-Logical representation for agent skills (arXiv:2604.24026, Peking University)",
+    "Comprehensive Survey on Agent Skills: Taxonomy, techniques, and applications (SSRN 6656500, CUHK, April 2026)",
+    "Agent Skills Ecosystem Report 2026: 1.9M skills, ~40 platforms, 36% prompt injection rate (Agentman, June 2026)"
   ],
-  "notes": "Iteration 27: Strong SHACL 1.2 + agent integration signal (new W3C property for LLM input, rules engine pattern). Agent Skills ecosystem accelerating with platform support (gh skill, VS Code). SSSOM toolkit releases. 4 new raw sources. Daily digest + metadata updated. Phase 1 complete."
+  "notes": "Iteration 28: Strong formal verification signal — SkillFortify (abstract interpretation, SAT-based dependency resolution, ASBOM) and AgentVerify (LTL model checking, 23 specification templates) represent paradigm shift from heuristic scanning to formal mathematical guarantees. SSL representation (Peking University) demonstrates structured skill representations improve discovery (+23.4% MRR) and risk assessment (+5.8% F1). Ecosystem report quantifies quality gap (6.2/12 avg) and security gap (36% prompt injection). 5 new raw sources. Daily digest + metadata updated."
 }

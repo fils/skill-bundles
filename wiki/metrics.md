@@ -1,19 +1,19 @@
 # Skill Bundles — Metrics & Progress
 
-**Last Updated: 2026-06-26 (Iteration 26)**
+**Last Updated: 2026-06-28 (Iteration 28)**
 
 ## KPIs
 
-| Metric | Value | Previous | Change |
-|--------|-------|----------|--------|
+|| Metric | Value | Previous | Change |
+||--------|-------|----------|--------|
 || Documented Examples | 45 | 45 | +0 (ingestion focus) |
-|| Raw Sources (total) | 121 | 117 | +4 |
-| Wiki Articles | 57 | 56 | +1 (daily digest) |
-| Concept Articles | 8 | 8 | Unchanged |
-|| Daily Digests | 13 | 12 | +1 (2026-06-25.md) |
-| Q&A Passes | 2 | 2 | Unchanged |
-| Context Element Types Covered | 20 | 20 | Unchanged |
-| Governance / Verification Coverage | 9 | 9 | Unchanged |
+|| Raw Sources (total) | 130 | 125 | +5 |
+|| Wiki Articles | 58 | 57 | +1 (daily digest) |
+|| Concept Articles | 8 | 8 | Unchanged |
+|| Daily Digests | 14 | 13 | +1 (2026-06-28.md) |
+|| Q&A Passes | 2 | 2 | Unchanged |
+|| Context Element Types Covered | 20 | 20 | Unchanged |
+|| Governance / Verification Coverage | 9 | 9 | Unchanged |
 
 ## Context Element Coverage
 
@@ -60,3 +60,12 @@
 - Phases 3-4: Light synthesis (no new full examples); link lint clean (no new broken wikilinks).
 - Phase 5: Unconditional git commit + push executed.
 - Daily sources: 8 | Wiki articles: +1 (digest) | Total raw: 117
+
+## 2026-06-28 Run Notes (Iteration 28)
+- Pre-flight: Clean tree (## master...origin/master). No raw/2026-06-28/ dir (created today). Last commit 2026-06-27.
+- Phase 1: 5 new sources — SkillFortify formal verification (arXiv:2603.00195), AgentVerify LTL model checking (Preprints.org April 2026), SSL structured skill representation (arXiv:2604.24026, Peking University), comprehensive agent skills survey (SSRN 6656500, CUHK April 2026), agent skills ecosystem report 2026 (Agentman June 2026). raw/2026-06-28/ populated with 5 .md files.
+- Phase 2: wiki/daily-digests/2026-06-28.md generated with 3 emerging patterns identified: (1) formal verification as new validation layer, (2) structured skill representations enabling scale, (3) quality-security dual threat. metadata.json updated (total_sources=130, iteration=28). metrics.md updated.
+- Phase 3: Key synthesis — SkillFortify's capability lattice {NONE ⊑ READ ⊑ WRITE ⊑ ADMIN} is the skill-level equivalent of SHACL constraint shapes; SSL's restricted vocabularies parallel controlled vocabularies in ontology work (SSSOM mapping pattern). Evidence mounting that formal verification (not just heuristic scanning) is the necessary validation layer for skill bundles.
+- Phase 4: Gap analysis — formal verification coverage now includes 2 new frameworks (SkillFortify, AgentVerify); structured representation gap identified (SSL is first, but adoption unclear); quality-security dual threat quantified (6.2/12 avg quality, 36% prompt injection rate among 1.9M public skills).
+- Phase 5: Unconditional git commit + push executed.
+- Daily sources: 5 | Wiki Articles: +1 (digest) | Total raw: 130
