@@ -1,15 +1,14 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-28",
-  "daily_sources": 5,
-  "total_sources": 130,
-  "iteration": 28,
+  "date": "2026-06-29",
+  "daily_sources": 4,
+  "total_sources": 134,
+  "iteration": 29,
   "new_today": [
-    "SkillFortify: Formal analysis & supply chain security for agentic AI skills (arXiv:2603.00195)",
-    "AgentVerify: Compositional formal verification of AI agent safety via LTL model checking (Preprints.org, April 2026)",
-    "SSL Representation: Scheduling-Structural-Logical representation for agent skills (arXiv:2604.24026, Peking University)",
-    "Comprehensive Survey on Agent Skills: Taxonomy, techniques, and applications (SSRN 6656500, CUHK, April 2026)",
-    "Agent Skills Ecosystem Report 2026: 1.9M skills, ~40 platforms, 36% prompt injection rate (Agentman, June 2026)"
+    "addyosmani/agent-skills: 24-skill production engineering lifecycle bundle (23 SDLC + meta-skill)",
+    "SHACL 1.2 + Agent Integration: sh:agentInstruction, rules engine usage, LLM input property (W3C, Kurt Cagle, data-shapes#725)",
+    "SSSOM + Agent Mappings: curation_rule metadata for agent execution, sssom-py toolkit",
+    "agentskills.io Ecosystem: official standard, gh skill CLI, cross-tool support, awesome collections"
   ],
-  "notes": "Iteration 28: Strong formal verification signal — SkillFortify (abstract interpretation, SAT-based dependency resolution, ASBOM) and AgentVerify (LTL model checking, 23 specification templates) represent paradigm shift from heuristic scanning to formal mathematical guarantees. SSL representation (Peking University) demonstrates structured skill representations improve discovery (+23.4% MRR) and risk assessment (+5.8% F1). Ecosystem report quantifies quality gap (6.2/12 avg) and security gap (36% prompt injection). 5 new raw sources. Daily digest + metadata updated."
+  "notes": "Iteration 29: Ecosystem refresh + SHACL/SSSOM context element signals. addyosmani production bundle, SHACL 1.2 agent primitives, SSSOM agent curation rules, agentskills.io standard + CLI. 4 new raw sources. Daily digest + metadata updated. No new full wiki examples (ingestion focus)."
 }

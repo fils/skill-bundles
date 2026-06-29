@@ -1,6 +1,6 @@
 # Skill Bundles — Metrics & Progress
 
-**Last Updated: 2026-06-28 (Iteration 28)**
+**Last Updated: 2026-06-29 (Iteration 29)**
 
 ## KPIs
 
@@ -69,3 +69,11 @@
 - Phase 4: Gap analysis — formal verification coverage now includes 2 new frameworks (SkillFortify, AgentVerify); structured representation gap identified (SSL is first, but adoption unclear); quality-security dual threat quantified (6.2/12 avg quality, 36% prompt injection rate among 1.9M public skills).
 - Phase 5: Unconditional git commit + push executed.
 - Daily sources: 5 | Wiki Articles: +1 (digest) | Total raw: 130
+
+## 2026-06-29 Run Notes (Iteration 29)
+- Pre-flight: Clean tree (## master...origin/master). No raw/2026-06-29/ dir (created today). Last commit 2026-06-28. No leftover uncommitted raw.
+- Phase 1: 4 sources — addyosmani/agent-skills (24-skill production engineering bundle), SHACL 1.2 + agentInstruction primitives + rules-engine usage, SSSOM agent curation metadata, agentskills.io ecosystem + gh skill CLI. raw/2026-06-29/ populated with 4 .md files.
+- Phase 2: wiki/daily-digests/2026-06-29.md generated (ecosystem refresh + SHACL/SSSOM context signals). metadata.json to be updated (total_sources=134, iteration=29).
+- Phase 3-4: Light synthesis (no new full examples); link lint clean.
+- Phase 5: Unconditional git commit + push executed.
+- Daily sources: 4 | Wiki Articles: +1 (digest) | Total raw: 134
