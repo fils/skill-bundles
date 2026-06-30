@@ -1,14 +1,15 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-29",
-  "daily_sources": 4,
-  "total_sources": 134,
-  "iteration": 29,
+  "date": "2026-06-30",
+  "daily_sources": 5,
+  "total_sources": 139,
+  "iteration": 30,
   "new_today": [
-    "addyosmani/agent-skills: 24-skill production engineering lifecycle bundle (23 SDLC + meta-skill)",
-    "SHACL 1.2 + Agent Integration: sh:agentInstruction, rules engine usage, LLM input property (W3C, Kurt Cagle, data-shapes#725)",
-    "SSSOM + Agent Mappings: curation_rule metadata for agent execution, sssom-py toolkit",
-    "agentskills.io Ecosystem: official standard, gh skill CLI, cross-tool support, awesome collections"
+    "addyosmani/agent-skills: 24-skill production engineering lifecycle bundle (SDLC + personas + checklists)",
+    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction, sh:intent, sh:codeIdentifier — direct agent instruction support in validation shapes",
+    "agentskills.io Specification: core SKILL.md format, progressive disclosure, cross-platform standard",
+    "anthropics/skills: Official Anthropic reference implementation (157k stars), document skills sub-bundle",
+    "Agent Skills Ecosystem (GitHub Topics): 8,130+ repos, patterns in engineering/scientific/domain bundles"
   ],
-  "notes": "Iteration 29: Ecosystem refresh + SHACL/SSSOM context element signals. addyosmani production bundle, SHACL 1.2 agent primitives, SSSOM agent curation rules, agentskills.io standard + CLI. 4 new raw sources. Daily digest + metadata updated. No new full wiki examples (ingestion focus)."
+  "notes": "Iteration 30: Strong focus on production bundles + SHACL 1.2 agent primitives. 5 new raw sources ingested. SHACL 1.2 provides the missing formal validation + agentInstruction layer that complements Agent Skills SKILL.md. Ecosystem growth confirmed (8k+ repos). Daily digest created. Metadata updated."
 }

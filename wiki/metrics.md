@@ -77,3 +77,12 @@
 - Phase 3-4: Light synthesis (no new full examples); link lint clean.
 - Phase 5: Unconditional git commit + push executed.
 - Daily sources: 4 | Wiki Articles: +1 (digest) | Total raw: 134
+
+## 2026-06-30 Run Notes (Iteration 30)
+- Pre-flight: Clean tree (## master...origin/master). No raw/2026-06-30/ dir (created today). Last commit 2026-06-29. No leftover uncommitted raw.
+- Phase 1: 5 new sources — addyosmani/agent-skills (24-skill engineering lifecycle bundle), SHACL 1.2 Core (sh:agentInstruction + agent primitives, 2026-06-30 WD), agentskills.io specification, anthropics/skills (157k stars official ref), GitHub agent-skills ecosystem snapshot (8,130+ repos). raw/2026-06-30/ populated with 5 .md files.
+- Phase 2: wiki/daily-digests/2026-06-30.md generated (production bundles + SHACL agent-instruction convergence + spec + ecosystem growth). metadata.json updated (total_sources=139, iteration=30).
+- Phase 3: Light synthesis — noted SHACL 1.2 as the missing formal validation + instruction layer; reference checklists as taxonomy equivalents.
+- Phase 4: Gap analysis — SHACL agentInstruction coverage now explicit in spec; formal verification + structured representation signals from prior days reinforced. No new broken wikilinks.
+- Phase 5: Unconditional git commit + push executed.
+- Daily sources: 5 | Wiki Articles: +1 (digest) | Total raw: 139

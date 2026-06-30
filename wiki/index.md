@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-06-29 (Iteration 15)
-|**Status:** Active research — 50+ examples documented
+|**Last Updated:** 2026-06-30 (Iteration 30)
+|**Status:** Active research — 50+ examples documented (raw ingestion + SHACL 1.2 agent primitives focus)
 
 ## Overview
 
@@ -11,6 +11,7 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-06-30 (Iteration 30)](daily-digests/2026-06-30.md)
   - [2026-06-29 (Iteration 15)](daily-digests/2026-06-09.md)
   - [2026-06-05 (Iteration 14)](daily-digests/2026-06-05.md)
   - [2026-06-04 (Iteration 14)](daily-digests/2026-06-04.md)
