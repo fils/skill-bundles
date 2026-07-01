@@ -1,15 +1,14 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-06-30",
-  "daily_sources": 5,
-  "total_sources": 139,
-  "iteration": 30,
+  "date": "2026-07-01",
+  "daily_sources": 4,
+  "total_sources": 143,
+  "iteration": 31,
   "new_today": [
-    "addyosmani/agent-skills: 24-skill production engineering lifecycle bundle (SDLC + personas + checklists)",
-    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction, sh:intent, sh:codeIdentifier — direct agent instruction support in validation shapes",
-    "agentskills.io Specification: core SKILL.md format, progressive disclosure, cross-platform standard",
-    "anthropics/skills: Official Anthropic reference implementation (157k stars), document skills sub-bundle",
-    "Agent Skills Ecosystem (GitHub Topics): 8,130+ repos, patterns in engineering/scientific/domain bundles"
+    "agentskills.io: Core open standard for Agent Skills (SKILL.md + progressive disclosure) — foundational bundle format",
+    "addyosmani/agent-skills: 68k-star production-grade engineering skills repo (workflows, quality gates, multi-agent support)",
+    "anthropics/skills: Official Anthropic reference implementation (157k stars) with spec/ and skills/ structure",
+    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction property — explicit agent/LLM instruction support in validation shapes"
   ],
-  "notes": "Iteration 30: Strong focus on production bundles + SHACL 1.2 agent primitives. 5 new raw sources ingested. SHACL 1.2 provides the missing formal validation + agentInstruction layer that complements Agent Skills SKILL.md. Ecosystem growth confirmed (8k+ repos). Daily digest created. Metadata updated."
+  "notes": "Iteration 31: High-signal sources on the core Agent Skills standard + major implementations + SHACL 1.2 agent primitives. 4 new raw sources. Strong alignment with skill bundles + formal context (SHACL validation + agent instructions). Metadata updated."
 }

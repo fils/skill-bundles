@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-06-30 (Iteration 30)
-|**Status:** Active research — 50+ examples documented (raw ingestion + SHACL 1.2 agent primitives focus)
+|**Last Updated:** 2026-07-01 (Iteration 31)
+|**Status:** Active research — 50+ examples documented (raw ingestion + SHACL 1.2 agent primitives + core standard focus)
 
 ## Overview
 
@@ -83,3 +83,5 @@ Six new examples added in Iteration 13 (46 total):
 6. Monorepo SKILL.md / Claude Plugin Marketplace consolidation events
 7. Self-driving lab skill bundles (ChemCrow, autonomous synthesis → skill decomposition)
 8. Bioinformatics skill taxonomy (ClawBio categories → formal ontology)
+
+|| **31** | **2026-07-01** | **Core Agent Skills standard + major reference implementations + SHACL 1.2 agent primitives** | **agentskills.io, addyosmani/agent-skills (68k), anthropics/skills (157k), SHACL 1.2 Core** |

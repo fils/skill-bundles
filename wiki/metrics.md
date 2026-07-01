@@ -86,3 +86,9 @@
 - Phase 4: Gap analysis — SHACL agentInstruction coverage now explicit in spec; formal verification + structured representation signals from prior days reinforced. No new broken wikilinks.
 - Phase 5: Unconditional git commit + push executed.
 - Daily sources: 5 | Wiki Articles: +1 (digest) | Total raw: 139
+
+## 2026-07-01 Update (Iteration 31)
+- Raw sources: +4 (total 143)
+- Daily digests: +1 (2026-07-01.md)
+- Focus: Core Agent Skills standard (agentskills.io), two major reference implementations (addyosmani 68k + anthropics 157k), SHACL 1.2 Core with sh:agentInstruction
+- Notes: Strong convergence on the portable bundle format + validation+instruction bridge. High-signal foundational sources. No new broken links introduced. Schedule preserved.
