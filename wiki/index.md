@@ -85,3 +85,4 @@ Six new examples added in Iteration 13 (46 total):
 8. Bioinformatics skill taxonomy (ClawBio categories → formal ontology)
 
 || **31** | **2026-07-01** | **Core Agent Skills standard + major reference implementations + SHACL 1.2 agent primitives** | **agentskills.io, addyosmani/agent-skills (68k), anthropics/skills (157k), SHACL 1.2 Core** |
+|| **32** | **2026-07-02** | **Core standard + reference implementations + SHACL 1.2 agentInstruction + SSSOM agent metadata** | **addyosmani (68k), anthropics (157k), agentskills.io ecosystem, SHACL 1.2 sh:agentInstruction, SSSOM agent curation** |

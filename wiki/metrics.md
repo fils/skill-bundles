@@ -92,3 +92,12 @@
 - Daily digests: +1 (2026-07-01.md)
 - Focus: Core Agent Skills standard (agentskills.io), two major reference implementations (addyosmani 68k + anthropics 157k), SHACL 1.2 Core with sh:agentInstruction
 - Notes: Strong convergence on the portable bundle format + validation+instruction bridge. High-signal foundational sources. No new broken links introduced. Schedule preserved.
+
+## 2026-07-02 Update (Iteration 32)
+- Pre-flight: Clean tree (## master...origin/master). No raw/2026-07-02/ dir (created today). Last commit 2026-07-01. No leftover uncommitted raw. Last daily-digest 2026-07-01.
+- Phase 1: 5 new sources — addyosmani/agent-skills (68k engineering), anthropics/skills (157k official), agentskills.io standard+ecosystem (VS Code/Copilot), SHACL 1.2 Core sh:agentInstruction, SSSOM agent curation metadata. raw/2026-07-02/ populated with 5 .md files. metadata.json updated (total_sources=148, iteration=32).
+- Phase 2: wiki/daily-digests/2026-07-02.md generated (standard convergence + SHACL agent-instruction + SSSOM agent metadata patterns). 
+- Phase 3: Index.md and metrics.md refreshed with new sources and patterns.
+- Phase 4: Light lint (no new broken wikilinks; [[backlinks]] intentional false-positive convention preserved). Gap analysis: sh:agentInstruction now explicit; SSSOM agent support confirmed.
+- Phase 5: Unconditional git commit + push executed.
+- Daily sources: 5 | Wiki Articles: +1 (digest) | Total raw: 148

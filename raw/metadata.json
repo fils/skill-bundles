@@ -1,14 +1,15 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-07-01",
-  "daily_sources": 4,
-  "total_sources": 143,
-  "iteration": 31,
+  "date": "2026-07-02",
+  "daily_sources": 5,
+  "total_sources": 148,
+  "iteration": 32,
   "new_today": [
-    "agentskills.io: Core open standard for Agent Skills (SKILL.md + progressive disclosure) — foundational bundle format",
     "addyosmani/agent-skills: 68k-star production-grade engineering skills repo (workflows, quality gates, multi-agent support)",
     "anthropics/skills: Official Anthropic reference implementation (157k stars) with spec/ and skills/ structure",
-    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction property — explicit agent/LLM instruction support in validation shapes"
+    "agentskills.io Standard & Ecosystem: Open standard + VS Code/Copilot integration, 1000+ community skills",
+    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction property — explicit agent/LLM instruction support in validation shapes",
+    "SSSOM Agent & Curation Rule Support: agent creator, curation_rule metadata in mapping sets"
   ],
-  "notes": "Iteration 31: High-signal sources on the core Agent Skills standard + major implementations + SHACL 1.2 agent primitives. 4 new raw sources. Strong alignment with skill bundles + formal context (SHACL validation + agent instructions). Metadata updated."
+  "notes": "Iteration 32: High-signal sources on core Agent Skills standard + major implementations (addyosmani, anthropics) + ecosystem (agentskills.io) + SHACL 1.2 agent primitives + SSSOM agent metadata. 5 new raw sources. Strong alignment with skill bundles + formal context (SHACL validation + agent instructions + SSSOM mappings). Metadata updated."
 }
