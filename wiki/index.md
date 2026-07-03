@@ -1,6 +1,6 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-07-01 (Iteration 31)
+|**Last Updated:** 2026-07-03 (Iteration 33)
 |**Status:** Active research — 50+ examples documented (raw ingestion + SHACL 1.2 agent primitives + core standard focus)
 
 ## Overview
@@ -85,4 +85,5 @@ Six new examples added in Iteration 13 (46 total):
 8. Bioinformatics skill taxonomy (ClawBio categories → formal ontology)
 
 || **31** | **2026-07-01** | **Core Agent Skills standard + major reference implementations + SHACL 1.2 agent primitives** | **agentskills.io, addyosmani/agent-skills (68k), anthropics/skills (157k), SHACL 1.2 Core** |
-|| **32** | **2026-07-02** | **Core standard + reference implementations + SHACL 1.2 agentInstruction + SSSOM agent metadata** | **addyosmani (68k), anthropics (157k), agentskills.io ecosystem, SHACL 1.2 sh:agentInstruction, SSSOM agent curation** |
+|| **32** | **2026-07-02** | **Core standard + reference implementations + SHACL 1.2 agentInstruction + SSSOM agent curation** | **addyosmani (68k), anthropics (157k), agentskills.io ecosystem, SHACL 1.2 sh:agentInstruction, SSSOM agent curation** |
+|| **33** | **2026-07-03** | **Core Agent Skills standard + major implementations + SHACL 1.2 + SSSOM** | **5 sources: addyosmani/agent-skills, agentskills.io spec, anthropics/skills, SHACL 1.2 Core, SSSOM agent mappings** |

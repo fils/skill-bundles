@@ -1,15 +1,15 @@
 {
   "project": "Skill Bundles",
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "daily_sources": 5,
-  "total_sources": 148,
-  "iteration": 32,
+  "total_sources": 153,
+  "iteration": 33,
   "new_today": [
-    "addyosmani/agent-skills: 68k-star production-grade engineering skills repo (workflows, quality gates, multi-agent support)",
-    "anthropics/skills: Official Anthropic reference implementation (157k stars) with spec/ and skills/ structure",
-    "agentskills.io Standard & Ecosystem: Open standard + VS Code/Copilot integration, 1000+ community skills",
-    "SHACL 1.2 Core (2026-06-30 WD): sh:agentInstruction property — explicit agent/LLM instruction support in validation shapes",
-    "SSSOM Agent & Curation Rule Support: agent creator, curation_rule metadata in mapping sets"
+    "addyosmani/agent-skills: Production-grade engineering skills for AI coding agents (workflows, quality gates)",
+    "agentskills.io: Official open standard + specification for Agent Skills (SKILL.md, resources, progressive disclosure)",
+    "anthropics/skills: Large public catalog demonstrating Claude skills system (creative + engineering domains)",
+    "SHACL 1.2 Core (W3C): sh:agentInstruction, sh:intent — formal validation + agent instructions for skill bundles",
+    "SSSOM: Simple Standard for Sharing Ontology Mappings — agent-driven curation rules, mapping metadata for skills"
   ],
-  "notes": "Iteration 32: High-signal sources on core Agent Skills standard + major implementations (addyosmani, anthropics) + ecosystem (agentskills.io) + SHACL 1.2 agent primitives + SSSOM agent metadata. 5 new raw sources. Strong alignment with skill bundles + formal context (SHACL validation + agent instructions + SSSOM mappings). Metadata updated."
+  "notes": "Iteration 33: 5 new high-signal sources focused on core spec (agentskills.io), major implementations (addyosmani 68k, anthropics 157k), and formal context layers (SHACL 1.2 agent primitives + SSSOM curation). Strong coverage of skill bundles + validation/mapping patterns. Metadata updated 2026-07-03."
 }
