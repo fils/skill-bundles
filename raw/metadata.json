@@ -1,15 +1,26 @@
 {
-  "project": "Skill Bundles",
-  "date": "2026-07-03",
-  "daily_sources": 5,
-  "total_sources": 153,
-  "iteration": 33,
-  "new_today": [
-    "addyosmani/agent-skills: Production-grade engineering skills for AI coding agents (workflows, quality gates)",
-    "agentskills.io: Official open standard + specification for Agent Skills (SKILL.md, resources, progressive disclosure)",
-    "anthropics/skills: Large public catalog demonstrating Claude skills system (creative + engineering domains)",
-    "SHACL 1.2 Core (W3C): sh:agentInstruction, sh:intent — formal validation + agent instructions for skill bundles",
-    "SSSOM: Simple Standard for Sharing Ontology Mappings — agent-driven curation rules, mapping metadata for skills"
-  ],
-  "notes": "Iteration 33: 5 new high-signal sources focused on core spec (agentskills.io), major implementations (addyosmani 68k, anthropics 157k), and formal context layers (SHACL 1.2 agent primitives + SSSOM curation). Strong coverage of skill bundles + validation/mapping patterns. Metadata updated 2026-07-03."
+  "last_updated": "2026-07-04",
+  "daily_runs": {
+    "2026-07-04": {
+      "sources_ingested": 6,
+      "files": [
+        "addyosmani-agent-skills.md",
+        "anthropics-skills.md",
+        "agentskills-io-spec.md",
+        "shacl12-core-agentInstruction.md",
+        "vscode-agent-skills.md",
+        "sssom-agent-mappings.md"
+      ],
+      "queries_used": [
+        "agent skills github",
+        "SHACL agentInstruction",
+        "SSSOM agent mapping",
+        "agentskills.io",
+        "anthropics/skills",
+        "addyosmani/agent-skills"
+      ]
+    }
+  },
+  "cumulative_sources": 42,
+  "note": "2026-07-04 run: 6 high-signal sources focused on Agent Skills standard, major repos, SHACL 1.2 agent extensions, and VS Code integration."
 }
