@@ -1,6 +1,25 @@
 {
-  "last_updated": "2026-07-04",
+  "last_updated": "2026-07-05",
   "daily_runs": {
+    "2026-07-05": {
+      "sources_ingested": 6,
+      "files": [
+        "agentskills-io-spec.md",
+        "addyosmani-agent-skills.md",
+        "anthropics-skills.md",
+        "shacl-1.2-core.md",
+        "nvidia-skills.md",
+        "vscode-agent-skills.md"
+      ],
+      "queries_used": [
+        "agent skills github",
+        "SHACL agent OR skills",
+        "SSSOM agent OR mapping",
+        "agentskills.io",
+        "NVIDIA skills",
+        "VS Code agent skills"
+      ]
+    },
     "2026-07-04": {
       "sources_ingested": 6,
       "files": [
@@ -21,6 +40,6 @@
       ]
     }
   },
-  "cumulative_sources": 42,
-  "note": "2026-07-04 run: 6 high-signal sources focused on Agent Skills standard, major repos, SHACL 1.2 agent extensions, and VS Code integration."
+  "cumulative_sources": 48,
+  "note": "2026-07-05 run: 6 sources — agentskills.io spec, addyosmani (68.8k), anthropics, SHACL 1.2 Core, NVIDIA/skills, VS Code integration. Strengthened SHACL + vendor bundle coverage."
 }
