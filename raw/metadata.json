@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "daily_runs": {
     "2026-07-05": {
       "sources_ingested": 6,
@@ -38,8 +38,21 @@
         "anthropics/skills",
         "addyosmani/agent-skills"
       ]
+    },
+    "2026-07-06": {
+      "sources_ingested": 3,
+      "files": [
+        "shacl-1.2-core-2026-06-30.md",
+        "agentskills-io-overview-2026-07-06.md",
+        "nvidia-skills-update.md"
+      ],
+      "queries_used": [
+        "SHACL 1.2 Core agentInstruction",
+        "agentskills.io",
+        "NVIDIA skills"
+      ]
     }
   },
-  "cumulative_sources": 48,
-  "note": "2026-07-05 run: 6 sources — agentskills.io spec, addyosmani (68.8k), anthropics, SHACL 1.2 Core, NVIDIA/skills, VS Code integration. Strengthened SHACL + vendor bundle coverage."
+  "cumulative_sources": 51,
+  "note": "2026-07-06 run: 3 sources \u2014 SHACL 1.2 Core (agentInstruction), agentskills.io overview, NVIDIA/skills update. Continued SHACL + agent skills coverage."
 }

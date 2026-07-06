@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
 |**Last Updated:** 2026-07-03 (Iteration 33)
-|**Status:** Active research — 50+ examples documented (raw ingestion + SHACL 1.2 agent primitives + core standard focus)
+|**Status:** Active research — 51 sources, SHACL 1.2 agentInstruction focus, agentskills.io standard adoption
 
 ## Overview
 
