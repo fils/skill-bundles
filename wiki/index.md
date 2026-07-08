@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-07-03 (Iteration 33)
-|**Status:** Active research — 51 sources, SHACL 1.2 agentInstruction focus, agentskills.io standard adoption
+|**Last Updated:** 2026-07-08 (Iteration 34)
+|**Status:** Active research — 57 sources, agentskills.io spec + SHACL 1.2 + SSSOM integration, VS Code/Copilot adoption, large catalogs (addyosmani 72.5k, anthropics 159k)
 
 ## Overview
 

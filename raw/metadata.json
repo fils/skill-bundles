@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-08",
   "daily_runs": {
     "2026-07-05": {
       "sources_ingested": 6,
@@ -50,6 +50,25 @@
         "SHACL 1.2 Core agentInstruction",
         "agentskills.io",
         "NVIDIA skills"
+      ]
+    },
+    "2026-07-08": {
+      "sources_ingested": 6,
+      "files": [
+        "agentskills-io-spec.md",
+        "shacl-1.2-core.md",
+        "sssom-ontology-mappings.md",
+        "vscode-agent-skills.md",
+        "addyosmani-agent-skills.md",
+        "anthropics-skills.md"
+      ],
+      "queries_used": [
+        "agent skills github",
+        "SHACL agent OR skills",
+        "SSSOM agent OR mapping",
+        "agentskills.io",
+        "NVIDIA skills",
+        "VS Code agent skills"
       ]
     }
   },
