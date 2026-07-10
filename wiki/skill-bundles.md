@@ -1,12 +1,12 @@
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-06-09 (Iteration 14)
+**Primary Publication** — Last major update: 2026-07-10 (Iteration 35)
 
 ## TL;DR
 
 Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies).
 
-## Documented Examples (50 Total)
+## Documented Examples (57 Total)
 
 ### Research & Workflow
 - NORA — Autonomous research agent with orchestrated skills
@@ -15,8 +15,10 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Superpowers** — Engineering discipline as skills: Iron Laws, Red Flags, methodology cycle (14 skills)
 - **NORA Paper** — Harness-engineered autonomous research agent (21 skills + 9 sub-agents, arXiv 2605.02092)
 - **ai4curation/curation-skills** — Chris Mungall's ontology/biocuration bundle (7 skills: OAK, ROBOT, DOSDP, OBO editing). Production users: Mondo, Cell Ontology, Uberon, EFO
-- **ClawBio** (NEW Iteration 14) — Bioinformatics-native library: 88 skills (29 production), 8,000+ Galaxy tools, reproducibility bundles, Corpasome reference genome (DOI: 10.5281/zenodo.19297389), 92.3% validation pass rate
-- **Addy Osmani Agent Skills** (NEW Iteration 14) — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture
+- **ClawBio** — Bioinformatics-native library: 88 skills (29 production), 8,000+ Galaxy tools, reproducibility bundles, Corpasome reference genome (DOI: 10.5281/zenodo.19297389), 92.3% validation pass rate
+- **Addy Osmani Agent Skills** — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture
+- **Scientific Agent Skills (K-Dense)** (NEW Iteration 35) — 148 science skills, 100+ databases, package skills, security CI, agentskills.io (~30.6k★)
+- **OpenMontage** (NEW Iteration 35) — Agentic video production: 500+ skills, 12 pipelines, hard human approval gates + checkpoint audit trail (~36.3k★)
 
 ### Ontology & Knowledge
 - Ontologizer — OpenClaw ontology skill
@@ -61,6 +63,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Claude API Integration** — Container parameter, version pinning, 8 skills/request, 30MB limit
 - OpenAI Codex Agent Skills — Progressive disclosure, MCP dependency declarations
 - VS Code Copilot Agent Skills — Cross-platform agentskills.io implementation
+- **Vercel Labs Agent Skills** (NEW Iteration 35) — Official vendor constraint-rule skills: React best practices (40+), web design (100+), writing handbook (80+), vercel-optimize (~28.9k★)
 
 ### Enterprise Platform Implementations
 - **Microsoft Agent Framework Skills** — Enterprise platform: 3 implementation types (file/inline/class), script approval, DI support, multi-source composition
@@ -70,6 +73,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Chris Ayers Plugin Ecosystem** — 3-layer model (Skills → Plugins → Marketplaces); cross-tool compatibility matrix proving SKILL.md universal portability
 - **Agensi Marketplace Landscape** — 8-marketplace comparison: skills.sh (2k), SkillsMP (800k), Agensi (200+, 8-point security scan); consolidation trends
 - **agentskill.sh** — 100k+ skill registry with 12-category threat scanning, content-SHA versioning, auto-rate feedback loop
+- **Agentic Awesome Skills Library** (NEW Iteration 35) — Installable mega-catalog: 1,943+ skills, npm installer, specialized plugins, schemas, security audit gates (~42.8k★, v14.1.0)
 
 ### Infrastructure & Participation
 - **Agents at Conferences** (NEW Iteration 14) — Infrastructure for AI agent conference participation: 6-component protocol (registration, feeds, communication, moderation, benchmarking, memory), capability schema taxonomy, SciFM26 target: 50 agents
@@ -198,23 +202,25 @@ Two foundational papers provide theoretical grounding:
 | Governance / Verification | 9 | **Strong** (+1: conference moderation layer) |
 | Security Framework / Certification | 4 | **Growing** |
 | Platform Implementation | 6 | **Growing** (+1: Addy Osmani cross-platform) |
-| Plugin / Distribution | 3 | **Emerging** |
-| Academic Survey | 1 | **Emerging** |
+| Plugin / Distribution | 4 | **Growing** (+1: Agentic Awesome Skills installable mega-catalog) |
+| Academic Survey | 2 | **Growing** (+1: arXiv:2602.08004; Agent Skills '26 workshop) |
 | Universal Skill Format | 1 | **Emerging** |
 | Dependency Graphs | 2 | **Stable** |
 | YAML Configuration | 9+ | **Ubiquitous** |
 | MCP Dependencies | 4 | **Emerging** (+1: conference feed API) |
 | SSSOM Mapping | 4 | **Mature** |
-| Supply Chain / Provenance | 5 | **Growing** (+1: content-SHA versioning, +1: reproducibility bundles) |
-| Benchmarking | 2 | **Emerging** (+1: DSPy GEPA benchmarks) |
+| Supply Chain / Provenance | 6 | **Growing** (+1: OpenMontage checkpoint audit trail) |
+| Benchmarking | 2 | **Emerging** (+1: DSPy GEPA; SkillsBench at workshop) |
 | LLM-as-Judge Quality Scoring | 1 | **NEW** (skill-validator) |
 | Multi-Agent SHACL Generation | 1 | **NEW** (text2shacl) |
 | Content-Addressed Versioning | 1 | **NEW** (agentskill.sh) |
 | Pre-commit Multi-Platform Hooks | 1 | **NEW** (skill-validator, 13 platforms) |
 | **Reproducibility Bundles** | **2** | **NEW** (ClawBio per-execution, DSPy pinned deps + benchmarks) |
-| **Reference Data Assets** | **2** | **NEW** (Corpasome genome, DSPy benchmark datasets) |
+| **Reference Data Assets** | **3** | **Growing** (+1: K-Dense 100+ scientific DBs) |
 | **Infrastructure Protocols** | **1** | **NEW** (Agents at Conferences 6-component protocol) |
 | **Specification Layer Contracts** | **2** | **NEW** (ClawBio SKILL.md contracts, Addy Osmani Iron Laws) |
+| **Human Approval Gates** | **1** | **NEW** (OpenMontage checkpoint gates) |
+| **Vendor Constraint Handbooks** | **2** | **Growing** (+1: Vercel Labs rule catalogs) |
 
 See also:
 - [[skill-security-governance]] — Complete governance stack synthesis

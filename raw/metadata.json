@@ -1,55 +1,44 @@
 {
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-10",
+  "iteration": 35,
   "daily_runs": {
-    "2026-07-05": {
+    "2026-07-10": {
       "sources_ingested": 6,
       "files": [
-        "agentskills-io-spec.md",
-        "addyosmani-agent-skills.md",
-        "anthropics-skills.md",
-        "shacl-1.2-core.md",
-        "nvidia-skills.md",
-        "vscode-agent-skills.md"
+        "agentskills-workshop-2026.md",
+        "arxiv-2602-08004-agent-skills-analysis.md",
+        "agentic-awesome-skills.md",
+        "scientific-agent-skills-kdense.md",
+        "vercel-labs-agent-skills.md",
+        "openmontage-agentic-video.md"
       ],
       "queries_used": [
-        "agent skills github",
-        "SHACL agent OR skills",
-        "SSSOM agent OR mapping",
-        "agentskills.io",
-        "NVIDIA skills",
-        "VS Code agent skills"
+        "agent skills 2026 workshop OR catalog",
+        "SHACL agentInstruction skills",
+        "SSSOM agent ontology mapping",
+        "skill bundle SLSA OR in-toto provenance",
+        "gh search repos agent skills / skill bundle"
+      ],
+      "new_examples": [
+        "scientific-agent-skills-kdense",
+        "agentic-awesome-skills-library",
+        "vercel-labs-agent-skills",
+        "openmontage-video-production-skills"
+      ],
+      "new_papers": [
+        "arxiv-2602-08004-agent-skills-analysis",
+        "agentskills-workshop-2026"
       ]
     },
-    "2026-07-04": {
+    "2026-07-09": {
       "sources_ingested": 6,
       "files": [
-        "addyosmani-agent-skills.md",
-        "anthropics-skills.md",
-        "agentskills-io-spec.md",
-        "shacl12-core-agentInstruction.md",
-        "vscode-agent-skills.md",
-        "sssom-agent-mappings.md"
-      ],
-      "queries_used": [
-        "agent skills github",
-        "SHACL agentInstruction",
-        "SSSOM agent mapping",
-        "agentskills.io",
-        "anthropics/skills",
-        "addyosmani/agent-skills"
-      ]
-    },
-    "2026-07-06": {
-      "sources_ingested": 3,
-      "files": [
-        "shacl-1.2-core-2026-06-30.md",
-        "agentskills-io-overview-2026-07-06.md",
-        "nvidia-skills-update.md"
-      ],
-      "queries_used": [
-        "SHACL 1.2 Core agentInstruction",
-        "agentskills.io",
-        "NVIDIA skills"
+        "nvidia-skills",
+        "agentskills-io-spec",
+        "shacl-1.2-core",
+        "sssom",
+        "addyosmani-agent-skills",
+        "anthropics-skills"
       ]
     },
     "2026-07-08": {
@@ -70,8 +59,38 @@
         "NVIDIA skills",
         "VS Code agent skills"
       ]
+    },
+    "2026-07-05": {
+      "sources_ingested": 6,
+      "files": [
+        "agentskills-io-spec.md",
+        "addyosmani-agent-skills.md",
+        "anthropics-skills.md",
+        "shacl-1.2-core.md",
+        "nvidia-skills.md",
+        "vscode-agent-skills.md"
+      ]
+    },
+    "2026-07-04": {
+      "sources_ingested": 6,
+      "files": [
+        "addyosmani-agent-skills.md",
+        "anthropics-skills.md",
+        "agentskills-io-spec.md",
+        "shacl12-core-agentInstruction.md",
+        "vscode-agent-skills.md",
+        "sssom-agent-mappings.md"
+      ]
+    },
+    "2026-07-06": {
+      "sources_ingested": 3,
+      "files": [
+        "shacl-1.2-core-2026-06-30.md",
+        "agentskills-io-overview-2026-07-06.md",
+        "nvidia-skills-update.md"
+      ]
     }
   },
-  "cumulative_sources": 51,
-  "note": "2026-07-06 run: 3 sources \u2014 SHACL 1.2 Core (agentInstruction), agentskills.io overview, NVIDIA/skills update. Continued SHACL + agent skills coverage."
+  "cumulative_sources": 57,
+  "note": "2026-07-10: diversified beyond core re-scrapes — workshop, arXiv 40k analysis, mega-catalog (1.9k), science domain (148), Vercel vendor, OpenMontage video gates. 4 new examples + 2 papers."
 }
