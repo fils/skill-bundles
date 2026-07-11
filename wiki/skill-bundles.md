@@ -1,12 +1,12 @@
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-07-10 (Iteration 35)
+**Primary Publication** — Last major update: 2026-07-11 (Iteration 36)
 
 ## TL;DR
 
 Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies).
 
-## Documented Examples (57 Total)
+## Documented Examples (61 Total + 6 Paper Notes)
 
 ### Research & Workflow
 - NORA — Autonomous research agent with orchestrated skills
@@ -19,6 +19,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Addy Osmani Agent Skills** — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture
 - **Scientific Agent Skills (K-Dense)** (NEW Iteration 35) — 148 science skills, 100+ databases, package skills, security CI, agentskills.io (~30.6k★)
 - **OpenMontage** (NEW Iteration 35) — Agentic video production: 500+ skills, 12 pipelines, hard human approval gates + checkpoint audit trail (~36.3k★)
+- **CoEvoSkills** (NEW Iteration 36) — First self-evolving multi-file skill package framework: co-evolutionary verification (generator + surrogate verifier), surpasses human-curated skills within 5 iterations on SkillsBench (arXiv:2604.01687)
 
 ### Ontology & Knowledge
 - Ontologizer — OpenClaw ontology skill
@@ -51,11 +52,15 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - GitHub CLI Skill Management — Supply chain integrity (immutability, pinning, provenance)
 - **Mondoo Security Analysis** — 14 attack patterns, 25%+ vulnerable skills, ClawHavoc campaign
 - **agentskill.sh / ags** — Registry-level security scoring: 12-category threat taxonomy, 100k+ skills scanned, 0-100 security score, content-SHA versioning, 10-dim quality scoring
+- **ClawHavoc Campaign** (NEW Iteration 36) — ~1,184 malicious skills on ClawHub; 13% malicious rate; dual-vector attack (prompt injection + shell access); canonical marketplace supply-chain case study
+- **Supply Chain Agentic Factory** (NEW Iteration 36) — First proposal to extend SLSA/in-toto provenance to agentic code generation; "intent → source → binary" trust gap; Konflux/fullsend project (Red Hat)
 
 ### Security Governance Frameworks
 - **OWASP Agentic Skills Top 10 (AST10)** — First dedicated security risk framework: 10-class vulnerability taxonomy, Lethal Trifecta, Universal Skill Format
 - **Agentic Trust Framework (CSA)** — Zero Trust governance: 4-level maturity model (Intern→Principal), 5 promotion gates, compliance mapping
 - **arXiv Agent Skills Survey** — First comprehensive academic survey: 26.1% vulnerability rate, 4-axis analysis (architecture, acquisition, deployment, security)
+- **SoK: Agentic Skills** (NEW Iteration 36) — Formal skill definition S=(C,π,T,R); 7-stage lifecycle; 7 design patterns; ClawHavoc case study; 73 citations (arXiv:2602.20867)
+- **Survey: Procedural Infrastructure** (NEW Iteration 36) — Six-layer taxonomy (ontology→governance→applications); marketplace scale data (800K+ total skills); Awesome-Agent-Skill-Papers catalog (Preprints 202605.1276)
 
 ### Platform Skill Systems
 - **Anthropic Official Skills** — Canonical reference: spec, templates, production document skills (140k stars)
@@ -74,6 +79,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Agensi Marketplace Landscape** — 8-marketplace comparison: skills.sh (2k), SkillsMP (800k), Agensi (200+, 8-point security scan); consolidation trends
 - **agentskill.sh** — 100k+ skill registry with 12-category threat scanning, content-SHA versioning, auto-rate feedback loop
 - **Agentic Awesome Skills Library** (NEW Iteration 35) — Installable mega-catalog: 1,943+ skills, npm installer, specialized plugins, schemas, security audit gates (~42.8k★, v14.1.0)
+- **Awesome-Agent-Skill-Papers** (NEW Iteration 36) — Curated paper catalog accompanying six-layer taxonomy survey; discovery index for academic agent skill research (GitHub: DataArcTech)
 
 ### Infrastructure & Participation
 - **Agents at Conferences** (NEW Iteration 14) — Infrastructure for AI agent conference participation: 6-component protocol (registration, feeds, communication, moderation, benchmarking, memory), capability schema taxonomy, SciFM26 target: 50 agents
@@ -190,6 +196,12 @@ Two foundational papers provide theoretical grounding:
 27. **Infrastructure-as-Agent-Capabilities** (NEW Iteration 14 — 6-component protocol for conference participation: registration, feeds, communication, moderation, benchmarking, memory; see [[agents-at-conferences-infrastructure]])
 28. **Exact Dependency Pinning + Offline Validation** (NEW Iteration 14 — DSPy 3.2.1 pinned, 34+ validators, --dry-run smoke tests, committed benchmarks; see [[dspy-agent-skills-bundle]])
 29. **Autonomous Science Workflow Theory** (NEW Iteration 14 — State machine abstraction, Intelligence×Composition matrix, co-pilot→lab-pilot, SDLs as skill bundles; see [[sc25-autonomous-science-workflows]], [[scaince-ai-lab-automation]])
+30. **Formal Skill Definition S=(C,π,T,R)** (NEW Iteration 36 — SoK provides canonical formal vocabulary; skills ≠ tools ≠ plans ≠ memory; simultaneously executable, reusable, governable; see [[sok-agentic-skills-beyond-tool-use]])
+31. **Co-Evolutionary Verification** (NEW Iteration 36 — Dynamic verification where the verifier co-evolves with the skill generator; generalizes static validation to adaptive feedback loops; see [[coevoskills-self-evolving-skills]])
+32. **SLSA/in-toto Provenance for Skills** (NEW Iteration 36 — Extending supply chain provenance to the "intent → source" gap; neutral observer pattern for skill generation; see [[supply-chain-agentic-factory-in-toto]])
+33. **Marketplace Supply-Chain Attack Quantification** (NEW Iteration 36 — ClawHavoc: ~13% malicious rate; SoK: 26.1% vulnerable; workshop: 37% flaw rate; convergent quantification of marketplace risk; see [[clawhavoc-marketplace-attack]])
+34. **Dependency-Aware Retrieval Validated** (NEW Iteration 36 — GoS v3: +25.55% reward, -56.72% tokens on SkillsBench; dependency-aware bundle retrieval outperforms flat in both quality and efficiency; see [[graph-of-skills-dependency-retrieval]])
+35. **Six-Layer Skill Taxonomy** (NEW Iteration 36 — Ontology→Representation→Lifecycle→Runtime→Governance→Applications; comprehensive structural framework; see [[survey-agent-skills-procedural-infrastructure]])
 
 ## Context Element Coverage
 
@@ -221,6 +233,11 @@ Two foundational papers provide theoretical grounding:
 | **Specification Layer Contracts** | **2** | **NEW** (ClawBio SKILL.md contracts, Addy Osmani Iron Laws) |
 | **Human Approval Gates** | **1** | **NEW** (OpenMontage checkpoint gates) |
 | **Vendor Constraint Handbooks** | **2** | **Growing** (+1: Vercel Labs rule catalogs) |
+| **Co-Evolutionary Verification** | **1** | **NEW** (CoEvoSkills surrogate verifier) |
+| **SLSA/in-toto Provenance** | **1** | **NEW** (Supply Chain Agentic Factory) |
+| **Formal Skill Definition** | **1** | **NEW** (SoK S=(C,π,T,R)) |
+| **Six-Layer Taxonomy** | **1** | **NEW** (Procedural Infrastructure survey) |
+| **Paper Catalog** | **1** | **NEW** (Awesome-Agent-Skill-Papers) |
 
 See also:
 - [[skill-security-governance]] — Complete governance stack synthesis

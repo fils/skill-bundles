@@ -36,9 +36,22 @@ High — GitHub repo at davidliuk/graph-of-skills with code for graph constructi
 ## Impact for Skill Bundles
 GoS formalizes what we've seen informally: skills form dependency graphs that need to be resolved before execution. The [[dspy-agent-skills-bundle]]'s `dspy-advanced-workflow` orchestrator skill and [[superpowers-engineering-discipline-skills]]'s methodology cycle are both **dependency-ordered** — GoS provides the theoretical foundation for these patterns.
 
+## v3 Update (2026-07-11)
+
+GoS v3 (27 May 2026) includes concrete SkillsBench benchmark results:
+- **Peak reward increase: +25.55%** on SkillsBench using GPT-5.2 Codex
+- **Token savings: -56.72%** total tokens vs vanilla full skill-loading baseline
+- Consistent improvements across Claude Sonnet 4.5, MiniMax M2.7, GPT-5.2 Codex
+- Validated on skill libraries from 200 to 2,000 skills
+
+Method refined: hybrid semantic-lexical seeding → reverse-aware Personalized PageRank → context-budgeted hydration.
+
+This provides **concrete benchmark evidence** that dependency-aware skill bundle retrieval outperforms flat retrieval — validating the skill bundle composition thesis with both quality AND efficiency gains.
+
 ## Confidence
-8/10 — Published on arXiv (2604.05333), code available on GitHub.
+9/10 — Published on arXiv (2604.05333v3), code on GitHub, SkillsBench-validated.
 
 ## Sources
 - https://arxiv.org/abs/2604.05333
 - https://github.com/davidliuk/graph-of-skills
+- https://skillsbench.ai/ (SkillsBench v1.1 leaderboard)

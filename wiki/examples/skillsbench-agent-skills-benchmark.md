@@ -43,10 +43,28 @@ SkillsBench provides the **measurement foundation** for skill bundle quality cla
 - Cross-platform comparison: Same skills tested on Claude Code vs Codex vs Gemini CLI
 - Domain optimization: Identify which skill categories matter most per domain
 
+## v1.1 Update (2026-07-11)
+
+SkillsBench v1.1 now has **87 tasks across 8 domains** with a live leaderboard of **24 model-harness configurations**:
+
+| Rank | Agent | Without | With Skills | Δ | Gain (g) |
+|------|-------|---------|-------------|---|----------|
+| 1 | GPT-5.5 OpenHands | 51.5% | 67.3% | +15.8 | 32.6% |
+| 2 | GPT-5.5 Codex | 46.8% | 66.5% | +19.7 | 37.0% |
+| 3 | Opus 4.7 Claude Code | 43.0% | 61.2% | +18.2 | 31.9% |
+| 4 | Gemini 3.1 Pro Gemini CLI | 36.0% | 60.8% | +24.8 | 38.7% |
+| 5 | GLM 5.1 OpenHands | 32.7% | 58.4% | +25.7 | 38.1% |
+
+- **Normalized gain (g)** measures skill effectiveness relative to room for improvement
+- **Three abstraction layers:** Skills (applications) → Agent Harness (OS) → Models (CPUs)
+- **8 professional domains:** SE, Industrial & Physical Systems, Natural Science, Office & White Collar, Finance & Economics, Mathematics & OR, Cybersecurity, Media & Content Production
+- **Fleet trend:** Resolution rate improving +2.2 pts/month across model releases
+
 ## Confidence
-8/10 — Published on arXiv, website at skillsbench.ai, multiple secondary confirmations.
+9/10 — Published on arXiv, live website at skillsbench.ai with leaderboard, 24-config evaluation.
 
 ## Sources
 - https://arxiv.org/abs/2602.12670
 - https://www.skillsbench.ai
 - https://www.skillsbench.ai/blogs/introducing-skillsbench
+- https://github.com/benchflow-ai/skillsbench (v1.1)
