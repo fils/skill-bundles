@@ -1,19 +1,19 @@
 # Skill Bundles — Metrics & Progress
 
-|**Last Updated: 2026-07-11 (Iteration 36)**
+|**Last Updated: 2026-07-12 (Iteration 37)
 
 ## KPIs
 
 | Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 61 | 57 | +4 |
-| Raw Sources (daily folders) | 48 days | 47 | +1 (2026-07-11) |
-| Wiki Example Files | 61 | 57 | +4 |
-| Paper Notes | 6 | 4 | +2 (SoK + Procedural Infrastructure survey) |
+| Documented Examples | 69 | 61 | +8 |
+| Raw Sources (daily folders) | 49 days | 48 | +1 (2026-07-12) |
+| Wiki Example Files | 69 | 61 | +8 |
+| Paper Notes | 6 | 6 | Unchanged |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | +1 (2026-07-11) | — | +1 |
-| Q&A Passes | +1 (2026-07-11-qa) | — | +1 |
-| Context Element Types Covered | 27+ | 22 | +5 (Co-Evo Verification, SLSA/in-toto, Formal Definition, 6-Layer Taxonomy, Paper Catalog) |
+| Daily Digests | +1 (2026-07-12) | — | +1 |
+| Q&A Passes | +1 (2026-07-12-qa) | — | +1 |
+| Context Element Types Covered | 34+ | 27 | +7 (Multi-objective optimization, Delta debugging, Progressive disclosure, DAG scheduler, Canonical taxonomy, Closed-loop knowledge, LLM jury voting) |
 
 ## Context Element Coverage (summary)
 
@@ -31,17 +31,24 @@
 | Formal Skill Definition | New (SoK S=(C,π,T,R)) |
 | Six-Layer Taxonomy | New (Procedural Infrastructure survey) |
 | Paper Catalog | New (Awesome-Agent-Skill-Papers) |
+| Multi-Objective Optimization | New (SkillMOO NSGA-II Pareto) |
+| Delta Debugging | New (SkillReducer adversarial delta) |
+| Progressive Disclosure | New (SkillReducer on-demand loading) |
+| DAG Scheduler | New (ORCA dependency resolution + policy gates) |
+| Canonical Taxonomy | New (ORCA 184/184 capability coverage) |
+| Closed-Loop Knowledge | New (AI-KM knowledge→skill→knowledge) |
+| LLM Jury Voting | New (SkillSieve 3-LLM debate) |
 
-## 2026-07-11 Run Notes (Iteration 36)
+## 2026-07-12 Run Notes (Iteration 37)
 
-- Pre-flight: Clean tree (`## master...origin/master`). No `raw/2026-07-11/` (created today). Last commit 2026-07-10. Digests current through 2026-07-10. No leftover uncommitted raw.
-- Anti-stagnation: Diversified away from core monitoring sources — focused on arXiv survey papers (SoK, 6-layer), self-evolving skills (CoEvoSkills), supply chain provenance (SLSA/in-toto), marketplace attack (ClawHavoc), benchmark updates (GoS v3, SkillsBench v1.1), and paper catalog (Awesome-Agent-Skill-Papers).
-- Phase 1: **6 sources** — CoEvoSkills, SoK: Agentic Skills, Procedural Infrastructure survey, Supply Chain Agentic Factory, ClawHavoc Campaign, GoS v3 + SkillsBench v1.1.
-- Phase 2: 4 new example articles + 2 new paper notes + daily digest. Updated 2 existing entries (GoS, SkillsBench).
-- Phase 3: skill-bundles.md count 61 (+6 paper notes); index + patterns + context element coverage updated; 6 new emerging patterns.
-- Phase 4: Q&A with 4 complex questions + 3 epistemic sample checks (all verified against primary sources). Lint: 33 broken links (25 pre-existing, 8 new false positives fixed inline — path-style wikilinks).
+- Pre-flight: Clean tree (`## master...origin/master`). No `raw/2026-07-12/` (created today). Last commit 2026-07-11. Digests current through 2026-07-11. No leftover uncommitted raw.
+- Anti-stagnation: Followed yesterday's priority search list (6 targets from digest) — found 5/6 directly + diversified into SkillReducer, ORCA, AI-KM, marketplace landscape. All sources novel (none appeared in prior week's digests).
+- Phase 1: **8 sources** — SkillMOO, EffiSkill, SkillSieve, SkillCraft, SkillReducer, ORCA, AI-KM, Marketplace Landscape. Atomic Skills (arXiv:2604.05013) found but WITHDRAWN — documented as raw source only.
+- Phase 2: 8 new example articles + daily digest.
+- Phase 3: index + patterns + context element coverage updated; 6 new emerging patterns.
+- Phase 4: Q&A + lint pass.
 - Phase 5: Unconditional git commit + push.
-- Daily sources: 6 | New examples: 4 | Papers: 2 | Updated: 2 | New patterns: 6 | New context elements: 5
+- Daily sources: 8 | New examples: 8 | Papers: 0 | Updated: 0 | New patterns: 6 | New context elements: 7
 
 ## Velocity Notes (prior)
 
@@ -62,3 +69,6 @@
 | 5 | SoK: Agentic Skills | S=(C,π,T,R) × 7 patterns × 7-stage lifecycle × ClawHavoc case study × 73 citations |
 | 6 | Vercel Labs | Few skills × very high rule density (40–100+/skill) |
 | 7 | CoEvoSkills | Multi-file packages × co-evolutionary verification × 8-LLM generalization × SkillsBench-validated |
+| 8 | SkillSieve | 3-layer triage × LLM jury × 49K skills evaluated × F1=0.920 × $0.006/skill |
+| 9 | ORCA | 122 capabilities × 36 DAG skills × policy gates × provenance × 184/184 taxonomy |
+| 10 | SkillReducer | 55K skills studied × delta debugging × taxonomy × progressive disclosure × less-is-more |

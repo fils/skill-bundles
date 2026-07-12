@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-07-11 (Iteration 36)
-|**Status:** Active research — 4 new examples (CoEvoSkills self-evolving, ClawHavoc attack, SLSA/in-toto provenance, paper catalog) + 2 new papers (SoK Agentic Skills, Procedural Infrastructure survey); GoS v3 + SkillsBench v1.1 updates
+|**Last Updated:** 2026-07-12 (Iteration 37)
+|**Status:** Active research — 8 new examples (SkillMOO multi-objective optimization, EffiSkill two-tier skills, SkillSieve malicious skill detection, SkillCraft composition benchmark, SkillReducer token efficiency, ORCA cognitive runtime, AI-KM ontology+skills, marketplace landscape)
 
 ## Overview
 
@@ -11,6 +11,7 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-07-12 (Iteration 37)](daily-digests/2026-07-12.md)
   - [2026-07-11 (Iteration 36)](daily-digests/2026-07-11.md)
   - [2026-07-10 (Iteration 35)](daily-digests/2026-07-10.md)
   - [2026-07-09](daily-digests/2026-07-09.md)
@@ -24,29 +25,32 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Metrics](metrics.md)
 - [Q&A](qa/)
 
-## Current Status (Iteration 36 — 2026-07-11)
+## Current Status (Iteration 37 — 2026-07-12)
 
-Four major new skill-bundle examples plus two foundational survey papers and two benchmark updates:
+Eight major new skill-bundle examples covering skill optimization, composition, security, runtime, and ontology integration:
 
-- **[[coevoskills-self-evolving-skills]]** — first self-evolving multi-file skill package framework; co-evolutionary verification; surpasses human-curated skills in 5 iterations (arXiv:2604.01687)
-- **[[clawhavoc-marketplace-attack]]** — ~1,184 malicious skills on ClawHub; 13% malicious rate; canonical supply-chain attack case study
-- **[[supply-chain-agentic-factory-in-toto]]** — SLSA/in-toto provenance extended to agentic code generation; "intent → source → binary" trust gap; Konflux/fullsend project
-- **[[awesome-agent-skill-papers-catalog]]** — curated paper catalog; discovery index for academic agent skill research
-- **[[sok-agentic-skills-beyond-tool-use]]** — formal skill definition S=(C,π,T,R); 7-stage lifecycle; 7 design patterns; 73 citations (arXiv:2602.20867)
-- **[[survey-agent-skills-procedural-infrastructure]]** — six-layer taxonomy; marketplace scale data (800K+ skills); Awesome-Agent-Skill-Papers catalog
-- Updated: [[graph-of-skills-dependency-retrieval]] (v3: +25.55% reward, -56.72% tokens), [[skillsbench-agent-skills-benchmark]] (v1.1: 87 tasks, 24-config leaderboard)
+- **[[skillmoo-multi-objective-optimization]]** — first multi-objective skill bundle optimization; NSGA-II Pareto on pass rate + cost; pruning/substitution dominate edits; top rank on 11/12 SkillsBench tasks
+- **[[effiskill-code-efficiency-optimization]]** — two-tier skill hierarchy (Operator + Meta Skills); execution-free diagnosis; +3.69–12.52pp improvement on EffiBench-X
+- **[[skillsieve-malicious-skill-detection]]** — three-layer triage (heuristic→LLM→LLM jury); F1=0.920 at $0.006/skill; cross-ecosystem (ClawHub→Feishu); open-sourced
+- **[[skillcraft-benchmark]]** — benchmark for skill composition/reuse; agents auto-compose tools into skills; 80% token savings; cited by 20
+- **[[skillreducer-token-efficiency]]** — 55K skill empirical study: 26.4% lack routing, 60%+ non-actionable; delta debugging + progressive disclosure; 48%+39% compression, +2.8% quality (less-is-more)
+- **[[orca-cognitive-runtime]]** — Open Runtime for Capable Agents; 122 capabilities + 36 DAG skills + policy gates + provenance; 184/184 taxonomy coverage; MCP support
+- **[[ai-km-ontology-skills]]** — skills + ontology-driven knowledge modeling in closed loop; NL extraction builds ontologies; conversation-invokable + autonomous planning
+- **[[marketplace-landscape-2026]]** — 8 major marketplaces compared; SkillsMP 800K+, LobeHub 169K+; 6.3 issues/skill, 36% prompt injection; MCP access rising
 
 **Convergence signals:**
-1. **Academic convergence on skill formalization** — three surveys (SoK, 4-axis, 6-layer) all define skills as multi-file packages ≠ tools; lifecycle models needed; security critical
-2. **Marketplace risk quantified** — ClawHavoc 13% + SoK 26.1% + workshop 37% ≈ 1 in 4–8 marketplace skills malicious/vulnerable
-3. **Co-evolutionary verification** — dynamic verifier co-evolves with generator (generalizes static validation)
-4. **SLSA/in-toto for skills** — supply chain provenance extended to "intent → source" gap
-5. **Dependency-aware retrieval validated** — GoS v3 concrete benchmark evidence (+25.55% quality, -56.72% efficiency)
+1. **Skill optimization triad** — SkillMOO (search), CoEvoSkills (evolution), SkillReducer (content reduction) address different axes; could compose
+2. **Less-is-more effect** — removing non-essential content *improves* quality (+2.8%); progressive disclosure is the architectural pattern
+3. **Skill composition as core capability** — SkillCraft validates composition strongly correlates with success; 80% token savings from caching
+4. **Hierarchical security validation** — SkillSieve's LLM jury (3-LLM voting + debate) is production-ready at $0.006/skill
+5. **Skills + ontologies integrated** — AI-KM closes the knowledge→skill→knowledge loop
+6. **Marketplace consolidation** — 8 → 3-4 within a year; security scanning + creator payments becoming table stakes
 
 ## Iteration History (recent)
 
 | Iteration | Date | Focus | New Examples |
 |-----------|------|-------|--------------|
+| **37** | **2026-07-12** | **Skill optimization + composition + security + runtime + ontology** | **SkillMOO, EffiSkill, SkillSieve, SkillCraft, SkillReducer, ORCA, AI-KM, Marketplace Landscape** |
 | **36** | **2026-07-11** | **Self-evolving skills + supply chain provenance + marketplace attack + academic surveys** | **CoEvoSkills, ClawHavoc, SLSA/in-toto factory, Awesome-Agent-Skill-Papers, SoK, 6-layer survey** |
 | **35** | **2026-07-10** | **Workshop + marketplace analysis + domain/vendor mega-bundles** | **K-Dense scientific, Agentic Awesome, Vercel Labs, OpenMontage** |
 | 31–34 | 2026-07-01…09 | Core standard + SHACL 1.2 agentInstruction + reference impl refresh | Monitoring sources (agentskills.io, addyosmani, anthropics, NVIDIA) |
@@ -55,9 +59,9 @@ Four major new skill-bundle examples plus two foundational survey papers and two
 
 ## Tomorrow Priority Searches
 
-1. **Atomic Skills** (arXiv:2604.05013) — Scaling Coding Agents via Atomic Skills decomposition pattern
-2. **SkillMOO** (arXiv:2604.09297) — Multi-Objective Optimization for SE skills
-3. **EffiSkill** (arXiv:2603.27850) — Agent Skill Based Code Efficiency Optimization
-4. **arXiv:2604.06550** — Hierarchical Triage Framework for detecting malicious skills (ClawHavoc-validated)
-5. **SkillsMP / LobeHub marketplace** — largest skill marketplaces (425K / 170K skills) — governance models
-6. **SkillCraft** — Can LLM agents learn to use tools skillfully? (cited by CoEvoSkills)
+1. **SkillVerifier / SkillGuard** — runtime verification frameworks for skill execution safety
+2. **Skill transfer learning** — cross-domain skill reuse patterns (SE → data analysis?)
+3. **Auto-skill discovery** — agents autonomously discovering new skills from task patterns
+4. **SkillsBench v2** — latest developments beyond v1.1 (87 tasks, 24 configs)
+5. **Skill provenance standards** — W3C or other standards bodies working on skill provenance
+6. **OpenClaw / ClawHub ecosystem** — latest governance changes post-ClawHavoc

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-11",
-  "iteration": 36,
+  "last_updated": "2026-07-12",
+  "iteration": 37,
   "daily_runs": {
     "2026-07-11": {
       "sources_ingested": 6,
@@ -109,8 +109,29 @@
         "agentskills-io-overview-2026-07-06.md",
         "nvidia-skills-update.md"
       ]
+    },
+    "2026-07-12": {
+      "sources": 8,
+      "examples": [
+        "skillmoo-multi-objective-optimization",
+        "effiskill-code-efficiency-optimization",
+        "skillsieve-malicious-skill-detection",
+        "skillcraft-benchmark",
+        "skillreducer-token-efficiency",
+        "orca-cognitive-runtime",
+        "ai-km-ontology-skills",
+        "marketplace-landscape-2026"
+      ],
+      "patterns": [
+        "Skill optimization triad",
+        "Less-is-more effect",
+        "Skill composition as core capability",
+        "Hierarchical security validation",
+        "Skills+ontologies integrated",
+        "Marketplace consolidation"
+      ]
     }
   },
-  "cumulative_sources": 63,
-  "note": "2026-07-11: diversified discovery — CoEvoSkills (self-evolving), SoK: Agentic Skills (formal definition + ClawHavoc), 6-layer taxonomy survey, SLSA/in-toto provenance for skills, ClawHavoc attack, GoS v3 + SkillsBench v1.1 updates, Awesome-Agent-Skill-Papers catalog. 4 new examples + 2 papers + 2 updates."
+  "cumulative_sources": 71,
+  "note": "2026-07-12: skill optimization (SkillMOO, SkillReducer, EffiSkill), skill composition (SkillCraft), security validation (SkillSieve), runtime (ORCA), ontology+skills (AI-KM), marketplace landscape"
 }
