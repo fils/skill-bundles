@@ -1,12 +1,12 @@
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-07-12 (Iteration 37)
+**Primary Publication** — Last major update: 2026-07-13 (Iteration 38)
 
 ## TL;DR
 
-Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 69 documented examples across 37 iterations of daily research.
+Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 75 documented examples across 38 iterations of daily research.
 
-## Documented Examples (69 Total + 6 Paper Notes)
+## Documented Examples (75 Total + 6 Paper Notes)
 
 ### Research & Workflow
 - NORA — Autonomous research agent with orchestrated skills
@@ -23,6 +23,8 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **SkillMOO** (NEW Iteration 37) — First multi-objective skill bundle optimization: NSGA-II Pareto selection on pass rate + cost; pruning and substitution dominate successful edits; top rank on 11/12 SkillsBench tasks (arXiv:2604.09297)
 - **EffiSkill** (NEW Iteration 37) — Two-tier skill hierarchy: Operator Skills (concrete transformations) + Meta Skills (strategic patterns); execution-free diagnosis; +3.69–12.52pp on EffiBench-X (arXiv:2603.27850)
 - **SkillCraft** (NEW Iteration 37) — Benchmark for skill composition and reuse: agents auto-compose atomic tools into executable Skills; 80% token savings from caching; cited by 20 (arXiv:2603.00718)
+- **EvoSkill** (NEW Iteration 38) — Self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★) (arXiv:2603.02766)
+- **SkillOpt** (NEW Iteration 38) — Treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells (6 benchmarks × 7 models × 3 modes); +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks (Microsoft Research, June 2026)
 
 ### Ontology & Knowledge
 - Ontologizer — OpenClaw ontology skill
@@ -58,6 +60,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **ClawHavoc Campaign** (NEW Iteration 36) — ~1,184 malicious skills on ClawHub; 13% malicious rate; dual-vector attack (prompt injection + shell access); canonical marketplace supply-chain case study
 - **Supply Chain Agentic Factory** (NEW Iteration 36) — First proposal to extend SLSA/in-toto provenance to agentic code generation; "intent → source → binary" trust gap; Konflux/fullsend project (Red Hat)
 - **SkillSieve** (NEW Iteration 37) — Three-layer triage for malicious skill detection: heuristic filter (86% volume) → LLM analysis (4 sub-tasks) → LLM jury (3-LLM voting+debate); F1=0.920 at $0.006/skill; 49K ClawHub skills evaluated; cross-ecosystem (ClawHub→Feishu); open-sourced (arXiv:2604.06550)
+- **PROV-AGENT** (NEW Iteration 38) — Provenance model extending W3C PROV + MCP for tracking AI agent interactions in agentic workflows; agent decisions/prompts/responses as first-class provenance; near real-time capture system; cross-facility (edge/cloud/HPC); Oak Ridge + Argonne National Labs (arXiv:2508.02866)
 
 ### Security Governance Frameworks
 - **OWASP Agentic Skills Top 10 (AST10)** — First dedicated security risk framework: 10-class vulnerability taxonomy, Lethal Trifecta, Universal Skill Format
@@ -85,6 +88,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Agentic Awesome Skills Library** (NEW Iteration 35) — Installable mega-catalog: 1,943+ skills, npm installer, specialized plugins, schemas, security audit gates (~42.8k★, v14.1.0)
 - **Awesome-Agent-Skill-Papers** (NEW Iteration 36) — Curated paper catalog accompanying six-layer taxonomy survey; discovery index for academic agent skill research (GitHub: DataArcTech)
 - **Marketplace Landscape 2026** (NEW Iteration 37) — 8 major marketplaces compared: SkillsMP (800K+), LobeHub (169K+), Skills.sh (2K), Agensi (200+, 8-point security scan, 70/30 creator payments); 6.3 issues/skill avg, 36% prompt injection rate; MCP-based access predicted as default
+- **SkillMigrator** (NEW Iteration 38) — Cross-domain web skill reuse via Transferable Interaction Patterns (TIP 4-tuple ⟨intent, template, slots, layout-skeleton⟩); accessibility-tree skeleton matching with Tree Edit Distance; 8-10% LLM call reduction; 35.4% cross-domain reuse rate (arXiv:2606.17645)
 
 ### Infrastructure & Participation
 - **Agents at Conferences** (NEW Iteration 14) — Infrastructure for AI agent conference participation: 6-component protocol (registration, feeds, communication, moderation, benchmarking, memory), capability schema taxonomy, SciFM26 target: 50 agents
@@ -98,6 +102,8 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **DSPy Agent Skills v0.2.3** — Updated bundle for DSPy 3.2.x, +19.53pp RAG improvement, dual-platform install, committed benchmark artifacts
 - **Skills+DSPy SDK** — SkillsReActAgent with firejail, meta-tools, YAML config for sandbox
 - **ORCA** (NEW Iteration 37) — Open Runtime for Capable Agents: 122 YAML capabilities + 36 DAG-composed skills + policy gates + provenance tracking; 184/184 canonical taxonomy coverage; MCP support; LangChain/CrewAI/Semantic Kernel adapters (Apache-2.0, 43★)
+- **Skill OS** (NEW Iteration 38) — "Skills are the new Apps" position paper: surveys ~100K public skills; identifies 6 properties (phased procedures, semi-deterministic blocks, semantic equivalence, safety without enforcement, dependency fragility, no global management); argues for Skill OS abstraction (caching, env construction, global management, failure handling, security) (AgenticOS 2026 Workshop)
+- **SkillGenBench** (NEW Iteration 38) — Benchmark for skill generation pipelines: 187 tasks × 8 domains; generator-executor decoupling; repository-grounded pass@3: 7-16% (extremely hard), document-grounded: 23-27%; auto-generated skills risk negative transfer (Zhou et al., 2026)
 
 ### Specification & Runtime
 - Agent Skills Specification — The open standard (agentskills.io)
@@ -218,6 +224,12 @@ Two foundational papers provide theoretical grounding:
 40. **Skills + Ontology Closed Loop** (NEW Iteration 37 — Knowledge→ontology→skills→knowledge feedback; NL extraction builds ontologies; conversation-invokable skills; autonomous planning for novel tasks; see [[ai-km-ontology-skills]])
 41. **DAG-Based Skill Composition Runtime** (NEW Iteration 37 — Declarative YAML capabilities composed as DAGs with policy gates, provenance, and deterministic baselines; 122 capabilities, 36 skills; see [[orca-cognitive-runtime]])
 42. **Marketplace Consolidation** (NEW Iteration 37 — 8 marketplaces → 3-4 within a year; security scanning + creator payments becoming table stakes; MCP-based access replacing downloads; see [[marketplace-landscape-2026]])
+43. **Skill Optimization Taxonomy Completing** (NEW Iteration 38 — Five approaches mapped: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction), SkillOpt (training/gradient-like text optimization), EvoSkill (failure-driven discovery); SkillOpt outperforms all on 52/52 cells; see [[skillopt-trainable-skill-parameters]], [[evoskill-automated-skill-discovery]])
+44. **Skill Transfer Quantified** (NEW Iteration 38 — EvoSkill zero-shot task→task +5.3%, SkillOpt cross-harness Codex→Claude Code +59.7 + cross-model-scale, SkillMigrator cross-domain 35.4%; skills capture reusable workflow knowledge, not benchmark-specific instructions; see [[evoskill-automated-skill-discovery]], [[skillopt-trainable-skill-parameters]], [[skillmigrator-cross-domain-transfer]])
+45. **Skill Generation Is the Bottleneck** (NEW Iteration 38 — SkillGenBench: 7-27% pass@3 for auto-generation; 2-3x harder than skill use; negative transfer risk; shifts research frontier from use to creation; see [[skillgenbench-skill-generation-benchmark]])
+46. **Skills Need OS-Level Management** (NEW Iteration 38 — Skill OS paper: ~100K skill analysis reveals 6 properties; OS abstractions needed (caching, env construction, global management, failure handling, security); ORCA is early implementation; see [[skill-os-skills-as-apps]], [[orca-cognitive-runtime]])
+47. **Provenance Standards Converging** (NEW Iteration 38 — PROV-AGENT (W3C PROV + MCP) + SLSA/in-toto + W3C Agent Protocol CG; provenance becoming standard context element for skill bundles; see [[prov-agent-unified-provenance]])
+48. **Cross-Domain Transfer via Structural Layout** (NEW Iteration 38 — SkillMigrator's TIP abstraction (accessibility-tree skeleton + slot schema) enables cross-domain skill transfer by matching layout structure, not element IDs; novel architectural pattern; see [[skillmigrator-cross-domain-transfer]])
 
 ## Context Element Coverage
 
@@ -263,6 +275,15 @@ Two foundational papers provide theoretical grounding:
 | **LLM Jury Voting** | **1** | **NEW** (SkillSieve 3-LLM debate) |
 | **Two-Tier Skill Hierarchy** | **1** | **NEW** (EffiSkill Operator+Meta) |
 | **Auto-Composition Protocol** | **1** | **NEW** (SkillCraft agent-authored) |
+| **Pareto Frontier Governance** | **1** | **NEW** (EvoSkill K=3 git-backed) |
+| **Textual Learning Rate** | **1** | **NEW** (SkillOpt per-step edit budget) |
+| **Validation Gating + Rejected-Edit Buffer** | **1** | **NEW** (SkillOpt training-style optimization) |
+| **Transferable Interaction Pattern (TIP)** | **1** | **NEW** (SkillMigrator 4-tuple) |
+| **Accessibility-Tree Skeleton Matching** | **1** | **NEW** (SkillMigrator TED layout) |
+| **W3C PROV + MCP Provenance** | **1** | **NEW** (PROV-AGENT) |
+| **Skill OS Abstraction** | **1** | **NEW** (Skill OS 100K analysis) |
+| **Generator-Executor Decoupling** | **1** | **NEW** (SkillGenBench) |
+| **Negative Transfer Detection** | **1** | **NEW** (SkillGenBench auto-skill risk) |
 
 See also:
 - [[skill-security-governance]] — Complete governance stack synthesis

@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-07-12 (Iteration 37)
-|**Status:** Active research — 8 new examples (SkillMOO multi-objective optimization, EffiSkill two-tier skills, SkillSieve malicious skill detection, SkillCraft composition benchmark, SkillReducer token efficiency, ORCA cognitive runtime, AI-KM ontology+skills, marketplace landscape)
+|**Last Updated:** 2026-07-13 (Iteration 38)
+|**Status:** Active research — 6 new examples (EvoSkill auto-discovery, SkillOpt trainable parameters, PROV-AGENT provenance, SkillMigrator cross-domain, Skill OS abstraction, SkillGenBench generation benchmark)
 
 ## Overview
 
@@ -11,6 +11,7 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-07-13 (Iteration 38)](daily-digests/2026-07-13.md)
   - [2026-07-12 (Iteration 37)](daily-digests/2026-07-12.md)
   - [2026-07-11 (Iteration 36)](daily-digests/2026-07-11.md)
   - [2026-07-10 (Iteration 35)](daily-digests/2026-07-10.md)
@@ -25,31 +26,30 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Metrics](metrics.md)
 - [Q&A](qa/)
 
-## Current Status (Iteration 37 — 2026-07-12)
+## Current Status (Iteration 38 — 2026-07-13)
 
-Eight major new skill-bundle examples covering skill optimization, composition, security, runtime, and ontology integration:
+Six major new skill-bundle examples covering auto-skill discovery, trainable skill optimization, provenance, cross-domain transfer, OS-level skill management, and skill generation benchmarking:
 
-- **[[skillmoo-multi-objective-optimization]]** — first multi-objective skill bundle optimization; NSGA-II Pareto on pass rate + cost; pruning/substitution dominate edits; top rank on 11/12 SkillsBench tasks
-- **[[effiskill-code-efficiency-optimization]]** — two-tier skill hierarchy (Operator + Meta Skills); execution-free diagnosis; +3.69–12.52pp improvement on EffiBench-X
-- **[[skillsieve-malicious-skill-detection]]** — three-layer triage (heuristic→LLM→LLM jury); F1=0.920 at $0.006/skill; cross-ecosystem (ClawHub→Feishu); open-sourced
-- **[[skillcraft-benchmark]]** — benchmark for skill composition/reuse; agents auto-compose tools into skills; 80% token savings; cited by 20
-- **[[skillreducer-token-efficiency]]** — 55K skill empirical study: 26.4% lack routing, 60%+ non-actionable; delta debugging + progressive disclosure; 48%+39% compression, +2.8% quality (less-is-more)
-- **[[orca-cognitive-runtime]]** — Open Runtime for Capable Agents; 122 capabilities + 36 DAG skills + policy gates + provenance; 184/184 taxonomy coverage; MCP support
-- **[[ai-km-ontology-skills]]** — skills + ontology-driven knowledge modeling in closed loop; NL extraction builds ontologies; conversation-invokable + autonomous planning
-- **[[marketplace-landscape-2026]]** — 8 major marketplaces compared; SkillsMP 800K+, LobeHub 169K+; 6.3 issues/skill, 36% prompt injection; MCP access rising
+- **[[evoskill-automated-skill-discovery]]** — self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★)
+- **[[skillopt-trainable-skill-parameters]]** — treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells; +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks
+- **[[prov-agent-unified-provenance]]** — extends W3C PROV + MCP for agent interaction provenance; agent decisions/prompts/responses as first-class; near real-time capture; cross-facility (edge/cloud/HPC); Oak Ridge + Argonne
+- **[[skillmigrator-cross-domain-transfer]]** — cross-domain web skill reuse via Transferable Interaction Patterns (TIP 4-tuple); accessibility-tree skeleton matching with Tree Edit Distance; 8-10% LLM call reduction; 35.4% cross-domain reuse rate
+- **[[skill-os-skills-as-apps]]** — "Skills are the new Apps"; surveys ~100K public skills; 6 properties identified; argues for Skill OS abstraction (caching, env construction, global management, failure handling, security)
+- **[[skillgenbench-skill-generation-benchmark]]** — benchmark for skill generation pipelines; 187 tasks × 8 domains; generator-executor decoupling; repo-grounded pass@3: 7-16%, doc-grounded: 23-27%; auto-generated skills risk negative transfer
 
 **Convergence signals:**
-1. **Skill optimization triad** — SkillMOO (search), CoEvoSkills (evolution), SkillReducer (content reduction) address different axes; could compose
-2. **Less-is-more effect** — removing non-essential content *improves* quality (+2.8%); progressive disclosure is the architectural pattern
-3. **Skill composition as core capability** — SkillCraft validates composition strongly correlates with success; 80% token savings from caching
-4. **Hierarchical security validation** — SkillSieve's LLM jury (3-LLM voting + debate) is production-ready at $0.006/skill
-5. **Skills + ontologies integrated** — AI-KM closes the knowledge→skill→knowledge loop
-6. **Marketplace consolidation** — 8 → 3-4 within a year; security scanning + creator payments becoming table stakes
+1. **Skill optimization taxonomy completing** — Five approaches now mapped: SkillMOO (search), CoEvoSkills (evolution), SkillReducer (content reduction), SkillOpt (training/gradient-like), EvoSkill (discovery). SkillOpt outperforms all on 52/52 cells.
+2. **Skill transfer is quantified** — EvoSkill (task→task +5.3%), SkillOpt (cross-harness +59.7, cross-model-scale), SkillMigrator (cross-domain 35.4%). Skills capture reusable workflow knowledge.
+3. **Skill generation is the bottleneck** — SkillGenBench proves generating skills (7-27% pass@3) is 2-3x harder than using them. Negative transfer is a real risk.
+4. **Skills need OS-level management** — Skill OS paper (100K skill analysis) argues skills are applications requiring OS abstractions. ORCA is early implementation.
+5. **Provenance standards converging** — PROV-AGENT (W3C PROV + MCP), SLSA/in-toto, W3C Agent Protocol CG. Provenance becoming standard context element.
+6. **Cross-domain via structural layout** — SkillMigrator's TIP enables cross-domain transfer by matching layout structure, not element IDs.
 
 ## Iteration History (recent)
 
 | Iteration | Date | Focus | New Examples |
 |-----------|------|-------|--------------|
+| **38** | **2026-07-13** | **Auto-discovery + trainable skills + provenance + cross-domain transfer + OS abstraction + generation benchmark** | **EvoSkill, SkillOpt, PROV-AGENT, SkillMigrator, Skill OS, SkillGenBench** |
 | **37** | **2026-07-12** | **Skill optimization + composition + security + runtime + ontology** | **SkillMOO, EffiSkill, SkillSieve, SkillCraft, SkillReducer, ORCA, AI-KM, Marketplace Landscape** |
 | **36** | **2026-07-11** | **Self-evolving skills + supply chain provenance + marketplace attack + academic surveys** | **CoEvoSkills, ClawHavoc, SLSA/in-toto factory, Awesome-Agent-Skill-Papers, SoK, 6-layer survey** |
 | **35** | **2026-07-10** | **Workshop + marketplace analysis + domain/vendor mega-bundles** | **K-Dense scientific, Agentic Awesome, Vercel Labs, OpenMontage** |
@@ -59,9 +59,10 @@ Eight major new skill-bundle examples covering skill optimization, composition, 
 
 ## Tomorrow Priority Searches
 
-1. **SkillVerifier / SkillGuard** — runtime verification frameworks for skill execution safety
-2. **Skill transfer learning** — cross-domain skill reuse patterns (SE → data analysis?)
-3. **Auto-skill discovery** — agents autonomously discovering new skills from task patterns
-4. **SkillsBench v2** — latest developments beyond v1.1 (87 tasks, 24 configs)
-5. **Skill provenance standards** — W3C or other standards bodies working on skill provenance
-6. **OpenClaw / ClawHub ecosystem** — latest governance changes post-ClawHavoc
+1. **SkillVerifier / SkillGuard** — runtime verification frameworks for skill execution safety (still not found)
+2. **OpenClaw / ClawHub ecosystem** — latest governance changes post-ClawHavoc (still not found)
+3. **Memento-Skills** — RL-based skill self-evolution; "Complete Autopsy" article suggests analysis available
+4. **ASPIRE** (NVIDIA) — agentic skill programming through iterative robot exploration; robotics-focused skill discovery
+5. **EXIF** — Automated Skill Discovery for Language Agents through Exploration
+6. **JayLZhou/Awesome-Agent-Skills** — curated paper list + "Comprehensive Survey on Agent Skills" — check for new papers
+7. **Skill OS implementations** — any systems implementing the Skill OS abstraction demands?

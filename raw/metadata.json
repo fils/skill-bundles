@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-07-12",
-  "iteration": 37,
+  "last_updated": "2026-07-13",
+  "iteration": 38,
   "daily_runs": {
+    "2026-07-13": {
+      "sources": 6,
+      "examples": [
+        "evoskill-automated-skill-discovery",
+        "skillopt-trainable-skill-parameters",
+        "prov-agent-unified-provenance",
+        "skillmigrator-cross-domain-transfer",
+        "skill-os-skills-as-apps",
+        "skillgenbench-skill-generation-benchmark"
+      ],
+      "queries_used": [
+        "SkillVerifier SkillGuard runtime verification agent skills execution safety 2026",
+        "auto-skill discovery agents autonomously discovering new skills task patterns 2026",
+        "skill transfer learning cross-domain skill reuse agent LLM 2026",
+        "skill provenance standards W3C agent skills attestation provenance 2026",
+        "SkillsBench v2 agent skills benchmark 2026 update new tasks",
+        "gh search repos 'agent skills' --sort stars",
+        "gh search repos 'skill bundle' --sort updated"
+      ],
+      "patterns": [
+        "Skill optimization taxonomy completing",
+        "Skill transfer is quantified",
+        "Skill generation is the bottleneck",
+        "Skills need OS-level management",
+        "Provenance standards converging",
+        "Cross-domain via structural layout"
+      ]
+    },
     "2026-07-11": {
       "sources_ingested": 6,
       "files": [
@@ -132,6 +160,6 @@
       ]
     }
   },
-  "cumulative_sources": 71,
-  "note": "2026-07-12: skill optimization (SkillMOO, SkillReducer, EffiSkill), skill composition (SkillCraft), security validation (SkillSieve), runtime (ORCA), ontology+skills (AI-KM), marketplace landscape"
+  "cumulative_sources": 77,
+  "note": "2026-07-13: auto-skill discovery (EvoSkill), trainable skill parameters (SkillOpt), W3C PROV+MCP provenance (PROV-AGENT), cross-domain web skill transfer (SkillMigrator), Skill OS abstraction (100K skill analysis), skill generation benchmark (SkillGenBench)"
 }
