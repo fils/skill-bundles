@@ -1,12 +1,12 @@
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-07-13 (Iteration 38)
+**Primary Publication** — Last major update: 2026-07-14 (Iteration 39)
 
 ## TL;DR
 
-Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 75 documented examples across 38 iterations of daily research.
+Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 82 documented examples across 39 iterations of daily research.
 
-## Documented Examples (75 Total + 6 Paper Notes)
+## Documented Examples (82 Total + 6 Paper Notes)
 
 ### Research & Workflow
 - NORA — Autonomous research agent with orchestrated skills
@@ -25,6 +25,10 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **SkillCraft** (NEW Iteration 37) — Benchmark for skill composition and reuse: agents auto-compose atomic tools into executable Skills; 80% token savings from caching; cited by 20 (arXiv:2603.00718)
 - **EvoSkill** (NEW Iteration 38) — Self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★) (arXiv:2603.02766)
 - **SkillOpt** (NEW Iteration 38) — Treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells (6 benchmarks × 7 models × 3 modes); +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks (Microsoft Research, June 2026)
+- **ASPIRE** (NEW Iteration 39) — NVIDIA GEAR Lab; continual learning for robotics via code-as-policy; three components (execution engine + multimodal traces, skill library, evolutionary search); +77% LIBERO-Pro, +72% Robosuite, +32% BEHAVIOR-1K; 31% zero-shot vs 4%; sim-to-real transfer evidence; authors include Linxi "Jim" Fan, Ken Goldberg (arXiv:2607.00272)
+- **Memento-Skills** (NEW Iteration 39) — Agent-designing agent; memory-based RL with stateful prompts; skills as structured markdown files = persistent evolving memory; Read-Write Reflective Learning (read = skill router, write = update library); continual learning without LLM parameter updates; +26.2% General AI Assistants, +116.2% Humanity's Last Exam; 27 citations (arXiv:2603.18743)
+- **Skill1** (NEW Iteration 39) — Unified evolution of skill-augmented agents via RL; single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; outperforms baselines; 18 citations (arXiv:2605.06130)
+- **EXIF** (NEW Iteration 39) — Alice-Bob dual-agent for automated skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; iterative feedback loop; self-play (Alice=Bob) enables self-evolution; Webshop + Crafter; precursor to 2026 skill discovery wave; 11 citations (arXiv:2506.04287)
 
 ### Ontology & Knowledge
 - Ontologizer — OpenClaw ontology skill
@@ -61,6 +65,9 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Supply Chain Agentic Factory** (NEW Iteration 36) — First proposal to extend SLSA/in-toto provenance to agentic code generation; "intent → source → binary" trust gap; Konflux/fullsend project (Red Hat)
 - **SkillSieve** (NEW Iteration 37) — Three-layer triage for malicious skill detection: heuristic filter (86% volume) → LLM analysis (4 sub-tasks) → LLM jury (3-LLM voting+debate); F1=0.920 at $0.006/skill; 49K ClawHub skills evaluated; cross-ecosystem (ClawHub→Feishu); open-sourced (arXiv:2604.06550)
 - **PROV-AGENT** (NEW Iteration 38) — Provenance model extending W3C PROV + MCP for tracking AI agent interactions in agentic workflows; agent decisions/prompts/responses as first-class provenance; near real-time capture system; cross-facility (edge/cloud/HPC); Oak Ridge + Argonne National Labs (arXiv:2508.02866)
+- **SkillGuard** (NEW Iteration 39) — Permission framework for agent skills; dual-plane governance (context plane + action plane); five components (skill manifests, runtime access control, user-mediated authorization, deny-by-default, behavior monitoring); 315 real-world skills; 99.76% taxonomy coverage; 91% F1 manifest generation; attack success reduced 32%→23%; CSIRO+ANU (arXiv:2606.03024)
+- **SkillFortify** (NEW Iteration 39) — First formal analysis framework for agent skill supply chains; six contributions: DY-Skill attacker model (Dolev-Yao for 5-phase lifecycle), sound static analysis (abstract interpretation), capability-based sandboxing with confinement proof, Agent Dependency Graph with SAT resolution + lockfile semantics, trust score algebra, SkillFortifyBench (540 skills); 96.95% F1, 100% precision, 0% FP; 22 frameworks; 6,487 malicious tools catalogued (arXiv:2603.00195)
+- **NVIDIA-Verified Agent Skills** (NEW Iteration 39) — Industry productionization of skill governance: verified = cataloged, scanned (SkillSpector), signed (cryptographic skill.oms.sig), documented (skill cards); built on agentskills.io spec; cross-platform SKILL.md (Claude Code, Codex, Cursor); daily catalog sync; evaluation layer planned (NVIDIA, May 2026)
 
 ### Security Governance Frameworks
 - **OWASP Agentic Skills Top 10 (AST10)** — First dedicated security risk framework: 10-class vulnerability taxonomy, Lethal Trifecta, Universal Skill Format

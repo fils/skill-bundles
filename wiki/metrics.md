@@ -1,19 +1,19 @@
 # Skill Bundles — Metrics & Progress
 
-|**Last Updated: 2026-07-13 (Iteration 38)**|
+|**Last Updated: 2026-07-14 (Iteration 39)**|
 
 ## KPIs
 
-| Metric | Value | Previous | Change |
+|| Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 75 | 69 | +6 |
-| Raw Sources (daily folders) | 50 days | 49 | +1 (2026-07-13) |
-| Wiki Example Files | 75 | 69 | +6 |
+| Documented Examples | 82 | 75 | +7 |
+| Raw Sources (daily folders) | 51 days | 50 | +1 (2026-07-14) |
+| Wiki Example Files | 82 | 75 | +7 |
 | Paper Notes | 6 | 6 | Unchanged |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | +1 (2026-07-13) | — | +1 |
-| Q&A Passes | +1 (2026-07-13-qa) | — | +1 |
-| Context Element Types Covered | 40+ | 34+ | +6 (Pareto frontier governance, Textual learning rate, TIP 4-tuple, W3C PROV+MCP provenance, Skill OS abstraction, Generator-executor decoupling) |
+| Daily Digests | +1 (2026-07-14) | — | +1 |
+| Q&A Passes | +1 (2026-07-14-qa) | — | +1 |
+| Context Element Types Covered | 47+ | 40+ | +7 (Dual-plane governance, Skill manifests, DY-Skill attacker model, Agent Dependency Graph lockfile, Frequency decomposition credit, Skill cards, Cryptographic signing) |
 
 ## Context Element Coverage (summary)
 
@@ -22,7 +22,7 @@
 | SHACL Validation | Strong (monitoring sh:agentInstruction) |
 | Constraint Rules | Strong (+Vercel handbooks) |
 | Ontology / Taxonomy / Scientific DBs | Strong (+K-Dense) |
-| Security / Governance | Strong (+ClawHavoc, +SoK 7-pattern) |
+| Security / Governance | Strong (+ClawHavoc, +SoK 7-pattern, +SkillGuard dual-plane, +SkillFortify formal) |
 | Plugin / Distribution | Strong (+Awesome-Agent-Skill-Papers catalog) |
 | Human Approval Gates | Stable (OpenMontage) |
 | SSSOM Mapping | Mature (no new hit today) |
@@ -47,6 +47,31 @@
 | Skill OS Abstraction | New (100K skill analysis → 5 OS demands) |
 | Generator-Executor Decoupling | New (SkillGenBench skill generation evaluation) |
 | Negative Transfer Detection | New (SkillGenBench auto-skill risk) |
+| Dual-Plane Governance (Context + Action) | New (SkillGuard dual-plane permission model) |
+| Skill Manifests (Capability Declaration) | New (SkillGuard pre-execution permission surface) |
+| Deny-by-Default Enforcement | New (SkillGuard runtime access control) |
+| DY-Skill Attacker Model | New (SkillFortify Dolev-Yao for 5-phase skill lifecycle) |
+| Agent Dependency Graph + Lockfile | New (SkillFortify SAT resolution, SHA-256 integrity) |
+| Trust Score Algebra | New (SkillFortify formal monotonicity) |
+| Capability-Based Sandboxing | New (SkillFortify confinement proof) |
+| Frequency Decomposition Credit | New (Skill1 low-freq=selection, high-freq=distillation) |
+| Skill Cards (Trust Metadata) | New (NVIDIA-verified ownership, deps, limitations, status) |
+| Cryptographic Skill Signing | New (NVIDIA-verified detached skill.oms.sig) |
+| Skills as Persistent Evolving Memory | New (Memento-Skills markdown files as memory) |
+| Read-Write Reflective Learning | New (Memento-Skills skill lifecycle cycle) |
+| Code-as-Policy Skill Library | New (ASPIRE robot control programs as reusable skills) |
+| Evolutionary Skill Search | New (ASPIRE diverse task/program generation) |
+
+## 2026-07-14 Run Notes (Iteration 39)
+
+- Pre-flight: Clean tree (`## master...origin/master`). No `raw/2026-07-14/` (created today). Last commit 2026-07-13 (fa8b066). Digests current through 2026-07-13. No leftover uncommitted raw.
+- Anti-stagnation: Followed 2026-07-13 priority search list. Found 4/7 directly (ASPIRE, Memento-Skills, EXIF, SkillGuard) + diversified into SkillFortify, Skill1, NVIDIA-verified. All 7 sources novel (none appeared in prior week's digests). GitHub `gh search` showed many new repos updated today but papers were the main yield.
+- Phase 1: **7 sources** — ASPIRE, Memento-Skills, SkillGuard, SkillFortify, Skill1, NVIDIA-verified, EXIF. All novel.
+- Phase 2: 7 new example articles + daily digest.
+- Phase 3: index + patterns + context element coverage updated; 6 new emerging patterns.
+- Phase 4: Q&A + lint pass.
+- Phase 5: Unconditional git commit + push.
+- Daily sources: 7 | New examples: 7 | Papers: 0 | Updated: 0 | New patterns: 6 | New context elements: 7
 
 ## 2026-07-13 Run Notes (Iteration 38)
 
@@ -70,7 +95,7 @@
 ### 2026-06-30 Run Notes (Iteration 30)
 - 5 sources; SHACL agentInstruction + production bundles; total raw days growing.
 
-## Bundle density leaderboard (Iteration 38 refresh)
+## Bundle density leaderboard (Iteration 39 refresh)
 
 | Rank | Example | Density signal |
 |------|---------|----------------|
