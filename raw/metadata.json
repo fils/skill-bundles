@@ -1,7 +1,38 @@
 {
-  "last_updated": "2026-07-14",
-  "iteration": 39,
+  "last_updated": "2026-07-15",
+  "iteration": 40,
   "daily_runs": {
+    "2026-07-15": {
+      "sources": 8,
+      "examples": [
+        "skillclaw-collective-skill-evolution",
+        "skillspector-nvidia-security-scanner",
+        "maltool-malicious-tool-attacks",
+        "badskill-backdoor-model-in-skill",
+        "skillject-automated-prompt-injection",
+        "agentbound-mcp-access-control",
+        "swe-skills-bench-utility-benchmark",
+        "externalization-llm-agents-unified-review"
+      ],
+      "queries_used": [
+        "SkillClaw collective skill evolution multi-agent agent skills 2026",
+        "SkillSpector NVIDIA security scanning agent skills detection",
+        "MalTool benchmark malicious tools LLM agents arXiv 2026",
+        "Badskill backdoor attacks agent skills model-in-skill poisoning arXiv 2604.09378",
+        "Skillject stealthy skill-based prompt injection coding agents arXiv",
+        "AgentBound declarative access control MCP servers sandbox 2026",
+        "SWE-Skills-Bench agent skills software engineering benchmark arXiv",
+        "Externalization in LLM Agents unified review memory skills protocols arXiv 2604.08224"
+      ],
+      "patterns": [
+        "Complete attack taxonomy spans four threat surfaces",
+        "Defense stack achieves full lifecycle coverage",
+        "MCP as critical infrastructure layer",
+        "Empirical reality check on skill utility (80% zero improvement)",
+        "Theoretical foundation arrives (externalization framework)",
+        "Collective evolution as paradigm shift"
+      ]
+    },
     "2026-07-14": {
       "sources": 7,
       "examples": [
@@ -189,6 +220,6 @@
       ]
     }
   },
-  "cumulative_sources": 84,
-  "note": "2026-07-14: robotics skill discovery (ASPIRE), agent-designing agents (Memento-Skills), permission framework (SkillGuard), formal verification (SkillFortify), unified RL evolution (Skill1), industry governance (NVIDIA-verified), precursor skill discovery (EXIF)"
+  "cumulative_sources": 92,
+  "note": "2026-07-15: collective skill evolution (SkillClaw), security scanner (SkillSpector), malicious tool attacks (MalTool), model-in-skill backdoor (BadSkill), automated prompt injection (SkillJect), MCP access control (AgentBound), skill utility benchmark (SWE-Skills-Bench), externalization theory (Unified Review)"
 }

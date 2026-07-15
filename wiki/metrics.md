@@ -1,19 +1,19 @@
 # Skill Bundles — Metrics & Progress
 
-|**Last Updated: 2026-07-14 (Iteration 39)**|
+|**Last Updated: 2026-07-15 (Iteration 40)**|
 
 ## KPIs
 
 || Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 82 | 75 | +7 |
-| Raw Sources (daily folders) | 51 days | 50 | +1 (2026-07-14) |
-| Wiki Example Files | 82 | 75 | +7 |
-| Paper Notes | 6 | 6 | Unchanged |
+| Documented Examples | 90 | 82 | +8 |
+| Raw Sources (daily folders) | 52 days | 51 | +1 (2026-07-15) |
+| Wiki Example Files | 90 | 82 | +8 |
+| Paper Notes | 7 | 6 | +1 (Externalization) |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | +1 (2026-07-14) | — | +1 |
-| Q&A Passes | +1 (2026-07-14-qa) | — | +1 |
-| Context Element Types Covered | 47+ | 40+ | +7 (Dual-plane governance, Skill manifests, DY-Skill attacker model, Agent Dependency Graph lockfile, Frequency decomposition credit, Skill cards, Cryptographic signing) |
+| Daily Digests | +1 (2026-07-15) | — | +1 |
+| Q&A Passes | +1 (2026-07-15-qa) | — | +1 |
+| Context Element Types Covered | 55+ | 47+ | +8 (Collective skill evolution, Autonomous evolver, YARA rules, CIA triad for agent tools, Model-in-skill threat surface, Two-channel attack model, Declarative MCP access control, Cognitive artifacts framework) |
 
 ## Context Element Coverage (summary)
 
@@ -61,6 +61,25 @@
 | Read-Write Reflective Learning | New (Memento-Skills skill lifecycle cycle) |
 | Code-as-Policy Skill Library | New (ASPIRE robot control programs as reusable skills) |
 | Evolutionary Skill Search | New (ASPIRE diverse task/program generation) |
+| Collective Skill Evolution (Cross-User + Over-Time) | New (SkillClaw multi-user trajectory aggregation + autonomous evolver) |
+| Autonomous Skill Evolver | New (SkillClaw pattern recognition → skill update pipeline) |
+| YARA Rules (Pattern-Based Detection) | New (SkillSpector YARA rule engine for malicious code) |
+| CIA Triad for Agent Tools | New (MalTool confidentiality/integrity/availability taxonomy) |
+| Model-in-Skill Threat Surface | New (BadSkill backdoor-fine-tuned models in skills) |
+| Two-Channel Attack Model | New (SkillJect artifact channel + instruction channel) |
+| Declarative MCP Access Control | New (AgentBound Android-permission-inspired policy) |
+| Cognitive Artifacts Framework | New (Externalization four-form taxonomy) |
+
+## 2026-07-15 Run Notes (Iteration 40)
+
+- Pre-flight: Clean tree (`## master...origin/master`). No `raw/2026-07-15/` (created today). Last commit 2026-07-14 (aa0016c). Digests current through 2026-07-14. No leftover uncommitted raw.
+- Anti-stagnation: Followed 2026-07-14 priority search list (8 targets). Found all 8/8 directly (SkillClaw, SkillSpector, MalTool, BadSkill, SkillJect, AgentBound, SWE-Skills-Bench, Externalization). 100% hit rate on priority list. All 8 sources novel (none appeared in prior week's digests). Theme: security attack/defense + evaluation + theory.
+- Phase 1: **8 sources** — SkillClaw, SkillSpector, MalTool, BadSkill, SkillJect, AgentBound, SWE-Skills-Bench, Externalization. All novel.
+- Phase 2: 8 new example articles + daily digest.
+- Phase 3: index + patterns + context element coverage updated; 6 new emerging patterns.
+- Phase 4: Q&A + lint pass.
+- Phase 5: Unconditional git commit + push.
+- Daily sources: 8 | New examples: 8 | Papers: 1 (Externalization) | Updated: 0 | New patterns: 6 | New context elements: 8
 
 ## 2026-07-14 Run Notes (Iteration 39)
 

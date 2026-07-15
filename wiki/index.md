@@ -1,7 +1,7 @@
 # Skill Bundles Knowledge Base
 
-|**Last Updated:** 2026-07-14 (Iteration 39)|
-|**Status:** Active research — 7 new examples (ASPIRE robotics skill discovery, Memento-Skills agent-designing agent, SkillGuard permission framework, SkillFortify formal verification, Skill1 unified RL evolution, NVIDIA-verified skills governance, EXIF automated skill discovery)|
+|**Last Updated:** 2026-07-15 (Iteration 40)|
+|**Status:** Active research — 8 new examples (SkillClaw collective evolution, SkillSpector security scanner, MalTool malicious tools, BadSkill model-in-skill backdoor, SkillJect automated prompt injection, AgentBound MCP access control, SWE-Skills-Bench utility benchmark, Externalization unified review)|
 
 ## Overview
 
@@ -11,6 +11,7 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 
 - [Main Publication](skill-bundles.md)
 - [Daily Digests](daily-digests/)
+  - [2026-07-15 (Iteration 40)](daily-digests/2026-07-15.md)
   - [2026-07-14 (Iteration 39)](daily-digests/2026-07-14.md)
   - [2026-07-13 (Iteration 38)](daily-digests/2026-07-13.md)
   - [2026-07-12 (Iteration 37)](daily-digests/2026-07-12.md)
@@ -27,30 +28,32 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Metrics](metrics.md)
 - [Q&A](qa/)
 
-## Current Status (Iteration 39 — 2026-07-14)
+## Current Status (Iteration 40 — 2026-07-15)
 
-Seven major new skill-bundle examples covering robotics skill discovery, agent-designing agents, permission governance, formal verification, unified RL skill evolution, industry verification governance, and precursor skill discovery:
+Eight major new skill-bundle examples covering collective skill evolution, security scanning, malicious tool attacks, model-in-skill backdoors, automated prompt injection, MCP access control, skill utility benchmarking, and theoretical foundations:
 
-- **[[aspire-robotics-skill-discovery]]** — NVIDIA GEAR Lab; continual learning for robotics via code-as-policy; three components (execution engine, skill library, evolutionary search); +77% LIBERO-Pro, 31% zero-shot vs 4%; sim-to-real transfer
-- **[[memento-skills-agent-designing-agent]]** — agent-designing agent; skills as structured markdown files = persistent evolving memory; Read-Write Reflective Learning; continual learning without LLM parameter updates; +26.2% GAIA, +116.2% HLE; 27 citations
-- **[[skillguard-permission-framework]]** — dual-plane governance (context + action); five components: manifests, runtime access control, user-mediated auth, deny-by-default, behavior monitoring; 315 skills; 99.76% taxonomy coverage; attack reduction 32%→23%
-- **[[skillfortify-formal-verification-supply-chain]]** — first formal analysis framework for skill supply chains; 6 contributions: DY-Skill attacker model, sound static analysis, capability sandboxing, Agent Dependency Graph + lockfile, trust score algebra, 540-skill benchmark; 96.95% F1, 100% precision, 0% FP
-- **[[skill1-unified-skill-evolution-rl]]** — single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; 18 citations
-- **[[nvidia-verified-agent-skills-governance]]** — industry productionization of skill governance; verified = cataloged, scanned (SkillSpector), signed (cryptographic), documented (skill cards); built on agentskills.io; cross-platform SKILL.md
-- **[[exif-automated-skill-discovery]]** — Alice-Bob dual-agent for skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; self-play enables self-evolution; precursor to 2026 wave; 11 citations
+- **[[skillclaw-collective-skill-evolution]]** — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★)
+- **[[skillspector-nvidia-security-scanner]]** — NVIDIA's security scanner for AI agent skills; YARA rules + LLM semantic analysis; OWASP/MITRE alignment; batch scanning; CI/CD integration; 1312 unit tests; v2.3.13; 13.2k★; scanning step of NVIDIA-Verified ecosystem
+- **[[maltool-malicious-tool-attacks]]** — First systematic study of malicious tool code implementations; CIA triad taxonomy; coding-LLM-based synthesis (standalone + embedded); automated verifier; 1,300 standalone + 5,727 embedded malicious tools; existing detection insufficient; UC Berkeley (Dawn Song) + Duke (Neil Gong); 10 citations
+- **[[badskill-backdoor-model-in-skill]]** — Backdoor attacks via model-in-skill poisoning; semantic compositional triggers; composite training objective; 99.5% ASR; 3% poison rate → 91.7% ASR; 8 architectures (494M–7.1B), 5 model families; 12 citations
+- **[[skillject-automated-prompt-injection]]** — First automated framework for poisoned skills; two-channel attack (artifact: helper script + instruction: front-loaded SKILL.md); closed-loop multi-agent (Attack→Victim→Evaluate→refine); supports Claude Code + OpenClaw; authors include Philip Torr (Oxford); 7 citations
+- **[[agentbound-mcp-access-control]]** — First access control framework for MCP servers; Android permission model inspired; declarative policy + enforcement engine; 296 most popular MCP servers; 80.9% automated policy generation; negligible overhead; ACM FSE 2026
+- **[[swe-skills-bench-utility-benchmark]]** — First requirement-driven benchmark isolating marginal utility of agent skills in SWE; 49 skills × GitHub repos × requirement docs; ~565 task instances; 39/49 skills yield zero improvement; avg gain +1.2%; token overhead up to +451%; only 7 help (up to +30%), 3 degrade (up to -10%); 34 citations
+- **[[externalization-llm-agents-unified-review]]** — Unified review of memory, skills, protocols, harness engineering; cognitive artifacts lens; four-form taxonomy; weights→context→harness progression; parametric/externalized trade-off; self-evolving harnesses + shared infrastructure; 54 pages; 21 authors including Jun Wang (UCL), Weinan Zhang (SJTU); 35 citations
 
 **Convergence signals:**
-1. **Skill discovery now multi-domain** — ASPIRE (robotics), Memento-Skills (general agents), Skill1 (RL), EXIF (self-play). Discovery taxonomy spans domains and mechanisms.
-2. **Dual-plane security governance** — SkillGuard recognizes skills operate across context + action planes. Combined with SkillFortify (formal supply chain) and NVIDIA-verified (publication), security covers: publication → supply chain → runtime → behavior.
-3. **Formal verification arrives** — SkillFortify brings mathematical proofs (Dolev-Yao, abstract interpretation, capability confinement) to skills. First non-heuristic defense. Lockfile semantics adapt package management.
-4. **Agent-designing agents** — Memento-Skills: agents autonomously construct and improve task-specific agents. Skills as markdown = sole adaptation mechanism (no LLM updates).
-5. **Industry governance productionized** — NVIDIA-verified skills: catalog → scan → sign → document → distribute. Skill cards centralize trust metadata.
-6. **Frequency decomposition for skill credit** — Skill1: single task-outcome signal decomposes into selection (low-freq) and distillation (high-freq). Novel unified governance.
+1. **Complete attack taxonomy now spans four threat surfaces** — MalTool (code), BadSkill (model weights), SkillJect (SKILL.md instructions), ClawHavoc (marketplace distribution). Each requires a different defense layer.
+2. **Defense stack achieves full lifecycle coverage** — SkillSpector (pre-installation) + SkillFortify (supply chain) + SkillGuard (runtime) + AgentBound (MCP) now cover: pre-installation → supply chain → runtime → infrastructure. Gap: model-in-skill verification.
+3. **MCP as critical infrastructure layer** — AgentBound recognizes MCP as the connective tissue requiring its own security model (296 servers, unrestricted access). Extends skill security beyond skills to the protocol layer.
+4. **Empirical reality check on skill utility** — SWE-Skills-Bench: 80% of skills yield zero improvement. Combined with SkillReducer's less-is-more effect, the field needs rigorous evaluation, not just adoption enthusiasm.
+5. **Theoretical foundation arrives** — Externalization framework: skills = externalized procedural expertise, one of four coupled forms. Weights→context→harness progression explains the field's evolution. Self-evolving + shared infrastructure are the frontier.
+6. **Collective evolution as paradigm shift** — SkillClaw: multi-user skill evolution transforms skills from static artifacts to living, self-improving infrastructure. Connects to Externalization paper's emerging directions.
 
 ## Iteration History (recent)
 
 | Iteration | Date | Focus | New Examples |
 |-----------|------|-------|--------------|
+| **40** | **2026-07-15** | **Collective evolution + security scanner + malicious tools + model backdoor + prompt injection + MCP access control + utility benchmark + externalization theory** | **SkillClaw, SkillSpector, MalTool, BadSkill, SkillJect, AgentBound, SWE-Skills-Bench, Externalization** |
 | **39** | **2026-07-14** | **Robotics skill discovery + agent-designing agents + permission governance + formal verification + unified RL evolution + industry governance + precursor discovery** | **ASPIRE, Memento-Skills, SkillGuard, SkillFortify, Skill1, NVIDIA-verified, EXIF** |
 | **38** | **2026-07-13** | **Auto-discovery + trainable skills + provenance + cross-domain transfer + OS abstraction + generation benchmark** | **EvoSkill, SkillOpt, PROV-AGENT, SkillMigrator, Skill OS, SkillGenBench** |
 | **37** | **2026-07-12** | **Skill optimization + composition + security + runtime + ontology** | **SkillMOO, EffiSkill, SkillSieve, SkillCraft, SkillReducer, ORCA, AI-KM, Marketplace Landscape** |
@@ -62,11 +65,11 @@ Seven major new skill-bundle examples covering robotics skill discovery, agent-d
 
 ## Tomorrow Priority Searches
 
-1. **SkillClaw** — collective skill evolution framework (mentioned in Memento-Skills); multi-agent skill sharing
-2. **SkillSpector** — NVIDIA's security scanning tool for agent skills; detection methods
-3. **MalTool benchmark** — 6,487 malicious tools targeting LLM agents (arXiv, Wang et al.)
-4. **Badskill** — backdoor attacks on agent skills via model-in-skill poisoning (arXiv:2604.09378)
-5. **Skillject** — automating stealthy skill-based prompt injection for coding agents
-6. **AgentBound** — declarative access-control for MCP servers (sandbox-based)
-7. **SWE-Skills-Bench** — do agent skills help in real-world software engineering?
-8. **Externalization in LLM Agents** — unified review of memory, skills, protocols, harness engineering (arXiv:2604.08224)
+1. **WildClawBench** — SkillClaw's benchmark for real-world agent scenarios; methodology and task design
+2. **Skill provenance for model artifacts** — How to verify model weights embedded in skills (motivated by BadSkill)
+3. **MCP server security landscape** — Beyond AgentBound: what other MCP security frameworks exist?
+4. **Skill utility in non-SWE domains** — SWE-Skills-Bench showed 80% zero improvement in SWE; is this domain-specific?
+5. **Skill versioning and compatibility** — SWE-Skills-Bench's version-mismatch finding; how should skills declare version compatibility?
+6. **Cognitive artifacts in agent design** — Further theoretical work on the externalization framework
+7. **Automated policy generation** — AgentBound's 80.9% accuracy; can this be improved?
+8. **MalTool defense gap** — MalTool shows existing detection insufficient; what new approaches are needed?
