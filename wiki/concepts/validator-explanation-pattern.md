@@ -1,3 +1,11 @@
+---
+type: Concept
+title: Validator + Explanation Bundle Pattern
+description: 'The Validator + Explanation pattern addresses a fundamental problem: **validation reports alone are not actionable**.'
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # Validator + Explanation Bundle Pattern
 
 **Date:** 2026-05-24 (Discovered Iteration 8)
@@ -15,8 +23,8 @@ The Validator + Explanation pattern addresses a fundamental problem: **validatio
 
 ## Examples
 
-- **[[xpshacl-explainable-shacl]]** — Full implementation: pyshacl + justification trees + RAG + Violation KG. 99.48% cache hit rate across 868 vocabularies.
-- **[[shacl-data-quality-69-metrics]]** — 69 data quality metrics as SHACL shapes; prototype computes numerical quality scores from violations.
+- **[xpshacl explainable shacl](../examples/xpshacl-explainable-shacl.md)** — Full implementation: pyshacl + justification trees + RAG + Violation KG. 99.48% cache hit rate across 868 vocabularies.
+- **[shacl data quality 69 metrics](../examples/shacl-data-quality-69-metrics.md)** — 69 data quality metrics as SHACL shapes; prototype computes numerical quality scores from violations.
 
 ## Why This Pattern Works
 
@@ -32,5 +40,5 @@ Any skill that produces or consumes structured data can benefit from this patter
 
 ## Related Patterns
 
-- **[[skill-bundle-patterns]]** — SHACL + Cypher Rules + Shadow Testing (GraphGuard OS)
-- [[sssom-mapping-protocol]] — SSSOM standard can be paired with explainable validation for multi-ontology scenarios
+- **[skill bundle patterns](skill-bundle-patterns.md)** — SHACL + Cypher Rules + Shadow Testing (GraphGuard OS)
+- [sssom mapping protocol](../examples/sssom-mapping-protocol.md) — SSSOM standard can be paired with explainable validation for multi-ontology scenarios

@@ -1,3 +1,10 @@
+---
+type: Skill Bundle Example
+title: Anthropic Official Skills Repository
+description: The official anthropics/skills repository (~140k stars) is the **canonical reference implementation** for agent skills.
+resource: https://github.com/anthropics/skills
+---
+
 # Anthropic Official Skills Repository
 
 ## Overview

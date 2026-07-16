@@ -1,3 +1,12 @@
+---
+type: Paper
+title: 'A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents'
+description: The most comprehensive **six-layer taxonomy** of agent skills, covering ontology, representation/packaging, lifecycle, runtime integration, governance, and applications.
+resource: https://www.preprints.org/manuscript/202605.1276
+timestamp: '2026-07-11T00:00:00Z'
+date: '2026-07-11'
+---
+
 # A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents
 
 **Source:** https://www.preprints.org/manuscript/202605.1276 (19 May 2026)
@@ -40,18 +49,18 @@ The six-layer taxonomy maps directly to our wiki structure:
 
 | Survey Layer | Wiki Mapping |
 |-------------|-------------|
-| Ontology | [[skill-bundle-patterns]] |
-| Representation/Packaging | [[agent-skills-spec]], SKILL.md format |
-| Lifecycle | [[skill-bundle-patterns]] |
-| Runtime Integration | [[agensi-marketplace-landscape]] |
-| Governance | [[skill-security-governance]] |
+| Ontology | [skill bundle patterns](../concepts/skill-bundle-patterns.md) |
+| Representation/Packaging | [agent skills spec](../examples/agent-skills-spec.md), SKILL.md format |
+| Lifecycle | [skill bundle patterns](../concepts/skill-bundle-patterns.md) |
+| Runtime Integration | [agensi marketplace landscape](../tools/agensi-marketplace-landscape.md) |
+| Governance | [skill security governance](../concepts/skill-security-governance.md) |
 | Applications | Domain-specific examples (see wiki/examples/) |
 
 The marketplace data quantifies the ecosystem at **800K+ total skills** across major marketplaces — a scale that makes governance and validation critical.
 
 ## Composition Notes
 
-This survey is complementary to [[arxiv-agent-skills-survey]] (4-axis: architecture, acquisition, security, deployment) and [[sok-agentic-skills-beyond-tool-use]] (7 patterns + lifecycle). Together, these three surveys provide overlapping but non-redundant coverage:
+This survey is complementary to [arxiv agent skills survey](../examples/arxiv-agent-skills-survey.md) (4-axis: architecture, acquisition, security, deployment) and [sok agentic skills beyond tool use](sok-agentic-skills-beyond-tool-use.md) (7 patterns + lifecycle). Together, these three surveys provide overlapping but non-redundant coverage:
 - **This survey:** 6-layer taxonomy (most comprehensive structure)
 - **arXiv survey:** 4-axis (architecture + security focus)
 - **SoK:** 7 patterns + formal definition (design patterns focus)
@@ -62,12 +71,12 @@ High — preprint on Preprints.org (CC BY 4.0), GitHub repo with paper list and 
 
 ## Bundle Links
 
-- [[arxiv-agent-skills-survey]] — complementary 4-axis survey
-- [[sok-agentic-skills-beyond-tool-use]] — SoK (7 patterns + lifecycle)
-- [[skill-bundle-patterns]] — pattern taxonomy
-- [[skillsbench-agent-skills-benchmark]] — benchmark
-- [[coevoskills-self-evolving-skills]] — self-evolving
-- [[awesome-agent-skill-papers-catalog]] — paper catalog
+- [arxiv agent skills survey](../examples/arxiv-agent-skills-survey.md) — complementary 4-axis survey
+- [sok agentic skills beyond tool use](sok-agentic-skills-beyond-tool-use.md) — SoK (7 patterns + lifecycle)
+- [skill bundle patterns](../concepts/skill-bundle-patterns.md) — pattern taxonomy
+- [skillsbench agent skills benchmark](../examples/skillsbench-agent-skills-benchmark.md) — benchmark
+- [coevoskills self evolving skills](../examples/coevoskills-self-evolving-skills.md) — self-evolving
+- [awesome agent skill papers catalog](../examples/awesome-agent-skill-papers-catalog.md) — paper catalog
 
 ## Sources
 

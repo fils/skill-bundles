@@ -1,3 +1,11 @@
+---
+type: Q&A
+title: Complex Q&A — Skill Bundles Wiki
+description: '- SHACL validation (built-in `shacl` tool for RDF validation) - Ontology alignment via stable matching (six-signal similarity scoring) - While not using SSSOM TSV format directly, the alignment mechanism operates at t...'
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # Complex Q&A — Skill Bundles Wiki
 
 **Date:** 2026-05-24 (Iteration 8)
@@ -6,12 +14,12 @@
 
 ## Q1: Which bundles combine skills with SHACL validation AND SSSOM-style mappings?
 
-**Answer:** The closest example is [[open-ontologies-paper]] (Open Ontologies by Rovai), which combines:
+**Answer:** The closest example is [open ontologies paper](../examples/open-ontologies-paper.md) (Open Ontologies by Rovai), which combines:
 - SHACL validation (built-in `shacl` tool for RDF validation)
 - Ontology alignment via stable matching (six-signal similarity scoring)
 - While not using SSSOM TSV format directly, the alignment mechanism operates at the same semantic level — mapping terms between ontologies with confidence scores and provenance
 
-The newly added [[xpshacl-explainable-shacl]] focuses on validation explainability but doesn't incorporate mapping. True SHACL+SSSOM bundles remain a gap — the pieces exist (SHACL validation + SSSOM standard) but no single example combines them.
+The newly added [xpshacl explainable shacl](../examples/xpshacl-explainable-shacl.md) focuses on validation explainability but doesn't incorporate mapping. True SHACL+SSSOM bundles remain a gap — the pieces exist (SHACL validation + SSSOM standard) but no single example combines them.
 
 ## Q2: What ontology patterns appear most frequently alongside agent skills?
 
@@ -26,9 +34,9 @@ The dominant pattern is: skills use an ontology to provide structured domain kno
 ## Q3: How do successful bundles handle rule integration?
 
 **Answer:** Three distinct patterns emerged:
-1. **Authorization kernel** ([[veto-agent-authorization]], [[tool-use-firewall]]) — binary allow/block decisions on tool calls
-2. **Graph-based policy enforcement** ([[graphguard-os-guardrails]]) — SHACL shapes (structural) + Cypher policies (behavioral) validated against a knowledge graph
-3. **Framework taxonomy** ([[claude-skills-ecosystem-1116]]) — skills organized under MITRE/NIST frameworks, inheriting rule semantics from the taxonomy
+1. **Authorization kernel** ([veto agent authorization](../examples/veto-agent-authorization.md), [tool use firewall](../examples/tool-use-firewall.md)) — binary allow/block decisions on tool calls
+2. **Graph-based policy enforcement** ([graphguard os guardrails](../examples/graphguard-os-guardrails.md)) — SHACL shapes (structural) + Cypher policies (behavioral) validated against a knowledge graph
+3. **Framework taxonomy** ([claude skills ecosystem 1116](../examples/claude-skills-ecosystem-1116.md)) — skills organized under MITRE/NIST frameworks, inheriting rule semantics from the taxonomy
 
 GraphGuard's approach (SHACL + Cypher + Shadow Policy Manager) is the most sophisticated, enabling safe rule evolution without production risk.
 

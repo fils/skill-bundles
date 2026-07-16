@@ -1,6 +1,15 @@
+---
+type: Skill Bundle Example
+title: RDF Ontologies Skill — SHACL + SPARQL Integration
+description: RDF Ontologies — an agent skill that teaches LLMs to use Resource Description Framework (RDF) and Turtle (TTL) syntax for managing software specifications, ontologies, and knowledge graphs.
+resource: https://eliteai.tools/agent-skills/rdf-ontologies-1
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # RDF Ontologies Skill — SHACL + SPARQL Integration
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Source:** https://eliteai.tools/agent-skills/rdf-ontologies-1
 **Installed via:** npx add-skill https://github.com/majiayu000/claude-skill-registry/tree/main/skills/other/rdf-ontologies
 **Confidence:** 4/5 (Third-party catalog extraction)

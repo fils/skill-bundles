@@ -1,6 +1,15 @@
+---
+type: Skill Bundle Example
+title: OpenAI Codex Agent Skills — Structured Skill System
+description: OpenAI Agent Skills for Codex — the official skill system for OpenAI's Codex CLI agent.
+resource: https://developers.openai.com/codex/skills
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # OpenAI Codex Agent Skills — Structured Skill System
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Source:** https://developers.openai.com/codex/skills
 **Confidence:** 5/5 (Official documentation)
 

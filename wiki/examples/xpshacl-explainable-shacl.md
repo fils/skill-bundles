@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: xpSHACL — Explainable SHACL Validation with RAG and LLMs
+description: xpSHACL is an open-source system that solves the "interpretability gap" in RDF data validation.
+resource: https://arxiv.org/abs/2507.08432
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # xpSHACL — Explainable SHACL Validation with RAG and LLMs
 
-**Source:** https://arxiv.org/abs/2507.08432  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Authors:** Gustavo Correa Publio (University of Leipzig), José Emilio Labra Gayo (University of Oviedo)  
-**Bundle Type:** SHACL Validation + RAG + Violation Knowledge Graph  
+**Source:** https://arxiv.org/abs/2507.08432
+**Date Added:** 2026-05-24 (Iteration 8)
+**Authors:** Gustavo Correa Publio (University of Leipzig), José Emilio Labra Gayo (University of Oviedo)
+**Bundle Type:** SHACL Validation + RAG + Violation Knowledge Graph
 **Confidence:** 9/10
 
 ## Name & Origin

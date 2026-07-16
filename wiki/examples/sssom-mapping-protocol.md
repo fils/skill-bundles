@@ -1,10 +1,19 @@
+---
+type: Skill Bundle Example
+title: SSSOM Protocol — Simple Standard for Sharing Ontological Mappings
+description: SSSOM (Simple Standard for Sharing Ontological Mappings) provides a TSV-based representation for ontology term mappings with a comprehensive metadata model for provenance.
+resource: https://github.com/mapping-commons/sssom/,
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # SSSOM Protocol — Simple Standard for Sharing Ontological Mappings
 
-**Source:** https://github.com/mapping-commons/sssom/, https://mapping-commons.github.io/sssom/dev/  
-**Python Toolkit:** https://github.com/mapping-commons/sssom-py  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Author:** Mapping Commons  
-**Bundle Type:** SSSOM Mapping + Ontology Interoperability  
+**Source:** https://github.com/mapping-commons/sssom/, https://mapping-commons.github.io/sssom/dev/
+**Python Toolkit:** https://github.com/mapping-commons/sssom-py
+**Date Added:** 2026-05-24 (Iteration 8)
+**Author:** Mapping Commons
+**Bundle Type:** SSSOM Mapping + Ontology Interoperability
 **Confidence:** 9/10
 
 ## Name & Origin
@@ -37,7 +46,7 @@ SSSOM provides the **mapping layer** that agents need when they work with data f
 3. Use mappings to translate queries across schema boundaries
 4. Report confidence scores on mapping relationships
 
-This directly addresses the "SSSOM Mapping" category in our bundle taxonomy. Combined with [[open-ontologies-paper]] (which implements stable matching for ontology alignment), SSSOM provides the standard format for expressing those mapping results.
+This directly addresses the "SSSOM Mapping" category in our bundle taxonomy. Combined with [open ontologies paper](open-ontologies-paper.md) (which implements stable matching for ontology alignment), SSSOM provides the standard format for expressing those mapping results.
 
 ## Composition Notes
 
@@ -55,6 +64,6 @@ High — open standard with Python implementation. TSV format is human-readable.
 
 ## Relationship to Other Examples
 
-- **[[open-ontologies-paper]]** implements ontology alignment (stable matching); SSSOM is the format for expressing those alignment results
-- **[[open-ontologies-github]]** provides 32 standard ontologies in its marketplace; SSSOM mappings could be added to define relationships between these ontologies
-- **[[xpshacl-explainable-shacl]]** validates RDF graphs; SSSOM mappings enable multi-ontology validation scenarios
+- **[open ontologies paper](open-ontologies-paper.md)** implements ontology alignment (stable matching); SSSOM is the format for expressing those alignment results
+- **[open ontologies github](open-ontologies-github.md)** provides 32 standard ontologies in its marketplace; SSSOM mappings could be added to define relationships between these ontologies
+- **[xpshacl explainable shacl](xpshacl-explainable-shacl.md)** validates RDF graphs; SSSOM mappings enable multi-ontology validation scenarios

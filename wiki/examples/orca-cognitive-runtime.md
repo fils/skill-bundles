@@ -1,12 +1,23 @@
 ---
-title: "ORCA: Open Runtime for Capable Agents"
+type: Skill Bundle Example
+title: 'ORCA: Open Runtime for Capable Agents'
+description: '- **GitHub:** https://github.com/gfernandf/agent-skills (43 stars, 407 commits) - **Author:** Guillermo Fernandez (gfernandf) - **License:** Apache-2.0 - **Language:** Python (99.3%)'
+resource: https://github.com/gfernandf/agent-skills
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://github.com/gfernandf/agent-skills
-authors: [Guillermo Fernandez]
+authors:
+- Guillermo Fernandez
 github_stars: 43
 license: Apache-2.0
 signal: 8
-context_elements: [Capability registry, DAG scheduler, Policy gates, Provenance tracking, Canonical taxonomy, MCP integration]
+context_elements:
+- Capability registry
+- DAG scheduler
+- Policy gates
+- Provenance tracking
+- Canonical taxonomy
+- MCP integration
 ---
 
 # ORCA: Open Runtime for Capable Agents
@@ -60,7 +71,7 @@ output:
 
 ## Composition Notes
 
-ORCA is a reference implementation for [[three-layer-validation-stack]]:
+ORCA is a reference implementation for [three layer validation stack](../concepts/three-layer-validation-stack.md):
 1. **Capabilities** (base layer) — 122 standardized, deterministic baselines
 2. **Skills** (composition layer) — DAG-based workflows with dependency resolution
 3. **Policy gates** (governance layer) — runtime enforcement at each step
@@ -87,8 +98,7 @@ ORCA is a reference implementation for [[three-layer-validation-stack]]:
 ## Connections
 
 - Complete runtime implementation of capability→skill→governance stack
-- Canonical taxonomy maps to [[agent-skills-spec]] naming conventions
-- Provenance tracking connects to [[supply-chain-agentic-factory-in-toto]]'s SLSA/in-toto approach
-- DAG composition is a formalization of [[skillcraft-benchmark]]'s auto-composition pattern
+- Canonical taxonomy maps to [agent skills spec](agent-skills-spec.md) naming conventions
+- Provenance tracking connects to [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md)'s SLSA/in-toto approach
+- DAG composition is a formalization of [skillcraft benchmark](skillcraft-benchmark.md)'s auto-composition pattern
 
-[[backlinks]]

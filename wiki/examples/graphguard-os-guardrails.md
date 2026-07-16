@@ -1,10 +1,19 @@
+---
+type: Skill Bundle Example
+title: GraphGuard OS — Guardrails for Coordinating AI Agents via Knowledge Graph
+description: GraphGuard OS is an enterprise-grade safety layer for Agentic GraphOS, a 16-layer architecture used to govern production-ready AI agents through Knowledge Graphs.
+resource: https://github.com/agentgraph-ai/graphguard
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # GraphGuard OS — Guardrails for Coordinating AI Agents via Knowledge Graph
 
-**Source:** https://github.com/agentgraph-ai/graphguard  
-**Mirror:** https://medium.com/@aiwithakashgoyal/graphguard-os-part-2-your-ai-agents-are-coordinating-but-where-are-the-guardrails-a63dc441fa35  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Author:** Akash Goyal  
-**Bundle Type:** SHACL Validation + Cypher Rules + Knowledge Graph Guardrails  
+**Source:** https://github.com/agentgraph-ai/graphguard
+**Mirror:** https://medium.com/@aiwithakashgoyal/graphguard-os-part-2-your-ai-agents-are-coordinating-but-where-are-the-guardrails-a63dc441fa35
+**Date Added:** 2026-05-24 (Iteration 8)
+**Author:** Akash Goyal
+**Bundle Type:** SHACL Validation + Cypher Rules + Knowledge Graph Guardrails
 **Confidence:** 8/10
 
 ## Name & Origin

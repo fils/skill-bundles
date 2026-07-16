@@ -1,11 +1,27 @@
 ---
-title: "SkillClaw: Collective Skill Evolution with Agentic Evolver"
+type: Skill Bundle Example
+title: 'SkillClaw: Collective Skill Evolution with Agentic Evolver'
+description: SkillClaw is a framework for **collective skill evolution** in multi-user agent ecosystems.
+resource: https://arxiv.org/abs/2604.08377
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2604.08377", "https://github.com/AMAP-ML/SkillClaw"]
-skills_included: ["Trajectory aggregation", "Autonomous skill evolver", "Shared skill repository", "Skill synchronization", "Skill reload (poll/webhook)"]
-context_elements: ["Collective skill evolution (cross-user + over-time)", "Autonomous evolver (pattern recognition → skill update)", "Shared synchronized skill repository", "Trajectory aggregation pipeline", "Multi-framework compatibility (OpenClaw, Hermes)"]
-composition: "Meta-skill framework: trajectory collector → autonomous evolver (identifies recurring patterns → refines/extends skills) → shared repository → cross-user synchronization. Users contribute experience passively; improvements propagate system-wide."
-reproducibility: "Open-sourced on GitHub (AMAP-ML/SkillClaw, 2.1k stars, 202 forks, MIT license). Evaluated on WildClawBench with Qwen3-Max. Supports OpenClaw and Hermes."
+sources:
+- arXiv:2604.08377
+- https://github.com/AMAP-ML/SkillClaw
+skills_included:
+- Trajectory aggregation
+- Autonomous skill evolver
+- Shared skill repository
+- Skill synchronization
+- Skill reload (poll/webhook)
+context_elements:
+- Collective skill evolution (cross-user + over-time)
+- Autonomous evolver (pattern recognition → skill update)
+- Shared synchronized skill repository
+- Trajectory aggregation pipeline
+- Multi-framework compatibility (OpenClaw, Hermes)
+composition: 'Meta-skill framework: trajectory collector → autonomous evolver (identifies recurring patterns → refines/extends skills) → shared repository → cross-user synchronization. Users contribute experience passively; improvements propagate system-wide.'
+reproducibility: Open-sourced on GitHub (AMAP-ML/SkillClaw, 2.1k stars, 202 forks, MIT license). Evaluated on WildClawBench with Qwen3-Max. Supports OpenClaw and Hermes.
 rating: 9
 ---
 
@@ -50,14 +66,13 @@ SkillClaw is a framework for **collective skill evolution** in multi-user agent 
 
 SkillClaw represents a **meta-skill bundle**: the bundle is the evolution system itself (trajectory collector + evolver + shared repo + sync). This extends the skill lifecycle from static deployment to continuous multi-user evolution.
 
-- Extends [[memento-skills-agent-designing-agent]] (which mentioned SkillClaw for collective evolution)
-- Complements [[coevoskills-self-evolving-skills]] (co-evolutionary verification approach)
-- Related to [[skill1-unified-skill-evolution-rl]] (RL-based unified evolution)
-- Related to [[exif-automated-skill-discovery]] (self-play skill discovery)
-- Connects to [[externalization-llm-agents-unified-review]] (shared agent infrastructure as emerging direction)
+- Extends [memento skills agent designing agent](memento-skills-agent-designing-agent.md) (which mentioned SkillClaw for collective evolution)
+- Complements [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) (co-evolutionary verification approach)
+- Related to [skill1 unified skill evolution rl](skill1-unified-skill-evolution-rl.md) (RL-based unified evolution)
+- Related to [exif automated skill discovery](exif-automated-skill-discovery.md) (self-play skill discovery)
+- Connects to [externalization llm agents unified review](externalization-llm-agents-unified-review.md) (shared agent infrastructure as emerging direction)
 
 ## Key Insight
 
 Skills don't need to be static after deployment. By aggregating multi-user interaction trajectories and processing them through an autonomous evolver, skills can collectively evolve — improvements in one context benefit all users. This transforms skill bundles from static artifacts into living, self-improving infrastructure.
 
-[[backlinks]]

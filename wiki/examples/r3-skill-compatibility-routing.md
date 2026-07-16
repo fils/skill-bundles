@@ -1,18 +1,32 @@
 ---
-title: "R3-Skill: Query-Conditional Skill Routing with Compatibility"
+type: Skill Bundle Example
+title: 'R3-Skill: Query-Conditional Skill Routing with Compatibility'
+description: 'R3-Skill formalizes that **skill retrieval is not document retrieval**: top-K success depends on whether retrieved skills **work together under a query** (skill compatibility), not independent relevance alone.'
+resource: https://arxiv.org/abs/2606.03565
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2606.03565", "https://github.com/Tencent/R3-Skill"]
-skills_included: ["10,246 skill corpus routing", "R3-Embedding recall", "R3-Reranker graded ranking"]
-context_elements: ["Skill compatibility (query-conditioned)", "Reject-as-Resource supervision", "8-class rejection-reason taxonomy", "Bilingual skill-routing benchmark", "Two-stage embedding+rerank pipeline"]
-composition: "R3-Skill benchmark trains R3-Embedding + R3-Reranker using LLM rejection decisions as compatibility labels for set-aware top-K routing."
-reproducibility: "GitHub Tencent/R3-Skill; HF models R3-embedding-0.6b + R3-rerank-0.6b; Hit@1=0.7521, NDCG@10=0.8173, Set-Compat=0.3188."
+sources:
+- arXiv:2606.03565
+- https://github.com/Tencent/R3-Skill
+skills_included:
+- 10,246 skill corpus routing
+- R3-Embedding recall
+- R3-Reranker graded ranking
+context_elements:
+- Skill compatibility (query-conditioned)
+- Reject-as-Resource supervision
+- 8-class rejection-reason taxonomy
+- Bilingual skill-routing benchmark
+- Two-stage embedding+rerank pipeline
+composition: R3-Skill benchmark trains R3-Embedding + R3-Reranker using LLM rejection decisions as compatibility labels for set-aware top-K routing.
+reproducibility: GitHub Tencent/R3-Skill; HF models R3-embedding-0.6b + R3-rerank-0.6b; Hit@1=0.7521, NDCG@10=0.8173, Set-Compat=0.3188.
 rating: 9
 ---
 
 # R3-Skill: Query-Conditional Skill Routing with Compatibility
 
-**Origin:** Tencent IMA Product Center + Youtu Lab (Wang, Wen et al.), arXiv:2606.03565 (v4 Jul 2026)  
-**Code/Data:** https://github.com/Tencent/R3-Skill  
+**Origin:** Tencent IMA Product Center + Youtu Lab (Wang, Wen et al.), arXiv:2606.03565 (v4 Jul 2026)
+**Code/Data:** https://github.com/Tencent/R3-Skill
 **Models:** https://huggingface.co/tencent/R3-embedding-0.6b , R3-rerank-0.6b
 
 ## Overview
@@ -53,14 +67,13 @@ Token reality: mean skill body ~2,073 tokens; full library ≈ **21.2M** tokens 
 
 ## Relation to Skill Bundle Patterns
 
-- Explains negative deltas in [[skillsbench-agent-skills-benchmark]] and zero-gain skills in [[swe-skills-bench-utility-benchmark]]: wrong co-retrieval hurts
-- Complements [[graph-of-skills-dependency-retrieval]] (GoS dependency-aware retrieval)
-- Complements [[skillcraft-benchmark]] (composition/reuse)
-- Complements [[skillreducer-token-efficiency]] (less-is-more compression)
-- Production counterpart to [[skill-os-skills-as-apps]] management demands (caching, env construction)
+- Explains negative deltas in [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) and zero-gain skills in [swe skills bench utility benchmark](swe-skills-bench-utility-benchmark.md): wrong co-retrieval hurts
+- Complements [graph of skills dependency retrieval](graph-of-skills-dependency-retrieval.md) (GoS dependency-aware retrieval)
+- Complements [skillcraft benchmark](skillcraft-benchmark.md) (composition/reuse)
+- Complements [skillreducer token efficiency](skillreducer-token-efficiency.md) (less-is-more compression)
+- Production counterpart to [skill os skills as apps](skill-os-skills-as-apps.md) management demands (caching, env construction)
 
 ## Key Insight
 
 A skill bundle is not a bag of independently relevant packages. **Compatibility under the query** is a formal context element: retrieval systems must train on co-suitability (including rejections), not just relevance.
 
-[[backlinks]]

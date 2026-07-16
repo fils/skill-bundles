@@ -1,11 +1,26 @@
 ---
-title: "EffiSkill: Agent Skill Based Code Efficiency Optimization"
+type: Skill Bundle Example
+title: 'EffiSkill: Agent Skill Based Code Efficiency Optimization'
+description: '- **arXiv:** 2603.27850 (submitted 29 Mar 2026) - **Authors:** Zimu Wang, Yuling Shi, Mengfan Li, Zijun Liu, Jie M.'
+resource: https://arxiv.org/abs/2603.27850
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://arxiv.org/abs/2603.27850
-authors: [Wang, Shi, Li, Liu, Zhang, Wan, Gu]
-arxiv: 2603.27850
+authors:
+- Wang
+- Shi
+- Li
+- Liu
+- Zhang
+- Wan
+- Gu
+arxiv: 2603.2785
 signal: 8
-context_elements: [Two-tier skill hierarchy, Operator Skills, Meta Skills, Execution-free diagnosis]
+context_elements:
+- Two-tier skill hierarchy
+- Operator Skills
+- Meta Skills
+- Execution-free diagnosis
 ---
 
 # EffiSkill: Agent Skill Based Automated Code Efficiency Optimization
@@ -57,12 +72,11 @@ Key innovation: **execution-free** skill application — no runtime feedback nee
 ## Reproducibility
 
 - EffiBench-X benchmark
-- Same research group as [[skillmoo-multi-objective-optimization]] (Jie M. Zhang)
+- Same research group as [skillmoo multi objective optimization](skillmoo-multi-objective-optimization.md) (Jie M. Zhang)
 
 ## Connections
 
-- Two-tier hierarchy maps to [[skillcraft-benchmark]]'s atomic tool → skill composition pattern
-- Skill library concept similar to [[orca-cognitive-runtime]]'s capability registry
-- Execution-free approach contrasts with [[coevoskills-self-evolving-skills]]'s runtime verification
+- Two-tier hierarchy maps to [skillcraft benchmark](skillcraft-benchmark.md)'s atomic tool → skill composition pattern
+- Skill library concept similar to [orca cognitive runtime](orca-cognitive-runtime.md)'s capability registry
+- Execution-free approach contrasts with [coevoskills self evolving skills](coevoskills-self-evolving-skills.md)'s runtime verification
 
-[[backlinks]]

@@ -1,3 +1,9 @@
+---
+type: Metrics
+title: Skill Bundles — Metrics & Progress
+description: 'Tracked KPIs for the skill-bundles research wiki: example counts, coverage, and iteration progress.'
+---
+
 # Skill Bundles — Metrics & Progress
 
 |**Last Updated: 2026-07-16 (Iteration 41)**|

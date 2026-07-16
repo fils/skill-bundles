@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Spring AI — Generic Agent Skills for the Java Ecosystem
+description: Spring AI's **Generic Agent Skills** implementation brings the Agent Skills open specification to the Java/Spring ecosystem.
+resource: https://spring.io/blog/2026/01/13/spring-ai-generic-agent-skills
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # Spring AI — Generic Agent Skills for the Java Ecosystem
 
 **Source:** https://spring.io/blog/2026/01/13/spring-ai-generic-agent-skills
@@ -58,7 +67,7 @@ Spring AI's architecture formalizes the **three core capabilities** any skill ru
 High - public Spring blog post with complete code examples, Maven/Gradle dependency available, open-source spring-ai-agent-utils library.
 
 ## Bundle Links
-- [[microsoft-agent-framework-skills]] — .NET/Python counterpart
-- [[agent-skills-spec]] — The open standard Spring AI implements
-- [[claude-api-skills-integration]] — Anthropic's native implementation (Generic vs Native comparison)
-- [[ylang-labs-agent-skills-overview]] — Defines the "recipes vs kitchen" metaphor for Skills vs MCP
+- [microsoft agent framework skills](microsoft-agent-framework-skills.md) — .NET/Python counterpart
+- [agent skills spec](agent-skills-spec.md) — The open standard Spring AI implements
+- [claude api skills integration](claude-api-skills-integration.md) — Anthropic's native implementation (Generic vs Native comparison)
+- [ylang labs agent skills overview](ylang-labs-agent-skills-overview.md) — Defines the "recipes vs kitchen" metaphor for Skills vs MCP

@@ -1,11 +1,24 @@
 ---
-title: "From Registry to Repository: Skill Authorship, Reuse & Maintenance"
+type: Skill Bundle Example
+title: 'From Registry to Repository: Skill Authorship, Reuse & Maintenance'
+description: First empirical study treating AI agent skills as **engineered software artefacts** — authored, reused, customized, and maintained — rather than only as agent capabilities.
+resource: https://arxiv.org/abs/2607.00911
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2607.00911"]
-skills_included: ["Registry skills (skills.sh)", "Personal-use GitHub skills", "Reuse-link adaptation"]
-context_elements: ["SWEBOK KA classification of skills", "Six-theme SKILL.md content taxonomy", "Six-theme maintenance taxonomy", "One-time copy reuse model", "Registry vs repository dual channel"]
-composition: "Empirical study: 18,463 registry + 23,199 personal skills, 3,709 reuse links; content + maintenance taxonomies for skill-as-artefact engineering."
-reproducibility: "arXiv:2607.00911 Jul 2026; large mined corpus + qualitative coding of 180 skills / 444 modifications."
+sources:
+- arXiv:2607.00911
+skills_included:
+- Registry skills (skills.sh)
+- Personal-use GitHub skills
+- Reuse-link adaptation
+context_elements:
+- SWEBOK KA classification of skills
+- Six-theme SKILL.md content taxonomy
+- Six-theme maintenance taxonomy
+- One-time copy reuse model
+- Registry vs repository dual channel
+composition: 'Empirical study: 18,463 registry + 23,199 personal skills, 3,709 reuse links; content + maintenance taxonomies for skill-as-artefact engineering.'
+reproducibility: arXiv:2607.00911 Jul 2026; large mined corpus + qualitative coding of 180 skills / 444 modifications.
 rating: 9
 ---
 
@@ -28,12 +41,12 @@ First empirical study treating AI agent skills as **engineered software artefact
 
 ## Content Taxonomy (6 themes)
 
-1. Scoping and orchestrating  
-2. Running the execution lifecycle  
-3. Ensuring output quality  
-4. Governing agent conduct  
-5. Grounding domain knowledge  
-6. User/agent coordination  
+1. Scoping and orchestrating
+2. Running the execution lifecycle
+3. Ensuring output quality
+4. Governing agent conduct
+5. Grounding domain knowledge
+6. User/agent coordination
 
 Software Construction dominates SWEBOK KAs with a long specialized tail.
 
@@ -58,14 +71,13 @@ metadata · operational specs · behavioral constraints · knowledge/resources �
 
 ## Relation to Skill Bundle Patterns
 
-- Maintenance science for [[agent-skills-spec]] and marketplace catalogs
-- Explains versioning immaturity seen in [[inside-skill-market-se-activities]] (companion 2026-07-16)
-- Motivates lockfiles/manifests from [[assc-skill-supply-chains-skillbom]]
-- Complements [[skillopt-trainable-skill-parameters]] (systematic skill improvement vs ad-hoc edits)
-- Complements [[skillreducer-token-efficiency]] (many skills bloated/non-actionable)
+- Maintenance science for [agent skills spec](agent-skills-spec.md) and marketplace catalogs
+- Explains versioning immaturity seen in [inside skill market se activities](inside-skill-market-se-activities.md) (companion 2026-07-16)
+- Motivates lockfiles/manifests from [assc skill supply chains skillbom](assc-skill-supply-chains-skillbom.md)
+- Complements [skillopt trainable skill parameters](skillopt-trainable-skill-parameters.md) (systematic skill improvement vs ad-hoc edits)
+- Complements [skillreducer token efficiency](skillreducer-token-efficiency.md) (many skills bloated/non-actionable)
 
 ## Key Insight
 
 Skill bundles behave like **editable documentation dependencies**, not immutable packages: copy once, rarely pull updates, add local knowledge, leave behavioral contracts alone. Registries and tools should optimize for consolidating re-authored domain knowledge and project-specific bindings — not assume npm-style update streams.
 
-[[backlinks]]

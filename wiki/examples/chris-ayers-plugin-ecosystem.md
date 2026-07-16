@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: 'Chris Ayers — Plugin Ecosystem: Skills, Plugins, and Marketplaces'
+description: 'A comprehensive guide to the **three-layer agent extensibility ecosystem**: Skills (atomic capabilities), Plugins (bundled distributions), and Marketplaces (discovery and versioning).'
+resource: https://chris-ayers.com/posts/agent-skills-plugins-marketplace/
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # Chris Ayers — Plugin Ecosystem: Skills, Plugins, and Marketplaces
 
 **Source:** https://chris-ayers.com/posts/agent-skills-plugins-marketplace/
@@ -39,8 +48,8 @@ A comprehensive guide to the **three-layer agent extensibility ecosystem**: Skil
 The plugin ecosystem provides the **distribution and versioning layer** that pure SKILL.md lacks:
 
 1. **Plugins as Skill Bundles:** A plugin IS a skill bundle — it packages multiple skills with optional agents, hooks, and MCP servers into a single installable unit with version metadata
-2. **Version Pinning:** External source references with `ref: v2.0` implement the immutable versioning that [[owasp-agentic-skills-top-10]]'s AST07 (Update Drift) requires
-3. **Cross-Tool SKILL.md Compatibility:** The fact that SKILL.md works identically across all five major tools validates the [[agent-skills-spec]]'s portability claim
+2. **Version Pinning:** External source references with `ref: v2.0` implement the immutable versioning that [owasp agentic skills top 10](owasp-agentic-skills-top-10.md)'s AST07 (Update Drift) requires
+3. **Cross-Tool SKILL.md Compatibility:** The fact that SKILL.md works identically across all five major tools validates the [agent skills spec](agent-skills-spec.md)'s portability claim
 4. **Marketplace as Governance Mechanim** : Marketplaces with `marketplace.json` provide the skill inventory that AST09 (No Governance) demands
 
 ## Key Insight: SKILL.md is the Universal Portable Unit
@@ -64,7 +73,7 @@ This suggests skill bundles will follow the same maturation path as package mana
 High — public blog post with complete code examples, CLI commands, and configuration files.
 
 ## Bundle Links
-- [[agent-skills-spec]] — The SKILL.md standard that powers cross-tool compatibility
-- [[github-cli-skill-management]] — Related CLI management patterns
-- [[agensi-marketplace-landscape]] — Marketplace comparison from this iteration
-- [[owasp-agentic-skills-top-10]] — Security requirements for marketplace governance (AST02, AST07, AST09)
+- [agent skills spec](agent-skills-spec.md) — The SKILL.md standard that powers cross-tool compatibility
+- [github cli skill management](github-cli-skill-management.md) — Related CLI management patterns
+- [agensi marketplace landscape](../tools/agensi-marketplace-landscape.md) — Marketplace comparison from this iteration
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — Security requirements for marketplace governance (AST02, AST07, AST09)

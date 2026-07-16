@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: Claude Skills Ecosystem — 1,116 Skills from 500+ Repos
+description: A comprehensive survey and mapping of 1,116 unique Claude Code Skills discovered across 500+ repositories.
+resource: https://growthexe.substack.com/p/i-found-1116-claude-code-skills-from
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # Claude Skills Ecosystem — 1,116 Skills from 500+ Repos
 
-**Source:** https://growthexe.substack.com/p/i-found-1116-claude-code-skills-from  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Author:** GrowthExe (Substack)  
-**Bundle Type:** Mega Collection + Security Taxonomy  
+**Source:** https://growthexe.substack.com/p/i-found-1116-claude-code-skills-from
+**Date Added:** 2026-05-24 (Iteration 8)
+**Author:** GrowthExe (Substack)
+**Bundle Type:** Mega Collection + Security Taxonomy
 **Confidence:** 8/10
 
 ## Name & Origin

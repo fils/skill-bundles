@@ -1,22 +1,29 @@
 ---
+type: Skill Bundle Example
+title: Ylang Labs — Agent Skills Portable Format Overview
+description: Ylang Labs published a comprehensive overview of the Agent Skills open standard, explaining how it provides a portable format for teaching AI agents procedural knowledge.
+resource: https://ylanglabs.com/blogs/agent-skills
+timestamp: '2026-05-25T00:00:00Z'
 date: 2026-05-25
 sources:
-  - https://ylanglabs.com/blogs/agent-skills
-title: Ylang Labs — Agent Skills Portable Format Overview
+- https://ylanglabs.com/blogs/agent-skills
 skills_included:
-  - Sprint planning workflow example
-  - Document/asset creation patterns
-  - Workflow automation patterns
-  - MCP enhancement patterns
+- Sprint planning workflow example
+- Document/asset creation patterns
+- Workflow automation patterns
+- MCP enhancement patterns
 context_elements:
-  - YAML frontmatter schema (name, description)
-  - Progressive disclosure three-level loading
-  - scripts/ references/ assets/ directory patterns
-  - Distribution models (direct, marketplace, community)
-composition_notes: |
-  Definitive overview of the Agent Skills format. Provides the "recipes vs kitchen" metaphor
+- YAML frontmatter schema (name, description)
+- Progressive disclosure three-level loading
+- scripts/ references/ assets/ directory patterns
+- Distribution models (direct, marketplace, community)
+composition_notes: 'Definitive overview of the Agent Skills format. Provides the "recipes vs kitchen" metaphor
+
   for Skills vs MCP. Documents the three-level progressive disclosure loading pattern that
+
   appears across multiple bundles in our catalog.
+
+  '
 reproducibility: High — published reference article
 confidence: 9/10
 ---
@@ -35,7 +42,7 @@ Ylang Labs published a comprehensive overview of the Agent Skills open standard,
 | 2. Instructions | SKILL.md body | When triggered | <5,000 tokens |
 | 3. Resources | Scripts & References | Only as needed | Variable |
 
-This pattern is used by [[dspy-agent-skills-bundle]], [[anthropic-official-skills-repo]], and the updated [[dspy-agent-skills-v023]].
+This pattern is used by [dspy agent skills bundle](dspy-agent-skills-bundle.md), [anthropic official skills repo](anthropic-official-skills-repo.md), and the updated [dspy agent skills v023](dspy-agent-skills-v023.md).
 
 ## Skills vs Alternatives
 
@@ -68,7 +75,7 @@ description: >
 - **Interoperability**: Depth of integration varies (30+ products support)
 
 ## Connection to Pattern Catalog
-This article provides the **foundational reference** for why progressive disclosure matters across all bundles. The three-level loading pattern explains the architecture of [[dspy-agent-skills-bundle]]'s SKILL.md + reference.md pair, and why [[awesome-agent-skills-catalogs]] catalogs skills by their metadata descriptions.
+This article provides the **foundational reference** for why progressive disclosure matters across all bundles. The three-level loading pattern explains the architecture of [dspy agent skills bundle](dspy-agent-skills-bundle.md)'s SKILL.md + reference.md pair, and why [awesome agent skills catalogs](awesome-agent-skills-catalogs.md) catalogs skills by their metadata descriptions.
 
 ## Source Attribution
-Raw source: [[../../raw/2026-05-25/ylang-labs-agent-skills.md]]
+Raw source: [ylang labs agent skills](../../raw/2026-05-25/ylang-labs-agent-skills.md)

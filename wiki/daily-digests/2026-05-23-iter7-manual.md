@@ -1,3 +1,12 @@
+---
+type: Daily Digest
+title: 'Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)'
+description: '- **URL:** https://arxiv.org/html/2605.09184v1 - **Author:** Fabio Rovai (The Tesseract Academy, London) - **Type:** Peer-reviewed preprint with empirical benchmarks'
+resource: https://arxiv.org/html/2605.09184v1
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)
 
 ## Sources Added

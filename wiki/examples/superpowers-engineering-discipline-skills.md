@@ -1,3 +1,10 @@
+---
+type: Skill Bundle Example
+title: 'Superpowers: Engineering Discipline as Skills'
+description: Superpowers by Jesse Vincent is a **multi-host skills framework** that encodes software engineering best practices as 14 SKILL.md files.
+resource: https://github.com/obra/superpowers
+---
+
 # Superpowers: Engineering Discipline as Skills
 
 ## Overview

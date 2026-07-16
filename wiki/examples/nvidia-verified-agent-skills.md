@@ -1,6 +1,15 @@
+---
+type: Skill Bundle Example
+title: NVIDIA Verified Agent Skills — Governance & Verification
+description: NVIDIA Verified Agent Skills — a governed catalog of portable instruction sets for AI agents to interact with NVIDIA CUDA-X libraries, AI Blueprints, and platform tools.
+resource: https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # NVIDIA Verified Agent Skills — Governance & Verification
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Sources:**
 - https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/
 - https://github.com/NVIDIA/skills

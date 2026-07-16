@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Microsoft Agent Framework — Enterprise Agent Skills Implementation
+description: Microsoft's implementation of the Agent Skills open specification within the **Microsoft Agent Framework**, a comprehensive enterprise agent platform.
+resource: https://learn.microsoft.com/en-us/agent-framework/agents/skills
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # Microsoft Agent Framework — Enterprise Agent Skills Implementation
 
 **Source:** https://learn.microsoft.com/en-us/agent-framework/agents/skills
@@ -34,15 +43,15 @@ Microsoft's implementation of the Agent Skills open specification within the **M
 Microsoft's implementation is notable for its **enterprise-grade integration**:
 
 1. **DI and Runtime Context:** Skills can receive authenticated user context, database connections, and configuration — making them first-class enterprise components
-2. **Script Approval:** The human-in-the-loop gating mechanism addresses [[owasp-agentic-skills-top-10]]'s AST06 (Weak Isolation) concern
-3. **Multi-Source Composition:** Aggregating, filtering, and deduplicating skills from files, code, and packages mirrors [[graph-of-skills-dependency-retrieval]]'s composition patterns
-4. **Versioning:** The `metadata.version` field in SKILL.md frontmatter supports the version pinning recommended by [[nvidia-verified-agent-skills]]
+2. **Script Approval:** The human-in-the-loop gating mechanism addresses [owasp agentic skills top 10](owasp-agentic-skills-top-10.md)'s AST06 (Weak Isolation) concern
+3. **Multi-Source Composition:** Aggregating, filtering, and deduplicating skills from files, code, and packages mirrors [graph of skills dependency retrieval](graph-of-skills-dependency-retrieval.md)'s composition patterns
+4. **Versioning:** The `metadata.version` field in SKILL.md frontmatter supports the version pinning recommended by [nvidia verified agent skills](nvidia-verified-agent-skills.md)
 
 ## Composition Notes
 
 This is the **most complete enterprise platform implementation** documented so far:
 
-| Feature | Microsoft Agent Framework | [[spring-ai-agent-skills]] | [[agent-skills-spec]] |
+| Feature | Microsoft Agent Framework | [spring ai agent skills](spring-ai-agent-skills.md) | [agent skills spec](agent-skills-spec.md) |
 |---------|--------------------------|---------------------------|----------------------|
 | Languages | C#, Python | Java | N/A (spec) |
 | Script Approval | Yes (built-in) | No (custom wrapper) | N/A |
@@ -58,7 +67,7 @@ The **Skills vs Workflows** decision guide is particularly valuable — it forma
 High — full documentation on Microsoft Learn with C# and Python code examples. Requires Microsoft Agent Framework SDK (production-ready).
 
 ## Bundle Links
-- [[spring-ai-agent-skills]] — Java ecosystem counterpart
-- [[agent-skills-spec]] — The open standard Microsoft implements
-- [[nvidia-verified-agent-skills]] — Enterprise governance benchmark
-- [[graph-of-skills-dependency-retrieval]] — Related composition pattern
+- [spring ai agent skills](spring-ai-agent-skills.md) — Java ecosystem counterpart
+- [agent skills spec](agent-skills-spec.md) — The open standard Microsoft implements
+- [nvidia verified agent skills](nvidia-verified-agent-skills.md) — Enterprise governance benchmark
+- [graph of skills dependency retrieval](graph-of-skills-dependency-retrieval.md) — Related composition pattern

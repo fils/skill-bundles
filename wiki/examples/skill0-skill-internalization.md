@@ -1,17 +1,31 @@
 ---
-title: "SKILL0: In-Context Agentic RL for Skill Internalization"
+type: Skill Bundle Example
+title: 'SKILL0: In-Context Agentic RL for Skill Internalization'
+description: SKILL0 asks whether agent skills must remain **external packages at inference**, or can be **internalized into model parameters**.
+resource: https://arxiv.org/abs/2604.02268
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2604.02268", "https://github.com/ZJU-REAL/SkillZero"]
-skills_included: ["Training-time skill scaffolding", "Dynamic Curriculum skill withdrawal", "Category-grouped skill rendering"]
-context_elements: ["Skill internalization objective", "Dynamic Curriculum (on-policy helpfulness + decaying budget)", "Visual Context Rendering", "Zero-shot inference (skills@train, zero@infer)", "Token-budget efficiency (<0.5k/step)"]
-composition: "Training loop: full skill context → on-policy helpfulness filter → linear budget decay → zero-shot parametric agent."
-reproducibility: "Code at ZJU-REAL/SkillZero; ALFWorld + Search-QA + WebShop; +9.7% / +6.6% / +10.1% over RL baselines."
+sources:
+- arXiv:2604.02268
+- https://github.com/ZJU-REAL/SkillZero
+skills_included:
+- Training-time skill scaffolding
+- Dynamic Curriculum skill withdrawal
+- Category-grouped skill rendering
+context_elements:
+- Skill internalization objective
+- Dynamic Curriculum (on-policy helpfulness + decaying budget)
+- Visual Context Rendering
+- Zero-shot inference (skills@train, zero@infer)
+- Token-budget efficiency (<0.5k/step)
+composition: 'Training loop: full skill context → on-policy helpfulness filter → linear budget decay → zero-shot parametric agent.'
+reproducibility: Code at ZJU-REAL/SkillZero; ALFWorld + Search-QA + WebShop; +9.7% / +6.6% / +10.1% over RL baselines.
 rating: 9
 ---
 
 # SKILL0: In-Context Agentic RL for Skill Internalization
 
-**Origin:** Zhejiang University + Meituan + Tsinghua (Lu et al.), arXiv:2604.02268, Apr 2026 (v2 May 2026)  
+**Origin:** Zhejiang University + Meituan + Tsinghua (Lu et al.), arXiv:2604.02268, Apr 2026 (v2 May 2026)
 **GitHub:** https://github.com/ZJU-REAL/SkillZero
 
 ## Overview
@@ -43,14 +57,13 @@ SKILL0 asks whether agent skills must remain **external packages at inference**,
 
 ## Relation to Skill Bundle Patterns
 
-- Opposite pole of [[skillopt-trainable-skill-parameters]] (skills stay external text parameters)
-- Contrasts [[memento-skills-agent-designing-agent]] (skills as persistent markdown memory, no weight updates)
-- Related to [[skill1-unified-skill-evolution-rl]] (co-evolve selection/utilization/distillation still external)
-- Complements [[coevoskills-self-evolving-skills]] and [[evoskill-automated-skill-discovery]] (evolution of external packages)
-- Theoretical frame: [[externalization-llm-agents-unified-review]] weights↔context trade-off
+- Opposite pole of [skillopt trainable skill parameters](skillopt-trainable-skill-parameters.md) (skills stay external text parameters)
+- Contrasts [memento skills agent designing agent](memento-skills-agent-designing-agent.md) (skills as persistent markdown memory, no weight updates)
+- Related to [skill1 unified skill evolution rl](skill1-unified-skill-evolution-rl.md) (co-evolve selection/utilization/distillation still external)
+- Complements [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) and [evoskill automated skill discovery](evoskill-automated-skill-discovery.md) (evolution of external packages)
+- Theoretical frame: [externalization llm agents unified review](externalization-llm-agents-unified-review.md) weights↔context trade-off
 
 ## Key Insight
 
 Skill bundles can be a **training substrate**, not only a runtime product. Dynamic Curriculum internalization trades post-training adaptability for zero-shot autonomy and massive context savings — a first-class design choice in the Define→Generate→Serve→Align lifecycle.
 
-[[backlinks]]

@@ -1,8 +1,15 @@
+---
+type: Paper
+title: 'Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce'
+description: '> **Source:** Frontiers in Artificial Intelligence (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/ > **Added:** 2026-05-25 (manual seed for initial research)'
+resource: https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/
+---
+
 # Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce
 
 > **Source:** Frontiers in Artificial Intelligence (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/
 > **Added:** 2026-05-25 (manual seed for initial research)
-> **Raw:** [[../raw/2026-05-25/scaince-ai-lab-automation-pmc.md]]
+> **Raw:** [scaince ai lab automation pmc](../../raw/2026-05-25/scaince-ai-lab-automation-pmc.md)
 > **Author:** Thomas Hartung
 > **DOI:** 10.3389/frai.2025.1649155
 > **PMCID:** PMC12426084

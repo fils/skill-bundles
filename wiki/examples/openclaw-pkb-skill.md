@@ -1,7 +1,16 @@
+---
+type: Skill Bundle Example
+title: OpenClaw PKB Skill
+description: '- Standardized PKB (Personal Knowledge Base) skill - Zettelkasten + Git + Ontology integration'
+resource: https://github.com/hyjkimbot/openclaw-pkb
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # OpenClaw PKB Skill
 
-**Source:** https://github.com/hyjkimbot/openclaw-pkb  
-**Date Added:** 2026-05-23  
+**Source:** https://github.com/hyjkimbot/openclaw-pkb
+**Date Added:** 2026-05-23
 **Bundle Type:** Knowledge Base + Ontology Skill
 
 ## Skills Included

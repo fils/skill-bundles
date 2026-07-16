@@ -1,8 +1,15 @@
+---
+type: Skill Bundle Example
+title: 'NemoClaw: NVIDIA Agent Skills Security Scanner'
+description: NemoClaw is NVIDIA's **agent skill security scanning** system referenced by nvidia verified agent skills and the mondoo agent skills security analy...
+resource: https://mondoo.com/blog/agent-skills-real-power-real-risk
+---
+
 # NemoClaw: NVIDIA Agent Skills Security Scanner
 
 ## Overview
 
-NemoClaw is NVIDIA's **agent skill security scanning** system referenced by [[nvidia-verified-agent-skills]] and the [[mondoo-agent-skills-security]] analysis. It provides LLM-assisted security review of skill definitions, scripts, and bundled resources to detect vulnerabilities, prompt injections, and malicious patterns that traditional static analysis misses.
+NemoClaw is NVIDIA's **agent skill security scanning** system referenced by [nvidia verified agent skills](nvidia-verified-agent-skills.md) and the [mondoo agent skills security](mondoo-agent-skills-security.md) analysis. It provides LLM-assisted security review of skill definitions, scripts, and bundled resources to detect vulnerabilities, prompt injections, and malicious patterns that traditional static analysis misses.
 
 **Context Elements:** LLM-assisted reasoning for security review · Vulnerability detection patterns · SKILL.md analysis · Script scanning · Prompt injection detection
 
@@ -17,10 +24,10 @@ Based on NVIDIA's verified agent skills ecosystem:
 
 ## Relationship to Other Context Elements
 
-NemoClaw scanning represents the **LLM-assisted validation** pattern complementing the cryptographic signing in [[nvidia-verified-agent-skills]]:
+NemoClaw scanning represents the **LLM-assisted validation** pattern complementing the cryptographic signing in [nvidia verified agent skills](nvidia-verified-agent-skills.md):
 - **OpenSSF signing** verifies authenticity (who published this skill)
 - **NemoClaw scanning** verifies intent (what does this skill actually do)
-- Together they form the two pillars of [[verified-skill-governance]]
+- Together they form the two pillars of [verified skill governance](../concepts/verified-skill-governance.md)
 
 ## Confidence
 7/10 — Referenced in both NVIDIA verified agents docs and Mondoo security analysis as an active tool.

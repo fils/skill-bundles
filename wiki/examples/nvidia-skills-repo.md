@@ -1,6 +1,15 @@
+---
+type: Skill Bundle Example
+title: NVIDIA Skills Repository — Multi-Product Catalog
+description: NVIDIA Skills Repository — A centralized, public catalog of official, NVIDIA-verified skills for AI agents.
+resource: https://github.com/NVIDIA/skills
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # NVIDIA Skills Repository — Multi-Product Catalog
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Sources:**
 - https://github.com/NVIDIA/skills
 - https://developer.nvidia.com/blog/nvidia-verified-agent-skills-provide-capability-governance-for-ai-agents/
@@ -37,7 +46,7 @@ NVIDIA Skills Repository — A centralized, public catalog of official, NVIDIA-v
 The automated sync pipeline ensures skills stay current with product updates. The multi-agent compatibility demonstrates adherence to the open agent skills specification, enabling cross-platform usage.
 
 ## Composition Notes
-This represents a large-scale, production skill catalog with governance infrastructure. The verification pipeline (detailed in [[nvidia-verified-agent-skills]]) provides the trust layer for this distribution.
+This represents a large-scale, production skill catalog with governance infrastructure. The verification pipeline (detailed in [nvidia verified agent skills](nvidia-verified-agent-skills.md)) provides the trust layer for this distribution.
 
 ## Reproducibility
 High — public GitHub repo with standardized CLI installation.

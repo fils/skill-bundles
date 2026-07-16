@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: 'CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification'
+description: CoEvoSkills is the first framework to address the **tool–skill gap** in autonomous skill generation.
+resource: https://arxiv.org/abs/2604.01687
+timestamp: '2026-07-11T00:00:00Z'
+date: '2026-07-11'
+---
+
 # CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification
 
 **Source:** https://arxiv.org/abs/2604.01687
@@ -30,9 +39,9 @@ CoEvoSkills is the first framework to address the **tool–skill gap** in autono
 
 ## How Context Elements Support Skills
 
-The **Surrogate Verifier** is itself a novel context element — it acts as a formal quality gate for skill bundles, analogous to how [[schimatos-shacl-knowledge-graph|SHACL validation]] constrains knowledge graphs. Unlike static validation (SHACL shapes), the verifier co-evolves with the generator, creating a dynamic feedback loop.
+The **Surrogate Verifier** is itself a novel context element — it acts as a formal quality gate for skill bundles, analogous to how [SHACL validation](schimatos-shacl-knowledge-graph.md) constrains knowledge graphs. Unlike static validation (SHACL shapes), the verifier co-evolves with the generator, creating a dynamic feedback loop.
 
-The framework addresses a key finding from [[skillsbench-agent-skills-benchmark|SkillsBench]]: human-curated skills yield uneven gains due to cognitive misalignment. CoEvoSkills surpasses human-curated skills within 5 evolution iterations.
+The framework addresses a key finding from [SkillsBench](skillsbench-agent-skills-benchmark.md): human-curated skills yield uneven gains due to cognitive misalignment. CoEvoSkills surpasses human-curated skills within 5 evolution iterations.
 
 ## Composition Notes
 
@@ -46,11 +55,11 @@ High — arXiv paper (2604.01687), project page with code, SkillsBench evaluatio
 
 ## Bundle Links
 
-- [[skillsbench-agent-skills-benchmark]] — evaluation benchmark
-- [[arxiv-agent-skills-survey]] — cited for skill definition
-- [[skill-bundle-patterns]] — multi-file bundle pattern
-- [[sok-agentic-skills-beyond-tool-use]] — self-evolving pattern (Pattern 4)
-- [[three-layer-validation-stack]] — verifier as validation layer
+- [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) — evaluation benchmark
+- [arxiv agent skills survey](arxiv-agent-skills-survey.md) — cited for skill definition
+- [skill bundle patterns](../concepts/skill-bundle-patterns.md) — multi-file bundle pattern
+- [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) — self-evolving pattern (Pattern 4)
+- [three layer validation stack](../concepts/three-layer-validation-stack.md) — verifier as validation layer
 
 ## Sources
 

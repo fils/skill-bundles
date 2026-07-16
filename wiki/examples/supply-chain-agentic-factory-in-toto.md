@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Supply Chain Security Meets the Agentic Factory (SLSA/in-toto for Skills)
+description: The first concrete proposal to extend **SLSA/in-toto provenance** to the agentic code generation pipeline.
+resource: https://medium.com/@rbean_3467/supply-chain-security-meets-the-agentic-factory-5a770c34369b
+timestamp: '2026-07-11T00:00:00Z'
+date: '2026-07-11'
+---
+
 # Supply Chain Security Meets the Agentic Factory (SLSA/in-toto for Skills)
 
 **Source:** https://medium.com/@rbean_3467/supply-chain-security-meets-the-agentic-factory-5a770c34369b (19 Mar 2026)
@@ -41,8 +50,8 @@ This framework identifies a critical gap: **the supply chain is now `intent → 
 
 1. **Skill provenance:** Skills distributed via marketplaces need attestations (who created them, how, with what model)
 2. **Intent verification:** The "intent → source" gap applies to skill authoring — a compromised model could generate malicious skills
-3. **Neutral observer for skills:** The pattern could verify skill quality from outside the generation process (analogous to [[coevoskills-self-evolving-skills|CoEvoSkills]]' Surrogate Verifier)
-4. **Policy gates for skills:** Map to [[validate-skill-github-action]] and [[three-layer-validation-stack]]
+3. **Neutral observer for skills:** The pattern could verify skill quality from outside the generation process (analogous to [CoEvoSkills](coevoskills-self-evolving-skills.md)' Surrogate Verifier)
+4. **Policy gates for skills:** Map to [validate skill github action](validate-skill-github-action.md) and [three layer validation stack](../concepts/three-layer-validation-stack.md)
 5. **Hermetic skill builds:** Pre-fetch all skill dependencies, verify no smuggling
 
 ## Composition Notes
@@ -54,7 +63,7 @@ The "fullsend" project (Konflux community) is exploring:
 - Agent governance frameworks
 - Provenance for the code generation step itself
 
-This is the **infrastructure-level complement** to the academic security analysis in [[sok-agentic-skills-beyond-tool-use]] and [[owasp-agentic-skills-top-10]].
+This is the **infrastructure-level complement** to the academic security analysis in [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) and [owasp agentic skills top 10](owasp-agentic-skills-top-10.md).
 
 ## Reproducibility
 
@@ -62,13 +71,13 @@ Medium-High — blog post with detailed technical content, GitHub project (konfl
 
 ## Bundle Links
 
-- [[purplebox-supply-chain-security]] — existing supply chain entry
-- [[skill-security-governance]] — governance framework
-- [[sok-agentic-skills-beyond-tool-use]] — ClawHavoc case study
-- [[three-layer-validation-stack]] — validation layers
-- [[validate-skill-github-action]] — policy gate equivalent
-- [[clawhavoc-marketplace-attack]] — real-world supply chain attack
-- [[coevoskills-self-evolving-skills]] — verifier as neutral observer analog
+- [purplebox supply chain security](purplebox-supply-chain-security.md) — existing supply chain entry
+- [skill security governance](../concepts/skill-security-governance.md) — governance framework
+- [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) — ClawHavoc case study
+- [three layer validation stack](../concepts/three-layer-validation-stack.md) — validation layers
+- [validate skill github action](validate-skill-github-action.md) — policy gate equivalent
+- [clawhavoc marketplace attack](clawhavoc-marketplace-attack.md) — real-world supply chain attack
+- [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) — verifier as neutral observer analog
 
 ## Sources
 

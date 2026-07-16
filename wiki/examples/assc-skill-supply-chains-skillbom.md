@@ -1,11 +1,25 @@
 ---
-title: "ASSCs: Agent Skill Supply Chains & SkillBOM"
+type: Skill Bundle Example
+title: 'ASSCs: Agent Skill Supply Chains & SkillBOM'
+description: '**Skills Are Not Islands** argues skills have become **dependency-bearing artifacts** with mixed skill–package–service dependencies that remain largely implicit.'
+resource: https://arxiv.org/abs/2607.01136
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2607.01136"]
-skills_included: ["SDA dependency recovery", "SkillBOM serialization", "Multi-channel dep graphs"]
-context_elements: ["Agent Skill Supply Chains (ASSCs)", "SkillDepAnalyzer (SDA)", "SkillBOM (SBOM-compatible)", "Typed multi-channel deps (skill/package/service)", "Lockfile-like records", "Transitive risk propagation"]
-composition: "SDA extracts NL dependency evidence → typed skill/package/service graph → recursive expansion → SkillBOM; applied to 1.43M skills for ecosystem ASSC analysis."
-reproducibility: "arXiv:2607.01136 Jul 2026; SKILL-DEP benchmark F1=0.95; 1.43M-skill study with reported malicious-skill reporting."
+sources:
+- arXiv:2607.01136
+skills_included:
+- SDA dependency recovery
+- SkillBOM serialization
+- Multi-channel dep graphs
+context_elements:
+- Agent Skill Supply Chains (ASSCs)
+- SkillDepAnalyzer (SDA)
+- SkillBOM (SBOM-compatible)
+- Typed multi-channel deps (skill/package/service)
+- Lockfile-like records
+- Transitive risk propagation
+composition: SDA extracts NL dependency evidence → typed skill/package/service graph → recursive expansion → SkillBOM; applied to 1.43M skills for ecosystem ASSC analysis.
+reproducibility: arXiv:2607.01136 Jul 2026; SKILL-DEP benchmark F1=0.95; 1.43M-skill study with reported malicious-skill reporting.
 rating: 10
 ---
 
@@ -51,14 +65,13 @@ rating: 10
 
 ## Relation to Skill Bundle Patterns
 
-- Extends [[skillfortify-formal-verification-supply-chain]] (lockfile semantics, ADG) to **1.43M-skill** empirical supply chains
-- Complements [[clawhavoc-marketplace-attack]], [[maltool-malicious-tool-attacks]], [[skillsieve-malicious-skill-detection]]
-- Complements [[supply-chain-agentic-factory-in-toto]] (SLSA/in-toto for intent→source)
-- Addresses versioning gaps from [[swe-skills-bench-utility-benchmark]] and [[skill-os-skills-as-apps]]
-- Aligns with [[nvidia-verified-agent-skills-governance]] and [[prov-agent-unified-provenance]]
+- Extends [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (lockfile semantics, ADG) to **1.43M-skill** empirical supply chains
+- Complements [clawhavoc marketplace attack](clawhavoc-marketplace-attack.md), [maltool malicious tool attacks](maltool-malicious-tool-attacks.md), [skillsieve malicious skill detection](skillsieve-malicious-skill-detection.md)
+- Complements [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) (SLSA/in-toto for intent→source)
+- Addresses versioning gaps from [swe skills bench utility benchmark](swe-skills-bench-utility-benchmark.md) and [skill os skills as apps](skill-os-skills-as-apps.md)
+- Aligns with [nvidia verified agent skills governance](nvidia-verified-agent-skills-governance.md) and [prov agent unified provenance](prov-agent-unified-provenance.md)
 
 ## Key Insight
 
 Skill bundles inherit software supply-chain physics. Without typed manifests, SkillBOM, and lockfiles, **most risk and most packages live in the transitive dark**. Governance that only scans the root `SKILL.md` is structurally blind.
 
-[[backlinks]]

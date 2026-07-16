@@ -1,11 +1,25 @@
 ---
-title: "ASPIRE: Agentic Skill Programming through Iterative Robot Exploration"
+type: Skill Bundle Example
+title: 'ASPIRE: Agentic Skill Programming through Iterative Robot Exploration'
+description: ASPIRE is a continual learning system for robotics that autonomously writes and refines robot control programs in a **code-as-policy** paradigm while compounding experience into a reusable skill library.
+resource: https://arxiv.org/abs/2607.00272
+timestamp: '2026-07-14T00:00:00Z'
 date: 2026-07-14
-sources: ["arXiv:2607.00272", "https://research.nvidia.com/labs/gear/aspire/"]
-skills_included: ["Closed-loop robot execution engine", "Skill library (code-as-policy programs)", "Evolutionary search for task/program diversity"]
-context_elements: ["Multimodal execution traces (failure diagnosis)", "Validated repair knowledge compounding", "Evolutionary search governance", "Cross-embodiment skill transfer", "Sim-to-real transfer verification"]
-composition: "Three-component open-ended loop: execution engine generates traces → skill library distills validated fixes → evolutionary search explores diverse task sequences and control programs."
-reproducibility: "Project page with PDF; NVIDIA GEAR Lab; 43 pages, 12 figures, 9 tables. Code-as-policy paradigm with Claude as coding agent."
+sources:
+- arXiv:2607.00272
+- https://research.nvidia.com/labs/gear/aspire/
+skills_included:
+- Closed-loop robot execution engine
+- Skill library (code-as-policy programs)
+- Evolutionary search for task/program diversity
+context_elements:
+- Multimodal execution traces (failure diagnosis)
+- Validated repair knowledge compounding
+- Evolutionary search governance
+- Cross-embodiment skill transfer
+- Sim-to-real transfer verification
+composition: 'Three-component open-ended loop: execution engine generates traces → skill library distills validated fixes → evolutionary search explores diverse task sequences and control programs.'
+reproducibility: Project page with PDF; NVIDIA GEAR Lab; 43 pages, 12 figures, 9 tables. Code-as-policy paradigm with Claude as coding agent.
 rating: 9
 ---
 
@@ -47,12 +61,11 @@ Sim-to-real transfer: simulation-discovered skills reduce real-robot programming
 
 ASPIRE brings skill bundle patterns to the **robotics domain**:
 - Code-as-policy = skills as executable programs with formal structure
-- Skill library = persistent, transferable knowledge (analogous to [[evoskill-automated-skill-discovery]]'s skill folders)
-- Evolutionary search = skill discovery mechanism (complements [[skill1-unified-skill-evolution-rl]]'s RL-based approach)
-- Cross-embodiment transfer = skill portability evidence (parallels [[skillmigrator-cross-domain-transfer]]'s cross-domain transfer)
+- Skill library = persistent, transferable knowledge (analogous to [evoskill automated skill discovery](evoskill-automated-skill-discovery.md)'s skill folders)
+- Evolutionary search = skill discovery mechanism (complements [skill1 unified skill evolution rl](skill1-unified-skill-evolution-rl.md)'s RL-based approach)
+- Cross-embodiment transfer = skill portability evidence (parallels [skillmigrator cross domain transfer](skillmigrator-cross-domain-transfer.md)'s cross-domain transfer)
 
 ## Key Insight
 
 Robotics skill discovery via code-as-policy + evolutionary search produces skills that transfer across tasks, embodiments, and sim-to-real. The accumulated library enables zero-shot generalization to unseen long-horizon tasks (31% vs 4%), demonstrating that compounding validated repairs into a skill library is a viable continual learning strategy.
 
-[[backlinks]]

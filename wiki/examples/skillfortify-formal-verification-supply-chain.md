@@ -1,11 +1,28 @@
 ---
-title: "SkillFortify: Formal Analysis and Supply Chain Security for Agentic AI Skills"
+type: Skill Bundle Example
+title: 'SkillFortify: Formal Analysis and Supply Chain Security for Agentic AI Skills'
+description: SkillFortify is the **first formal analysis framework** for agent skill supply chains.
+resource: https://arxiv.org/abs/2603.00195
+timestamp: '2026-07-14T00:00:00Z'
 date: 2026-07-14
-sources: ["arXiv:2603.00195", "https://www.varunpratap.com/products/skillfortify"]
-skills_included: ["DY-Skill attacker model", "Sound static analysis (abstract interpretation)", "Capability-based sandboxing", "Agent Dependency Graph (SAT resolution)", "Trust score algebra", "SkillFortifyBench"]
-context_elements: ["Formal verification (5 mathematical theorems)", "Dolev-Yao attacker model for skill lifecycle", "Agent Dependency Graph with lockfile semantics", "Trust score algebra with monotonicity", "SHA-256 integrity hashing"]
-composition: "Six-contribution framework: DY-Skill threat model → sound static analysis → capability sandboxing with confinement proof → dependency graph with SAT resolution + lockfile → trust score algebra → benchmark (540 skills)."
-reproducibility: "arXiv paper (298K chars). Supports 22 agent frameworks. 540-skill benchmark. Product available at varunpratap.com."
+sources:
+- arXiv:2603.00195
+- https://www.varunpratap.com/products/skillfortify
+skills_included:
+- DY-Skill attacker model
+- Sound static analysis (abstract interpretation)
+- Capability-based sandboxing
+- Agent Dependency Graph (SAT resolution)
+- Trust score algebra
+- SkillFortifyBench
+context_elements:
+- Formal verification (5 mathematical theorems)
+- Dolev-Yao attacker model for skill lifecycle
+- Agent Dependency Graph with lockfile semantics
+- Trust score algebra with monotonicity
+- SHA-256 integrity hashing
+composition: 'Six-contribution framework: DY-Skill threat model → sound static analysis → capability sandboxing with confinement proof → dependency graph with SAT resolution + lockfile → trust score algebra → benchmark (540 skills).'
+reproducibility: arXiv paper (298K chars). Supports 22 agent frameworks. 540-skill benchmark. Product available at varunpratap.com.
 rating: 9
 ---
 
@@ -64,14 +81,13 @@ The lockfile provides:
 ## Relation to Skill Bundle Patterns
 
 SkillFortify provides the **formal verification layer** for skill bundle supply chains:
-- Complements [[skillguard-permission-framework]] (runtime permission governance) — SkillFortify governs supply chain, SkillGuard governs runtime
-- Complements [[skillsieve-malicious-skill-detection]] (heuristic detection) — SkillFortify provides formal guarantees, SkillSieve provides probabilistic detection
-- Extends [[supply-chain-agentic-factory-in-toto]] (SLSA/in-toto provenance) — SkillFortify adds formal analysis to provenance
-- Agent Dependency Graph parallels [[orca-cognitive-runtime]]'s DAG composition but for dependency resolution
+- Complements [skillguard permission framework](skillguard-permission-framework.md) (runtime permission governance) — SkillFortify governs supply chain, SkillGuard governs runtime
+- Complements [skillsieve malicious skill detection](skillsieve-malicious-skill-detection.md) (heuristic detection) — SkillFortify provides formal guarantees, SkillSieve provides probabilistic detection
+- Extends [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) (SLSA/in-toto provenance) — SkillFortify adds formal analysis to provenance
+- Agent Dependency Graph parallels [orca cognitive runtime](orca-cognitive-runtime.md)'s DAG composition but for dependency resolution
 - Lockfile semantics = package management pattern adapted for skills
 
 ## Key Insight
 
 The agent skill ecosystem reproduces the trust pathologies of traditional package ecosystems (npm, PyPI) but with amplified risk — skills execute with broad system privileges in the context of a powerful LLM. Heuristic detection is necessary but insufficient: "no findings does not mean no risk" (Cisco). Formal analysis with mathematical proofs provides the missing guarantee layer.
 
-[[backlinks]]

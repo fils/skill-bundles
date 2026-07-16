@@ -1,11 +1,25 @@
 ---
-title: "SkillOpt: Agent Skills as Trainable Parameters"
+type: Skill Bundle Example
+title: 'SkillOpt: Agent Skills as Trainable Parameters'
+description: SkillOpt reframes the question from "how do we write a better prompt?" to "how do we train the skill?" It treats the skill file as a **trainable parameter** living outside a frozen target model — like LoRA for prompts...
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["Microsoft Research Blog", "SkillOpt: Executive Strategy for Self-Evolving Agent Skills"]
-skills_included: ["Optimizer model", "Frozen target model", "Validation gate"]
-context_elements: ["Textual learning rate (per-step edit budget)", "Validation gating (held-out split)", "Rejected-edit buffer (negative feedback)", "Slow/meta updates (epoch-wise consolidation)", "Bounded text edits (add/delete/replace)", "Compact auditable skill files"]
-composition: "Forward-backward-update cycle: frozen target model executes tasks → optimizer model reflects on trajectories → bounded text edits → validation gate. Skills transfer across model scales, agent harnesses, and tasks."
-reproducibility: "Evaluated across 6 benchmarks, 7 target models, 3 execution modes (52 cells). Outperforms EvoSkill, GEPA, TextGrad, Trace2Skill, one-shot LLM skills, human-written skills."
+sources:
+- Microsoft Research Blog
+- 'SkillOpt: Executive Strategy for Self-Evolving Agent Skills'
+skills_included:
+- Optimizer model
+- Frozen target model
+- Validation gate
+context_elements:
+- Textual learning rate (per-step edit budget)
+- Validation gating (held-out split)
+- Rejected-edit buffer (negative feedback)
+- Slow/meta updates (epoch-wise consolidation)
+- Bounded text edits (add/delete/replace)
+- Compact auditable skill files
+composition: 'Forward-backward-update cycle: frozen target model executes tasks → optimizer model reflects on trajectories → bounded text edits → validation gate. Skills transfer across model scales, agent harnesses, and tasks.'
+reproducibility: Evaluated across 6 benchmarks, 7 target models, 3 execution modes (52 cells). Outperforms EvoSkill, GEPA, TextGrad, Trace2Skill, one-shot LLM skills, human-written skills.
 rating: 10
 ---
 
@@ -62,13 +76,12 @@ Cross-harness transfer suggests SkillOpt learns **general workflow logic**, not 
 ## Relation to Skill Bundle Patterns
 
 SkillOpt represents the **training-based optimization** paradigm, complementing:
-- [[evoskill-automated-skill-discovery]] (discovery-based) — SkillOpt outperforms EvoSkill on all cells
-- [[skillmoo-multi-objective-optimization]] (search-based) — SkillOpt uses gradient-like text optimization
-- [[coevoskills-self-evolving-skills]] (evolution-based) — SkillOpt adds validation gating + bounded edits
-- [[skillreducer-token-efficiency]] (content reduction) — SkillOpt grows skills purposefully; SkillReducer reduces them
+- [evoskill automated skill discovery](evoskill-automated-skill-discovery.md) (discovery-based) — SkillOpt outperforms EvoSkill on all cells
+- [skillmoo multi objective optimization](skillmoo-multi-objective-optimization.md) (search-based) — SkillOpt uses gradient-like text optimization
+- [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) (evolution-based) — SkillOpt adds validation gating + bounded edits
+- [skillreducer token efficiency](skillreducer-token-efficiency.md) (content reduction) — SkillOpt grows skills purposefully; SkillReducer reduces them
 
 ## Key Insight
 
 Treating skill files as trainable parameters with a proper optimization loop (forward-backward-update, validation gating, learning rate, rejected-edit buffer) produces skills that are compact, auditable, and transferable across models, harnesses, and tasks — without changing model weights. This is the closest analogue to deep learning optimization applied to the skill layer.
 
-[[backlinks]]

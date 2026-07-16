@@ -1,7 +1,16 @@
+---
+type: Skill Bundle Example
+title: Agentic Engineering Workflow Skills
+description: '- Peer review - Merge workflows - Other engineering process skills'
+resource: https://github.com/anbuneel/agentic-engineering
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Agentic Engineering Workflow Skills
 
-**Source:** https://github.com/anbuneel/agentic-engineering  
-**Date Added:** 2026-05-23  
+**Source:** https://github.com/anbuneel/agentic-engineering
+**Date Added:** 2026-05-23
 **Bundle Type:** Workflow Skills Pack
 
 ## Skills Included

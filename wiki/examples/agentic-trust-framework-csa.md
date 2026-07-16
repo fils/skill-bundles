@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Agentic Trust Framework (ATF) — Zero Trust Governance for Skill Bundles
+description: The **Agentic Trust Framework (ATF)** is an open governance specification from the Cloud Security Alliance that applies Zero Trust principles to autonomous AI agents.
+resource: https://cloudsecurityalliance.org/blog/2026/02/02/the-agentic-trust-framework-zero-trust-governance-for-ai-agents
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # Agentic Trust Framework (ATF) — Zero Trust Governance for Skill Bundles
 
 **Source:** https://cloudsecurityalliance.org/blog/2026/02/02/the-agentic-trust-framework-zero-trust-governance-for-ai-agents
@@ -34,15 +43,15 @@ The **Agentic Trust Framework (ATF)** is an open governance specification from t
 
 ATF provides **guardrails for skill deployment** at every maturity level:
 
-1. **Identity (skills provenance):** Every skill must have a verifiable publisher identity — aligns with [[nvidia-verified-agent-skills]]'s certificate chain
+1. **Identity (skills provenance):** Every skill must have a verifiable publisher identity — aligns with [nvidia verified agent skills](nvidia-verified-agent-skills.md)'s certificate chain
 2. **Behavior (skill monitoring):** When a skill executes, its behavior must be observable — logging every file access, network call, and state change
-3. **Data Governance (skill I/O):** Skills handling PII or credentials require input validation and output filtering — maps to [[veto-agent-authorization]] patterns
-4. **Segmentation (skill isolation):** Skills must run in resource-bounded environments — aligns with [[nemoclaw-security-scanner]] and [[graphguard-os-guardrails]]
+3. **Data Governance (skill I/O):** Skills handling PII or credentials require input validation and output filtering — maps to [veto agent authorization](veto-agent-authorization.md) patterns
+4. **Segmentation (skill isolation):** Skills must run in resource-bounded environments — aligns with [nemoclaw security scanner](nemoclaw-security-scanner.md) and [graphguard os guardrails](graphguard-os-guardrails.md)
 5. **Incident Response (skill fail-safe):** Circuit breakers and kill switches for skills behaving unexpectedly
 
 ## Composition Notes
 
-ATF and [[owasp-agentic-skills-top-10]] are **complementary frameworks**:
+ATF and [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) are **complementary frameworks**:
 
 | Dimension | OWASP AST10 | ATF |
 |-----------|-------------|-----|
@@ -61,7 +70,7 @@ The maturity model is particularly powerful for skill bundles — it suggests **
 High — open specification on CSA blog under CC BY 4.0, full GitHub repository with implementation code. The MVP phase (2-3 weeks) is designed to be immediately actionable.
 
 ## Bundle Links
-- [[owasp-agentic-skills-top-10]] — Complementary risk classification framework
-- [[nvidia-verified-agent-skills]] — Implements ATF's identity + signing requirements
-- [[graphguard-os-guardrails]] — Implements ATF's segmentation + incident response
-- [[mondoo-agent-skills-security]] — Provides empirical behavior data for ATF monitoring
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — Complementary risk classification framework
+- [nvidia verified agent skills](nvidia-verified-agent-skills.md) — Implements ATF's identity + signing requirements
+- [graphguard os guardrails](graphguard-os-guardrails.md) — Implements ATF's segmentation + incident response
+- [mondoo agent skills security](mondoo-agent-skills-security.md) — Provides empirical behavior data for ATF monitoring

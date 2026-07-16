@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: citiususc/text2shacl — Multi-Agent LangGraph Pipeline for SHACL Generation
+description: '`text2shacl` is an **ontology-driven multi-agent system for extracting SHACL shapes from text**, focused on the ERA (European Union Agency for Railways) ontology and RINF Application Guide.'
+resource: https://github.com/citiususc/text2shacl
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # citiususc/text2shacl — Multi-Agent LangGraph Pipeline for SHACL Generation
 
 **Source:** https://github.com/citiususc/text2shacl
@@ -41,9 +50,9 @@ This is the **inverse** of the typical SHACL workflow: instead of **validating**
 
 This is a **bidirectional SHACL↔LLM bridge**:
 - **Forward:** Natural-language requirements → SHACL shapes
-- **Reverse:** Existing SHACL shapes → natural-language explanations (covered by [[xpshacl-explainable-shacl]])
+- **Reverse:** Existing SHACL shapes → natural-language explanations (covered by [xpshacl explainable shacl](xpshacl-explainable-shacl.md))
 
-It also demonstrates a **multi-agent composition pattern** where the agents operate over different knowledge sources (ontology vs. docs vs. RAG summaries) — a composition that resembles the SC '25 paper's pipeline→hierarchical pattern ([[sc25-autonomous-science-workflows]]).
+It also demonstrates a **multi-agent composition pattern** where the agents operate over different knowledge sources (ontology vs. docs vs. RAG summaries) — a composition that resembles the SC '25 paper's pipeline→hierarchical pattern ([sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md)).
 
 The two merge strategies (`priority-llm` favors LLM-generated shapes when conflict; `restrictive` keeps only constraints that all sources agree on) are an example of **explicit conflict-resolution policy** — a pattern we have not seen elsewhere in the catalog.
 
@@ -51,7 +60,7 @@ The two merge strategies (`priority-llm` favors LLM-generated shapes when confli
 
 - **Multi-source grounding:** The agents use ontology, RAG over technical docs, and a published baseline (Astrea) — three independent evidence sources.
 - **Multi-model evaluation:** Same pipeline runs across 5 different LLMs to compare quality, enabling empirical model selection for this task.
-- **Post-processing pipeline:** SHACL shapes are *validated, cleaned, and merged* before being declared usable — exactly the kind of post-validation pattern that [[graphguard-os-guardrails]] uses for runtime guardrails.
+- **Post-processing pipeline:** SHACL shapes are *validated, cleaned, and merged* before being declared usable — exactly the kind of post-validation pattern that [graphguard os guardrails](graphguard-os-guardrails.md) uses for runtime guardrails.
 - **Reproducible evaluation:** Results in `results.csv`, bar+line charts and heatmaps comparing models, gold standard for comparison.
 
 ## Reproducibility
@@ -59,10 +68,10 @@ The two merge strategies (`priority-llm` favors LLM-generated shapes when confli
 **Very High.** Apache-2.0 license, conda environment file, full source code, public evaluation results (results.csv, figures), gold standard published, two input guide versions compared.
 
 ## Bundle Links
-- [[xpshacl-explainable-shacl]] — Reverse direction (SHACL → natural language)
-- [[shacl-1-2-spec]] — The spec these shapes conform to
-- [[shacl-data-quality-69-metrics]] — Shape-quality dimensions
-- [[graphguard-os-guardrails]] — Policy-as-code pattern reference
-- [[dspy-agent-skills-bundle]] — Another multi-agent + validation bundle
-- [[sc25-autonomous-science-workflows]] — Autonomous science framework this resembles
-- [[onto-llm-mapping]] — LLM-based ontology mapping (related LLM-for-ontologies work)
+- [xpshacl explainable shacl](xpshacl-explainable-shacl.md) — Reverse direction (SHACL → natural language)
+- [shacl 1 2 spec](shacl-1-2-spec.md) — The spec these shapes conform to
+- [shacl data quality 69 metrics](shacl-data-quality-69-metrics.md) — Shape-quality dimensions
+- [graphguard os guardrails](graphguard-os-guardrails.md) — Policy-as-code pattern reference
+- [dspy agent skills bundle](dspy-agent-skills-bundle.md) — Another multi-agent + validation bundle
+- [sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md) — Autonomous science framework this resembles
+- [onto llm mapping](onto-llm-mapping.md) — LLM-based ontology mapping (related LLM-for-ontologies work)

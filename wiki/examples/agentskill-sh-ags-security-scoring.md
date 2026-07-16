@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace
+description: The `ags` (Agent Skills) repo is the official home for the **agentskill.sh** CLI and skills.
+resource: https://github.com/agentskill-sh/ags
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace
 
 **Source:** https://github.com/agentskill-sh/ags
@@ -47,7 +56,7 @@ The `ags` (Agent Skills) repo is the official home for the **agentskill.sh** CLI
 
 `ags` is a **marketplace-with-policy-as-code** for skill bundles. The 12-category threat taxonomy is a *security specification* — a kind of SHACL for skill files. Every install path is gated by both server-side (the registry score) and client-side (the `/learn` second scan) checks, which is a defense-in-depth composition.
 
-The **content SHA tagging** is essentially **Merkle-root provenance** for installed skills — the same provenance pattern that [[nvidia-verified-agent-skills]] uses with OpenSSF signing. Two independent implementations of the same underlying pattern (immutable identifier for a skill version).
+The **content SHA tagging** is essentially **Merkle-root provenance** for installed skills — the same provenance pattern that [nvidia verified agent skills](nvidia-verified-agent-skills.md) uses with OpenSSF signing. Two independent implementations of the same underlying pattern (immutable identifier for a skill version).
 
 ## Composition Notes
 
@@ -68,18 +77,18 @@ One of the most bundle-dense examples in the catalog:
 
 ## Convergence Signal
 
-The README directly cites the Koi AI blog post on OpenClaw — the same incident that motivated the [[nemoclaw-security-scanner]] and [[owasp-agentic-skills-top-10]] entries in our catalog. **Three independent projects converging on the same threat model** is strong signal that the threat taxonomy is now well-defined.
+The README directly cites the Koi AI blog post on OpenClaw — the same incident that motivated the [nemoclaw security scanner](nemoclaw-security-scanner.md) and [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) entries in our catalog. **Three independent projects converging on the same threat model** is strong signal that the threat taxonomy is now well-defined.
 
 ## Reproducibility
 
 **High.** Open-source CLI, public GitHub repo, npm package, security dashboard accessible without auth. Threat taxonomy is published (12 categories listed in README).
 
 ## Bundle Links
-- [[nemoclaw-security-scanner]] — Convergent security scanner (same OpenClaw threat model)
-- [[owasp-agentic-skills-top-10]] — Defines 10-class vulnerability taxonomy
-- [[agentic-trust-framework-csa]] — 4-level Zero Trust maturity model
-- [[purplebox-supply-chain-security]] — 6-vector attack taxonomy
-- [[nvidia-verified-agent-skills]] — OpenSSF signing (another provenance implementation)
-- [[mondoo-agent-skills-security]] — Security skills-as-scanners pattern
-- [[skill-validator-cli]] — Local/pre-commit validation
-- [[validate-skill-github-action]] — CI/CD structural validation
+- [nemoclaw security scanner](nemoclaw-security-scanner.md) — Convergent security scanner (same OpenClaw threat model)
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — Defines 10-class vulnerability taxonomy
+- [agentic trust framework csa](agentic-trust-framework-csa.md) — 4-level Zero Trust maturity model
+- [purplebox supply chain security](purplebox-supply-chain-security.md) — 6-vector attack taxonomy
+- [nvidia verified agent skills](nvidia-verified-agent-skills.md) — OpenSSF signing (another provenance implementation)
+- [mondoo agent skills security](mondoo-agent-skills-security.md) — Security skills-as-scanners pattern
+- [skill validator cli](skill-validator-cli.md) — Local/pre-commit validation
+- [validate skill github action](validate-skill-github-action.md) — CI/CD structural validation

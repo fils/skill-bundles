@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: ai4curation/curation-skills — Ontology & Biocuration Skill Bundle
+description: A bundle of **Claude Skills** (SKILL.md folders) built specifically for **ontology and biocuration tasks**.
+resource: https://github.com/ai4curation/curation-skills
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # ai4curation/curation-skills — Ontology & Biocuration Skill Bundle
 
 **Source:** https://github.com/ai4curation/curation-skills
@@ -72,8 +81,8 @@ The companion `ai-blame` tool is interesting: it solves the "what did the agent 
 **High.** All skills are version-controlled in a public repo, use deterministic commands (OAK, ROBOT, OLS), and the reference implementations in Mondo/Cell Ontology provide working examples. The Justfile (`ai.just`) encodes repeatable workflows.
 
 ## Bundle Links
-- [[nora-gis-research-agent]] — Earlier NORA bundle from same research lineage
-- [[rdf-ontologies-skill]] — Related RDF/ontologies skill pattern
-- [[open-ontologies-paper]] / [[open-ontologies-github]] — SSSOM/Mapping context this bundle uses
-- [[skill-bundle-patterns]] — Auto-invocation pattern reference
-- [[sc25-autonomous-science-workflows]] — SC '25 framework for state-machine scientific agents
+- [nora gis research agent](nora-gis-research-agent.md) — Earlier NORA bundle from same research lineage
+- [rdf ontologies skill](rdf-ontologies-skill.md) — Related RDF/ontologies skill pattern
+- [open ontologies paper](open-ontologies-paper.md) / [open ontologies github](open-ontologies-github.md) — SSSOM/Mapping context this bundle uses
+- [skill bundle patterns](../concepts/skill-bundle-patterns.md) — Auto-invocation pattern reference
+- [sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md) — SC '25 framework for state-machine scientific agents

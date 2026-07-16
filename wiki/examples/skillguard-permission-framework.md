@@ -1,11 +1,27 @@
 ---
-title: "SkillGuard: A Permission Framework for Agent Skills"
+type: Skill Bundle Example
+title: 'SkillGuard: A Permission Framework for Agent Skills'
+description: SkillGuard is a skill-centric permission framework that treats skills as **permission-bearing executable artifacts**.
+resource: https://arxiv.org/abs/2606.03024
+timestamp: '2026-07-14T00:00:00Z'
 date: 2026-07-14
-sources: ["arXiv:2606.03024", "https://github.com/Dianshu-Liao/SkilLGuard"]
-skills_included: ["Skill manifests", "Runtime permission access control", "User-mediated authorization", "Capability inference", "Behavior monitoring"]
-context_elements: ["Dual-plane governance (context + action)", "Skill manifests (capability declaration)", "Deny-by-default enforcement", "Permission taxonomy (99.76% coverage)", "Runtime access control with canonical capability mapping"]
-composition: "Five-component framework: skill manifests declare capabilities → runtime access control maps tool invocations to canonical capabilities → user-mediated authorization for sensitive permissions → deny-by-default enforcement → behavior monitoring."
-reproducibility: "Open-sourced on GitHub (Dianshu-Liao/SkilLGuard). 315 real-world skills evaluated."
+sources:
+- arXiv:2606.03024
+- https://github.com/Dianshu-Liao/SkilLGuard
+skills_included:
+- Skill manifests
+- Runtime permission access control
+- User-mediated authorization
+- Capability inference
+- Behavior monitoring
+context_elements:
+- Dual-plane governance (context + action)
+- Skill manifests (capability declaration)
+- Deny-by-default enforcement
+- Permission taxonomy (99.76% coverage)
+- Runtime access control with canonical capability mapping
+composition: 'Five-component framework: skill manifests declare capabilities → runtime access control maps tool invocations to canonical capabilities → user-mediated authorization for sensitive permissions → deny-by-default enforcement → behavior monitoring.'
+reproducibility: Open-sourced on GitHub (Dianshu-Liao/SkilLGuard). 315 real-world skills evaluated.
 rating: 9
 ---
 
@@ -52,13 +68,12 @@ SkillGuard is a skill-centric permission framework that treats skills as **permi
 ## Relation to Skill Bundle Patterns
 
 SkillGuard extends the skill bundle thesis to include **permission governance** as a formal context element:
-- Complements [[skillfortify-formal-verification-supply-chain]] (formal verification/static analysis) — SkillGuard governs runtime, SkillFortify governs supply chain
-- Complements [[skillsieve-malicious-skill-detection]] (detection) — SkillGuard prevents, SkillSieve detects
-- Extends [[veto-agent-authorization]] and [[tool-use-firewall]] patterns to skill-centric governance
+- Complements [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (formal verification/static analysis) — SkillGuard governs runtime, SkillFortify governs supply chain
+- Complements [skillsieve malicious skill detection](skillsieve-malicious-skill-detection.md) (detection) — SkillGuard prevents, SkillSieve detects
+- Extends [veto agent authorization](veto-agent-authorization.md) and [tool use firewall](tool-use-firewall.md) patterns to skill-centric governance
 - Dual-plane model is novel: recognizes skills shape both reasoning (context) and execution (actions)
 
 ## Key Insight
 
 Agent skills operate across two coupled planes — context (what a skill tells the agent to think) and action (what a skill causes the agent to do). Security frameworks that address only one plane leave the other vulnerable. SkillGuard's dual-plane governance with deny-by-default enforcement provides a practical foundation for skill ecosystem security.
 
-[[backlinks]]

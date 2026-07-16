@@ -1,11 +1,26 @@
 ---
-title: "AgentBound: Declarative Access Control for MCP Servers"
+type: Skill Bundle Example
+title: 'AgentBound: Declarative Access Control for MCP Servers'
+description: AgentBound is the first access control framework for **MCP servers**.
+resource: https://arxiv.org/abs/2510.21236
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2510.21236", "https://github.com/dortort/agent-bound"]
-skills_included: ["Declarative policy generation", "Policy enforcement engine", "Source code analysis for policy derivation", "MCP server sandboxing"]
-context_elements: ["Declarative access control (Android permission model inspired)", "Policy enforcement engine (no server modifications)", "Automated policy generation from source code (80.9% accuracy)", "MCP server dataset (296 most popular)", "ACM FSE 2026 publication"]
-composition: "Access control framework: source code analysis → automated policy generation (80.9%) → declarative policy enforcement engine wraps MCP servers without modification → blocks malicious behavior at negligible overhead."
-reproducibility: "Open-sourced on GitHub (dortort/agent-bound). 296 most popular MCP servers evaluated. Published at ACM FSE 2026."
+sources:
+- arXiv:2510.21236
+- https://github.com/dortort/agent-bound
+skills_included:
+- Declarative policy generation
+- Policy enforcement engine
+- Source code analysis for policy derivation
+- MCP server sandboxing
+context_elements:
+- Declarative access control (Android permission model inspired)
+- Policy enforcement engine (no server modifications)
+- Automated policy generation from source code (80.9% accuracy)
+- MCP server dataset (296 most popular)
+- ACM FSE 2026 publication
+composition: 'Access control framework: source code analysis → automated policy generation (80.9%) → declarative policy enforcement engine wraps MCP servers without modification → blocks malicious behavior at negligible overhead.'
+reproducibility: Open-sourced on GitHub (dortort/agent-bound). 296 most popular MCP servers evaluated. Published at ACM FSE 2026.
 rating: 9
 ---
 
@@ -59,14 +74,13 @@ AgentBound is the first access control framework for **MCP servers**. As the Mod
 
 AgentBound extends skill bundle security to the **MCP protocol layer** — the infrastructure that connects skills to resources.
 
-- Complements [[skillguard-permission-framework]] (skill-level permissions vs. MCP-server-level permissions)
-- Related to [[skillfortify-formal-verification-supply-chain]] (formal supply chain — AgentBound is runtime infrastructure)
-- Different layer from [[skillspector-nvidia-security-scanner]] (static scanning vs. runtime access control)
-- Addresses the infrastructure layer defined by [[agent-skills-spec]] and MCP
-- Connects to [[externalization-llm-agents-unified-review]] (harness engineering = governed execution)
+- Complements [skillguard permission framework](skillguard-permission-framework.md) (skill-level permissions vs. MCP-server-level permissions)
+- Related to [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (formal supply chain — AgentBound is runtime infrastructure)
+- Different layer from [skillspector nvidia security scanner](skillspector-nvidia-security-scanner.md) (static scanning vs. runtime access control)
+- Addresses the infrastructure layer defined by [agent skills spec](agent-skills-spec.md) and MCP
+- Connects to [externalization llm agents unified review](externalization-llm-agents-unified-review.md) (harness engineering = governed execution)
 
 ## Key Insight
 
 MCP servers are the connective tissue between agents and resources, yet thousands run with unrestricted access. AgentBound demonstrates that the Android permission model — proven across billions of devices — can be adapted to MCP server security with automated policy generation and non-invasive enforcement. This brings software engineering access control discipline to agent infrastructure.
 
-[[backlinks]]

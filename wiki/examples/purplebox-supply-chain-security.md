@@ -1,21 +1,28 @@
 ---
+type: Skill Bundle Example
+title: PurpleBox Security — AI Agent Skills Supply Chain Risk Analysis
+description: PurpleBox Security published a comprehensive analysis of the security risks in the Agent Skills marketplace ecosystem.
+resource: https://www.prplbx.com/blog/agent-skills-supply-chain
+timestamp: '2026-05-25T00:00:00Z'
 date: 2026-05-25
 sources:
-  - https://www.prplbx.com/blog/agent-skills-supply-chain
-title: PurpleBox Security — AI Agent Skills Supply Chain Risk Analysis
+- https://www.prplbx.com/blog/agent-skills-supply-chain
 skills:
-  - Security audit procedures for agent skills
-  - Attack taxonomy identification
+- Security audit procedures for agent skills
+- Attack taxonomy identification
 context_elements:
-  - Attack taxonomy (6 vectors)
-  - CVE documentation (CVE-2026-25253)
-  - Marketplace infection rate tracking
-  - Security gap analysis (4 critical gaps)
-  - Remediation playbooks (immediate/short-term/long-term)
-composition_notes: |
-  Negative example showing what skill bundles LACK — the security context elements that should
-  be included but aren't in the Agent Skills specification. Maps directly to the need for
+- Attack taxonomy (6 vectors)
+- CVE documentation (CVE-2026-25253)
+- Marketplace infection rate tracking
+- Security gap analysis (4 critical gaps)
+- Remediation playbooks (immediate/short-term/long-term)
+composition_notes: 'Negative example showing what skill bundles LACK — the security context elements that should
+
+  be included but aren''t in the Agent Skills specification. Maps directly to the need for
+
   validation, signing, and authorization layers in bundles.
+
+  '
 reproducibility: High — published article with full data
 confidence: 9/10
 ---
@@ -24,7 +31,7 @@ confidence: 9/10
 
 ## Overview
 
-PurpleBox Security published a comprehensive analysis of the security risks in the Agent Skills marketplace ecosystem. Within 7 weeks of the [[agent-skills-spec]] open standard release, researchers identified a **12% infection rate** in public marketplaces — 341 malicious skills on ClawHub alone, ~900 total identified globally.
+PurpleBox Security published a comprehensive analysis of the security risks in the Agent Skills marketplace ecosystem. Within 7 weeks of the [agent skills spec](agent-skills-spec.md) open standard release, researchers identified a **12% infection rate** in public marketplaces — 341 malicious skills on ClawHub alone, ~900 total identified globally.
 
 ## The ClawHavoc Campaign
 
@@ -58,14 +65,14 @@ This article directly maps to context elements needed in skill bundles:
 
 | Gap | Existing Counterexample in Catalog |
 |---|---|
-| Code signing | [[nvidia-verified-agent-skills]] (OpenSSF) |
-| Sandboxing | [[nemoclaw-security-scanner]] |
-| Authorization | [[veto-agent-authorization]] |
-| Supply chain | [[github-cli-skill-management]] |
-| Scanning | [[mondoo-agent-skills-security]] (14 attack patterns) |
+| Code signing | [nvidia verified agent skills](nvidia-verified-agent-skills.md) (OpenSSF) |
+| Sandboxing | [nemoclaw security scanner](nemoclaw-security-scanner.md) |
+| Authorization | [veto agent authorization](veto-agent-authorization.md) |
+| Supply chain | [github cli skill management](github-cli-skill-management.md) |
+| Scanning | [mondoo agent skills security](mondoo-agent-skills-security.md) (14 attack patterns) |
 
 ## Why This Matters for Bundles
-PurpleBox shows that skill bundles are an **active attack surface**. Any skill bundle design that doesn't include security as a context element (validation, signing, authorization, scanning) is vulnerable to the attack vectors documented here. This article provides the **theoretical foundation** for why bundles like [[graphguard-os-guardrails]], [[tool-use-firewall]], and [[veto-agent-authorization]] exist — they are the defense against these attacks.
+PurpleBox shows that skill bundles are an **active attack surface**. Any skill bundle design that doesn't include security as a context element (validation, signing, authorization, scanning) is vulnerable to the attack vectors documented here. This article provides the **theoretical foundation** for why bundles like [graphguard os guardrails](graphguard-os-guardrails.md), [tool use firewall](tool-use-firewall.md), and [veto agent authorization](veto-agent-authorization.md) exist — they are the defense against these attacks.
 
 ## Source Attribution
-Raw source: [[../../raw/2026-05-25/purplebox-supply-chain-risk.md]]
+Raw source: [purplebox supply chain risk](../../raw/2026-05-25/purplebox-supply-chain-risk.md)

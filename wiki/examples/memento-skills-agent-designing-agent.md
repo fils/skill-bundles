@@ -1,11 +1,26 @@
 ---
-title: "Memento-Skills: Let Agents Design Agents"
+type: Skill Bundle Example
+title: 'Memento-Skills: Let Agents Design Agents'
+description: 'Memento-Skills is a generalist, continually-learnable LLM agent system that functions as an **agent-designing agent**: it autonomously constructs, adapts, and improves task-specific agents through experience.'
+resource: https://arxiv.org/abs/2603.18743
+timestamp: '2026-07-14T00:00:00Z'
 date: 2026-07-14
-sources: ["arXiv:2603.18743", "https://github.com/Memento-Teams/Memento-Skills"]
-skills_included: ["Behaviour-trainable skill router", "Read-Write Reflective Learning", "Skill library (structured markdown files)", "Stateful prompts"]
-context_elements: ["Skills as persistent evolving memory (markdown)", "Read-Write Reflective Learning cycle", "Stateful prompts (context carry-forward)", "Skill router (selection governance)", "Continual learning without LLM parameter updates"]
-composition: "Agent-designing agent: read phase selects skills via router, write phase updates/expands skill library. Skills as structured markdown files serve as persistent, evolving memory."
-reproducibility: "Open-sourced on GitHub (Memento-Teams/Memento-Skills). Technical report with 27 citations."
+sources:
+- arXiv:2603.18743
+- https://github.com/Memento-Teams/Memento-Skills
+skills_included:
+- Behaviour-trainable skill router
+- Read-Write Reflective Learning
+- Skill library (structured markdown files)
+- Stateful prompts
+context_elements:
+- Skills as persistent evolving memory (markdown)
+- Read-Write Reflective Learning cycle
+- Stateful prompts (context carry-forward)
+- Skill router (selection governance)
+- Continual learning without LLM parameter updates
+composition: 'Agent-designing agent: read phase selects skills via router, write phase updates/expands skill library. Skills as structured markdown files serve as persistent, evolving memory.'
+reproducibility: Open-sourced on GitHub (Memento-Teams/Memento-Skills). Technical report with 27 citations.
 rating: 9
 ---
 
@@ -45,8 +60,8 @@ Memento-Skills is a generalist, continually-learnable LLM agent system that func
 ## Relation to Skill Bundle Patterns
 
 Memento-Skills is a canonical example of **skills as the primary adaptation mechanism**:
-- Skills = structured markdown files (matching [[agentskills-io-specification]] format)
-- Read-Write cycle = skill lifecycle (parallels [[skill1-unified-skill-evolution-rl]]'s select-use-distill)
+- Skills = structured markdown files (matching [agent skills spec](agent-skills-spec.md) format)
+- Read-Write cycle = skill lifecycle (parallels [skill1 unified skill evolution rl](skill1-unified-skill-evolution-rl.md)'s select-use-distill)
 - Agent-designing agent = meta-level composition (skills create skills for new tasks)
 - Continual learning without LLM updates = skills as the adaptation substrate
 
@@ -56,4 +71,3 @@ Also mentions **SkillClaw** framework for collective skill evolution (multi-agen
 
 Skills stored as structured markdown files can serve as the sole adaptation mechanism for continual learning — no LLM parameter updates needed. The Read-Write Reflective Learning cycle (read = select skill, write = update skill library) is a complete skill lifecycle that enables agents to design other agents end-to-end.
 
-[[backlinks]]

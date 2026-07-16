@@ -1,11 +1,25 @@
 ---
-title: "AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling"
+type: Skill Bundle Example
+title: 'AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling'
+description: '- **Journal:** SoftwareX, Volume 35, September 2026, 102855 - **Authors:** Haolin Wen, Songyi Wang, Bingjie Li, Junfen Xiong, Tong Chen, Xin Liang - **DOI:** https://doi.org/10.1016/j.softx.2026.102855'
+resource: https://www.sciencedirect.com/science/article/pii/S235271102600347X
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://www.sciencedirect.com/science/article/pii/S235271102600347X
-authors: [Wen, Wang, Li, Xiong, Chen, Liang]
+authors:
+- Wen
+- Wang
+- Li
+- Xiong
+- Chen
+- Liang
 journal: SoftwareX
 signal: 8
-context_elements: [Ontology-driven knowledge modeling, Agentic skill framework, Closed-loop knowledge cycle, Natural language entity extraction]
+context_elements:
+- Ontology-driven knowledge modeling
+- Agentic skill framework
+- Closed-loop knowledge cycle
+- Natural language entity extraction
 ---
 
 # AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling (v6.6.1)
@@ -64,8 +78,7 @@ This directly implements the "skills bundled with ontologies" pattern from the s
 ## Connections
 
 - Skills + ontology integration is the core skill bundle thesis
-- Conversation-invokable skills contrast with file-based [[agent-skills-spec]]
-- Autonomous planning mode connects to [[skillcraft-benchmark]]'s auto-composition
+- Conversation-invokable skills contrast with file-based [agent skills spec](agent-skills-spec.md)
+- Autonomous planning mode connects to [skillcraft benchmark](skillcraft-benchmark.md)'s auto-composition
 - Closed-loop design is a novel governance pattern (skills validate knowledge, knowledge guides skills)
 
-[[backlinks]]

@@ -1,11 +1,25 @@
 ---
-title: "EvoSkill: Automated Skill Discovery for Multi-Agent Systems"
+type: Skill Bundle Example
+title: 'EvoSkill: Automated Skill Discovery for Multi-Agent Systems'
+description: EvoSkill is a self-evolving framework that automatically discovers and refines agent skills through iterative failure analysis.
+resource: https://arxiv.org/abs/2603.02766
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["arXiv:2603.02766", "https://github.com/sentient-agi/EvoSkill"]
-skills_included: ["Executor Agent", "Proposer Agent", "Skill-Builder Agent"]
-context_elements: ["Pareto frontier governance", "Git-backed version control (program/ branches + frontier/ tags)", "Structured skill folders (SKILL.md + trigger metadata + helper scripts)", "Multi-tolerance scoring (5 tolerance levels)", "Meta-skill bootstrapping"]
-composition: "Three-agent collaboration: Executor runs tasks, Proposer analyzes failures and proposes skills, Skill-Builder materializes into skill folders. Pareto frontier governs selection."
-reproducibility: "Open-sourced on GitHub (1k stars, 322 commits). Git-backed program version control enables full lineage reconstruction. Supports Claude Code, Codex, OpenCode."
+sources:
+- arXiv:2603.02766
+- https://github.com/sentient-agi/EvoSkill
+skills_included:
+- Executor Agent
+- Proposer Agent
+- Skill-Builder Agent
+context_elements:
+- Pareto frontier governance
+- Git-backed version control (program/ branches + frontier/ tags)
+- Structured skill folders (SKILL.md + trigger metadata + helper scripts)
+- Multi-tolerance scoring (5 tolerance levels)
+- Meta-skill bootstrapping
+composition: 'Three-agent collaboration: Executor runs tasks, Proposer analyzes failures and proposes skills, Skill-Builder materializes into skill folders. Pareto frontier governs selection.'
+reproducibility: Open-sourced on GitHub (1k stars, 322 commits). Git-backed program version control enables full lineage reconstruction. Supports Claude Code, Codex, OpenCode.
 rating: 9
 ---
 
@@ -49,12 +63,11 @@ A bounded set of top-performing programs (K=3 default) tracked via git tags. Eac
 ## Relation to Skill Bundle Patterns
 
 EvoSkill represents the **auto-discovery** paradigm in the skill bundle ecosystem. It complements:
-- [[coevoskills-self-evolving-skills]] (evolution-based) and [[skillmoo-multi-objective-optimization]] (search-based) as skill optimization approaches
-- [[skillcraft-benchmark]] (composition) by demonstrating skills can be discovered, not just composed
-- [[skillreducer-token-efficiency]] (content reduction) — both modify skills but EvoSkill creates, SkillReducer reduces
+- [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) (evolution-based) and [skillmoo multi objective optimization](skillmoo-multi-objective-optimization.md) (search-based) as skill optimization approaches
+- [skillcraft benchmark](skillcraft-benchmark.md) (composition) by demonstrating skills can be discovered, not just composed
+- [skillreducer token efficiency](skillreducer-token-efficiency.md) (content reduction) — both modify skills but EvoSkill creates, SkillReducer reduces
 
 ## Key Insight
 
 Skills discovered through failure analysis at the skill abstraction level (not prompt/code level) produce **transferable capabilities** — a skill evolved on one benchmark improves a completely different one without modification. This is direct evidence that skill-level optimization captures generalizable knowledge.
 
-[[backlinks]]

@@ -1,18 +1,32 @@
 ---
-title: "WildClawBench: Native-Runtime Long-Horizon Agent Evaluation"
+type: Skill Bundle Example
+title: 'WildClawBench: Native-Runtime Long-Horizon Agent Evaluation'
+description: 'WildClawBench is a **native-runtime** benchmark for AI agents: 60 human-authored bilingual multimodal tasks run inside Docker containers hosting the **actual** CLI harnesses used in deployment (OpenClaw, Claude Code,...'
+resource: https://arxiv.org/abs/2605.10912
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2605.10912", "https://github.com/InternLM/WildClawBench"]
-skills_included: ["Optional category skill sets", "Multi-harness skill packaging", "OpenClaw/Claude Code/Codex/Hermes skill load"]
-context_elements: ["Native-runtime Docker harness", "Hybrid grading (rules + env audit + LLM/VLM judge)", "Skill-set ablation methodology", "ClawHub-aligned task taxonomy", "Multi-harness comparative protocol"]
-composition: "Benchmark bundle: 60 bilingual multimodal tasks × 4 real CLI harnesses × optional domain skill sets; measures long-horizon work not mock APIs."
-reproducibility: "Open tasks, code, containers (InternLM/WildClawBench, 477★). 19 models evaluated; best 62.2% Claude Opus 4.7 / OpenClaw."
+sources:
+- arXiv:2605.10912
+- https://github.com/InternLM/WildClawBench
+skills_included:
+- Optional category skill sets
+- Multi-harness skill packaging
+- OpenClaw/Claude Code/Codex/Hermes skill load
+context_elements:
+- Native-runtime Docker harness
+- Hybrid grading (rules + env audit + LLM/VLM judge)
+- Skill-set ablation methodology
+- ClawHub-aligned task taxonomy
+- Multi-harness comparative protocol
+composition: 'Benchmark bundle: 60 bilingual multimodal tasks × 4 real CLI harnesses × optional domain skill sets; measures long-horizon work not mock APIs.'
+reproducibility: Open tasks, code, containers (InternLM/WildClawBench, 477★). 19 models evaluated; best 62.2% Claude Opus 4.7 / OpenClaw.
 rating: 9
 ---
 
 # WildClawBench: Native-Runtime Long-Horizon Agent Evaluation
 
-**Origin:** InternLM / Shanghai AI Lab et al., arXiv:2605.10912, May 2026  
-**GitHub:** https://github.com/InternLM/WildClawBench (~477★)  
+**Origin:** InternLM / Shanghai AI Lab et al., arXiv:2605.10912, May 2026
+**GitHub:** https://github.com/InternLM/WildClawBench (~477★)
 **Leaderboard:** https://internlm.github.io/WildClawBench/
 
 ## Overview
@@ -44,13 +58,12 @@ WildClawBench is a **native-runtime** benchmark for AI agents: 60 human-authored
 
 ## Relation to Skill Bundle Patterns
 
-- Complements [[skillsbench-agent-skills-benchmark]] (paired +16.2pp curated delta across domains) with **in-the-wild multi-harness** reality
-- Complements [[swe-skills-bench-utility-benchmark]] (SWE-only, 80% zero gain) with non-SWE long-horizon categories
-- Evaluation substrate used by [[skillclaw-collective-skill-evolution]]
-- Multi-harness sensitivity reinforces [[skill-os-skills-as-apps]] and harness-as-infrastructure themes from [[externalization-llm-agents-unified-review]]
+- Complements [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) (paired +16.2pp curated delta across domains) with **in-the-wild multi-harness** reality
+- Complements [swe skills bench utility benchmark](swe-skills-bench-utility-benchmark.md) (SWE-only, 80% zero gain) with non-SWE long-horizon categories
+- Evaluation substrate used by [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md)
+- Multi-harness sensitivity reinforces [skill os skills as apps](skill-os-skills-as-apps.md) and harness-as-infrastructure themes from [externalization llm agents unified review](externalization-llm-agents-unified-review.md)
 
 ## Key Insight
 
 Skill utility and model quality are **not harness-invariant**. Measuring skill bundles requires native runtimes, multi-harness comparison, and skill-set ablations — synthetic sandboxes understate both difficulty and configuration sensitivity.
 
-[[backlinks]]

@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Open Ontologies — GitHub Repository (Rust MCP Server)
+description: Open Ontologies — a high-performance, Rust-based Model Context Protocol (MCP) server and desktop Studio for AI-native ontology engineering.
+resource: https://github.com/fabio-rovai/open-ontologies
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Open Ontologies — GitHub Repository (Rust MCP Server)
 
 **Source:** https://github.com/fabio-rovai/open-ontologies
@@ -9,7 +18,7 @@
 
 ## Name & Origin
 
-Open Ontologies — a high-performance, Rust-based Model Context Protocol (MCP) server and desktop Studio for AI-native ontology engineering. Companion to the arXiv paper (see [[open-ontologies-paper]]), this repo represents the production implementation.
+Open Ontologies — a high-performance, Rust-based Model Context Protocol (MCP) server and desktop Studio for AI-native ontology engineering. Companion to the arXiv paper (see [open ontologies paper](open-ontologies-paper.md)), this repo represents the production implementation.
 
 ## Skills Included
 

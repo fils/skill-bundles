@@ -1,3 +1,11 @@
+---
+type: Concept
+title: Bidirectional SHACL ↔ LLM Bridge
+description: 'A **bidirectional SHACL ↔ LLM bridge** is a bundle that uses LLMs to translate between natural-language requirements and SHACL shapes in both directions:'
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # Bidirectional SHACL ↔ LLM Bridge
 
 **Date Added:** 2026-06-01 (Iteration 13)
@@ -14,7 +22,7 @@ The catalog now has examples of both directions, which together form a complete 
 
 ## Forward Direction: text2shacl
 
-[[text2shacl-multi-agent-shacl]] (added Iteration 13) demonstrates forward generation:
+[text2shacl multi agent shacl](../examples/text2shacl-multi-agent-shacl.md) (added Iteration 13) demonstrates forward generation:
 
 - Input: HTML/PDF technical requirements (RINF Application Guide) + OWL ontology
 - Pipeline: 4 stages — preprocessing → RAG indexing → SHACL generation (LangGraph multi-agent) → post-processing/merging
@@ -27,7 +35,7 @@ The merge step implements explicit conflict-resolution policy:
 
 ## Reverse Direction: xpSHACL
 
-[[xpshacl-explainable-shacl]] (already in catalog from Iteration 8) demonstrates reverse explanation:
+[xpshacl explainable shacl](../examples/xpshacl-explainable-shacl.md) (already in catalog from Iteration 8) demonstrates reverse explanation:
 
 - Input: SHACL shapes + RDF data
 - Output: Natural-language explanations of why validation passes/fails
@@ -59,11 +67,11 @@ This is the kind of closed loop that makes SHACL accessible to non-RDF-experts �
 
 ## Cross-References in the Catalog
 
-- [[shacl-1-2-spec]] — The spec both directions target
-- [[shacl-data-quality-69-metrics]] — Shape-quality dimensions the forward direction can optimize for
-- [[xpshacl-explainable-shacl]] — The reverse direction
-- [[dspy-agent-skills-bundle]] — LLM-as-judge pattern useful for evaluating forward generation quality
-- [[sc25-autonomous-science-workflows]] — Closed-loop autonomous pattern this resembles
+- [shacl 1 2 spec](../examples/shacl-1-2-spec.md) — The spec both directions target
+- [shacl data quality 69 metrics](../examples/shacl-data-quality-69-metrics.md) — Shape-quality dimensions the forward direction can optimize for
+- [xpshacl explainable shacl](../examples/xpshacl-explainable-shacl.md) — The reverse direction
+- [dspy agent skills bundle](../examples/dspy-agent-skills-bundle.md) — LLM-as-judge pattern useful for evaluating forward generation quality
+- [sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md) — Closed-loop autonomous pattern this resembles
 
 ## Open Questions
 
@@ -72,6 +80,6 @@ This is the kind of closed loop that makes SHACL accessible to non-RDF-experts �
 3. **Partial shapes:** Forward generation often produces *partial* shapes — a constraint for some properties but not all. The reverse direction should be able to explain "this shape doesn't constrain property X" — does it?
 
 ## Related Concepts
-- [[validator-explanation-pattern]] — The reverse direction
-- [[sssom-mapping-as-context]] — Mapping as a parallel bridge pattern
-- [[skill-bundle-patterns]] — Foundation patterns
+- [validator explanation pattern](validator-explanation-pattern.md) — The reverse direction
+- [sssom mapping as context](sssom-mapping-as-context.md) — Mapping as a parallel bridge pattern
+- [skill bundle patterns](skill-bundle-patterns.md) — Foundation patterns

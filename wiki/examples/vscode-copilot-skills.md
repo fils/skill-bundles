@@ -1,6 +1,15 @@
+---
+type: Skill Bundle Example
+title: VS Code Copilot Agent Skills — Cross-Platform Standard
+description: VS Code Copilot Agent Skills — Microsoft's implementation of the agentskills.io open standard for GitHub Copilot in VS Code, Copilot CLI, and Copilot cloud agent.
+resource: https://code.visualstudio.com/docs/copilot/customization/agent-skills
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # VS Code Copilot Agent Skills — Cross-Platform Standard
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Source:** https://code.visualstudio.com/docs/copilot/customization/agent-skills
 **Confidence:** 5/5 (Official Microsoft documentation)
 

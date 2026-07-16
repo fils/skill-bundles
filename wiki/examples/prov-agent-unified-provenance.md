@@ -1,11 +1,24 @@
 ---
-title: "PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions"
+type: Skill Bundle Example
+title: 'PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions'
+description: In agentic workflows, autonomous agents plan tasks, interact with humans and peers, and shape scientific outcomes.
+resource: https://arxiv.org/abs/2508.02866
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["arXiv:2508.02866"]
-skills_included: ["Provenance capture system", "Agent interaction tracking"]
-context_elements: ["W3C PROV extension", "MCP (Model Context Protocol) integration", "Agent-centric metadata (prompts, responses, decisions)", "Cross-facility provenance (edge/cloud/HPC)", "Near real-time capture system", "Provenance graph (agent actions as first-class)"]
-composition: "Extends W3C PROV standard with MCP concepts to capture agent decisions, prompts, and responses as first-class provenance components in end-to-end workflow graphs."
-reproducibility: "Open-source provenance capture system. Cross-facility evaluation (edge, cloud, HPC). Oak Ridge + Argonne National Labs."
+sources:
+- arXiv:2508.02866
+skills_included:
+- Provenance capture system
+- Agent interaction tracking
+context_elements:
+- W3C PROV extension
+- MCP (Model Context Protocol) integration
+- Agent-centric metadata (prompts, responses, decisions)
+- Cross-facility provenance (edge/cloud/HPC)
+- Near real-time capture system
+- Provenance graph (agent actions as first-class)
+composition: Extends W3C PROV standard with MCP concepts to capture agent decisions, prompts, and responses as first-class provenance components in end-to-end workflow graphs.
+reproducibility: Open-source provenance capture system. Cross-facility evaluation (edge, cloud, HPC). Oak Ridge + Argonne National Labs.
 rating: 8
 ---
 
@@ -52,12 +65,11 @@ Without this, root cause analysis is impossible when unexpected behavior occurs 
 ## Relation to Skill Bundle Patterns
 
 PROV-AGENT addresses the **provenance and traceability** dimension of skill bundles:
-- Complements [[supply-chain-agentic-factory-in-toto]] (SLSA/in-toto for supply chain) — PROV-AGENT captures runtime provenance
-- Extends [[ai-km-ontology-skills]] pattern — both connect skills to formal knowledge artifacts
+- Complements [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) (SLSA/in-toto for supply chain) — PROV-AGENT captures runtime provenance
+- Extends [ai km ontology skills](ai-km-ontology-skills.md) pattern — both connect skills to formal knowledge artifacts
 - Relates to W3C Agent Protocol Community Group efforts for interoperable agent standards
 
 ## Key Insight
 
 Agent decisions, prompts, and responses must be first-class provenance components — not just data flow. The W3C PROV + MCP combination provides a standards-based foundation for agent workflow traceability, enabling root cause analysis when agents hallucinate or reason incorrectly in multi-step workflows.
 
-[[backlinks]]

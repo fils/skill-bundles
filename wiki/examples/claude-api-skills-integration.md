@@ -1,3 +1,10 @@
+---
+type: Skill Bundle Example
+title: 'Claude API Agent Skills: Official Integration Guide'
+description: This entry covers the **official Claude API integration mechanism** for Agent Skills via the `container` parameter.
+resource: https://platform.claude.com/docs/en/build-with-claude/skills-guide
+---
+
 # Claude API Agent Skills: Official Integration Guide
 
 ## Overview

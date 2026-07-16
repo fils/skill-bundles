@@ -1,11 +1,34 @@
 ---
-title: "SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?"
+type: Skill Bundle Example
+title: 'SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?'
+description: '- **arXiv:** 2603.00718 (submitted 28 Feb 2026, v2 10 Mar 2026) - **Authors:** Shiqi Chen, Jingze Gai, +15 others (Junxian He, Yee Whye Teh) - **Code:** https://github.com/shiqichen17/SkillCraft'
+resource: https://arxiv.org/abs/2603.00718
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://arxiv.org/abs/2603.00718
-authors: [Chen, Gai, Zhou, Zhang, Zhu, Li, Wang, Wang, Chen, Kaleb, Miao, Gao, Lu, Li, He, Teh]
+authors:
+- Chen
+- Gai
+- Zhou
+- Zhang
+- Zhu
+- Li
+- Wang
+- Wang
+- Chen
+- Kaleb
+- Miao
+- Gao
+- Lu
+- Li
+- He
+- Teh
 arxiv: 2603.00718
 signal: 9
-context_elements: [Skill composition benchmark, Auto-composition protocol, Persistent skill library]
+context_elements:
+- Skill composition benchmark
+- Auto-composition protocol
+- Persistent skill library
 ---
 
 # SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?
@@ -59,9 +82,8 @@ The inverse of static skill bundles: instead of humans authoring skills, agents 
 
 ## Connections
 
-- Auto-composition pattern complements [[orca-cognitive-runtime]] (declarative composition) and [[effiskill-code-efficiency-optimization]] (two-tier mining)
-- Cited by [[coevoskills-self-evolving-skills]] as foundational
-- 80% token savings quantifies efficiency benefit (cf. [[skillreducer-token-efficiency]]'s 48%+39% compression)
+- Auto-composition pattern complements [orca cognitive runtime](orca-cognitive-runtime.md) (declarative composition) and [effiskill code efficiency optimization](effiskill-code-efficiency-optimization.md) (two-tier mining)
+- Cited by [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) as foundational
+- 80% token savings quantifies efficiency benefit (cf. [skillreducer token efficiency](skillreducer-token-efficiency.md)'s 48%+39% compression)
 - Skill abstraction maps to the atomic skill decomposition pattern (see arXiv:2604.05013, withdrawn)
 
-[[backlinks]]

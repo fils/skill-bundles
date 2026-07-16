@@ -1,3 +1,11 @@
+---
+type: Concept
+title: Three-Layer Validation Stack for Skill Bundles
+description: 'A **three-layer validation stack** is the emerging pattern where skill bundles are validated at three different points in the lifecycle, by three different tools, each with a different scope and threat model:'
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # Three-Layer Validation Stack for Skill Bundles
 
 **Date Added:** 2026-06-01 (Iteration 13)
@@ -9,9 +17,9 @@ A **three-layer validation stack** is the emerging pattern where skill bundles a
 
 | Layer | Where | Tool (catalog) | Scope | Cost |
 |---|---|---|---|---|
-| **1. Pre-commit** | Local dev, before commit | [[skill-validator-cli]] (Go binary, 13 platform hooks) | Structure + content + contamination + link rot + LLM-as-judge | Seconds to minutes |
-| **2. CI/CD** | PR pipelines, GitHub Actions | [[validate-skill-github-action]] (YAML Action) | Structure + spec compliance + reference checking | < 1 second |
-| **3. Registry** | Marketplace / install time | [[agentskill-sh-ags-security-scoring]] (12-category threat scan) | Security (12 threat categories) + content SHA versioning + quality rating | Continuous |
+| **1. Pre-commit** | Local dev, before commit | [skill validator cli](../examples/skill-validator-cli.md) (Go binary, 13 platform hooks) | Structure + content + contamination + link rot + LLM-as-judge | Seconds to minutes |
+| **2. CI/CD** | PR pipelines, GitHub Actions | [validate skill github action](../examples/validate-skill-github-action.md) (YAML Action) | Structure + spec compliance + reference checking | < 1 second |
+| **3. Registry** | Marketplace / install time | [agentskill sh ags security scoring](../examples/agentskill-sh-ags-security-scoring.md) (12-category threat scan) | Security (12 threat categories) + content SHA versioning + quality rating | Continuous |
 
 ## Why This Pattern Matters
 
@@ -23,11 +31,11 @@ Each layer catches what the others miss:
 
 ## Composition With Other Catalog Bundles
 
-- **[[owasp-agentic-skills-top-10]]** — Defines *what* vulnerabilities to scan for at layer 3
-- **[[agentic-trust-framework-csa]]** — Defines the *maturity levels* each layer can achieve
-- **[[mondoo-agent-skills-security]]** — Provides skills-as-scanners that can plug into layer 1 or 2
-- **[[purplebox-supply-chain-security]]** — Defines the 6 supply chain attack vectors layer 3 must catch
-- **[[nvidia-verified-agent-skills]]** — Provides the OpenSSF signing that supplements layer 3's hash-based provenance
+- **[owasp agentic skills top 10](../examples/owasp-agentic-skills-top-10.md)** — Defines *what* vulnerabilities to scan for at layer 3
+- **[agentic trust framework csa](../examples/agentic-trust-framework-csa.md)** — Defines the *maturity levels* each layer can achieve
+- **[mondoo agent skills security](../examples/mondoo-agent-skills-security.md)** — Provides skills-as-scanners that can plug into layer 1 or 2
+- **[purplebox supply chain security](../examples/purplebox-supply-chain-security.md)** — Defines the 6 supply chain attack vectors layer 3 must catch
+- **[nvidia verified agent skills](../examples/nvidia-verified-agent-skills.md)** — Provides the OpenSSF signing that supplements layer 3's hash-based provenance
 
 ## Cross-Domain Analogy
 
@@ -48,7 +56,7 @@ The skill ecosystem is approximately 2-3 years behind the npm/PyPI ecosystem in 
 3. **Bundle-level validation:** All three layers validate individual skills — but skills in a bundle may interact. Bundle-level validation is an open problem.
 
 ## Related Concepts
-- [[skill-bundle-patterns]] — Foundation patterns
-- [[skill-security-governance]] — Why each layer exists
-- [[sssom-mapping-as-context]] — Mappings as a form of validation
-- [[constraint-rules-as-context]] — Rules as a form of validation
+- [skill bundle patterns](skill-bundle-patterns.md) — Foundation patterns
+- [skill security governance](skill-security-governance.md) — Why each layer exists
+- [sssom mapping as context](sssom-mapping-as-context.md) — Mappings as a form of validation
+- [constraint rules as context](constraint-rules-as-context.md) — Rules as a form of validation

@@ -1,11 +1,24 @@
 ---
-title: "SkillGenBench: Benchmarking Skill Generation Pipelines"
+type: Skill Bundle Example
+title: 'SkillGenBench: Benchmarking Skill Generation Pipelines'
+description: SkillGenBench is a benchmark for evaluating **skill generation pipelines** — not the skills themselves, not the agents that use them, but the process of distilling skills from raw source material.
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["Medium (Vishal Mysore, May 2026)", "Zhou et al., 2026"]
-skills_included: ["Generator pipeline", "Executor (standardized)"]
-context_elements: ["Generator-executor decoupling", "Standardized SKILL.md output", "Two source types (repository vs. document)", "Pass@3 metric", "8 domain coverage", "Negative transfer detection"]
-composition: "Decouples generator from executor: [Raw Corpora] → [Generator] → [Standardized SKILL.md] → [Executor] → [Downstream Tasks]. Measures procedure-to-skill distillation directly."
-reproducibility: "187 tasks across 8 domains. Open benchmark. Repository-grounded pass@3: 7-16%. Document-grounded pass@3: 23-27%."
+sources:
+- Medium (Vishal Mysore, May 2026)
+- Zhou et al., 2026
+skills_included:
+- Generator pipeline
+- Executor (standardized)
+context_elements:
+- Generator-executor decoupling
+- Standardized SKILL.md output
+- Two source types (repository vs. document)
+- Pass@3 metric
+- 8 domain coverage
+- Negative transfer detection
+composition: 'Decouples generator from executor: [Raw Corpora] → [Generator] → [Standardized SKILL.md] → [Executor] → [Downstream Tasks]. Measures procedure-to-skill distillation directly.'
+reproducibility: '187 tasks across 8 domains. Open benchmark. Repository-grounded pass@3: 7-16%. Document-grounded pass@3: 23-27%.'
 rating: 8
 ---
 
@@ -66,12 +79,11 @@ The generator-executor decoupling isolates skill distillation from planning abil
 ## Relation to Skill Bundle Patterns
 
 SkillGenBench represents the **skill generation evaluation** dimension:
-- Complements [[skillsbench-agent-skills-benchmark]] — SkillsBench evaluates skill use; SkillGenBench evaluates skill generation
-- Relates to [[evoskill-automated-skill-discovery]] — EvoSkill is a skill generator that would be evaluated by SkillGenBench
-- Connects to [[skillopt-trainable-skill-parameters]] — SkillOpt is a skill optimizer; SkillGenBench measures the generation step that precedes optimization
+- Complements [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) — SkillsBench evaluates skill use; SkillGenBench evaluates skill generation
+- Relates to [evoskill automated skill discovery](evoskill-automated-skill-discovery.md) — EvoSkill is a skill generator that would be evaluated by SkillGenBench
+- Connects to [skillopt trainable skill parameters](skillopt-trainable-skill-parameters.md) — SkillOpt is a skill optimizer; SkillGenBench measures the generation step that precedes optimization
 
 ## Key Insight
 
 Skill generation is the bottleneck in the skill ecosystem, not skill use. Repository-grounded skill generation (7-16% pass@3) is extraordinarily difficult because procedures are implicit in code. Auto-generated skills risk negative transfer. This benchmark fills the critical gap between "skills help when done right" and "skills hurt when done wrong."
 
-[[backlinks]]

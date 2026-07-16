@@ -1,8 +1,15 @@
+---
+type: Paper
+title: 'Paper: The (R)evolution of Scientific Workflows in the Agentic AI Era — Towards Autonomous Science'
+description: This paper presents a framework for the evolution of scientific workflows from traditional orchestrated pipelines to fully autonomous, distributed scientific laboratories.
+resource: https://dl.acm.org/doi/full/10.1145/3731599.3767580
+---
+
 # Paper: The (R)evolution of Scientific Workflows in the Agentic AI Era — Towards Autonomous Science
 
 > **Source:** ACM SC '25 Workshops — https://dl.acm.org/doi/full/10.1145/3731599.3767580
 > **Added:** 2026-05-25 (manual seed for initial research)
-> **Raw:** [[../raw/2026-05-25/autonomous-science-workflows-acm.md]]
+> **Raw:** [autonomous science workflows acm](../../raw/2026-05-25/autonomous-science-workflows-acm.md)
 
 ## Summary
 

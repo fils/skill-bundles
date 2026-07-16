@@ -1,11 +1,25 @@
 ---
-title: "BadSkill: Backdoor Attacks via Model-in-Skill Poisoning"
+type: Skill Bundle Example
+title: 'BadSkill: Backdoor Attacks via Model-in-Skill Poisoning'
+description: 'BadSkill introduces a novel backdoor attack surface: **model-in-skill poisoning**.'
+resource: https://arxiv.org/abs/2604.09378
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2604.09378"]
-skills_included: ["Backdoor-fine-tuned model embedding", "Semantic compositional triggers", "Composite training objective", "Hard negative training"]
-context_elements: ["Model-in-skill threat surface", "Semantic compositional triggers (multi-parameter)", "Composite training objective (classification + margin + poison)", "Poison rate analysis", "Cross-architecture robustness (5 families, 8 architectures)"]
-composition: "Backdoor attack: adversary publishes benign-looking skill with embedded backdoor-fine-tuned model → model activates hidden payload only when skill parameters satisfy attacker-chosen semantic trigger combinations. Composite objective: classification loss + margin-based separation + poison-focused optimization."
-reproducibility: "arXiv:2604.09378. 13 skills (8 triggered + 5 control), 571 negative-class + 396 trigger-aligned queries, 8 architectures (494M–7.1B), 5 model families. OpenClaw-inspired simulation."
+sources:
+- arXiv:2604.09378
+skills_included:
+- Backdoor-fine-tuned model embedding
+- Semantic compositional triggers
+- Composite training objective
+- Hard negative training
+context_elements:
+- Model-in-skill threat surface
+- Semantic compositional triggers (multi-parameter)
+- Composite training objective (classification + margin + poison)
+- Poison rate analysis
+- Cross-architecture robustness (5 families, 8 architectures)
+composition: 'Backdoor attack: adversary publishes benign-looking skill with embedded backdoor-fine-tuned model → model activates hidden payload only when skill parameters satisfy attacker-chosen semantic trigger combinations. Composite objective: classification loss + margin-based separation + poison-focused optimization.'
+reproducibility: arXiv:2604.09378. 13 skills (8 triggered + 5 control), 571 negative-class + 396 trigger-aligned queries, 8 architectures (494M–7.1B), 5 model families. OpenClaw-inspired simulation.
 rating: 9
 ---
 
@@ -22,9 +36,9 @@ BadSkill introduces a novel backdoor attack surface: **model-in-skill poisoning*
 ## Threat Surface: Model-in-Skill
 
 This is a **distinct** threat from:
-- **Prompt injection** (manipulating skill instructions — cf. [[skillject-automated-prompt-injection]])
-- **Code-level malicious tools** (malicious code in tool implementation — cf. [[maltool-malicious-tool-attacks]])
-- **Permission misuse** (skills accessing unauthorized resources — cf. [[skillguard-permission-framework]])
+- **Prompt injection** (manipulating skill instructions — cf. [skillject automated prompt injection](skillject-automated-prompt-injection.md))
+- **Code-level malicious tools** (malicious code in tool implementation — cf. [maltool malicious tool attacks](maltool-malicious-tool-attacks.md))
+- **Permission misuse** (skills accessing unauthorized resources — cf. [skillguard permission framework](skillguard-permission-framework.md))
 
 Model-in-skill poisoning hides malicious behavior **inside model weights**, making it invisible to code scanning, prompt inspection, and permission frameworks.
 
@@ -61,15 +75,14 @@ Model-in-skill poisoning hides malicious behavior **inside model weights**, maki
 
 BadSkill identifies a threat surface that existing defense frameworks don't address:
 
-- Beyond [[skillject-automated-prompt-injection]] (prompt-level, not model-level)
-- Beyond [[maltool-malicious-tool-attacks]] (code-level, not weight-level)
-- Bypasses [[skillguard-permission-framework]] (malicious behavior is inside the model, not in tool calls)
-- Motivates [[skillfortify-formal-verification-supply-chain]] (formal provenance verification for model artifacts)
-- Motivates [[skillspector-nvidia-security-scanner]] (behavioral vetting, not just code scanning)
-- Related to [[supply-chain-agentic-factory-in-toto]] (provenance for model artifacts in skills)
+- Beyond [skillject automated prompt injection](skillject-automated-prompt-injection.md) (prompt-level, not model-level)
+- Beyond [maltool malicious tool attacks](maltool-malicious-tool-attacks.md) (code-level, not weight-level)
+- Bypasses [skillguard permission framework](skillguard-permission-framework.md) (malicious behavior is inside the model, not in tool calls)
+- Motivates [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (formal provenance verification for model artifacts)
+- Motivates [skillspector nvidia security scanner](skillspector-nvidia-security-scanner.md) (behavioral vetting, not just code scanning)
+- Related to [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) (provenance for model artifacts in skills)
 
 ## Key Insight
 
 Skills that bundle model artifacts create a supply-chain risk invisible to current defense frameworks. Backdoor-fine-tuned models can achieve 99.5% attack success with only 3% training data contamination, and the attack generalizes across architectures and model scales. This motivates stronger provenance verification and behavioral vetting for third-party skill artifacts containing models.
 
-[[backlinks]]

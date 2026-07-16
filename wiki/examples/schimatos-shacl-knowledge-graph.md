@@ -1,7 +1,16 @@
+---
+type: Skill Bundle Example
+title: Schimatos — SHACL-based Knowledge Graph Editor
+description: '- SHACL-based web form generation - Knowledge Graph editing with validation'
+resource: https://github.com/schimatos/schimatos.org
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Schimatos — SHACL-based Knowledge Graph Editor
 
-**Source:** https://github.com/schimatos/schimatos.org  
-**Date Added:** 2026-05-23 (Iteration 3)  
+**Source:** https://github.com/schimatos/schimatos.org
+**Date Added:** 2026-05-23 (Iteration 3)
 **Bundle Type:** Validation + Knowledge Graph Tool
 
 ## Skills / Capabilities

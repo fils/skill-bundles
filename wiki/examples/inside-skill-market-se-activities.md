@@ -1,11 +1,23 @@
 ---
-title: "Inside the Skill Market: SE Activities as Reusable Skills"
+type: Skill Bundle Example
+title: 'Inside the Skill Market: SE Activities as Reusable Skills'
+description: First **activity-centric** large-scale study of software-engineering skills in public skill markets.
+resource: https://arxiv.org/abs/2607.09065
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2607.09065"]
-skills_included: ["11,497 SE marketplace skills", "Lifecycle-mapped SE activity skills"]
-context_elements: ["SE activity→skill mapping", "Lifecycle coverage analysis", "Skill versioning statistics", "Five-component skill structure", "Marketplace evaluation gap"]
-composition: "Activity-centric empirical study of SE skills in public markets: map SDLC activities to skill packages; measure coverage, versioning, and evaluation practices."
-reproducibility: "arXiv:2607.09065 Jul 10 2026; 11,497 unique SE-related skills from public repositories/marketplaces."
+sources:
+- arXiv:2607.09065
+skills_included:
+- 11,497 SE marketplace skills
+- Lifecycle-mapped SE activity skills
+context_elements:
+- SE activity→skill mapping
+- Lifecycle coverage analysis
+- Skill versioning statistics
+- Five-component skill structure
+- Marketplace evaluation gap
+composition: 'Activity-centric empirical study of SE skills in public markets: map SDLC activities to skill packages; measure coverage, versioning, and evaluation practices.'
+reproducibility: arXiv:2607.09065 Jul 10 2026; 11,497 unique SE-related skills from public repositories/marketplaces.
 rating: 8
 ---
 
@@ -40,14 +52,13 @@ First **activity-centric** large-scale study of software-engineering skills in p
 
 ## Relation to Skill Bundle Patterns
 
-- SE-domain counterpart to [[registry-to-repository-skill-maintenance]]
-- Versioning evidence supports [[swe-skills-bench-utility-benchmark]] version-mismatch findings
-- Complements [[assc-skill-supply-chains-skillbom]] (dependency/version manifests)
-- Aligns with [[skill-os-skills-as-apps]] (global management, no maturity indicators)
-- Complements engineering mega-bundles: [[addyosmani-engineering-skills]], [[superpowers-engineering-discipline-skills]], [[vercel-labs-agent-skills]]
+- SE-domain counterpart to [registry to repository skill maintenance](registry-to-repository-skill-maintenance.md)
+- Versioning evidence supports [swe skills bench utility benchmark](swe-skills-bench-utility-benchmark.md) version-mismatch findings
+- Complements [assc skill supply chains skillbom](assc-skill-supply-chains-skillbom.md) (dependency/version manifests)
+- Aligns with [skill os skills as apps](skill-os-skills-as-apps.md) (global management, no maturity indicators)
+- Complements engineering mega-bundles: [addyosmani engineering skills](addyosmani-engineering-skills.md), [superpowers engineering discipline skills](superpowers-engineering-discipline-skills.md), [vercel labs agent skills](vercel-labs-agent-skills.md)
 
 ## Key Insight
 
 Skill markets are already turning **SE activities into distributeable artefacts**, but coverage is skewed toward construction and versioning/evaluation infrastructure is weak. Closing the gap means better skill structure, recommendation, and encapsulation of high-context lifecycle stages — not only more code-generation skills.
 
-[[backlinks]]

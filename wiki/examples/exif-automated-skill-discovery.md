@@ -1,11 +1,23 @@
 ---
-title: "EXIF: Automated Skill Discovery for Language Agents through Exploration and Iterative Feedback"
+type: Skill Bundle Example
+title: 'EXIF: Automated Skill Discovery for Language Agents through Exploration and Iterative Feedback'
+description: EXIF (EXploration and Iterative Feedback) is an automatic skill discovery framework for LLM-powered agents, designed to improve the **feasibility** of generated target behaviors while accounting for the agents' capabi...
+resource: https://arxiv.org/abs/2506.04287
+timestamp: '2026-07-14T00:00:00Z'
 date: 2026-07-14
-sources: ["arXiv:2506.04287"]
-skills_included: ["Alice (exploration agent)", "Bob (target agent)", "Iterative feedback loop"]
-context_elements: ["Environment-grounded skill dataset", "Alice-Bob dual-agent framework", "Exploration-first strategy", "Self-play (Alice=Bob) for self-evolution"]
-composition: "Alice interacts with environment → retrospectively generates feasible skill dataset → Bob trained on dataset → Alice evaluates Bob → feedback guides next exploration round."
-reproducibility: "arXiv preprint (under review). 11 citations. Webshop and Crafter benchmarks."
+sources:
+- arXiv:2506.04287
+skills_included:
+- Alice (exploration agent)
+- Bob (target agent)
+- Iterative feedback loop
+context_elements:
+- Environment-grounded skill dataset
+- Alice-Bob dual-agent framework
+- Exploration-first strategy
+- Self-play (Alice=Bob) for self-evolution
+composition: Alice interacts with environment → retrospectively generates feasible skill dataset → Bob trained on dataset → Alice evaluates Bob → feedback guides next exploration round.
+reproducibility: arXiv preprint (under review). 11 citations. Webshop and Crafter benchmarks.
 rating: 7
 ---
 
@@ -44,13 +56,12 @@ Setting Alice to the same model as Bob notably improves performance, demonstrati
 ## Relation to Skill Bundle Patterns
 
 EXIF is a **precursor** to the 2026 skill discovery wave:
-- Alice-Bob dual-agent → "generator-executor decoupling" pattern (cf. [[skillgenbench-skill-generation-benchmark]])
-- Self-play (Alice=Bob) → foreshadows self-evolving skill systems (cf. [[memento-skills-agent-designing-agent]])
-- Retrospective skill generation → "exploration-first" strategy (cf. [[aspire-robotics-skill-discovery]]'s evolutionary search)
+- Alice-Bob dual-agent → "generator-executor decoupling" pattern (cf. [skillgenbench skill generation benchmark](skillgenbench-skill-generation-benchmark.md))
+- Self-play (Alice=Bob) → foreshadows self-evolving skill systems (cf. [memento skills agent designing agent](memento-skills-agent-designing-agent.md))
+- Retrospective skill generation → "exploration-first" strategy (cf. [aspire robotics skill discovery](aspire-robotics-skill-discovery.md)'s evolutionary search)
 - Environment-grounded skills → skills from interaction, not human design
 
 ## Key Insight
 
 Automatic skill discovery requires grounding in actual environment interaction. LLMs proposing tasks directly often generate infeasible targets. EXIF's exploration-first strategy (Alice explores → retrospectively generates feasible skills → trains Bob → feedback loop) produces meaningful skills that iteratively expand agent capabilities. Self-play (Alice=Bob) enables self-evolution without external agents.
 
-[[backlinks]]

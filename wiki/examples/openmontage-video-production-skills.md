@@ -1,15 +1,20 @@
 ---
+type: Skill Bundle Example
+title: OpenMontage Video Production Skills
+description: 500+ agent skills across 12 video production pipelines and 52 tools.
+resource: https://github.com/calesthio/OpenMontage
+timestamp: '2026-07-10T00:00:00Z'
 date: 2026-07-10
 sources:
-  - raw/2026-07-10/openmontage-agentic-video.md
-  - https://github.com/calesthio/OpenMontage
+- raw/2026-07-10/openmontage-agentic-video.md
+- https://github.com/calesthio/OpenMontage
 skills_included: 500+
 context_elements:
-  - pipeline-manifests
-  - human-approval-gates
-  - checkpoint-audit-trail
-  - tool-registry
-  - multi-platform-packaging
+- pipeline-manifests
+- human-approval-gates
+- checkpoint-audit-trail
+- tool-registry
+- multi-platform-packaging
 composition_notes: Domain production system with hard human gates and provenance checkpoints.
 reproducibility: Medium-High — AGPL-3.0, active monorepo; full media pipeline deps are heavy
 ---
@@ -32,11 +37,11 @@ reproducibility: Medium-High — AGPL-3.0, active monorepo; full media pipeline 
 
 ## How context supports skills
 
-Gates and checkpoints are **hard constraints** on skill execution (authorization + provenance), not soft guidance. Analogous to promotion gates in [[agentic-trust-framework-csa]] and Iron Laws in engineering discipline bundles.
+Gates and checkpoints are **hard constraints** on skill execution (authorization + provenance), not soft guidance. Analogous to promotion gates in [agentic trust framework csa](agentic-trust-framework-csa.md) and Iron Laws in engineering discipline bundles.
 
 ## Composition notes / reusability
 
-- Infrastructure-as-skills for **media production** (extends conference-infra pattern from [[agents-at-conferences-infrastructure]])
+- Infrastructure-as-skills for **media production** (extends conference-infra pattern from [agents at conferences infrastructure](agents-at-conferences-infrastructure.md))
 - Strong human-in-the-loop formalization rarely this explicit in software-only skill repos
 
 ## Reproducibility assessment
@@ -45,8 +50,7 @@ Gates and checkpoints are **hard constraints** on skill execution (authorization
 
 ## Related
 
-- [[agentic-trust-framework-csa]]
-- [[constraint-rules-as-context]]
-- [[skill-bundle-patterns]]
+- [agentic trust framework csa](agentic-trust-framework-csa.md)
+- [constraint rules as context](../concepts/constraint-rules-as-context.md)
+- [skill bundle patterns](../concepts/skill-bundle-patterns.md)
 
-[[backlinks]]

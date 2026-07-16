@@ -1,7 +1,16 @@
+---
+type: Skill Bundle Example
+title: Veto — Authorization Kernel for AI Agents
+description: '- Authorization kernel for agent tool calls - Block, allow, or escalate decisions'
+resource: https://github.com/PlawIO/veto
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Veto — Authorization Kernel for AI Agents
 
-**Source:** https://github.com/PlawIO/veto  
-**Date Added:** 2026-05-23 (Iteration 4)  
+**Source:** https://github.com/PlawIO/veto
+**Date Added:** 2026-05-23 (Iteration 4)
 **Bundle Type:** Rules / Authorization Layer
 
 ## Skills / Capabilities

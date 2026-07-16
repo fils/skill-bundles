@@ -1,11 +1,19 @@
+---
+type: Concept
+title: Verified Skill Governance Patterns
+description: NVIDIA's Verified Agent Skills represent the most comprehensive example of formal governance in the skill bundle ecosystem.
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Verified Skill Governance Patterns
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Type:** Concept article
 
 ## Overview
 
-NVIDIA's Verified Agent Skills represent the most comprehensive example of formal governance in the skill bundle ecosystem. This concept article synthesizes the governance patterns found in [[nvidia-verified-agent-skills]] and [[nvidia-skills-repo]].
+NVIDIA's Verified Agent Skills represent the most comprehensive example of formal governance in the skill bundle ecosystem. This concept article synthesizes the governance patterns found in [nvidia verified agent skills](../examples/nvidia-verified-agent-skills.md) and [nvidia skills repo](../examples/nvidia-skills-repo.md).
 
 ## Governance Pyramid
 

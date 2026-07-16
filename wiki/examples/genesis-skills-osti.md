@@ -1,8 +1,15 @@
+---
+type: Skill Bundle Example
+title: Genesis Skills Repository (OSTI)
+description: A large curated collection of 74 Claude Code skills following the Agent Skills open standard.
+resource: https://gitlab.osti.gov/genesis/genesis-skills
+---
+
 # Genesis Skills Repository (OSTI)
 
-**Bundle Type:** Government Lab · Domain-Specific Skill Catalog · 74 Skills  
-**Source:** https://gitlab.osti.gov/genesis/genesis-skills  
-**License:** Apache 2.0 (core) + mixed third-party  
+**Bundle Type:** Government Lab · Domain-Specific Skill Catalog · 74 Skills
+**Source:** https://gitlab.osti.gov/genesis/genesis-skills
+**License:** Apache 2.0 (core) + mixed third-party
 **Status:** Active (updated ~1 week ago)
 
 ## Overview
@@ -58,5 +65,5 @@ It demonstrates how a national lab is operationalizing the Agent Skills standard
 
 ---
 
-**Documented**: 2026-06-03 (Iteration 14 candidate)  
+**Documented**: 2026-06-03 (Iteration 14 candidate)
 **Source file**: `raw/2026-06-03/genesis-skills-osti.md`

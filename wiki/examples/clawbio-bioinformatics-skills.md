@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: 'ClawBio: Bioinformatics-Native AI Agent Skill Library'
+description: '**ClawBio** is the first **bioinformatics-native skill library** for AI agents.'
+resource: https://github.com/ClawBio/ClawBio
+timestamp: '2026-06-09T00:00:00Z'
+date: '2026-06-09'
+---
+
 # ClawBio: Bioinformatics-Native AI Agent Skill Library
 
 **Source:** https://github.com/ClawBio/ClawBio  \
 **Date Added:** 2026-06-09  \
 **Bundle Type:** Domain-Specific Skill Library (Bioinformatics/Genomics)  \
-**Raw Source:** [[../raw/2026-06-09/clawbio-clawbio.md]]
+**Raw Source:** [clawbio clawbio](../../raw/2026-06-09/clawbio-clawbio.md)
 
 ## Overview
 
@@ -87,4 +96,4 @@ ClawBio demonstrates **advanced bundle composition patterns**:
 
 - https://github.com/ClawBio/ClawBio
 - https://clawbio.ai/
-- Raw: [[../raw/2026-06-09/clawbio-clawbio.md]]
+- Raw: [clawbio clawbio](../../raw/2026-06-09/clawbio-clawbio.md)

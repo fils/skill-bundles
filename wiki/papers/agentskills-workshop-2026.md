@@ -1,13 +1,18 @@
 ---
+type: Paper
+title: Agent Skills '26 (ACM CAIS Workshop)
+description: '- 103 submissions → 45 posters + 6 orals (non-archival) - OpenReview: ACM.org/CAIS/2026/Workshop/AgentSkills'
+resource: https://www.agentskills-workshop.org/
+timestamp: '2026-07-10T00:00:00Z'
 date: 2026-07-10
 sources:
-  - raw/2026-07-10/agentskills-workshop-2026.md
-  - https://www.agentskills-workshop.org/
+- raw/2026-07-10/agentskills-workshop-2026.md
+- https://www.agentskills-workshop.org/
 ---
 
 # Agent Skills '26 (ACM CAIS Workshop)
 
-**When/Where:** May 26, 2026 · San Jose, CA · Full day  
+**When/Where:** May 26, 2026 · San Jose, CA · Full day
 **Scope:** First workshop dedicated to design, evaluation, and optimization of Agent Skills / procedural knowledge for LLM agents
 
 ## Scale
@@ -30,12 +35,11 @@ sources:
 
 ## Why it matters
 
-Academic institutionalization of the skill-bundle research object. SkillsBench 1.0 launch party (DeepMind/BenchFlow/Kaggle) the next day signals evaluation becoming productized. Sponsors include K-Dense (see [[scientific-agent-skills-kdense]]).
+Academic institutionalization of the skill-bundle research object. SkillsBench 1.0 launch party (DeepMind/BenchFlow/Kaggle) the next day signals evaluation becoming productized. Sponsors include K-Dense (see [scientific agent skills kdense](../examples/scientific-agent-skills-kdense.md)).
 
 ## Related
 
-- [[skillsbench-agent-skills-benchmark]]
-- [[arxiv-2602-08004-agent-skills-analysis]]
-- [[skill-security-governance]]
+- [skillsbench agent skills benchmark](../examples/skillsbench-agent-skills-benchmark.md)
+- [arxiv 2602 08004 agent skills analysis](arxiv-2602-08004-agent-skills-analysis.md)
+- [skill security governance](../concepts/skill-security-governance.md)
 
-[[backlinks]]

@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Flash Brew Digital "Validate Skill" — GitHub Action for SKILL.md Spec Compliance
+description: A **GitHub Action that validates SKILL.md files against the Agent Skills specification** (https://agentskills.io/specification).
+resource: https://github.com/marketplace/actions/validate-skill
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # Flash Brew Digital "Validate Skill" — GitHub Action for SKILL.md Spec Compliance
 
 **Source:** https://github.com/marketplace/actions/validate-skill
@@ -11,7 +20,7 @@
 
 ## Name & Origin
 
-A **GitHub Action that validates SKILL.md files against the Agent Skills specification** (https://agentskills.io/specification). It is the **CI/CD complement** to the [[skill-validator-cli]] CLI — where the Go CLI runs locally with pre-commit hooks, this Action runs in PR pipelines.
+A **GitHub Action that validates SKILL.md files against the Agent Skills specification** (https://agentskills.io/specification). It is the **CI/CD complement** to the [skill validator cli](skill-validator-cli.md) CLI — where the Go CLI runs locally with pre-commit hooks, this Action runs in PR pipelines.
 
 ## Skills Included (1 Action)
 
@@ -43,7 +52,7 @@ A **GitHub Action that validates SKILL.md files against the Agent Skills specifi
 
 `validate-skill` is the **lightest-weight** validator in the catalog — pure CI/CD integration, no LLM dependency, fast YAML structural checks. It is what you put in `.github/workflows/` to guard a skill repo's PR quality.
 
-The action's design is a **minimal viable validator** — it implements *just* the structural and frontmatter rules from the Agent Skills spec. Heavier checks (content quality, contamination, LLM-as-judge, link rot) live in [[skill-validator-cli]]. Security threat scanning lives in [[agentskill-sh-ags-security-scoring]]. This is a clean **separation of concerns** across the validation stack.
+The action's design is a **minimal viable validator** — it implements *just* the structural and frontmatter rules from the Agent Skills spec. Heavier checks (content quality, contamination, LLM-as-judge, link rot) live in [skill validator cli](skill-validator-cli.md). Security threat scanning lives in [agentskill sh ags security scoring](agentskill-sh-ags-security-scoring.md). This is a clean **separation of concerns** across the validation stack.
 
 ## Composition Notes
 
@@ -80,8 +89,8 @@ The action's design is a **minimal viable validator** — it implements *just* t
 **High.** Open source, GitHub Marketplace listing, documented inputs/outputs, example workflows in repo (simple + advanced).
 
 ## Bundle Links
-- [[skill-validator-cli]] — Local/pre-commit complement (heavier checks)
-- [[agentskill-sh-ags-security-scoring]] — Registry-level security scanner
-- [[agent-skills-spec]] — The specification being enforced
-- [[graphguard-os-guardrails]] — Policy-as-code precedent
-- [[owasp-agentic-skills-top-10]] — Security specification that complements structural validation
+- [skill validator cli](skill-validator-cli.md) — Local/pre-commit complement (heavier checks)
+- [agentskill sh ags security scoring](agentskill-sh-ags-security-scoring.md) — Registry-level security scanner
+- [agent skills spec](agent-skills-spec.md) — The specification being enforced
+- [graphguard os guardrails](graphguard-os-guardrails.md) — Policy-as-code precedent
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — Security specification that complements structural validation

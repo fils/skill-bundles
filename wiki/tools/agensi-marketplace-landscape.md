@@ -1,3 +1,12 @@
+---
+type: Tool
+title: AI Agent Skill Marketplace Landscape (2026)
+description: The agent skill marketplace ecosystem as of April 2026, based on Agensi's comprehensive comparison.
+resource: https://www.agensi.io/learn/best-ai-agent-skills-marketplaces-2026
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # AI Agent Skill Marketplace Landscape (2026)
 
 **Source:** https://www.agensi.io/learn/best-ai-agent-skills-marketplaces-2026
@@ -45,6 +54,6 @@ The agent skill marketplace ecosystem as of April 2026, based on Agensi's compre
 Use TWO marketplaces: free browsing (ClaudeSkills.info or skills.sh) + vetted paid (Agensi). Skip massive scraped catalogs without auditing each skill.
 
 ## Related
-- [[chris-ayers-plugin-ecosystem]] — Complementary view of plugin/marketplace architecture
-- [[owasp-agentic-skills-top-10]] — Security requirements for marketplace governance
-- [[purplebox-supply-chain-security]] — Supply chain risks in markets (12% infection rate)
+- [chris ayers plugin ecosystem](../examples/chris-ayers-plugin-ecosystem.md) — Complementary view of plugin/marketplace architecture
+- [owasp agentic skills top 10](../examples/owasp-agentic-skills-top-10.md) — Security requirements for marketplace governance
+- [purplebox supply chain security](../examples/purplebox-supply-chain-security.md) — Supply chain risks in markets (12% infection rate)

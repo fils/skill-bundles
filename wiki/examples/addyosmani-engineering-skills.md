@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: 'Addy Osmani Agent Skills: Production-Grade Engineering Workflows'
+description: '**Agent Skills** by Addy Osmani is a collection of **workflows, quality gates, and best practices** designed to force AI coding agents to follow **senior-level engineering discipline** across the entire development li...'
+resource: https://github.com/addyosmani/agent-skills
+timestamp: '2026-06-09T00:00:00Z'
+date: '2026-06-09'
+---
+
 # Addy Osmani Agent Skills: Production-Grade Engineering Workflows
 
 **Source:** https://github.com/addyosmani/agent-skills  \
 **Date Added:** 2026-06-09  \
 **Bundle Type:** Process-Oriented Engineering Discipline Skill Bundle  \
-**Raw Source:** [[../raw/2026-06-09/addyosmani-agent-skills.md]]
+**Raw Source:** [addyosmani agent skills](../../raw/2026-06-09/addyosmani-agent-skills.md)
 
 ## Overview
 
@@ -115,4 +124,4 @@ This bundle demonstrates **process-as-skill** composition patterns:
 ## Sources
 
 - https://github.com/addyosmani/agent-skills
-- Raw: [[../raw/2026-06-09/addyosmani-agent-skills.md]]
+- Raw: [addyosmani agent skills](../../raw/2026-06-09/addyosmani-agent-skills.md)

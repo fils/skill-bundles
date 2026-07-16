@@ -1,11 +1,22 @@
 ---
-title: "SkillSieve: Hierarchical Triage for Detecting Malicious Agent Skills"
+type: Skill Bundle Example
+title: 'SkillSieve: Hierarchical Triage for Detecting Malicious Agent Skills'
+description: '- **arXiv:** 2604.06550 (submitted 8 Apr 2026, v2 26 May 2026) - **Authors:** Yinghan Hou, Zongyou Yang, Zaihu Pang, Xiujun Ma - **Cited by:** 17 - **Data:** 49,592 ClawHub skills (2026-04-04 snapshot) + adversarial s...'
+resource: https://arxiv.org/abs/2604.06550
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://arxiv.org/abs/2604.06550
-authors: [Hou, Yang, Pang, Ma]
-arxiv: 2604.06550
+authors:
+- Hou
+- Yang
+- Pang
+- Ma
+arxiv: 2604.0655
 signal: 9
-context_elements: [Three-layer detection pipeline, LLM jury voting, Cross-ecosystem adaptation]
+context_elements:
+- Three-layer detection pipeline
+- LLM jury voting
+- Cross-ecosystem adaptation
 ---
 
 # SkillSieve: A Hierarchical Triage Framework for Detecting Malicious AI Agent Skills
@@ -65,9 +76,8 @@ SkillSieve is the most sophisticated skill security validation framework to date
 
 ## Connections
 
-- Extends [[three-layer-validation-stack]] with security-specific hierarchy
-- Complements [[clawhavoc-marketplace-attack]] (the threat being detected)
-- Complements [[supply-chain-agentic-factory-in-toto]] (provenance approach to similar problem)
-- Validates marketplace risk data from [[sok-agentic-skills-beyond-tool-use]] (13-26% vulnerability rate)
+- Extends [three layer validation stack](../concepts/three-layer-validation-stack.md) with security-specific hierarchy
+- Complements [clawhavoc marketplace attack](clawhavoc-marketplace-attack.md) (the threat being detected)
+- Complements [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) (provenance approach to similar problem)
+- Validates marketplace risk data from [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) (13-26% vulnerability rate)
 
-[[backlinks]]

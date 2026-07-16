@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: OWASP Agentic Skills Top 10 (AST10) — Security Risk Framework for Skill Bundles
+description: The **OWASP Agentic Skills Top 10 (AST10)** is the first dedicated security risk framework for the agent skill ecosystem, analogous to OWASP's Top 10 for web applications and LLM applications.
+resource: https://owasp.org/www-project-agentic-skills-top-10/
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # OWASP Agentic Skills Top 10 (AST10) — Security Risk Framework for Skill Bundles
 
 **Source:** https://owasp.org/www-project-agentic-skills-top-10/
@@ -31,12 +40,12 @@ The **OWASP Agentic Skills Top 10 (AST10)** is the first dedicated security risk
 
 AST10 provides the **security specification** that skill bundle validation tools should enforce:
 
-1. **Malicious Skills (AST01):** Merkle root signing + registry scanning — directly complements [[nvidia-verified-agent-skills]]'s OpenSSF signing
-2. **Supply Chain (AST02):** Registry transparency + provenance tracking — maps to [[purplebox-supply-chain-security]]'s 6-vector taxonomy
-3. **Over-Privileged (AST03):** Least-privilege manifests + schema validation — reinforces [[veto-agent-authorization]] pattern
-4. **Weak Isolation (AST06):** Containerization + Docker sandboxing — aligns with [[graphguard-os-guardrails]] and [[nemoclaw-security-scanner]]
+1. **Malicious Skills (AST01):** Merkle root signing + registry scanning — directly complements [nvidia verified agent skills](nvidia-verified-agent-skills.md)'s OpenSSF signing
+2. **Supply Chain (AST02):** Registry transparency + provenance tracking — maps to [purplebox supply chain security](purplebox-supply-chain-security.md)'s 6-vector taxonomy
+3. **Over-Privileged (AST03):** Least-privilege manifests + schema validation — reinforces [veto agent authorization](veto-agent-authorization.md) pattern
+4. **Weak Isolation (AST06):** Containerization + Docker sandboxing — aligns with [graphguard os guardrails](graphguard-os-guardrails.md) and [nemoclaw security scanner](nemoclaw-security-scanner.md)
 
-The **Lethal Trifecta** formalizes what [[mondoo-agent-skills-security]] found empirically: skills with data access + untrusted content + network egress are the highest risk.
+The **Lethal Trifecta** formalizes what [mondoo agent skills security](mondoo-agent-skills-security.md) found empirically: skills with data access + untrusted content + network egress are the highest risk.
 
 ## Composition Notes
 
@@ -58,7 +67,7 @@ The framework is uniquely **evidence-based** — built on real incident data:
 High — published on OWASP's official website as an open project under CC-BY-SA-4.0. Full write-ups for AST01–AST06 expected Q2 2026.
 
 ## Bundle Links
-- [[mondoo-agent-skills-security]] — Empirical basis for many AST10 risk categories
-- [[nvidia-verified-agent-skills]] — Provides the signing/certificate chain AST10 recommends
-- [[purplebox-supply-chain-security]] — Supply chain attack taxonomy maps to AST02
-- [[nemoclaw-security-scanner]] — Fills the scanning pipeline gap (AST08)
+- [mondoo agent skills security](mondoo-agent-skills-security.md) — Empirical basis for many AST10 risk categories
+- [nvidia verified agent skills](nvidia-verified-agent-skills.md) — Provides the signing/certificate chain AST10 recommends
+- [purplebox supply chain security](purplebox-supply-chain-security.md) — Supply chain attack taxonomy maps to AST02
+- [nemoclaw security scanner](nemoclaw-security-scanner.md) — Fills the scanning pipeline gap (AST08)

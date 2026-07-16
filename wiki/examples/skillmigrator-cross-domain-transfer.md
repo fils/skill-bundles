@@ -1,11 +1,25 @@
 ---
-title: "SkillMigrator: Cross-Domain Web Skill Transfer via Transferable Interaction Patterns"
+type: Skill Bundle Example
+title: 'SkillMigrator: Cross-Domain Web Skill Transfer via Transferable Interaction Patterns'
+description: Web agents that use LLM skills typically can only reuse them within the same website/domain.
+resource: https://arxiv.org/abs/2606.17645
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["arXiv:2606.17645"]
-skills_included: ["Skill retrieval layer", "Slot binding (Hungarian algorithm)", "Gate mechanism (threshold fallback)"]
-context_elements: ["Transferable Interaction Pattern (TIP) 4-tuple", "Accessibility-tree skeleton (layout structure)", "Tree Edit Distance (APTED) matching", "Slot schema with synonym pools (co-clustered)", "Sentence-BERT text similarity", "Variable-arity form handling"]
-composition: "TIP stores skills as 4-tuples ⟨intent, template, slots, layout-skeleton⟩ without element references. At inference: text+layout score → gate → slot binding (Hungarian) → execute fixed plan."
-reproducibility: "Evaluated on Mind2Web and WebArena. 8-10% LLM call reduction vs SOTA. Cross-domain reuse rate 35.4%."
+sources:
+- arXiv:2606.17645
+skills_included:
+- Skill retrieval layer
+- Slot binding (Hungarian algorithm)
+- Gate mechanism (threshold fallback)
+context_elements:
+- Transferable Interaction Pattern (TIP) 4-tuple
+- Accessibility-tree skeleton (layout structure)
+- Tree Edit Distance (APTED) matching
+- Slot schema with synonym pools (co-clustered)
+- Sentence-BERT text similarity
+- Variable-arity form handling
+composition: 'TIP stores skills as 4-tuples ⟨intent, template, slots, layout-skeleton⟩ without element references. At inference: text+layout score → gate → slot binding (Hungarian) → execute fixed plan.'
+reproducibility: Evaluated on Mind2Web and WebArena. 8-10% LLM call reduction vs SOTA. Cross-domain reuse rate 35.4%.
 rating: 8
 ---
 
@@ -60,12 +74,11 @@ Ablation confirms layout signal + slot-synonym pools are critical for cross-doma
 ## Relation to Skill Bundle Patterns
 
 SkillMigrator represents **cross-domain skill transfer** in web automation:
-- Complements [[skillcraft-benchmark]] (composition) — Migrator transfers, Craft composes
-- Relates to [[skillreducer-token-efficiency]] — both reduce LLM calls (Migrator by reuse, Reducer by content reduction)
+- Complements [skillcraft benchmark](skillcraft-benchmark.md) (composition) — Migrator transfers, Craft composes
+- Relates to [skillreducer token efficiency](skillreducer-token-efficiency.md) — both reduce LLM calls (Migrator by reuse, Reducer by content reduction)
 - Extends progressive disclosure pattern — skills loaded on-demand via structural matching
 
 ## Key Insight
 
 Cross-domain skill reuse requires **structural layout matching** (accessibility-tree skeletons), not element references. The TIP abstraction (intent + template + slots + layout skeleton) is portable across domains because layout structure is more stable than DOM element IDs. This enables skills learned on one website to be reused on completely different websites.
 
-[[backlinks]]

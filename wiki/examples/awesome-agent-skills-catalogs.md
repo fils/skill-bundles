@@ -1,3 +1,9 @@
+---
+type: Skill Bundle Example
+title: 'Awesome Agent Skills Catalogs: Ecosystem Mapping'
+description: Two major **awesome-list** repositories catalog the agent skills ecosystem.
+---
+
 # Awesome Agent Skills Catalogs: Ecosystem Mapping
 
 ## Overview

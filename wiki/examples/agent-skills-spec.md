@@ -1,7 +1,16 @@
+---
+type: Skill Bundle Example
+title: Agent Skills Specification
+description: '- Standardized skill definition format - Capability declaration patterns'
+resource: https://agentskills.io/
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Agent Skills Specification
 
-**Source:** https://agentskills.io/  
-**Date Added:** 2026-05-23  
+**Source:** https://agentskills.io/
+**Date Added:** 2026-05-23
 **Bundle Type:** Specification + Reference Implementation
 
 ## Skills Included

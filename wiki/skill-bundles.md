@@ -1,3 +1,9 @@
+---
+type: Publication
+title: 'Skill Bundles: A Living Catalog'
+description: Living catalog of real-world skill bundle examples and composition patterns across validation, mapping, rules, and governance.
+---
+
 # Skill Bundles: A Living Catalog
 
 **Primary Publication** — Last major update: 2026-07-16 (Iteration 41)
@@ -149,7 +155,7 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 Iteration 14 adds **4 new examples** spanning **domain-specialized bioinformatics**, **production-grade engineering workflows**, **conference participation infrastructure**, and an **updated DSPy optimization bundle** — plus two foundational papers on autonomous scientific workflows.
 
 ### Domain-Specialized Bioinformatics Skill Bundle (NEW)
-[[clawbio-bioinformatics-skills]] is the richest domain-coherent bundle in the catalog: **88 skills** (29 production) serving genomics/bioinformatics with:
+[clawbio bioinformatics skills](examples/clawbio-bioinformatics-skills.md) is the richest domain-coherent bundle in the catalog: **88 skills** (29 production) serving genomics/bioinformatics with:
 - **Specification layer** as machine-readable contracts preventing hallucination in dosage/genetics
 - **Per-execution reproducibility bundles** (commands + environment + checksums) — a new context element type
 - **Reference genome asset** (Corpasome, DOI: 10.5281/zenodo.19297389) for deterministic testing
@@ -158,7 +164,7 @@ Iteration 14 adds **4 new examples** spanning **domain-specialized bioinformatic
 - **Galaxy Bridge** to 8,000+ external tools — external tool registry mapping
 
 ### Process-as-Skill Engineering Discipline Bundle (NEW)
-[[addyosmani-engineering-skills]] encodes the **full SDLC as 23 skills** with:
+[addyosmani engineering skills](examples/addyosmani-engineering-skills.md) encodes the **full SDLC as 23 skills** with:
 - **Anti-rationalization tables**: Explicit agent failure modes + required corrections
 - **Verification gates**: Non-negotiable evidence (tests, logs, runtime data)
 - **7 slash commands** mapping 1:1 to phases — a command taxonomy
@@ -168,7 +174,7 @@ Iteration 14 adds **4 new examples** spanning **domain-specialized bioinformatic
 - **Session hooks** for cross-cutting concerns (citation caching)
 
 ### Conference Participation Infrastructure as Skill Bundle (NEW)
-[[agents-at-conferences-infrastructure]] defines **6 core infrastructure capabilities** as agent skills:
+[agents at conferences infrastructure](examples/agents-at-conferences-infrastructure.md) defines **6 core infrastructure capabilities** as agent skills:
 - **Capability schema** (`capabilities[]`, `model_backbone`) as skill taxonomy for registration
 - **Protocol contracts** (WebSocket + REST in `ARCHITECTURE.md`) as interface specifications
 - **Benchmark arena** (GPQA, AAAR, LAB-Bench) as continuous evaluation harness
@@ -177,7 +183,7 @@ Iteration 14 adds **4 new examples** spanning **domain-specialized bioinformatic
 - **Output aggregation** (PDF + JSON API) as knowledge persistence + inter-agent queryability
 
 ### DSPy Bundle Deepening (v0.2.3)
-[[dspy-agent-skills-bundle]] now includes:
+[dspy agent skills bundle](examples/dspy-agent-skills-bundle.md) now includes:
 - **Exact dependency pinning** (DSPy 3.2.1 via `check_dspy_surface.py`) — prevents API drift
 - **34+ pytest validators** for SKILL.md frontmatter, JSON schemas, Python AST
 - **GEPA gotchas documented** as protocol constraints
@@ -186,18 +192,18 @@ Iteration 14 adds **4 new examples** spanning **domain-specialized bioinformatic
 
 ### Three-Layer Validation Stack (Iteration 13, reinforced)
 The skill ecosystem is converging on a three-layer architecture:
-- **Layer 1 (Pre-commit):** [[skill-validator-cli]] — deep quality + contamination + LLM-as-judge
-- **Layer 2 (CI/CD):** [[validate-skill-github-action]] — structural spec compliance
-- **Layer 3 (Registry):** [[agentskill-sh-ags-security-scoring]] — 12-category security scanning
+- **Layer 1 (Pre-commit):** [skill validator cli](examples/skill-validator-cli.md) — deep quality + contamination + LLM-as-judge
+- **Layer 2 (CI/CD):** [validate skill github action](examples/validate-skill-github-action.md) — structural spec compliance
+- **Layer 3 (Registry):** [agentskill sh ags security scoring](examples/agentskill-sh-ags-security-scoring.md) — 12-category security scanning
 
-This mirrors the **software supply chain** three-layer pattern (linters → CI scanners → registry audits) and is approximately 2-3 years behind the npm/PyPI ecosystem in maturity. See [[three-layer-validation-stack]].
+This mirrors the **software supply chain** three-layer pattern (linters → CI scanners → registry audits) and is approximately 2-3 years behind the npm/PyPI ecosystem in maturity. See [three layer validation stack](concepts/three-layer-validation-stack.md).
 
 ### Bidirectional SHACL ↔ LLM Bridge (Iteration 13, reinforced)
-With [[text2shacl-multi-agent-shacl]] (forward generation) added, the catalog now has a complete bridge:
+With [text2shacl multi agent shacl](examples/text2shacl-multi-agent-shacl.md) (forward generation) added, the catalog now has a complete bridge:
 - **Forward:** text2shacl turns natural-language requirements into SHACL shapes via multi-agent LangGraph pipeline with RAG
-- **Reverse:** [[xpshacl-explainable-shacl]] turns SHACL shapes into natural-language explanations
+- **Reverse:** [xpshacl explainable shacl](examples/xpshacl-explainable-shacl.md) turns SHACL shapes into natural-language explanations
 
-Together they form a closed loop: requirements → shapes → validation → explanation → refined requirements. See [[bidirectional-shacl-llm-bridge]].
+Together they form a closed loop: requirements → shapes → validation → explanation → refined requirements. See [bidirectional shacl llm bridge](concepts/bidirectional-shacl-llm-bridge.md).
 
 ### Autonomous Science Workflow Framework (Seeded Papers)
 Two foundational papers provide theoretical grounding:
@@ -223,37 +229,37 @@ Two foundational papers provide theoretical grounding:
 15. **Implicit Bundle Discovery** (new — bundles discovered by grouping related skills across taxonomy catalogs)
 16. **Attack → Defense Mapping** (new — PurpleBox attack vectors map directly to defense bundles)
 17. **Agent Context as Documentation** (new — CLAUDE.md + CONTEXT.md + ADR as living context)
-18. **Skill Security Governance Stack** (new — 4-layer model: AST10 risk taxonomy → ATF maturity model → empirical data → technical controls; see [[skill-security-governance]])
+18. **Skill Security Governance Stack** (new — 4-layer model: AST10 risk taxonomy → ATF maturity model → empirical data → technical controls; see [skill security governance](concepts/skill-security-governance.md))
 19. **SKILL.md as Universal Portable Unit** (new — confirmed identical operation across 5 major tools)
 20. **Enterprise Platform Convergence** (new — Microsoft + Spring AI both shipping production-grade implementations)
-21. **Three-Layer Validation Stack** (Iteration 13 — pre-commit → CI/CD → registry; see [[three-layer-validation-stack]])
-22. **Bidirectional SHACL↔LLM Bridge** (Iteration 13 — text → shapes → explanation → text; see [[bidirectional-shacl-llm-bridge]])
+21. **Three-Layer Validation Stack** (Iteration 13 — pre-commit → CI/CD → registry; see [three layer validation stack](concepts/three-layer-validation-stack.md))
+22. **Bidirectional SHACL↔LLM Bridge** (Iteration 13 — text → shapes → explanation → text; see [bidirectional shacl llm bridge](concepts/bidirectional-shacl-llm-bridge.md))
 23. **Registry-Level Security Scanning** (Iteration 13 — 12-category threat taxonomy + content-SHA provenance + auto-rate feedback)
 24. **Domain-Specific Ontology Skills** (Iteration 13 — OBO Foundry skills for ontology/biocuration work; OAK, ROBOT, DOSDP)
-25. **Domain-Coherent Bioinformatics Bundle** (NEW Iteration 14 — 88 skills, reproducibility bundles, reference genome asset, validation leaderboard, multi-modal access; see [[clawbio-bioinformatics-skills]])
-26. **Process-as-Skill SDLC Coverage** (NEW Iteration 14 — 23 skills spanning full lifecycle with anti-rationalization, verification gates, personas; see [[addyosmani-engineering-skills]])
-27. **Infrastructure-as-Agent-Capabilities** (NEW Iteration 14 — 6-component protocol for conference participation: registration, feeds, communication, moderation, benchmarking, memory; see [[agents-at-conferences-infrastructure]])
-28. **Exact Dependency Pinning + Offline Validation** (NEW Iteration 14 — DSPy 3.2.1 pinned, 34+ validators, --dry-run smoke tests, committed benchmarks; see [[dspy-agent-skills-bundle]])
-29. **Autonomous Science Workflow Theory** (NEW Iteration 14 — State machine abstraction, Intelligence×Composition matrix, co-pilot→lab-pilot, SDLs as skill bundles; see [[sc25-autonomous-science-workflows]], [[scaince-ai-lab-automation]])
-30. **Formal Skill Definition S=(C,π,T,R)** (NEW Iteration 36 — SoK provides canonical formal vocabulary; skills ≠ tools ≠ plans ≠ memory; simultaneously executable, reusable, governable; see [[sok-agentic-skills-beyond-tool-use]])
-31. **Co-Evolutionary Verification** (NEW Iteration 36 — Dynamic verification where the verifier co-evolves with the skill generator; generalizes static validation to adaptive feedback loops; see [[coevoskills-self-evolving-skills]])
-32. **SLSA/in-toto Provenance for Skills** (NEW Iteration 36 — Extending supply chain provenance to the "intent → source" gap; neutral observer pattern for skill generation; see [[supply-chain-agentic-factory-in-toto]])
-33. **Marketplace Supply-Chain Attack Quantification** (NEW Iteration 36 — ClawHavoc: ~13% malicious rate; SoK: 26.1% vulnerable; workshop: 37% flaw rate; convergent quantification of marketplace risk; see [[clawhavoc-marketplace-attack]])
-34. **Dependency-Aware Retrieval Validated** (NEW Iteration 36 — GoS v3: +25.55% reward, -56.72% tokens on SkillsBench; dependency-aware bundle retrieval outperforms flat in both quality and efficiency; see [[graph-of-skills-dependency-retrieval]])
-35. **Six-Layer Skill Taxonomy** (NEW Iteration 36 — Ontology→Representation→Lifecycle→Runtime→Governance→Applications; comprehensive structural framework; see [[survey-agent-skills-procedural-infrastructure]])
-36. **Skill Optimization Triad** (NEW Iteration 37 — Three distinct optimization approaches: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction); address configuration, content+verifier, and token efficiency axes; could compose; see [[skillmoo-multi-objective-optimization]], [[skillreducer-token-efficiency]])
-37. **Less-Is-More Effect** (NEW Iteration 37 — Removing non-essential skill content *improves* functional quality by 2.8%; progressive disclosure (load on demand) is the architectural pattern; challenges "more context = better" assumption; see [[skillreducer-token-efficiency]])
-38. **Skill Composition as Core Capability** (NEW Iteration 37 — SkillCraft validates that composing tools into reusable skills strongly correlates with agent success; 80% token savings from caching; auto-composition by agents (inverse of static bundles); see [[skillcraft-benchmark]])
-39. **Hierarchical Security Triage with LLM Jury** (NEW Iteration 37 — Three-layer pipeline: heuristic→LLM analysis→LLM jury (3-LLM voting+debate); production-ready at $0.006/skill; cross-ecosystem portable; see [[skillsieve-malicious-skill-detection]])
-40. **Skills + Ontology Closed Loop** (NEW Iteration 37 — Knowledge→ontology→skills→knowledge feedback; NL extraction builds ontologies; conversation-invokable skills; autonomous planning for novel tasks; see [[ai-km-ontology-skills]])
-41. **DAG-Based Skill Composition Runtime** (NEW Iteration 37 — Declarative YAML capabilities composed as DAGs with policy gates, provenance, and deterministic baselines; 122 capabilities, 36 skills; see [[orca-cognitive-runtime]])
-42. **Marketplace Consolidation** (NEW Iteration 37 — 8 marketplaces → 3-4 within a year; security scanning + creator payments becoming table stakes; MCP-based access replacing downloads; see [[marketplace-landscape-2026]])
-43. **Skill Optimization Taxonomy Completing** (NEW Iteration 38 — Five approaches mapped: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction), SkillOpt (training/gradient-like text optimization), EvoSkill (failure-driven discovery); SkillOpt outperforms all on 52/52 cells; see [[skillopt-trainable-skill-parameters]], [[evoskill-automated-skill-discovery]])
-44. **Skill Transfer Quantified** (NEW Iteration 38 — EvoSkill zero-shot task→task +5.3%, SkillOpt cross-harness Codex→Claude Code +59.7 + cross-model-scale, SkillMigrator cross-domain 35.4%; skills capture reusable workflow knowledge, not benchmark-specific instructions; see [[evoskill-automated-skill-discovery]], [[skillopt-trainable-skill-parameters]], [[skillmigrator-cross-domain-transfer]])
-45. **Skill Generation Is the Bottleneck** (NEW Iteration 38 — SkillGenBench: 7-27% pass@3 for auto-generation; 2-3x harder than skill use; negative transfer risk; shifts research frontier from use to creation; see [[skillgenbench-skill-generation-benchmark]])
-46. **Skills Need OS-Level Management** (NEW Iteration 38 — Skill OS paper: ~100K skill analysis reveals 6 properties; OS abstractions needed (caching, env construction, global management, failure handling, security); ORCA is early implementation; see [[skill-os-skills-as-apps]], [[orca-cognitive-runtime]])
-47. **Provenance Standards Converging** (NEW Iteration 38 — PROV-AGENT (W3C PROV + MCP) + SLSA/in-toto + W3C Agent Protocol CG; provenance becoming standard context element for skill bundles; see [[prov-agent-unified-provenance]])
-48. **Cross-Domain Transfer via Structural Layout** (NEW Iteration 38 — SkillMigrator's TIP abstraction (accessibility-tree skeleton + slot schema) enables cross-domain skill transfer by matching layout structure, not element IDs; novel architectural pattern; see [[skillmigrator-cross-domain-transfer]])
+25. **Domain-Coherent Bioinformatics Bundle** (NEW Iteration 14 — 88 skills, reproducibility bundles, reference genome asset, validation leaderboard, multi-modal access; see [clawbio bioinformatics skills](examples/clawbio-bioinformatics-skills.md))
+26. **Process-as-Skill SDLC Coverage** (NEW Iteration 14 — 23 skills spanning full lifecycle with anti-rationalization, verification gates, personas; see [addyosmani engineering skills](examples/addyosmani-engineering-skills.md))
+27. **Infrastructure-as-Agent-Capabilities** (NEW Iteration 14 — 6-component protocol for conference participation: registration, feeds, communication, moderation, benchmarking, memory; see [agents at conferences infrastructure](examples/agents-at-conferences-infrastructure.md))
+28. **Exact Dependency Pinning + Offline Validation** (NEW Iteration 14 — DSPy 3.2.1 pinned, 34+ validators, --dry-run smoke tests, committed benchmarks; see [dspy agent skills bundle](examples/dspy-agent-skills-bundle.md))
+29. **Autonomous Science Workflow Theory** (NEW Iteration 14 — State machine abstraction, Intelligence×Composition matrix, co-pilot→lab-pilot, SDLs as skill bundles; see [sc25 autonomous science workflows](papers/sc25-autonomous-science-workflows.md), [scaince ai lab automation](papers/scaince-ai-lab-automation.md))
+30. **Formal Skill Definition S=(C,π,T,R)** (NEW Iteration 36 — SoK provides canonical formal vocabulary; skills ≠ tools ≠ plans ≠ memory; simultaneously executable, reusable, governable; see [sok agentic skills beyond tool use](papers/sok-agentic-skills-beyond-tool-use.md))
+31. **Co-Evolutionary Verification** (NEW Iteration 36 — Dynamic verification where the verifier co-evolves with the skill generator; generalizes static validation to adaptive feedback loops; see [coevoskills self evolving skills](examples/coevoskills-self-evolving-skills.md))
+32. **SLSA/in-toto Provenance for Skills** (NEW Iteration 36 — Extending supply chain provenance to the "intent → source" gap; neutral observer pattern for skill generation; see [supply chain agentic factory in toto](examples/supply-chain-agentic-factory-in-toto.md))
+33. **Marketplace Supply-Chain Attack Quantification** (NEW Iteration 36 — ClawHavoc: ~13% malicious rate; SoK: 26.1% vulnerable; workshop: 37% flaw rate; convergent quantification of marketplace risk; see [clawhavoc marketplace attack](examples/clawhavoc-marketplace-attack.md))
+34. **Dependency-Aware Retrieval Validated** (NEW Iteration 36 — GoS v3: +25.55% reward, -56.72% tokens on SkillsBench; dependency-aware bundle retrieval outperforms flat in both quality and efficiency; see [graph of skills dependency retrieval](examples/graph-of-skills-dependency-retrieval.md))
+35. **Six-Layer Skill Taxonomy** (NEW Iteration 36 — Ontology→Representation→Lifecycle→Runtime→Governance→Applications; comprehensive structural framework; see [survey agent skills procedural infrastructure](papers/survey-agent-skills-procedural-infrastructure.md))
+36. **Skill Optimization Triad** (NEW Iteration 37 — Three distinct optimization approaches: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction); address configuration, content+verifier, and token efficiency axes; could compose; see [skillmoo multi objective optimization](examples/skillmoo-multi-objective-optimization.md), [skillreducer token efficiency](examples/skillreducer-token-efficiency.md))
+37. **Less-Is-More Effect** (NEW Iteration 37 — Removing non-essential skill content *improves* functional quality by 2.8%; progressive disclosure (load on demand) is the architectural pattern; challenges "more context = better" assumption; see [skillreducer token efficiency](examples/skillreducer-token-efficiency.md))
+38. **Skill Composition as Core Capability** (NEW Iteration 37 — SkillCraft validates that composing tools into reusable skills strongly correlates with agent success; 80% token savings from caching; auto-composition by agents (inverse of static bundles); see [skillcraft benchmark](examples/skillcraft-benchmark.md))
+39. **Hierarchical Security Triage with LLM Jury** (NEW Iteration 37 — Three-layer pipeline: heuristic→LLM analysis→LLM jury (3-LLM voting+debate); production-ready at $0.006/skill; cross-ecosystem portable; see [skillsieve malicious skill detection](examples/skillsieve-malicious-skill-detection.md))
+40. **Skills + Ontology Closed Loop** (NEW Iteration 37 — Knowledge→ontology→skills→knowledge feedback; NL extraction builds ontologies; conversation-invokable skills; autonomous planning for novel tasks; see [ai km ontology skills](examples/ai-km-ontology-skills.md))
+41. **DAG-Based Skill Composition Runtime** (NEW Iteration 37 — Declarative YAML capabilities composed as DAGs with policy gates, provenance, and deterministic baselines; 122 capabilities, 36 skills; see [orca cognitive runtime](examples/orca-cognitive-runtime.md))
+42. **Marketplace Consolidation** (NEW Iteration 37 — 8 marketplaces → 3-4 within a year; security scanning + creator payments becoming table stakes; MCP-based access replacing downloads; see [marketplace landscape 2026](examples/marketplace-landscape-2026.md))
+43. **Skill Optimization Taxonomy Completing** (NEW Iteration 38 — Five approaches mapped: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction), SkillOpt (training/gradient-like text optimization), EvoSkill (failure-driven discovery); SkillOpt outperforms all on 52/52 cells; see [skillopt trainable skill parameters](examples/skillopt-trainable-skill-parameters.md), [evoskill automated skill discovery](examples/evoskill-automated-skill-discovery.md))
+44. **Skill Transfer Quantified** (NEW Iteration 38 — EvoSkill zero-shot task→task +5.3%, SkillOpt cross-harness Codex→Claude Code +59.7 + cross-model-scale, SkillMigrator cross-domain 35.4%; skills capture reusable workflow knowledge, not benchmark-specific instructions; see [evoskill automated skill discovery](examples/evoskill-automated-skill-discovery.md), [skillopt trainable skill parameters](examples/skillopt-trainable-skill-parameters.md), [skillmigrator cross domain transfer](examples/skillmigrator-cross-domain-transfer.md))
+45. **Skill Generation Is the Bottleneck** (NEW Iteration 38 — SkillGenBench: 7-27% pass@3 for auto-generation; 2-3x harder than skill use; negative transfer risk; shifts research frontier from use to creation; see [skillgenbench skill generation benchmark](examples/skillgenbench-skill-generation-benchmark.md))
+46. **Skills Need OS-Level Management** (NEW Iteration 38 — Skill OS paper: ~100K skill analysis reveals 6 properties; OS abstractions needed (caching, env construction, global management, failure handling, security); ORCA is early implementation; see [skill os skills as apps](examples/skill-os-skills-as-apps.md), [orca cognitive runtime](examples/orca-cognitive-runtime.md))
+47. **Provenance Standards Converging** (NEW Iteration 38 — PROV-AGENT (W3C PROV + MCP) + SLSA/in-toto + W3C Agent Protocol CG; provenance becoming standard context element for skill bundles; see [prov agent unified provenance](examples/prov-agent-unified-provenance.md))
+48. **Cross-Domain Transfer via Structural Layout** (NEW Iteration 38 — SkillMigrator's TIP abstraction (accessibility-tree skeleton + slot schema) enables cross-domain skill transfer by matching layout structure, not element IDs; novel architectural pattern; see [skillmigrator cross domain transfer](examples/skillmigrator-cross-domain-transfer.md))
 
 ## Context Element Coverage
 
@@ -310,10 +316,10 @@ Two foundational papers provide theoretical grounding:
 | **Negative Transfer Detection** | **1** | **NEW** (SkillGenBench auto-skill risk) |
 
 See also:
-- [[skill-security-governance]] — Complete governance stack synthesis
-- [[three-layer-validation-stack]] — The validation architecture pattern
-- [[bidirectional-shacl-llm-bridge]] — The SHACL↔LLM closed loop
-- [[skill-bundle-patterns]] — Foundation patterns
-- [[sssom-mapping-as-context]] — Mappings as context
-- [[constraint-rules-as-context]] — Rules as context
-- [[validator-explanation-pattern]] — Validation + explanation pattern
+- [skill security governance](concepts/skill-security-governance.md) — Complete governance stack synthesis
+- [three layer validation stack](concepts/three-layer-validation-stack.md) — The validation architecture pattern
+- [bidirectional shacl llm bridge](concepts/bidirectional-shacl-llm-bridge.md) — The SHACL↔LLM closed loop
+- [skill bundle patterns](concepts/skill-bundle-patterns.md) — Foundation patterns
+- [sssom mapping as context](concepts/sssom-mapping-as-context.md) — Mappings as context
+- [constraint rules as context](concepts/constraint-rules-as-context.md) — Rules as context
+- [validator explanation pattern](concepts/validator-explanation-pattern.md) — Validation + explanation pattern

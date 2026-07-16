@@ -1,11 +1,26 @@
 ---
-title: "SWE-Skills-Bench: Do Agent Skills Actually Help in Software Engineering?"
+type: Skill Bundle Example
+title: 'SWE-Skills-Bench: Do Agent Skills Actually Help in Software Engineering?'
+description: SWE-Skills-Bench is the first **requirement-driven** benchmark that isolates the **marginal utility** of agent skills in real-world software engineering.
+resource: https://arxiv.org/abs/2603.15401
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2603.15401", "https://github.com/GeniusHTX/SWE-Skills-Bench"]
-skills_included: ["49 public SWE skills", "Deterministic verification framework", "Paired evaluation methodology (with/without skill)", "Acceptance criteria → execution test mapping"]
-context_elements: ["Requirement-driven benchmark design", "Execution-based acceptance criteria (deterministic verification)", "Paired evaluation (with/without skill, same task)", "6 SWE subdomains", "Version-pinned GitHub repositories"]
-composition: "Evaluation benchmark: 49 SWE skills × GitHub repos pinned at fixed commits × requirement docs with acceptance criteria → ~565 task instances across 6 subdomains → deterministic verification (acceptance criteria → execution tests) → paired with/without skill evaluation."
-reproducibility: "Open-sourced on GitHub (GeniusHTX/SWE-Skills-Bench). 49 skills, ~565 task instances, 6 SWE subdomains. arXiv:2603.15401, 34 citations."
+sources:
+- arXiv:2603.15401
+- https://github.com/GeniusHTX/SWE-Skills-Bench
+skills_included:
+- 49 public SWE skills
+- Deterministic verification framework
+- Paired evaluation methodology (with/without skill)
+- Acceptance criteria → execution test mapping
+context_elements:
+- Requirement-driven benchmark design
+- Execution-based acceptance criteria (deterministic verification)
+- Paired evaluation (with/without skill, same task)
+- 6 SWE subdomains
+- Version-pinned GitHub repositories
+composition: 'Evaluation benchmark: 49 SWE skills × GitHub repos pinned at fixed commits × requirement docs with acceptance criteria → ~565 task instances across 6 subdomains → deterministic verification (acceptance criteria → execution tests) → paired with/without skill evaluation.'
+reproducibility: Open-sourced on GitHub (GeniusHTX/SWE-Skills-Bench). 49 skills, ~565 task instances, 6 SWE subdomains. arXiv:2603.15401, 34 citations.
 rating: 10
 ---
 
@@ -67,15 +82,14 @@ SWE-Skills-Bench is the first **requirement-driven** benchmark that isolates the
 SWE-Skills-Bench provides the first rigorous empirical evaluation of skill utility. Its findings challenge the field's assumptions.
 
 - Critical counterpoint to skill adoption enthusiasm (80% zero improvement)
-- Complements [[skillreducer-token-efficiency]] (less-is-more effect — SWE-Skills-Bench quantifies the waste)
-- Related to [[skillsbench-agent-skills-benchmark]] (general skills benchmark — SWE-Skills-Bench is SWE-specific)
-- Related to [[skillgenbench-skill-generation-benchmark]] (generation evaluation — SWE-Skills-Bench is deployment evaluation)
-- Provides evaluation methodology missing from [[agent-skills-spec]] (specification without utility measurement)
-- Validates [[externalization-llm-agents-unified-review]] theory (skills as externalized procedural expertise can fail when expertise doesn't match context)
-- Version-mismatch finding connects to [[skillmigrator-cross-domain-transfer]] (contextual compatibility matters)
+- Complements [skillreducer token efficiency](skillreducer-token-efficiency.md) (less-is-more effect — SWE-Skills-Bench quantifies the waste)
+- Related to [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) (general skills benchmark — SWE-Skills-Bench is SWE-specific)
+- Related to [skillgenbench skill generation benchmark](skillgenbench-skill-generation-benchmark.md) (generation evaluation — SWE-Skills-Bench is deployment evaluation)
+- Provides evaluation methodology missing from [agent skills spec](agent-skills-spec.md) (specification without utility measurement)
+- Validates [externalization llm agents unified review](externalization-llm-agents-unified-review.md) theory (skills as externalized procedural expertise can fail when expertise doesn't match context)
+- Version-mismatch finding connects to [skillmigrator cross domain transfer](skillmigrator-cross-domain-transfer.md) (contextual compatibility matters)
 
 ## Key Insight
 
 Agent skills are not a universal performance booster. In real-world software engineering, 80% of skills provide zero benefit, and some are actively harmful (both in wasted tokens and degraded performance). Skill utility is a narrow, context-dependent intervention — the field needs rigorous evaluation, not just enthusiastic adoption.
 
-[[backlinks]]

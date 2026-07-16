@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: GitHub CLI Agent Skills Management (`gh skill`)
+description: GitHub introduced the `gh skill` command (CLI v2.90.0+) for discovering, installing, managing, and publishing agent skills across the entire agent ecosystem.
+resource: https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # GitHub CLI Agent Skills Management (`gh skill`)
 
-**Source:** https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Author:** GitHub Blog  
-**Bundle Type:** Supply Chain Security + Cross-Platform Skill Distribution  
+**Source:** https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/
+**Date Added:** 2026-05-24 (Iteration 8)
+**Author:** GitHub Blog
+**Bundle Type:** Supply Chain Security + Cross-Platform Skill Distribution
 **Confidence:** 9/10
 
 ## Name & Origin

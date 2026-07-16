@@ -1,3 +1,7 @@
+---
+okf_version: '0.1'
+---
+
 # Skill Bundles Knowledge Base
 
 |**Last Updated:** 2026-07-16 (Iteration 41)|
@@ -29,17 +33,42 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Metrics](metrics.md)
 - [Q&A](qa/)
 
+
+## Knowledge Catalog (OKF)
+
+This directory is an [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) Knowledge Bundle.
+
+**Format rules (read first for agents):** [OKF Knowledge Bundle — Format Rules](concepts/okf-knowledge-bundle.md)
+
+- Required: YAML frontmatter with `type` on every concept document
+- Cross-links: **relative markdown only** (OKF §5.2) — works on GitHub; never `[[wikilinks]]`
+- Conformance: `python3 scripts/okf-lint.py`
+- Workflow contract (outside bundle): repo-root `PLAN.md` — research loop may be Karpathy-inspired; **document format is OKF**
+
+# Bundle sections
+
+* [Skill Bundle Examples](examples/) - Documented real-world skill bundle case studies
+* [Concepts](concepts/) - Atomic notes on patterns, composition, and governance
+* [OKF format rules](concepts/okf-knowledge-bundle.md) - Local OKF v0.1 summary for this bundle
+* [Papers](papers/) - Summarized papers and workshop notes
+* [Tools](tools/) - Frameworks, marketplaces, and tooling landscape
+* [Daily Digests](daily-digests/) - Chronological research digests
+* [Q&A](qa/) - Structured exploration and gap analysis
+* [Primary Publication](skill-bundles.md) - Living catalog of examples and patterns
+* [Metrics](metrics.md) - KPIs and coverage tracking
+* [Update Log](log.md) - Chronological change history
+
 ## Current Status (Iteration 41 — 2026-07-16)
 
 Seven major new skill-bundle examples covering native multi-harness evaluation, skill internalization into weights, collective tree-search construction, composition-aware retrieval, ecosystem supply-chain inventory (1.43M skills), and empirical maintenance science:
 
-- **[[wildclawbench-native-runtime-evaluation]]** — 60 bilingual multimodal tasks in real OpenClaw / Claude Code / Codex / Hermes harnesses; hybrid grading; 19 models; best 62.2%; harness switch ±18pp; skill ablations mixed (Code Intelligence +22.4 strongest model); InternLM (arXiv:2605.10912)
-- **[[skill0-skill-internalization]]** — First RL skill-internalization framework ("skills@train, zero@infer"); Dynamic Curriculum on-policy helpfulness annealing; +9.7% ALFWorld / +10.1% WebShop; <0.5k tokens/step; ZJU-REAL/SkillZero (arXiv:2604.02268)
-- **[[openclaw-skill-csts-tree-search]]** — Collective Skill Tree Search: multi-model gen + quality/transferability assess; tree-of-skills anti-fragmentation; Collective Skill RL multi-skill selection (arXiv:2606.16774)
-- **[[r3-skill-compatibility-routing]]** — Skill retrieval ≠ document retrieval; Reject-as-Resource compatibility supervision; 10,246 skills; Hit@1=0.7521; Tencent R3-Skill (arXiv:2606.03565)
-- **[[assc-skill-supply-chains-skillbom]]** — Agent Skill Supply Chains; SDA + SkillBOM; 1.43M skills; 58.73% name collisions; 71–73% packages transitive-only; lockfile/manifest recommendations; PKU (arXiv:2607.01136)
-- **[[registry-to-repository-skill-maintenance]]** — First skill-as-artefact empirical study; 18k registry + 23k personal skills; one-time copy reuse; 53% never modified; 6 content + 6 maintenance themes (arXiv:2607.00911)
-- **[[inside-skill-market-se-activities]]** — Activity-centric SE skills market study; 11,497 SE skills; construction-heavy lifecycle skew; weak version maturity signals (arXiv:2607.09065)
+- **[wildclawbench native runtime evaluation](examples/wildclawbench-native-runtime-evaluation.md)** — 60 bilingual multimodal tasks in real OpenClaw / Claude Code / Codex / Hermes harnesses; hybrid grading; 19 models; best 62.2%; harness switch ±18pp; skill ablations mixed (Code Intelligence +22.4 strongest model); InternLM (arXiv:2605.10912)
+- **[skill0 skill internalization](examples/skill0-skill-internalization.md)** — First RL skill-internalization framework ("skills@train, zero@infer"); Dynamic Curriculum on-policy helpfulness annealing; +9.7% ALFWorld / +10.1% WebShop; <0.5k tokens/step; ZJU-REAL/SkillZero (arXiv:2604.02268)
+- **[openclaw skill csts tree search](examples/openclaw-skill-csts-tree-search.md)** — Collective Skill Tree Search: multi-model gen + quality/transferability assess; tree-of-skills anti-fragmentation; Collective Skill RL multi-skill selection (arXiv:2606.16774)
+- **[r3 skill compatibility routing](examples/r3-skill-compatibility-routing.md)** — Skill retrieval ≠ document retrieval; Reject-as-Resource compatibility supervision; 10,246 skills; Hit@1=0.7521; Tencent R3-Skill (arXiv:2606.03565)
+- **[assc skill supply chains skillbom](examples/assc-skill-supply-chains-skillbom.md)** — Agent Skill Supply Chains; SDA + SkillBOM; 1.43M skills; 58.73% name collisions; 71–73% packages transitive-only; lockfile/manifest recommendations; PKU (arXiv:2607.01136)
+- **[registry to repository skill maintenance](examples/registry-to-repository-skill-maintenance.md)** — First skill-as-artefact empirical study; 18k registry + 23k personal skills; one-time copy reuse; 53% never modified; 6 content + 6 maintenance themes (arXiv:2607.00911)
+- **[inside skill market se activities](examples/inside-skill-market-se-activities.md)** — Activity-centric SE skills market study; 11,497 SE skills; construction-heavy lifecycle skew; weak version maturity signals (arXiv:2607.09065)
 
 **Convergence signals:**
 1. **Internalization ↔ externalization spectrum** — SKILL0 (weights) vs SkillOpt/Memento (external packages) vs Externalization theory.

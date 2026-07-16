@@ -1,11 +1,29 @@
 ---
-title: "SkillSpector: NVIDIA Security Scanner for AI Agent Skills"
+type: Skill Bundle Example
+title: 'SkillSpector: NVIDIA Security Scanner for AI Agent Skills'
+description: SkillSpector is NVIDIA's open-source security scanner for AI agent skills.
+resource: https://github.com/nvidia/skillspector
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["https://github.com/nvidia/skillspector", "https://docs.nvidia.com/skills/scanning-agent-skills"]
-skills_included: ["YARA-based malicious pattern detection", "OWASP/MITRE-aligned security scanning", "Batch scanning", "CI/CD integration", "MCP least-privilege analysis", "Multi-provider LLM semantic analysis"]
-context_elements: ["YARA rules (pattern-based detection)", "OWASP LLM guidance alignment", "MITRE threat framework alignment", "CI/CD pipeline integration", "Docker containerization", "Plugin extensions system"]
-composition: "Security scanner: YARA rule engine + LLM semantic analysis + OWASP/MITRE framework alignment. Scans skills before installation. Part of NVIDIA-Verified ecosystem (catalog → scan → sign → document → distribute)."
-reproducibility: "Open-sourced on GitHub (NVIDIA/SkillSpector, 13.2k stars, 1.1k forks, Apache 2.0). 1312 unit tests. v2.3.13. Active development (286 commits, latest Jul 14, 2026)."
+sources:
+- https://github.com/nvidia/skillspector
+- https://docs.nvidia.com/skills/scanning-agent-skills
+skills_included:
+- YARA-based malicious pattern detection
+- OWASP/MITRE-aligned security scanning
+- Batch scanning
+- CI/CD integration
+- MCP least-privilege analysis
+- Multi-provider LLM semantic analysis
+context_elements:
+- YARA rules (pattern-based detection)
+- OWASP LLM guidance alignment
+- MITRE threat framework alignment
+- CI/CD pipeline integration
+- Docker containerization
+- Plugin extensions system
+composition: 'Security scanner: YARA rule engine + LLM semantic analysis + OWASP/MITRE framework alignment. Scans skills before installation. Part of NVIDIA-Verified ecosystem (catalog → scan → sign → document → distribute).'
+reproducibility: Open-sourced on GitHub (NVIDIA/SkillSpector, 13.2k stars, 1.1k forks, Apache 2.0). 1312 unit tests. v2.3.13. Active development (286 commits, latest Jul 14, 2026).
 rating: 10
 ---
 
@@ -49,17 +67,16 @@ SkillSpector is NVIDIA's open-source security scanner for AI agent skills. It de
 
 ## Relation to Skill Bundle Patterns
 
-SkillSpector operationalizes the scanning step of the [[nvidia-verified-agent-skills-governance]] pipeline. It is the industry-grade, productionized counterpart to academic detection frameworks.
+SkillSpector operationalizes the scanning step of the [nvidia verified agent skills governance](nvidia-verified-agent-skills-governance.md) pipeline. It is the industry-grade, productionized counterpart to academic detection frameworks.
 
-- Operationalizes [[nvidia-verified-agent-skills-governance]] (scanning step)
-- Complements [[skillsieve-malicious-skill-detection]] (three-layer LLM-based triage — SkillSpector adds YARA + CI integration)
-- Related to [[skillfortify-formal-verification-supply-chain]] (formal supply chain analysis — SkillSpector is the practical scanner)
-- Related to [[skillguard-permission-framework]] (runtime governance — SkillSpector is pre-installation)
-- Defense counterpart to [[maltool-malicious-tool-attacks]], [[badskill-backdoor-model-in-skill]], [[skillject-automated-prompt-injection]]
-- Related to [[nemoclaw-security-scanner]] (earlier NVIDIA scanner, SkillSpector is the successor)
+- Operationalizes [nvidia verified agent skills governance](nvidia-verified-agent-skills-governance.md) (scanning step)
+- Complements [skillsieve malicious skill detection](skillsieve-malicious-skill-detection.md) (three-layer LLM-based triage — SkillSpector adds YARA + CI integration)
+- Related to [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (formal supply chain analysis — SkillSpector is the practical scanner)
+- Related to [skillguard permission framework](skillguard-permission-framework.md) (runtime governance — SkillSpector is pre-installation)
+- Defense counterpart to [maltool malicious tool attacks](maltool-malicious-tool-attacks.md), [badskill backdoor model in skill](badskill-backdoor-model-in-skill.md), [skillject automated prompt injection](skillject-automated-prompt-injection.md)
+- Related to [nemoclaw security scanner](nemoclaw-security-scanner.md) (earlier NVIDIA scanner, SkillSpector is the successor)
 
 ## Key Insight
 
 Production-grade skill security scanning requires both pattern-based detection (YARA) and semantic analysis (LLM). SkillSpector combines both with industry-standard frameworks (OWASP, MITRE) and integrates directly into CI/CD pipelines, making pre-installation scanning a first-class deployment gate rather than an afterthought.
 
-[[backlinks]]

@@ -1,9 +1,18 @@
 ---
-title: "AI Agent Skills Marketplace Landscape 2026"
+type: Skill Bundle Example
+title: AI Agent Skills Marketplace Landscape 2026
+description: '- **Source:** Agensi.io comprehensive comparison (April 2026) - **Coverage:** 8 major marketplaces, Q2 2026 snapshot'
+resource: https://www.agensi.io/learn/best-ai-agent-skills-marketplaces-2026
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://www.agensi.io/learn/best-ai-agent-skills-marketplaces-2026
 signal: 8
-context_elements: [Marketplace governance, Security scanning, Creator payments, MCP-based access, Curation models]
+context_elements:
+- Marketplace governance
+- Security scanning
+- Creator payments
+- MCP-based access
+- Curation models
 ---
 
 # AI Agent Skills Marketplace Landscape 2026
@@ -71,9 +80,8 @@ This is a **marketplace ecosystem map**, not a single skill bundle. It documents
 
 ## Connections
 
-- Updates marketplace data from [[clawhavoc-marketplace-attack]] (1,184 malicious skills)
-- Expands on [[sok-agentic-skills-beyond-tool-use]]'s marketplace risk findings (13-26% vulnerability rate)
-- 6.3 issues/skill and 36% prompt injection rate validate [[skillsieve-malicious-skill-detection]]'s motivation
-- MCP-based access connects to [[orca-cognitive-runtime]]'s MCP server support
+- Updates marketplace data from [clawhavoc marketplace attack](clawhavoc-marketplace-attack.md) (1,184 malicious skills)
+- Expands on [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md)'s marketplace risk findings (13-26% vulnerability rate)
+- 6.3 issues/skill and 36% prompt injection rate validate [skillsieve malicious skill detection](skillsieve-malicious-skill-detection.md)'s motivation
+- MCP-based access connects to [orca cognitive runtime](orca-cognitive-runtime.md)'s MCP server support
 
-[[backlinks]]

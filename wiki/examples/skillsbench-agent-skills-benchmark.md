@@ -1,3 +1,9 @@
+---
+type: Skill Bundle Example
+title: 'SkillsBench: First Benchmark for Agent Skills Effectiveness'
+description: SkillsBench is the **first systematic benchmark** designed to measure how well agent skills improve AI agent performance across diverse tasks.
+---
+
 # SkillsBench: First Benchmark for Agent Skills Effectiveness
 
 ## Overview

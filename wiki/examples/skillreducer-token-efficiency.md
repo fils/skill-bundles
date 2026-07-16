@@ -1,11 +1,25 @@
 ---
-title: "SkillReducer: Optimizing LLM Agent Skills for Token Efficiency"
+type: Skill Bundle Example
+title: 'SkillReducer: Optimizing LLM Agent Skills for Token Efficiency'
+description: '- **arXiv:** 2603.29919 (submitted 31 Mar 2026, v2 24 Jun 2026) - **Authors:** Yudong Gao, Zongjie Li, Yuanyuan Yuan, Zimo Ji, Pingchuan Ma, Shuai Wang - **Study scale:** 55,315 publicly available skills'
+resource: https://arxiv.org/abs/2603.29919
+timestamp: '2026-07-12T00:00:00Z'
 date: 2026-07-12
 source: https://arxiv.org/abs/2603.29919
-authors: [Gao, Li, Yuan, Ji, Ma, Wang]
+authors:
+- Gao
+- Li
+- Yuan
+- Ji
+- Ma
+- Wang
 arxiv: 2603.29919
 signal: 9
-context_elements: [Delta debugging, Taxonomy-driven classification, Progressive disclosure, Faithfulness checks]
+context_elements:
+- Delta debugging
+- Taxonomy-driven classification
+- Progressive disclosure
+- Faithfulness checks
 ---
 
 # SkillReducer: Optimizing LLM Agent Skills for Token Efficiency
@@ -63,10 +77,9 @@ SkillReducer reveals the **bloat problem** in the skill bundle ecosystem and dem
 ## Connections
 
 - **Skill optimization triad:**
-  - [[skillmoo-multi-objective-optimization]]: search-based (NSGA-II Pareto)
-  - [[coevoskills-self-evolving-skills]]: evolution-based (co-evolutionary verification)
+  - [skillmoo multi objective optimization](skillmoo-multi-objective-optimization.md): search-based (NSGA-II Pareto)
+  - [coevoskills self evolving skills](coevoskills-self-evolving-skills.md): evolution-based (co-evolutionary verification)
   - SkillReducer: content reduction (delta debugging + taxonomy)
-- 26.4% missing routing + 60% non-actionable → quantifies the problem [[skillsbench-agent-skills-benchmark]] tests
-- Progressive disclosure pattern connects to [[orca-cognitive-runtime]]'s DAG-based lazy loading
+- 26.4% missing routing + 60% non-actionable → quantifies the problem [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) tests
+- Progressive disclosure pattern connects to [orca cognitive runtime](orca-cognitive-runtime.md)'s DAG-based lazy loading
 
-[[backlinks]]

@@ -1,25 +1,32 @@
 ---
+type: Skill Bundle Example
+title: DSPy Agent Skills v0.2.3 — Production-Grade DSPy 3.2.x Bundle
+description: Updated version of the dspy agent skills bundle for DSPy 3.2.x.
+resource: https://github.com/intertwine/dspy-agent-skills
+timestamp: '2026-05-25T00:00:00Z'
 date: 2026-05-25
 sources:
-  - https://github.com/intertwine/dspy-agent-skills
-title: DSPy Agent Skills v0.2.3 — Production-Grade DSPy 3.2.x Bundle
+- https://github.com/intertwine/dspy-agent-skills
 skills:
-  - dspy-fundamentals
-  - dspy-evaluation-harness
-  - dspy-gepa-optimizer
-  - dspy-rlm-module
-  - dspy-advanced-workflow
+- dspy-fundamentals
+- dspy-evaluation-harness
+- dspy-gepa-optimizer
+- dspy-rlm-module
+- dspy-advanced-workflow
 context_elements:
-  - SKILL.md progressive disclosure
-  - reference.md deep documentation
-  - pytest validation suite
-  - GEPA optimization benchmarks
-  - Dual-platform installation (Claude Code + Codex CLI)
-  - Offline dry-run testing
-composition_notes: |
-  Updated from v0.1.x to v0.2.3 with DSPy 3.2.x API validation. Five interdependent skills
+- SKILL.md progressive disclosure
+- reference.md deep documentation
+- pytest validation suite
+- GEPA optimization benchmarks
+- Dual-platform installation (Claude Code + Codex CLI)
+- Offline dry-run testing
+composition_notes: 'Updated from v0.1.x to v0.2.3 with DSPy 3.2.x API validation. Five interdependent skills
+
   with an orchestrator pattern (dspy-advanced-workflow activates the other four). Includes
+
   committed optimization benchmark artifacts showing measurable performance deltas.
+
+  '
 reproducibility: High — full source with install scripts for dual platforms
 confidence: 9/10
 ---
@@ -28,7 +35,7 @@ confidence: 9/10
 
 ## Overview
 
-Updated version of the [[dspy-agent-skills-bundle]] for DSPy 3.2.x. This bundle provides production-grade spec-compliant skills for coding agents (Claude Code, Codex CLI) to master DSPy with validated end-to-end examples.
+Updated version of the [dspy agent skills bundle](dspy-agent-skills-bundle.md) for DSPy 3.2.x. This bundle provides production-grade spec-compliant skills for coding agents (Claude Code, Codex CLI) to master DSPy with validated end-to-end examples.
 
 ## Skills Included
 
@@ -39,7 +46,7 @@ Updated version of the [[dspy-agent-skills-bundle]] for DSPy 3.2.x. This bundle 
 5. **dspy-advanced-workflow** — Orchestrator skill that composes the other four
 
 ## Progressive Disclosure
-Uses `SKILL.md` for quick agent context and `reference.md` for deep technical details — a pattern described in [[ylang-labs-agent-skills-overview]].
+Uses `SKILL.md` for quick agent context and `reference.md` for deep technical details — a pattern described in [ylang labs agent skills overview](ylang-labs-agent-skills-overview.md).
 
 ## GEPA Performance Benchmarks (Committed Artifacts)
 
@@ -61,7 +68,7 @@ Uses `SKILL.md` for quick agent context and `reference.md` for deep technical de
 - Manual: `./scripts/install.sh` symlinks to both `~/.claude/skills/` and `~/.agents/skills/`
 
 ## Connection to Existing Entries
-This is an **update** to our existing [[dspy-agent-skills-bundle]] entry (which covered v0.1.x). The v0.2.3 version adds DSPy 3.2.1 validation, updated GEPA benchmarks, and improved dry-run testing support. The [[skillsbench-agent-skills-benchmark]] benchmarking framework is relevant for evaluating the measurable improvements this bundle provides.
+This is an **update** to our existing [dspy agent skills bundle](dspy-agent-skills-bundle.md) entry (which covered v0.1.x). The v0.2.3 version adds DSPy 3.2.1 validation, updated GEPA benchmarks, and improved dry-run testing support. The [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) benchmarking framework is relevant for evaluating the measurable improvements this bundle provides.
 
 ## Source Attribution
-Raw source: [[../../raw/2026-05-25/dspy-agent-skills-v2.md]]
+Raw source: [dspy agent skills v2](../../raw/2026-05-25/dspy-agent-skills-v2.md)

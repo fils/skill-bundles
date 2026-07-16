@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: 'DSPy Agent Skills Bundle: Production-Grade DSPy Optimization'
+description: A family of three interoperable repositories that package **DSPy (Declarative Self-Improving Language Model programs)** expertise as agent skills.
+resource: https://github.com/intertwine/dspy-agent-skills
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # DSPy Agent Skills Bundle: Production-Grade DSPy Optimization
 
 **Source:** https://github.com/intertwine/dspy-agent-skills  \
 **Date Added:** 2026-05-23 (Updated: 2026-06-09)  \
 **Bundle Type:** Framework-Specific Skill Bundle (DSPy 3.2.x)  \
-**Raw Sources:** [[../raw/2026-06-09/intertwine-dspy-agent-skills.md]]
+**Raw Sources:** [intertwine dspy agent skills](../../raw/2026-06-09/intertwine-dspy-agent-skills.md)
 
 ## Overview
 
@@ -99,4 +108,4 @@ env -u UV_EXCLUDE_NEWER uv run --with dspy==3.2.1 python scripts/check_dspy_surf
 - https://github.com/intertwine/dspy-agent-skills
 - https://github.com/ivanvza/dspy-skills
 - https://github.com/OmidZamani/dspy-skills
-- Raw (v0.2.3): [[../raw/2026-06-09/intertwine-dspy-agent-skills.md]]
+- Raw (v0.2.3): [intertwine dspy agent skills](../../raw/2026-06-09/intertwine-dspy-agent-skills.md)

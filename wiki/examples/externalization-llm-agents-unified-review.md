@@ -1,11 +1,26 @@
 ---
-title: "Externalization in LLM Agents: Unified Review of Memory, Skills, Protocols, and Harness"
+type: Skill Bundle Example
+title: 'Externalization in LLM Agents: Unified Review of Memory, Skills, Protocols, and Harness'
+description: This paper provides the first **unified systems-level review** of how LLM agent capabilities are increasingly externalized — moved from model weights into runtime infrastructure.
+resource: https://arxiv.org/abs/2604.08224
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2604.08224"]
-skills_included: ["Theoretical framework for skill externalization", "Four-form taxonomy (memory, skills, protocols, harness)", "Historical progression (weights→context→harness)", "Parametric/externalized trade-off analysis"]
-context_elements: ["Cognitive artifacts framework", "Four-form externalization taxonomy", "Weights→Context→Harness progression model", "Parametric vs. externalized capability trade-off", "Self-evolving harnesses (emerging direction)", "Shared agent infrastructure (emerging direction)"]
-composition: "Theoretical review: cognitive artifacts lens → four forms of externalization (memory=state across time, skills=procedural expertise, protocols=interaction structure, harness=unification layer) → historical progression (weights→context→harness) → trade-off analysis → emerging directions → open challenges."
-reproducibility: "arXiv:2604.08224, 54 pages, 21 authors including Jun Wang (UCL) and Weinan Zhang (SJTU). 35 citations."
+sources:
+- arXiv:2604.08224
+skills_included:
+- Theoretical framework for skill externalization
+- Four-form taxonomy (memory, skills, protocols, harness)
+- Historical progression (weights→context→harness)
+- Parametric/externalized trade-off analysis
+context_elements:
+- Cognitive artifacts framework
+- Four-form externalization taxonomy
+- Weights→Context→Harness progression model
+- Parametric vs. externalized capability trade-off
+- Self-evolving harnesses (emerging direction)
+- Shared agent infrastructure (emerging direction)
+composition: 'Theoretical review: cognitive artifacts lens → four forms of externalization (memory=state across time, skills=procedural expertise, protocols=interaction structure, harness=unification layer) → historical progression (weights→context→harness) → trade-off analysis → emerging directions → open challenges.'
+reproducibility: arXiv:2604.08224, 54 pages, 21 authors including Jun Wang (UCL) and Weinan Zhang (SJTU). 35 citations.
 rating: 10
 ---
 
@@ -44,9 +59,9 @@ This paper provides the first **unified systems-level review** of how LLM agent 
 
 4. **Parametric vs. externalized trade-off** — There's a fundamental design trade-off between capabilities baked into model weights vs. those externalized into runtime infrastructure. The optimal balance is an open question.
 
-5. **Self-evolving harnesses** — Emerging direction: harnesses that improve themselves over time (cf. [[skillclaw-collective-skill-evolution]], [[coevoskills-self-evolving-skills]])
+5. **Self-evolving harnesses** — Emerging direction: harnesses that improve themselves over time (cf. [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md), [coevoskills self evolving skills](coevoskills-self-evolving-skills.md))
 
-6. **Shared agent infrastructure** — Emerging direction: collective/shared agent infrastructure (cf. [[skillclaw-collective-skill-evolution]] shared skill repository)
+6. **Shared agent infrastructure** — Emerging direction: collective/shared agent infrastructure (cf. [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md) shared skill repository)
 
 ## Open Challenges
 
@@ -66,16 +81,15 @@ This paper provides the first **unified systems-level review** of how LLM agent 
 This paper provides the **theoretical foundation** for the entire skill bundles wiki. Skills are formally defined as "externalized procedural expertise" — one of four coupled forms of externalization.
 
 - Skills = externalized procedural expertise (formal definition)
-- Harness engineering → [[skillguard-permission-framework]] (governance), [[skillfortify-formal-verification-supply-chain]] (verification), [[agentbound-mcp-access-control]] (access control)
-- Self-evolving harnesses → [[skillclaw-collective-skill-evolution]], [[coevoskills-self-evolving-skills]]
-- Shared infrastructure → [[skillclaw-collective-skill-evolution]] (shared skill repo)
-- Related to [[arxiv-agent-skills-survey]] (prior survey — this is more systems-level and theoretical)
-- Related to [[skill-os-skills-as-apps]] (OS abstraction = harness engineering)
-- Validates [[swe-skills-bench-utility-benchmark]] findings (externalized expertise can fail when it doesn't match context)
-- Connects to [[skillreducer-token-efficiency]] (parametric/externalized trade-off in practice)
+- Harness engineering → [skillguard permission framework](skillguard-permission-framework.md) (governance), [skillfortify formal verification supply chain](skillfortify-formal-verification-supply-chain.md) (verification), [agentbound mcp access control](agentbound-mcp-access-control.md) (access control)
+- Self-evolving harnesses → [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md), [coevoskills self evolving skills](coevoskills-self-evolving-skills.md)
+- Shared infrastructure → [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md) (shared skill repo)
+- Related to [arxiv agent skills survey](arxiv-agent-skills-survey.md) (prior survey — this is more systems-level and theoretical)
+- Related to [skill os skills as apps](skill-os-skills-as-apps.md) (OS abstraction = harness engineering)
+- Validates [swe skills bench utility benchmark](swe-skills-bench-utility-benchmark.md) findings (externalized expertise can fail when it doesn't match context)
+- Connects to [skillreducer token efficiency](skillreducer-token-efficiency.md) (parametric/externalized trade-off in practice)
 
 ## Key Insight
 
 Agent progress increasingly depends not just on stronger models, but on better external cognitive infrastructure. Skills, memory, and protocols are not auxiliary add-ons — they are cognitive artifacts that transform what the model needs to compute. The harness — the coordination layer that governs their interaction — is the emerging frontier. Understanding the parametric/externalized trade-off and enabling self-evolving, shared infrastructure are the key open challenges.
 
-[[backlinks]]

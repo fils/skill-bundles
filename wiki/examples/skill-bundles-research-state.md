@@ -1,6 +1,14 @@
+---
+type: Skill Bundle Example
+title: Current State of Skill Bundles Research (May 2026)
+description: 'After running five daily research cycles, the following picture has emerged:'
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Current State of Skill Bundles Research (May 2026)
 
-**Date:** 2026-05-23  
+**Date:** 2026-05-23
 **Iteration:** 5
 
 ## Summary After 5 Iterations

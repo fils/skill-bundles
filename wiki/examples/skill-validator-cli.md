@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: agent-ecosystem/skill-validator — CLI Validator + LLM-as-Judge
+description: A **CLI tool that validates and scores Agent Skill packages** (per the agentskills.io SKILL.md spec) — going well beyond spec compliance to check link rot, token cost, content quality, cross-language contamination, an...
+resource: https://github.com/agent-ecosystem/skill-validator
+timestamp: '2026-06-01T00:00:00Z'
+date: '2026-06-01'
+---
+
 # agent-ecosystem/skill-validator — CLI Validator + LLM-as-Judge
 
 **Source:** https://github.com/agent-ecosystem/skill-validator
@@ -49,9 +58,9 @@ The 3-axis content quality scoring (imperative count/ratio, strong/weak language
 
 ## Composition Notes
 
-The `validate structure` command's strict mode + per-platform hooks pattern resembles [[graphguard-os-guardrails]] — both apply policy-as-code to multi-platform agent surfaces.
+The `validate structure` command's strict mode + per-platform hooks pattern resembles [graphguard os guardrails](graphguard-os-guardrails.md) — both apply policy-as-code to multi-platform agent surfaces.
 
-`skill-validator` is the **local / pre-commit** layer. The CI/CD layer is filled by [[validate-skill-github-action]]. The **registry / marketplace** layer is filled by [[agentskill-sh-ags-security-scoring]]. Together they form a three-layer validation stack:
+`skill-validator` is the **local / pre-commit** layer. The CI/CD layer is filled by [validate skill github action](validate-skill-github-action.md). The **registry / marketplace** layer is filled by [agentskill sh ags security scoring](agentskill-sh-ags-security-scoring.md). Together they form a three-layer validation stack:
 
 1. **Pre-commit** (this tool, local Go binary)
 2. **CI/CD** (Validate Skill GitHub Action, structural checks)
@@ -62,9 +71,9 @@ The `validate structure` command's strict mode + per-platform hooks pattern rese
 **Very High.** Open-source, MIT-licensed, semver releases, full Go API, 13 platform hooks, homebrew + go install + pre-commit + library use paths all supported. Latest release v1.5.6 from Apr 2026 — actively maintained.
 
 ## Bundle Links
-- [[graphguard-os-guardrails]] — Policy-as-code for multi-platform agent surfaces
-- [[owasp-agentic-skills-top-10]] — Defines *what* a vulnerable skill is
-- [[agentic-trust-framework-csa]] — Defines *maturity levels* for trust
-- [[validate-skill-github-action]] — CI/CD complement
-- [[agentskill-sh-ags-security-scoring]] — Registry-level security scanner
-- [[dspy-agent-skills-bundle]] — LLM-as-judge pattern precedent
+- [graphguard os guardrails](graphguard-os-guardrails.md) — Policy-as-code for multi-platform agent surfaces
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — Defines *what* a vulnerable skill is
+- [agentic trust framework csa](agentic-trust-framework-csa.md) — Defines *maturity levels* for trust
+- [validate skill github action](validate-skill-github-action.md) — CI/CD complement
+- [agentskill sh ags security scoring](agentskill-sh-ags-security-scoring.md) — Registry-level security scanner
+- [dspy agent skills bundle](dspy-agent-skills-bundle.md) — LLM-as-judge pattern precedent

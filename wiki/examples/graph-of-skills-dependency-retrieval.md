@@ -1,3 +1,10 @@
+---
+type: Skill Bundle Example
+title: 'Graph of Skills (GoS): Dependency-Aware Structural Retrieval'
+description: Graph of Skills (GoS) (Li et al., 2026) presents an **inference-time structural retrieval layer** for large skill libraries.
+resource: https://arxiv.org/abs/2604.05333
+---
+
 # Graph of Skills (GoS): Dependency-Aware Structural Retrieval
 
 ## Overview
@@ -34,7 +41,7 @@ Skills are **not independent** — loading a skill without its dependencies lead
 High — GitHub repo at davidliuk/graph-of-skills with code for graph construction, retrieval, and PageRank ranking.
 
 ## Impact for Skill Bundles
-GoS formalizes what we've seen informally: skills form dependency graphs that need to be resolved before execution. The [[dspy-agent-skills-bundle]]'s `dspy-advanced-workflow` orchestrator skill and [[superpowers-engineering-discipline-skills]]'s methodology cycle are both **dependency-ordered** — GoS provides the theoretical foundation for these patterns.
+GoS formalizes what we've seen informally: skills form dependency graphs that need to be resolved before execution. The [dspy agent skills bundle](dspy-agent-skills-bundle.md)'s `dspy-advanced-workflow` orchestrator skill and [superpowers engineering discipline skills](superpowers-engineering-discipline-skills.md)'s methodology cycle are both **dependency-ordered** — GoS provides the theoretical foundation for these patterns.
 
 ## v3 Update (2026-07-11)
 

@@ -1,10 +1,19 @@
+---
+type: Skill Bundle Example
+title: SHACL 1.2 Data Quality Assessment — 69 Metrics as Shapes
+description: This research paper investigates the viability of using SHACL as a comprehensive tool for assessing data quality in Knowledge Graphs.
+resource: https://arxiv.org/abs/2507.22305
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # SHACL 1.2 Data Quality Assessment — 69 Metrics as Shapes
 
-**Source:** https://arxiv.org/abs/2507.22305  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Authors:** Carolina Cortés, Lisa Ehrlinger, Lorena Etcheverry, Felix Naumann  
-**Venue:** Proc. WOP-HAIBRIDGE 2025 (co-located with ISWC 2025)  
-**Bundle Type:** SHACL Validation + Data Quality Framework  
+**Source:** https://arxiv.org/abs/2507.22305
+**Date Added:** 2026-05-24 (Iteration 8)
+**Authors:** Carolina Cortés, Lisa Ehrlinger, Lorena Etcheverry, Felix Naumann
+**Venue:** Proc. WOP-HAIBRIDGE 2025 (co-located with ISWC 2025)
+**Bundle Type:** SHACL Validation + Data Quality Framework
 **Confidence:** 9/10
 
 ## Name & Origin

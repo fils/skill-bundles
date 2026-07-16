@@ -1,3 +1,9 @@
+---
+type: Concept
+title: Constraint Rules as Skill Context
+description: Some skill bundles encode **prohibitions and constraint rules** directly into their SKILL.md files, going beyond procedural instructions to enforce behavioral boundaries.
+---
+
 # Constraint Rules as Skill Context
 
 ## Overview
@@ -7,7 +13,7 @@ Some skill bundles encode **prohibitions and constraint rules** directly into th
 ## Examples
 
 ### Superpowers "Iron Laws"
-The [[superpowers-engineering-discipline-skills]] framework embeds non-negotiable constraints:
+The [superpowers engineering discipline skills](../examples/superpowers-engineering-discipline-skills.md) framework embeds non-negotiable constraints:
 - TDD: "NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST"
 - Verification: "NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE"
 - Debugging: "NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST"
@@ -23,10 +29,10 @@ Superpowers also documents **rationalization patterns** (Red Flags) that agents 
 This is a **second-order constraint**: the agent is taught to recognize its own rationalizations.
 
 ### Security Constraints
-[[nvidia-verified-agent-skills]] uses cryptographic signing (OpenSSF) as a constraint — unsigned skills cannot be installed. [[veto-agent-authorization]] implements a veto kernel where authorization decisions constrain what skills can execute.
+[nvidia verified agent skills](../examples/nvidia-verified-agent-skills.md) uses cryptographic signing (OpenSSF) as a constraint — unsigned skills cannot be installed. [veto agent authorization](../examples/veto-agent-authorization.md) implements a veto kernel where authorization decisions constrain what skills can execute.
 
 ### SHACL Validation as Constraint
-[[graphguard-os-guardrails]] uses SHACL shapes + Cypher rules as deterministic guardrails — constraints that LLMs cannot bypass through prompt engineering. [[xpshacl-explainable-shacl]] adds explainability: when validation fails, the agent receives the reason.
+[graphguard os guardrails](../examples/graphguard-os-guardrails.md) uses SHACL shapes + Cypher rules as deterministic guardrails — constraints that LLMs cannot bypass through prompt engineering. [xpshacl explainable shacl](../examples/xpshacl-explainable-shacl.md) adds explainability: when validation fails, the agent receives the reason.
 
 ## Pattern Classification
 
@@ -40,8 +46,8 @@ This is a **second-order constraint**: the agent is taught to recognize its own 
 
 ## Relationship to Other Concepts
 
-- [[skill-bundle-patterns]]: Constraint rules are the most restrictive form of context element
-- [[validator-explanation-pattern]]: Constraints need explanation when violated (xpSHACL pattern)
+- [skill bundle patterns](skill-bundle-patterns.md): Constraint rules are the most restrictive form of context element
+- [validator explanation pattern](validator-explanation-pattern.md): Constraints need explanation when violated (xpSHACL pattern)
 - Dependency constraints (Graph of Skills): Skills that require prerequisites can be viewed as constraints
 
 ## Status

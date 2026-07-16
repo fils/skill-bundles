@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: 'ClawHavoc Campaign: 1,184 Malicious Skills on ClawHub'
+description: ClawHavoc is a coordinated supply-chain attack that poisoned **ClawHub** (the official skill marketplace for OpenClaw, an open-source AI agent framework) with approximately **1,184–1,200 malicious skills** over approx...
+resource: https://arxiv.org/abs/2602.20867
+timestamp: '2026-07-11T00:00:00Z'
+date: '2026-07-11'
+---
+
 # ClawHavoc Campaign: 1,184 Malicious Skills on ClawHub
 
 **Sources:**
@@ -11,7 +20,7 @@
 
 ## Name & Origin
 
-ClawHavoc is a coordinated supply-chain attack that poisoned **ClawHub** (the official skill marketplace for OpenClaw, an open-source AI agent framework) with approximately **1,184–1,200 malicious skills** over approximately 6 weeks. The campaign exfiltrated API keys, cryptocurrency wallets, and browser credentials at scale. It is the canonical real-world case study for skill marketplace supply-chain attacks, anchored in the [[sok-agentic-skills-beyond-tool-use|SoK: Agentic Skills]] paper.
+ClawHavoc is a coordinated supply-chain attack that poisoned **ClawHub** (the official skill marketplace for OpenClaw, an open-source AI agent framework) with approximately **1,184–1,200 malicious skills** over approximately 6 weeks. The campaign exfiltrated API keys, cryptocurrency wallets, and browser credentials at scale. It is the canonical real-world case study for skill marketplace supply-chain attacks, anchored in the [SoK: Agentic Skills](../papers/sok-agentic-skills-beyond-tool-use.md) paper.
 
 ## Skills Included (malicious patterns)
 
@@ -31,18 +40,18 @@ ClawHavoc is a coordinated supply-chain attack that poisoned **ClawHub** (the of
 
 ClawHavoc demonstrates the **critical need for formal context elements** in skill bundles:
 
-1. **Provenance attestation** — without in-toto/SLSA provenance, malicious skills are indistinguishable from legitimate ones (see [[supply-chain-agentic-factory-in-toto]])
-2. **Validation gates** — the attack validates the need for [[three-layer-validation-stack]] and [[validate-skill-github-action]]
+1. **Provenance attestation** — without in-toto/SLSA provenance, malicious skills are indistinguishable from legitimate ones (see [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md))
+2. **Validation gates** — the attack validates the need for [three layer validation stack](../concepts/three-layer-validation-stack.md) and [validate skill github action](validate-skill-github-action.md)
 3. **Trust tiers** — the SoK's trust-tiered execution model directly responds to this attack pattern
-4. **Security scanning** — validates [[nemoclaw-security-scanner]] and [[mondoo-agent-skills-security]] approaches
-5. **OWASP AST01** — [[owasp-agentic-skills-top-10]] uses ClawHavoc as its primary real-world evidence
+4. **Security scanning** — validates [nemoclaw security scanner](nemoclaw-security-scanner.md) and [mondoo agent skills security](mondoo-agent-skills-security.md) approaches
+5. **OWASP AST01** — [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) uses ClawHavoc as its primary real-world evidence
 
 ## Composition Notes
 
 - **Detection by the target:** Koi Security's bot detected the malicious skills that were targeting it — "found by the bot they were targeting"
 - **Scale:** ~1,184 poisoned skills over 6 weeks; 341 confirmed malicious out of 2,632 audited (13% rate)
 - **Industry response:** Antiy CERT, Palo Alto Unit 42, Snyk, OWASP all published analyses
-- **Academic anchor:** Used as case study in [[sok-agentic-skills-beyond-tool-use]] (arXiv:2602.20867)
+- **Academic anchor:** Used as case study in [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) (arXiv:2602.20867)
 - **Hierarchical triage:** arXiv:2604.06550 proposes a formal detection framework validated on ClawHavoc data
 
 ## Reproducibility
@@ -51,14 +60,14 @@ High — multiple independent security firm analyses (Koi, Antiy CERT, Unit 42, 
 
 ## Bundle Links
 
-- [[sok-agentic-skills-beyond-tool-use]] — primary case study
-- [[owasp-agentic-skills-top-10]] — AST01 (Malicious Skills)
-- [[purplebox-supply-chain-security]] — supply chain security
-- [[skill-security-governance]] — governance framework
-- [[supply-chain-agentic-factory-in-toto]] — SLSA/in-toto provenance
-- [[nemoclaw-security-scanner]] — security scanning
-- [[three-layer-validation-stack]] — validation layers
-- [[mondoo-agent-skills-security]] — security analysis
+- [sok agentic skills beyond tool use](../papers/sok-agentic-skills-beyond-tool-use.md) — primary case study
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — AST01 (Malicious Skills)
+- [purplebox supply chain security](purplebox-supply-chain-security.md) — supply chain security
+- [skill security governance](../concepts/skill-security-governance.md) — governance framework
+- [supply chain agentic factory in toto](supply-chain-agentic-factory-in-toto.md) — SLSA/in-toto provenance
+- [nemoclaw security scanner](nemoclaw-security-scanner.md) — security scanning
+- [three layer validation stack](../concepts/three-layer-validation-stack.md) — validation layers
+- [mondoo agent skills security](mondoo-agent-skills-security.md) — security analysis
 
 ## Sources
 

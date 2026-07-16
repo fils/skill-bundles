@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Agent Skills for LLMs — Architecture, Acquisition, Security (arXiv Survey)
+description: 'The first **comprehensive academic survey** of the Agent Skills landscape, organized along four axes: architectural foundations, skill acquisition, deployment at scale, and security.'
+resource: https://arxiv.org/html/2602.12430v3
+timestamp: '2026-05-26T00:00:00Z'
+date: '2026-05-26'
+---
+
 # Agent Skills for LLMs — Architecture, Acquisition, Security (arXiv Survey)
 
 **Source:** https://arxiv.org/html/2602.12430v3
@@ -35,16 +44,16 @@ The first **comprehensive academic survey** of the Agent Skills landscape, organ
 This formalizes the distinction between skills and tool calls — a skill modifies the agent's **preparation and understanding**, not just its available functions.
 
 **Four Composition Axes (from the paper's hidden structure):**
-The survey maps composition patterns along (a) intelligence dimension — static → adaptive → learning → optimizing → intelligent, and (b) composition dimension — single → pipeline → hierarchical → mesh → swarm. This mirrors the [[sc25-autonomous-science-workflows]] framework, confirming cross-domain convergence.
+The survey maps composition patterns along (a) intelligence dimension — static → adaptive → learning → optimizing → intelligent, and (b) composition dimension — single → pipeline → hierarchical → mesh → swarm. This mirrors the [sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md) framework, confirming cross-domain convergence.
 
 ## How Context Elements Support Skills
 
 The survey provides the **formal academic foundation** for the entire skill bundle research program:
 
-1. **Architecture:** Documents progressive disclosure, SKILL.md format, and execution lifecycle — provides the canonical reference for [[agent-skills-spec]]
+1. **Architecture:** Documents progressive disclosure, SKILL.md format, and execution lifecycle — provides the canonical reference for [agent skills spec](agent-skills-spec.md)
 2. **Acquisition:** Explores RL-based skill learning, autonomous discovery, and compositional synthesis — research directions for future bundles
-3. **Deployment:** Computer-use agent stack, benchmarking methodologies — informs [[skillsbench-agent-skills-benchmark]]
-4. **Security:** 26.1% vulnerability rate validates the concerns raised by [[mondoo-agent-skills-security]] and [[owasp-agentic-skills-top-10]]
+3. **Deployment:** Computer-use agent stack, benchmarking methodologies — informs [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md)
+4. **Security:** 26.1% vulnerability rate validates the concerns raised by [mondoo agent skills security](mondoo-agent-skills-security.md) and [owasp agentic skills top 10](owasp-agentic-skills-top-10.md)
 
 ## Composition Notes
 
@@ -52,17 +61,17 @@ This survey serves as a **meta-catalog** for the entire wiki:
 
 | Survey Section | Corresponding Wiki Examples |
 |----------------|---------------------------|
-| Architecture (SKILL.md) | [[agent-skills-spec]], [[ylang-labs-agent-skills-overview]], [[spring-ai-agent-skills]], [[microsoft-agent-framework-skills]] |
-| Security | [[owasp-agentic-skills-top-10]], [[mondoo-agent-skills-security]], [[purplebox-supply-chain-security]] |
-| Composition | [[graph-of-skills-dependency-retrieval]], [[graphguard-os-guardrails]] |
-| Benchmarks | [[skillsbench-agent-skills-benchmark]], [[dspy-agent-skills-v023]] |
+| Architecture (SKILL.md) | [agent skills spec](agent-skills-spec.md), [ylang labs agent skills overview](ylang-labs-agent-skills-overview.md), [spring ai agent skills](spring-ai-agent-skills.md), [microsoft agent framework skills](microsoft-agent-framework-skills.md) |
+| Security | [owasp agentic skills top 10](owasp-agentic-skills-top-10.md), [mondoo agent skills security](mondoo-agent-skills-security.md), [purplebox supply chain security](purplebox-supply-chain-security.md) |
+| Composition | [graph of skills dependency retrieval](graph-of-skills-dependency-retrieval.md), [graphguard os guardrails](graphguard-os-guardrails.md) |
+| Benchmarks | [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md), [dspy agent skills v023](dspy-agent-skills-v023.md) |
 
 ## Reproducibility
 
 High — open-access arXiv paper under CC BY-NC-ND 4.0, accompanying GitHub repo with resources.
 
 ## Bundle Links
-- [[owasp-agentic-skills-top-10]] — AST10 validates the survey's 26.1% vulnerability finding
-- [[agent-skills-spec]] — The SKILL.md specification documented in the survey's architectural section
-- [[skillsbench-agent-skills-benchmark]] — One of the benchmarks the survey analyzes
-- [[sc25-autonomous-science-workflows]] — Convergent composition framework (same single→pipeline→hierarchical→mesh→swarm pattern)
+- [owasp agentic skills top 10](owasp-agentic-skills-top-10.md) — AST10 validates the survey's 26.1% vulnerability finding
+- [agent skills spec](agent-skills-spec.md) — The SKILL.md specification documented in the survey's architectural section
+- [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) — One of the benchmarks the survey analyzes
+- [sc25 autonomous science workflows](../papers/sc25-autonomous-science-workflows.md) — Convergent composition framework (same single→pipeline→hierarchical→mesh→swarm pattern)

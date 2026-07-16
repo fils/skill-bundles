@@ -1,11 +1,24 @@
 ---
-title: "Skill OS: Skills as First-Class Execution Artifacts"
+type: Skill Bundle Example
+title: 'Skill OS: Skills as First-Class Execution Artifacts'
+description: This paper surveys nearly **100,000 skills** from public repositories and argues that skills have become a new form of application.
+timestamp: '2026-07-13T00:00:00Z'
 date: 2026-07-13
-sources: ["AgenticOS 2026 Workshop Paper"]
-skills_included: ["Skill execution (discover → select → load → execute)", "Locality-aware caching", "Global skill management"]
-context_elements: ["100K skill empirical analysis", "Six property taxonomy", "Skill OS abstraction (5 demands)", "Progressive unfolding (metadata → instructions → resources)", "Parallel safety enforcement", "Structured failure handling"]
-composition: "Position paper: analyzes ~100K public skills, identifies 6 recurring properties, argues for OS-level skill management (caching, environment construction, global management, failure handling, security)."
-reproducibility: "Based on ~100K skills from public repositories. Anonymous (under review at AgenticOS 2026 workshop)."
+sources:
+- AgenticOS 2026 Workshop Paper
+skills_included:
+- Skill execution (discover → select → load → execute)
+- Locality-aware caching
+- Global skill management
+context_elements:
+- 100K skill empirical analysis
+- Six property taxonomy
+- Skill OS abstraction (5 demands)
+- Progressive unfolding (metadata → instructions → resources)
+- Parallel safety enforcement
+- Structured failure handling
+composition: 'Position paper: analyzes ~100K public skills, identifies 6 recurring properties, argues for OS-level skill management (caching, environment construction, global management, failure handling, security).'
+reproducibility: Based on ~100K skills from public repositories. Anonymous (under review at AgenticOS 2026 workshop).
 rating: 9
 ---
 
@@ -59,13 +72,12 @@ This paper surveys nearly **100,000 skills** from public repositories and argues
 ## Relation to Skill Bundle Patterns
 
 Skill OS represents the **systems-level** perspective on skill bundles:
-- Relates to [[orca-cognitive-runtime]] — ORCA implements some Skill OS demands (policy gates, provenance, DAG scheduler)
-- Extends [[skill-bundle-patterns]] — adds OS-level concerns (caching, parallelism, failure handling)
-- Complements [[skillreducer-token-efficiency]] — both address token waste (OS via caching, Reducer via content reduction)
-- Connects to [[marketplace-landscape-2026]] — marketplace = distribution layer, Skill OS = execution layer
+- Relates to [orca cognitive runtime](orca-cognitive-runtime.md) — ORCA implements some Skill OS demands (policy gates, provenance, DAG scheduler)
+- Extends [skill bundle patterns](../concepts/skill-bundle-patterns.md) — adds OS-level concerns (caching, parallelism, failure handling)
+- Complements [skillreducer token efficiency](skillreducer-token-efficiency.md) — both address token waste (OS via caching, Reducer via content reduction)
+- Connects to [marketplace landscape 2026](marketplace-landscape-2026.md) — marketplace = distribution layer, Skill OS = execution layer
 
 ## Key Insight
 
 Skills are a new application form that demands OS-level abstractions. The analogy to traditional OS is direct: processes → skills, virtual memory → skill caching, file permissions → skill security. Current prompt-centric systems miss optimization opportunities that a Skill OS would unlock. The 100K skill empirical analysis provides the evidence base.
 
-[[backlinks]]

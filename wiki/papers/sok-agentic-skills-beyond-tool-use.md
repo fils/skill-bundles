@@ -1,3 +1,12 @@
+---
+type: Paper
+title: 'SoK: Agentic Skills — Beyond Tool Use in LLM Agents'
+description: A comprehensive Systematization of Knowledge paper that provides the **first formal definition** of agentic skills, a complete lifecycle model, and dual taxonomies.
+resource: https://arxiv.org/abs/2602.20867
+timestamp: '2026-07-11T00:00:00Z'
+date: '2026-07-11'
+---
+
 # SoK: Agentic Skills — Beyond Tool Use in LLM Agents
 
 **Source:** https://arxiv.org/abs/2602.20867 (arXiv:2602.20867v1, 24 Feb 2026)
@@ -50,11 +59,11 @@ This SoK serves as a **meta-framework** for the wiki:
 | SoK Component | Wiki Mapping |
 |----------------|-------------|
 | Formal definition (S) | All wiki/examples/ entries |
-| Lifecycle model | [[skill-bundle-patterns]] |
-| Design patterns | [[skill-bundle-patterns]], individual examples |
-| Security analysis | [[skill-security-governance]], [[owasp-agentic-skills-top-10]] |
-| ClawHavoc case study | [[clawhavoc-marketplace-attack]] (new) |
-| Evaluation framework | [[skillsbench-agent-skills-benchmark]] |
+| Lifecycle model | [skill bundle patterns](../concepts/skill-bundle-patterns.md) |
+| Design patterns | [skill bundle patterns](../concepts/skill-bundle-patterns.md), individual examples |
+| Security analysis | [skill security governance](../concepts/skill-security-governance.md), [owasp agentic skills top 10](../examples/owasp-agentic-skills-top-10.md) |
+| ClawHavoc case study | [clawhavoc marketplace attack](../examples/clawhavoc-marketplace-attack.md) (new) |
+| Evaluation framework | [skillsbench agent skills benchmark](../examples/skillsbench-agent-skills-benchmark.md) |
 
 ## Reproducibility
 
@@ -62,15 +71,15 @@ High — open-access arXiv paper (CC BY 4.0), 192K+ characters of full text, com
 
 ## Bundle Links
 
-- [[skill-bundle-patterns]] — design patterns taxonomy
-- [[skill-security-governance]] — security analysis
-- [[three-layer-validation-stack]] — trust tier model
-- [[owasp-agentic-skills-top-10]] — security threats
-- [[purplebox-supply-chain-security]] — supply chain
-- [[coevoskills-self-evolving-skills]] — self-evolving pattern (Pattern 4)
-- [[clawhavoc-marketplace-attack]] — case study
-- [[supply-chain-agentic-factory-in-toto]] — SLSA/in-toto provenance
-- [[agentskills-workshop-2026]] — workshop venue
+- [skill bundle patterns](../concepts/skill-bundle-patterns.md) — design patterns taxonomy
+- [skill security governance](../concepts/skill-security-governance.md) — security analysis
+- [three layer validation stack](../concepts/three-layer-validation-stack.md) — trust tier model
+- [owasp agentic skills top 10](../examples/owasp-agentic-skills-top-10.md) — security threats
+- [purplebox supply chain security](../examples/purplebox-supply-chain-security.md) — supply chain
+- [coevoskills self evolving skills](../examples/coevoskills-self-evolving-skills.md) — self-evolving pattern (Pattern 4)
+- [clawhavoc marketplace attack](../examples/clawhavoc-marketplace-attack.md) — case study
+- [supply chain agentic factory in toto](../examples/supply-chain-agentic-factory-in-toto.md) — SLSA/in-toto provenance
+- [agentskills workshop 2026](agentskills-workshop-2026.md) — workshop venue
 
 ## Sources
 

@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: SHACL 1.2 Core Specification — W3C Standard
+description: SHACL 1.2 (Shapes Constraint Language) is the latest evolution of the W3C standard for describing conditions that a dataset must meet.
+resource: https://www.w3.org/TR/shacl12-core/
+timestamp: '2026-05-24T00:00:00Z'
+date: '2026-05-24'
+---
+
 # SHACL 1.2 Core Specification — W3C Standard
 
-**Source:** https://www.w3.org/TR/shacl12-core/  
-**Date Added:** 2026-05-24 (Iteration 8)  
-**Author:** W3C  
-**Bundle Type:** SHACL Validation (Core Specification)  
+**Source:** https://www.w3.org/TR/shacl12-core/
+**Date Added:** 2026-05-24 (Iteration 8)
+**Author:** W3C
+**Bundle Type:** SHACL Validation (Core Specification)
 **Confidence:** 9/10
 
 ## Name & Origin
@@ -44,10 +53,10 @@ N/A — this is a W3C specification, not software.
 
 ## Related Examples
 
-- [[schimatos-shacl-knowledge-graph]]
-- [[rdf-ontologies-skill]]
-- [[open-ontologies-paper]]
-- [[open-ontologies-github]]
-- [[graphguard-os-guardrails]]
-- [[xpshacl-explainable-shacl]]
-- [[shacl-data-quality-69-metrics]]
+- [schimatos shacl knowledge graph](schimatos-shacl-knowledge-graph.md)
+- [rdf ontologies skill](rdf-ontologies-skill.md)
+- [open ontologies paper](open-ontologies-paper.md)
+- [open ontologies github](open-ontologies-github.md)
+- [graphguard os guardrails](graphguard-os-guardrails.md)
+- [xpshacl explainable shacl](xpshacl-explainable-shacl.md)
+- [shacl data quality 69 metrics](shacl-data-quality-69-metrics.md)

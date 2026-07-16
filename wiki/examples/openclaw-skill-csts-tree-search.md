@@ -1,11 +1,25 @@
 ---
-title: "OpenClaw-Skill: Collective Skill Tree Search (CSTS)"
+type: Skill Bundle Example
+title: 'OpenClaw-Skill: Collective Skill Tree Search (CSTS)'
+description: OpenClaw-Skill proposes **Collective Skill Tree Search (CSTS)** to automatically construct structured, diverse, and **cross-model transferable** skill trees for OpenClaw-like agents — addressing handcrafted skill cost...
+resource: https://arxiv.org/abs/2606.16774
+timestamp: '2026-07-16T00:00:00Z'
 date: 2026-07-16
-sources: ["arXiv:2606.16774"]
-skills_included: ["Tree-of-skills construction", "CSN-Gen multi-model candidates", "CSN-Assess quality+transfer scoring", "Collective Skill RL multi-skill selection"]
-context_elements: ["Collective Skill Tree Search", "Collective quality scoring", "Collective transferability scoring", "Skill tree hierarchy (anti-fragmentation)", "Multi-model judge ensemble"]
-composition: "CSTS iterates CSN-Gen (multi-model skill candidates) → CSN-Assess (quality + cross-model transfer scores) → tree of skills + skill-augmented training → Collective Skill RL."
-reproducibility: "Paper arXiv:2606.16774 (Jun 2026); OpenClaw-Skill model trained with CSTS trees; benchmarks for long-horizon tool use."
+sources:
+- arXiv:2606.16774
+skills_included:
+- Tree-of-skills construction
+- CSN-Gen multi-model candidates
+- CSN-Assess quality+transfer scoring
+- Collective Skill RL multi-skill selection
+context_elements:
+- Collective Skill Tree Search
+- Collective quality scoring
+- Collective transferability scoring
+- Skill tree hierarchy (anti-fragmentation)
+- Multi-model judge ensemble
+composition: CSTS iterates CSN-Gen (multi-model skill candidates) → CSN-Assess (quality + cross-model transfer scores) → tree of skills + skill-augmented training → Collective Skill RL.
+reproducibility: Paper arXiv:2606.16774 (Jun 2026); OpenClaw-Skill model trained with CSTS trees; benchmarks for long-horizon tool use.
 rating: 8
 ---
 
@@ -48,14 +62,13 @@ OpenClaw-Skill proposes **Collective Skill Tree Search (CSTS)** to automatically
 
 ## Relation to Skill Bundle Patterns
 
-- Distinct from [[skillclaw-collective-skill-evolution]] (runtime multi-user trajectory aggregation) — CSTS is **construction-time** collective search
-- Complements [[coevoskills-self-evolving-skills]] (generator+verifier co-evolution)
-- Complements [[evoskill-automated-skill-discovery]] (failure-driven Pareto discovery)
-- Transfer gates relate to [[skillmigrator-cross-domain-transfer]] and [[skillsbench-agent-skills-benchmark]] transfer findings
-- Tree structure extends [[graph-of-skills-dependency-retrieval]] / [[skillcraft-benchmark]] composition themes
+- Distinct from [skillclaw collective skill evolution](skillclaw-collective-skill-evolution.md) (runtime multi-user trajectory aggregation) — CSTS is **construction-time** collective search
+- Complements [coevoskills self evolving skills](coevoskills-self-evolving-skills.md) (generator+verifier co-evolution)
+- Complements [evoskill automated skill discovery](evoskill-automated-skill-discovery.md) (failure-driven Pareto discovery)
+- Transfer gates relate to [skillmigrator cross domain transfer](skillmigrator-cross-domain-transfer.md) and [skillsbench agent skills benchmark](skillsbench-agent-skills-benchmark.md) transfer findings
+- Tree structure extends [graph of skills dependency retrieval](graph-of-skills-dependency-retrieval.md) / [skillcraft benchmark](skillcraft-benchmark.md) composition themes
 
 ## Key Insight
 
 Automatic skill construction needs **collective generation + collective transfer gates**, not single-model trajectory distillation. Packaging skills as trees (not flat lists) is the structural antidote to fragmentation for long-horizon OpenClaw-class work.
 
-[[backlinks]]

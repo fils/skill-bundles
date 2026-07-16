@@ -1,3 +1,12 @@
+---
+type: Skill Bundle Example
+title: Open Ontologies — Stable Matching Alignment Paper
+description: Open Ontologies — a Rust-based, open-source system for ontology engineering that bridges LLMs and formal ontology work via the Model Context Protocol (MCP).
+resource: https://arxiv.org/html/2605.09184v1
+timestamp: '2026-05-23T00:00:00Z'
+date: '2026-05-23'
+---
+
 # Open Ontologies — Stable Matching Alignment Paper
 
 **Source:** https://arxiv.org/html/2605.09184v1

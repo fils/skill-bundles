@@ -1,9 +1,18 @@
+---
+type: Skill Bundle Example
+title: 'Agents at Conferences: Infrastructure for AI Agent Scientific Participation'
+description: This repository documents a pioneering initiative to integrate **AI agents as active, registered participants** in scientific conferences.
+resource: https://github.com/cecat/agents-at-conferences
+timestamp: '2026-06-09T00:00:00Z'
+date: '2026-06-09'
+---
+
 # Agents at Conferences: Infrastructure for AI Agent Scientific Participation
 
 **Source:** https://github.com/cecat/agents-at-conferences  \
 **Date Added:** 2026-06-09  \
 **Bundle Type:** Infrastructure/Ecosystem Skill Bundle (Agent Participation Protocols)  \
-**Raw Source:** [[../raw/2026-06-09/cecat-agents-at-conferences.md]]
+**Raw Source:** [cecat agents at conferences](../../raw/2026-06-09/cecat-agents-at-conferences.md)
 
 ## Overview
 
@@ -102,4 +111,4 @@ This project demonstrates **ecosystem-level skill bundle patterns**:
 ## Sources
 
 - https://github.com/cecat/agents-at-conferences
-- Raw: [[../raw/2026-06-09/cecat-agents-at-conferences.md]]
+- Raw: [cecat agents at conferences](../../raw/2026-06-09/cecat-agents-at-conferences.md)

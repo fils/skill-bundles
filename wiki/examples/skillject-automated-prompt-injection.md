@@ -1,11 +1,26 @@
 ---
-title: "SkillJect: Automated Skill-Based Prompt Injection for Coding Agents"
+type: Skill Bundle Example
+title: 'SkillJect: Automated Skill-Based Prompt Injection for Coding Agents'
+description: SkillJect is the first **automated** framework for generating poisoned skills against skill-enabled agent systems.
+resource: https://arxiv.org/abs/2602.14211
+timestamp: '2026-07-15T00:00:00Z'
 date: 2026-07-15
-sources: ["arXiv:2602.14211", "https://github.com/jiaxiaojunQAQ/SkillJect"]
-skills_included: ["Poisoned skill generation (artifact + instruction channels)", "Front-loaded inducement strategy", "Closed-loop multi-agent refinement", "Helper script payload embedding"]
-context_elements: ["Two-channel attack model (artifact + instruction)", "SKILL.md rewriting with front-loaded inducement", "Closed-loop multi-agent process (Attack→Victim→Evaluate)", "Trace-driven refinement", "Cross-platform support (Claude Code, OpenClaw)"]
-composition: "Attack framework: Attack Agent generates poisoned skill (payload in helper script + front-loaded inducement in SKILL.md) → Victim Agent executes task with poisoned skill → Evaluate Agent inspects traces → feedback to Attack Agent for iterative refinement. Payload stays fixed; SKILL.md is rewritten."
-reproducibility: "Open-sourced on GitHub (jiaxiaojunQAQ/SkillJect). Supports Claude Code, OpenClaw. Methods: direct_execution, skillject, template_injection, baseline."
+sources:
+- arXiv:2602.14211
+- https://github.com/jiaxiaojunQAQ/SkillJect
+skills_included:
+- Poisoned skill generation (artifact + instruction channels)
+- Front-loaded inducement strategy
+- Closed-loop multi-agent refinement
+- Helper script payload embedding
+context_elements:
+- Two-channel attack model (artifact + instruction)
+- SKILL.md rewriting with front-loaded inducement
+- Closed-loop multi-agent process (Attack→Victim→Evaluate)
+- Trace-driven refinement
+- Cross-platform support (Claude Code, OpenClaw)
+composition: 'Attack framework: Attack Agent generates poisoned skill (payload in helper script + front-loaded inducement in SKILL.md) → Victim Agent executes task with poisoned skill → Evaluate Agent inspects traces → feedback to Attack Agent for iterative refinement. Payload stays fixed; SKILL.md is rewritten.'
+reproducibility: 'Open-sourced on GitHub (jiaxiaojunQAQ/SkillJect). Supports Claude Code, OpenClaw. Methods: direct_execution, skillject, template_injection, baseline.'
 rating: 9
 ---
 
@@ -54,7 +69,7 @@ The **payload stays fixed** while the SKILL.md inducement strategy is iterativel
 ## Context Elements
 
 - **Two-channel attack model** — Artifact (helper script) + instruction (SKILL.md) separation
-- **SKILL.md rewriting** — Manipulation of the skill definition file (cf. [[agent-skills-spec]])
+- **SKILL.md rewriting** — Manipulation of the skill definition file (cf. [agent skills spec](agent-skills-spec.md))
 - **Front-loaded inducement** — Exploiting positional bias in LLM instruction following
 - **Closed-loop multi-agent** — Attack→Victim→Evaluate feedback cycle
 - **Trace-driven refinement** — Execution trace analysis for iterative improvement
@@ -63,14 +78,13 @@ The **payload stays fixed** while the SKILL.md inducement strategy is iterativel
 
 SkillJect demonstrates that the SKILL.md specification itself is an attack surface. The skill bundle structure (instructions + scripts + resources) can be weaponized.
 
-- Attack vector distinct from [[badskill-backdoor-model-in-skill]] (prompt injection vs. model poisoning)
-- Related to [[maltool-malicious-tool-attacks]] (code-level attacks — SkillJect targets the skill definition layer)
-- Defense counterpart: [[skillspector-nvidia-security-scanner]] (must scan helper scripts, not just SKILL.md)
-- Related to [[skillguard-permission-framework]] (must govern auxiliary scripts, not just main skill)
-- Exploits the [[agent-skills-spec]] SKILL.md format
+- Attack vector distinct from [badskill backdoor model in skill](badskill-backdoor-model-in-skill.md) (prompt injection vs. model poisoning)
+- Related to [maltool malicious tool attacks](maltool-malicious-tool-attacks.md) (code-level attacks — SkillJect targets the skill definition layer)
+- Defense counterpart: [skillspector nvidia security scanner](skillspector-nvidia-security-scanner.md) (must scan helper scripts, not just SKILL.md)
+- Related to [skillguard permission framework](skillguard-permission-framework.md) (must govern auxiliary scripts, not just main skill)
+- Exploits the [agent skills spec](agent-skills-spec.md) SKILL.md format
 
 ## Key Insight
 
 Poisoned skills are a persistent (not one-shot) threat: they are loaded repeatedly as trusted guidance. The two-channel attack (payload in helper script + inducement in SKILL.md) and closed-loop multi-agent refinement make automated generation of stealthy, effective poisoned skills feasible. This elevates skill-based prompt injection from manual, brittle attacks to automated, adaptive threats.
 
-[[backlinks]]
