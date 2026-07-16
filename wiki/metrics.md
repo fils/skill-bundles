@@ -1,19 +1,19 @@
 # Skill Bundles — Metrics & Progress
 
-|**Last Updated: 2026-07-15 (Iteration 40)**|
+|**Last Updated: 2026-07-16 (Iteration 41)**|
 
 ## KPIs
 
 || Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 90 | 82 | +8 |
-| Raw Sources (daily folders) | 52 days | 51 | +1 (2026-07-15) |
-| Wiki Example Files | 90 | 82 | +8 |
-| Paper Notes | 7 | 6 | +1 (Externalization) |
+| Documented Examples | 97 | 90 | +7 |
+| Raw Sources (daily folders) | 53 days | 52 | +1 (2026-07-16) |
+| Wiki Example Files | 97 | 90 | +7 |
+| Paper Notes | 7 | 7 | Unchanged |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | +1 (2026-07-15) | — | +1 |
-| Q&A Passes | +1 (2026-07-15-qa) | — | +1 |
-| Context Element Types Covered | 55+ | 47+ | +8 (Collective skill evolution, Autonomous evolver, YARA rules, CIA triad for agent tools, Model-in-skill threat surface, Two-channel attack model, Declarative MCP access control, Cognitive artifacts framework) |
+| Daily Digests | +1 (2026-07-16) | — | +1 |
+| Q&A Passes | +1 (2026-07-16-qa) | — | +1 |
+| Context Element Types Covered | 62+ | 55+ | +7 (Native multi-harness protocol, Skill internalization/Dynamic Curriculum, Collective Skill Tree Search + transfer scoring, Skill compatibility / Reject-as-Resource, ASSC SkillBOM multi-channel deps, One-time copy reuse model, SE activity→skill mapping) |
 
 ## Context Element Coverage (summary)
 
@@ -69,6 +69,25 @@
 | Two-Channel Attack Model | New (SkillJect artifact channel + instruction channel) |
 | Declarative MCP Access Control | New (AgentBound Android-permission-inspired policy) |
 | Cognitive Artifacts Framework | New (Externalization four-form taxonomy) |
+
+| Native Multi-Harness Evaluation Protocol | New (WildClawBench OpenClaw/Claude Code/Codex/Hermes) |
+| Skill Internalization Dynamic Curriculum | New (SKILL0 on-policy helpfulness annealing) |
+| Collective Skill Tree Search + Transfer Scoring | New (CSTS CSN-Gen/CSN-Assess) |
+| Skill Compatibility / Reject-as-Resource | New (R3-Skill Set-Compat routing) |
+| ASSC SkillBOM Multi-Channel Deps | New (skill/package/service graphs + lockfiles) |
+| One-Time Copy Reuse Model | New (Registry→Repository maintenance science) |
+| SE Activity→Skill Lifecycle Mapping | New (Inside the Skill Market) |
+
+## 2026-07-16 Run Notes (Iteration 41)
+
+- Pre-flight: Clean tree (`## master...origin/master`). No `raw/2026-07-16/` (created today). Last commit 2026-07-15 (0b9b792). Digests current through 2026-07-15. No leftover uncommitted raw.
+- Anti-stagnation: Followed 2026-07-15 priority list (WildClawBench first hit) + diversified into Jul-2026 arXiv (ASSCs, Registry→Repository, SE market) + SKILL0 internalization + CSTS + R3-Skill. All 7 sources novel (none in prior week digests). Theme: evaluation + internalization + supply-chain inventory + maintenance science.
+- Phase 1: **7 sources** — WildClawBench, SKILL0, OpenClaw-Skill CSTS, R3-Skill, ASSCs, Registry→Repository, Inside Skill Market. All novel.
+- Phase 2: 7 new example articles + daily digest.
+- Phase 3: index + patterns + context element coverage updated; 6 new emerging patterns.
+- Phase 4: Q&A + lint pass.
+- Phase 5: Unconditional git commit + push.
+- Daily sources: 7 | New examples: 7 | Papers: 0 | Updated: 0 | New patterns: 6 | New context elements: 7
 
 ## 2026-07-15 Run Notes (Iteration 40)
 

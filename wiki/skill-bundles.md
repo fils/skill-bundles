@@ -1,12 +1,12 @@
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-07-15 (Iteration 40)
+**Primary Publication** — Last major update: 2026-07-16 (Iteration 41)
 
 ## TL;DR
 
-Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 90 documented examples across 40 iterations of daily research.
+Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 97 documented examples across 41 iterations of daily research.
 
-## Documented Examples (90 Total + 7 Paper Notes)
+## Documented Examples (97 Total + 7 Paper Notes)
 
 ### Research & Workflow
 - NORA — Autonomous research agent with orchestrated skills
@@ -30,6 +30,8 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Skill1** (NEW Iteration 39) — Unified evolution of skill-augmented agents via RL; single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; outperforms baselines; 18 citations (arXiv:2605.06130)
 - **EXIF** (NEW Iteration 39) — Alice-Bob dual-agent for automated skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; iterative feedback loop; self-play (Alice=Bob) enables self-evolution; Webshop + Crafter; precursor to 2026 skill discovery wave; 11 citations (arXiv:2506.04287)
 - **SkillClaw** (NEW Iteration 40) — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★) (arXiv:2604.08377)
+- **SKILL0** (NEW Iteration 41) — First RL framework for skill internalization ("skills at training, zero at inference"); Dynamic Curriculum anneals skill scaffolding by on-policy helpfulness; +9.7% ALFWorld, +6.6% Search-QA, +10.1% WebShop; <0.5k tokens/step; GitHub: ZJU-REAL/SkillZero (arXiv:2604.02268)
+- **OpenClaw-Skill / CSTS** (NEW Iteration 41) — Collective Skill Tree Search: multi-model candidate generation + quality/transferability assessment; builds structured transferable skill trees; Collective Skill RL multi-skill selection; addresses fragmentation, single-model bias, poor transfer (arXiv:2606.16774)
 
 ### Ontology & Knowledge
 - Ontologizer — OpenClaw ontology skill
@@ -102,6 +104,9 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - **Awesome-Agent-Skill-Papers** (NEW Iteration 36) — Curated paper catalog accompanying six-layer taxonomy survey; discovery index for academic agent skill research (GitHub: DataArcTech)
 - **Marketplace Landscape 2026** (NEW Iteration 37) — 8 major marketplaces compared: SkillsMP (800K+), LobeHub (169K+), Skills.sh (2K), Agensi (200+, 8-point security scan, 70/30 creator payments); 6.3 issues/skill avg, 36% prompt injection rate; MCP-based access predicted as default
 - **SkillMigrator** (NEW Iteration 38) — Cross-domain web skill reuse via Transferable Interaction Patterns (TIP 4-tuple ⟨intent, template, slots, layout-skeleton⟩); accessibility-tree skeleton matching with Tree Edit Distance; 8-10% LLM call reduction; 35.4% cross-domain reuse rate (arXiv:2606.17645)
+- **ASSCs / Skills Are Not Islands** (NEW Iteration 41) — Agent Skill Supply Chains; SDA recovers multi-channel deps (skill/package/service); SkillBOM (SBOM-compatible); 1.43M skills analyzed; 58.73% name collisions; 71–73% packages transitive-only; 60–78% security skill deps transitive; typed manifests + lockfiles recommended (arXiv:2607.01136)
+- **From Registry to Repository** (NEW Iteration 41) — First empirical study of skills as engineered artefacts; 18,463 registry + 23,199 personal skills; 3,709 reuse links; 6 content themes + 6 maintenance themes; reuse = one-time copy; 53% never modified after adoption (arXiv:2607.00911)
+- **Inside the Skill Market** (NEW Iteration 41) — First activity-centric SE skills study; 11,497 SE-related skills; SDLC coverage skewed to construction; versioning immature (most single-version); five-component skill model (arXiv:2607.09065)
 
 ### Infrastructure & Participation
 - **Agents at Conferences** (NEW Iteration 14) — Infrastructure for AI agent conference participation: 6-component protocol (registration, feeds, communication, moderation, benchmarking, memory), capability schema taxonomy, SciFM26 target: 50 agents
@@ -128,10 +133,12 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 
 ### Dependency & Retrieval
 - **Graph of Skills (GoS)** — DAG-based skill composition, PageRank ranking, prerequisite resolution
+- **R3-Skill** (NEW Iteration 41) — Query-conditional skill routing with skill compatibility; Reject-as-Resource uses LLM rejections as co-retrieval supervision; 10,246 skills; Hit@1=0.7521, NDCG@10=0.8173, Set-Compat=0.3188; Tencent R3-embedding/rerank (arXiv:2606.03565)
 
 ### Benchmarking & Catalogs
 - **SkillsBench** — First agent skills benchmark: +16.2pp avg improvement, Healthcare +51.9pp
 - **SWE-Skills-Bench** (NEW Iteration 40) — First requirement-driven benchmark isolating marginal utility of agent skills in SWE; 49 skills × GitHub repos × requirement docs; ~565 task instances, 6 subdomains; deterministic verification; **39/49 skills yield zero improvement**; avg gain +1.2%; token overhead up to +451%; only 7 help (up to +30%), 3 degrade (up to -10%); 34 citations (arXiv:2603.15401)
+- **WildClawBench** (NEW Iteration 41) — Native-runtime long-horizon benchmark: 60 bilingual multimodal tasks in real OpenClaw / Claude Code / Codex / Hermes harnesses; hybrid grading; 19 models; best 62.2% (Opus 4.7); harness switch ±18pp; skill ablations mixed (Code Intelligence +22.4 strongest model); InternLM (arXiv:2605.10912)
 - **Awesome Agent Skills Catalogs** — Ecosystem mapping: 1000+ skills, 44k+ marketplace
 
 ### Theory & Frameworks

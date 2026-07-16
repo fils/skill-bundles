@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-07-15",
-  "iteration": 40,
+  "last_updated": "2026-07-16",
+  "iteration": 41,
   "daily_runs": {
+    "2026-07-16": {
+      "sources": 7,
+      "examples": [
+        "wildclawbench-native-runtime-evaluation",
+        "skill0-skill-internalization",
+        "openclaw-skill-csts-tree-search",
+        "r3-skill-compatibility-routing",
+        "assc-skill-supply-chains-skillbom",
+        "registry-to-repository-skill-maintenance",
+        "inside-skill-market-se-activities"
+      ],
+      "queries_used": [
+        "WildClawBench agent skills OpenClaw Hermes Claude Code Codex skill ablation arXiv 2605.10912",
+        "SKILL0 skill internalization in-context agentic RL Dynamic Curriculum arXiv 2604.02268",
+        "OpenClaw-Skill Collective Skill Tree Search CSTS multi-model transferability arXiv 2606.16774",
+        "R3-Skill query-conditional skill routing compatibility Reject-as-Resource arXiv 2606.03565",
+        "Agent Skill Supply Chains ASSC SkillBOM SkillDepAnalyzer 1.43 million skills arXiv 2607.01136",
+        "From Registry to Repository AI agent skills written adapted maintained arXiv 2607.00911",
+        "Inside the Skill Market software engineering activities reusable agent skills arXiv 2607.09065",
+        "gh search repos agent skills --sort updated"
+      ],
+      "patterns": [
+        "Internalization vs externalization spectrum completes",
+        "Composition-aware retrieval is mandatory infrastructure",
+        "Supply chain moves from incident to inventory science",
+        "Native multi-harness evaluation standard",
+        "Maintenance science arrives (copy-fork skills)",
+        "Collective construction \u2260 collective evolution"
+      ]
+    },
     "2026-07-15": {
       "sources": 8,
       "examples": [
@@ -220,6 +250,6 @@
       ]
     }
   },
-  "cumulative_sources": 92,
-  "note": "2026-07-15: collective skill evolution (SkillClaw), security scanner (SkillSpector), malicious tool attacks (MalTool), model-in-skill backdoor (BadSkill), automated prompt injection (SkillJect), MCP access control (AgentBound), skill utility benchmark (SWE-Skills-Bench), externalization theory (Unified Review)"
+  "cumulative_sources": 99,
+  "note": "2026-07-16: WildClawBench native multi-harness eval, SKILL0 internalization, OpenClaw-Skill CSTS tree search, R3-Skill compatibility routing, ASSC SkillBOM 1.43M supply chains, Registry\u2192Repository maintenance study, Inside Skill Market SE activities"
 }
