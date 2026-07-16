@@ -54,3 +54,23 @@ date: '2026-05-23'
 2. Investigate the formal SSSOM spec (https://mapping-commons.github.io/sssom/) for comparison
 3. Look for other ontology alignment tools (AML, LogMap, POMAP++) as supplementary mapping examples
 4. Explore whether Open Ontologies' `onto_align` could be used as a mapping skill in other bundles
+
+## Linked Examples
+
+- [Agent Skills Specification](../examples/agent-skills-spec.md)
+- [Agentic Engineering Workflow Skills](../examples/agentic-engineering-workflow-skills.md)
+- [DSPy Agent Skills Bundle: Production-Grade DSPy Optimization](../examples/dspy-agent-skills-bundle.md)
+- [NORA — Night Owl Research Agent](../examples/nora-gis-research-agent.md)
+- [NVIDIA Skills Repository — Multi-Product Catalog](../examples/nvidia-skills-repo.md)
+- [NVIDIA Verified Agent Skills — Governance & Verification](../examples/nvidia-verified-agent-skills.md)
+- [Ontologizer — OpenClaw Ontology Skill](../examples/ontologizer-openclaw-ontology-skill.md)
+- [Open Ontologies — GitHub Repository (Rust MCP Server)](../examples/open-ontologies-github.md)
+- [Open Ontologies — Stable Matching Alignment Paper](../examples/open-ontologies-paper.md)
+- [OpenAI Codex Agent Skills — Structured Skill System](../examples/openai-codex-skills.md)
+- [OpenClaw PKB Skill](../examples/openclaw-pkb-skill.md)
+- [RDF Ontologies Skill — SHACL + SPARQL Integration](../examples/rdf-ontologies-skill.md)
+- [Schimatos — SHACL-based Knowledge Graph Editor](../examples/schimatos-shacl-knowledge-graph.md)
+- [Current State of Skill Bundles Research (May 2026)](../examples/skill-bundles-research-state.md)
+- [Tool-Use Firewall](../examples/tool-use-firewall.md)
+- [Veto — Authorization Kernel for AI Agents](../examples/veto-agent-authorization.md)
+- [VS Code Copilot Agent Skills — Cross-Platform Standard](../examples/vscode-copilot-skills.md)

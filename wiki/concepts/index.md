@@ -8,7 +8,7 @@ Progressive disclosure listing for this directory.
 * [Skill Bundle Patterns](skill-bundle-patterns.md) - The strongest examples (NORA, agentskills.io) combine executable skills with rich declarative files:
 * [Skill Security Governance — The Emergence of Formalized Risk Management](skill-security-governance.md) - A synthesis of four converging frameworks that together form a complete governance system for skill bundle security.
 * [SSSOM Mapping as Skill Bundle Context](sssom-mapping-as-context.md) - The sssom mapping protocol (Simple Standard for Sharing Ontological Mappings) is a community standard for sharing mappings between ontology terms in a machine-readable format.
-* [Three-Layer Validation Stack for Skill Bundles](three-layer-validation-stack.md) - A **three-layer validation stack** is the emerging pattern where skill bundles are validated at three different points in the lifecycle, by three different tools, each with a different scope and threat model:
+* [Three-Layer Validation Stack for Skill Bundles](three-layer-validation-stack.md) - A **three-layer validation stack** is the emerging pattern where skill bundles are validated at three different points in the lifecycle, by three different tools, each with a different scope and th...
 * [Validator + Explanation Bundle Pattern](validator-explanation-pattern.md) - The Validator + Explanation pattern addresses a fundamental problem: **validation reports alone are not actionable**.
 * [Verified Skill Governance Patterns](verified-skill-governance.md) - NVIDIA's Verified Agent Skills represent the most comprehensive example of formal governance in the skill bundle ecosystem.
 

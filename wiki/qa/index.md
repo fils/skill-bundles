@@ -10,6 +10,7 @@ Progressive disclosure listing for this directory.
 * [Q&A — 2026-07-11 (Iteration 36)](2026-07-11-qa.md) - The supply chain is now `intent → source → binary` (per supply chain agentic factory in toto):
 * [Q&A — 2026-07-10](2026-07-10-qa.md) - **None of today's new examples ships SHACL or SSSOM natively**, but all four use strong substitutes (schemas, taxonomies, gates, scientific data sources).
 * [Q&A / Lint 2026-07-06](2026-07-06-lint.md) - Run complete.
-* [Complex Q&A — 2026-06-01 (Iteration 13)](2026-06-01-iter13-qa.md) - - **Pre-commit layer:** skill-validator (Go binary, 13 platform hooks) - **CI/CD layer:** Validate Skill Action (GitHub Action, JSON outputs) - **Registry layer:** agentskill.sh (12-category threat scan, 100k+ skills)
+* [Complex Q&A — 2026-06-01 (Iteration 13)](2026-06-01-iter13-qa.md) - - **Pre-commit layer:** skill-validator (Go binary, 13 platform hooks) - **CI/CD layer:** Validate Skill Action (GitHub Action, JSON outputs) - **Registry layer:** agentskill.sh (12-category threat...
 * [Q&A and Gap Analysis — 2026-05-24 Iteration 9](2026-05-24-iter9-qa.md) - - Dependency graphs (DAGs): 2 examples (graph of skills dependency retrieval, graphguard os guardrails)
-* [Complex Q&A — Skill Bundles Wiki](2026-05-24-complex-qa.md) - - SHACL validation (built-in `shacl` tool for RDF validation) - Ontology alignment via stable matching (six-signal similarity scoring) - While not using SSSOM TSV format directly, the alignment mechanism operates at t...
+* [Complex Q&A — Skill Bundles Wiki](2026-05-24-complex-qa.md) - - SHACL validation (built-in `shacl` tool for RDF validation) - Ontology alignment via stable matching (six-signal similarity scoring) - While not using SSSOM TSV format directly, the alignment mec...
+

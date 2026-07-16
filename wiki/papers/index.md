@@ -8,3 +8,4 @@ Progressive disclosure listing for this directory.
 * [Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce](scaince-ai-lab-automation.md) - > **Source:** Frontiers in Artificial Intelligence (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/ > **Added:** 2026-05-25 (manual seed for initial research)
 * [SoK: Agentic Skills — Beyond Tool Use in LLM Agents](sok-agentic-skills-beyond-tool-use.md) - A comprehensive Systematization of Knowledge paper that provides the **first formal definition** of agentic skills, a complete lifecycle model, and dual taxonomies.
 * [A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents](survey-agent-skills-procedural-infrastructure.md) - The most comprehensive **six-layer taxonomy** of agent skills, covering ontology, representation/packaging, lifecycle, runtime integration, governance, and applications.
+

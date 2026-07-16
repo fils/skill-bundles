@@ -10,8 +10,9 @@ Helper tools for the skill-bundles research wiki (OKF v0.1 Knowledge Bundle unde
 
 | Script | Purpose |
 |--------|---------|
-| `okf-lint.py` | **Primary daily gate.** OKF §9 conformance: required `type` frontmatter, no residual `[[wikilinks]]`, relative link resolution, index/log structure. |
+| `okf-lint.py` | **Primary daily gate.** OKF §9 conformance + soft graph checks (catalog links, inbound degree, index completeness). |
 | `convert-to-okf.py` | One-shot / re-run migration helper (frontmatter, relative MD links, index generation). |
+| `link-catalog-and-digests.py` | Link primary catalog bullets, regenerate indexes, digest→example links, Q&A cross-links. |
 
 ```bash
 # From repo root — Hermes / daily agent should run this only
@@ -19,6 +20,7 @@ python3 scripts/okf-lint.py
 python3 scripts/okf-lint.py --strict   # also fail on soft issues
 python3 scripts/convert-to-okf.py --dry-run
 python3 scripts/convert-to-okf.py
+python3 scripts/link-catalog-and-digests.py   # after bulk catalog/digest link repairs
 ```
 
 ## Legacy (do not use in daily loop)

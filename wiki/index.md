@@ -32,6 +32,18 @@ This wiki catalogs real-world examples of **skill bundles** — collections of a
 - [Papers](papers/)
 - [Metrics](metrics.md)
 - [Q&A](qa/)
+  - [Complex Q&A — 2026-06-01 (Iteration 13)](qa/2026-06-01-iter13-qa.md)
+  - [Q&A and Gap Analysis — 2026-05-24 Iteration 9](qa/2026-05-24-iter9-qa.md)
+  - [Complex Q&A — Skill Bundles Wiki](qa/2026-05-24-complex-qa.md)
+
+  - [Q&A — 2026-07-16 (Iteration 41)](qa/2026-07-16-qa.md)
+  - [Q&A — 2026-07-15 (Iteration 40)](qa/2026-07-15-qa.md)
+  - [Q&A — 2026-07-14 (Iteration 39)](qa/2026-07-14-qa.md)
+  - [Q&A — 2026-07-13 (Skill Bundles, Iteration 38)](qa/2026-07-13-qa.md)
+  - [Q&A — 2026-07-12 (Iteration 37)](qa/2026-07-12-qa.md)
+  - [Q&A — 2026-07-11 (Iteration 36)](qa/2026-07-11-qa.md)
+  - [Q&A — 2026-07-10](qa/2026-07-10-qa.md)
+  - [Q&A / Lint 2026-07-06](qa/2026-07-06-lint.md)
 
 
 ## Knowledge Catalog (OKF)
