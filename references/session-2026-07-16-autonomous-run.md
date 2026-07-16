@@ -23,4 +23,4 @@
 
 ## Commit
 - Message: Daily research 2026-07-16: 7 sources (WildClawBench, SKILL0, CSTS, R3-Skill, ASSC SkillBOM, Registry→Repository, Inside Skill Market SE) + 7 examples + digest/QA/metrics
-- Hash: PENDING_PUSH
+- Hash: e4c4ee0 (pushed 0b9b792..e4c4ee0 master -> master)
