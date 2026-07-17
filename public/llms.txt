@@ -1,0 +1,214 @@
+# Knowledge Bundle
+
+## Index
+
+- [index.md](index.md): Knowledge bundle index
+- [log.md](log.md): log.md
+- [Skill Bundles — Metrics \& Progress](metrics.md): Tracked KPIs for the skill-bundles research wiki: example counts, coverage, and iteration progress.
+- [Skill Bundles: A Living Catalog](skill-bundles.md): Living catalog of real-world skill bundle examples and composition patterns across validation, mapping, rules, and governance.
+
+## case-studies
+
+- [index.md](case-studies/index.md): Index of case-studies
+
+## concepts
+
+- [index.md](concepts/index.md): Index of concepts
+- [Bidirectional SHACL ↔ LLM Bridge](concepts/bidirectional-shacl-llm-bridge.md): A \*\*bidirectional SHACL ↔ LLM bridge\*\* is a bundle that uses LLMs to translate between natural-language requirements and SHACL shapes in both directions:
+- [Constraint Rules as Skill Context](concepts/constraint-rules-as-context.md): Some skill bundles encode \*\*prohibitions and constraint rules\*\* directly into their SKILL.md files, going beyond procedural instructions to enforce behavioral boundaries.
+- [OKF Knowledge Bundle — Format Rules for this Wiki](concepts/okf-knowledge-bundle.md): Local summary of Open Knowledge Format (OKF) v0.1 rules used by the skill-bundles wiki for agents and humans.
+- [Skill Bundle Patterns](concepts/skill-bundle-patterns.md): The strongest examples (NORA, agentskills.io) combine executable skills with rich declarative files:
+- [Skill Security Governance — The Emergence of Formalized Risk Management](concepts/skill-security-governance.md): A synthesis of four converging frameworks that together form a complete governance system for skill bundle security.
+- [SSSOM Mapping as Skill Bundle Context](concepts/sssom-mapping-as-context.md): The sssom mapping protocol (Simple Standard for Sharing Ontological Mappings) is a community standard for sharing mappings between ontology terms in a machine-readable format.
+- [Three-Layer Validation Stack for Skill Bundles](concepts/three-layer-validation-stack.md): A \*\*three-layer validation stack\*\* is the emerging pattern where skill bundles are validated at three different points in the lifecycle, by three different tools, each with a different scope and threat model:
+- [Validator + Explanation Bundle Pattern](concepts/validator-explanation-pattern.md): The Validator + Explanation pattern addresses a fundamental problem: \*\*validation reports alone are not actionable\*\*.
+- [Verified Skill Governance Patterns](concepts/verified-skill-governance.md): NVIDIA's Verified Agent Skills represent the most comprehensive example of formal governance in the skill bundle ecosystem.
+
+## daily-digests
+
+- [index.md](daily-digests/index.md): Index of daily-digests
+- [Daily Digest — 2026-05-23 (Iteration 6)](daily-digests/2026-05-23-iter6.md): - Major discovery phase with formal platform skill systems - NVIDIA Verified Agent Skills (governance, signing, scanning, skill cards) - OpenAI Codex Agent Skills (progressive disclosure, MCP dependencies)
+- [Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)](daily-digests/2026-05-23-iter7-manual.md): - \*\*URL:\*\* https://arxiv.org/html/2605.09184v1 - \*\*Author:\*\* Fabio Rovai (The Tesseract Academy, London) - \*\*Type:\*\* Peer-reviewed preprint with empirical benchmarks
+- [Daily Digest — 2026-05-23 (Iteration 5)](daily-digests/2026-05-23.md): - Synthesis of findings across all previous iterations - Updated gap analysis - Creation of a "Current State of Research" document
+- [Daily Digest — Skill Bundles Research](daily-digests/2026-05-24-iter9.md): Three-interoperable-repo DSPy expertise bundle with AST validation, orchestration skill, sandbox config Iron Laws as constraint rules, methodology cycle, multi-host manifests
+- [Daily Digest — Skill Bundles Research](daily-digests/2026-05-24.md): SHACL + Cypher rules + Shadow Policy Manager for agent guardrails Explainable SHACL validation with RAG and Violation KG caching Supply chain security and cross-platform skill distribution
+- [Daily Digest — Skill Bundles Research](daily-digests/2026-05-25.md): SSSOM-compliant ontology mapping service from EMBL-EBI with CLAUDE.md agent context Updated DSPy 3.2.x bundle with GEPA optimization benchmarks (+19.53 pp improvement)
+- [Daily Digest — Skill Bundles Research](daily-digests/2026-05-26.md): First dedicated security risk framework: AST01–AST10 taxonomy, Lethal Trifecta risk model, Universal Skill Format with permissions and signatures Cloud Security Alliance''s Zero Trust governance: 4-level maturity model...
+- [Daily Digest: 2026-05-28 — Skill Bundles Research](daily-digests/2026-05-28.md): - Agent Skills standard (agentskills.io, Anthropic engineering post): Major discovery of open skill format with SKILL.md bundles including metadata, instructions, scripts.
+- [Daily Digest: 2026-06-01 — Skill Bundles Research (Iteration 13)](daily-digests/2026-06-01.md): Chris Mungall's ontology/biocuration skill bundle (7 skills, OAK/ROBOT/DOSDP/OBO Foundry tooling, used in production by Mondo, Cell Ontology, Uberon, EFO) Go CLI validator with 7 lifecycle-mapped commands, LLM-as-judg...
+- [Daily Digest — 2026-06-02](daily-digests/2026-06-02.md): - Strong momentum in Agent Skills ecosystem: official spec at agentskills.io, major repos from Anthropic (145k stars) and community leaders like addyosmani (47.7k stars).
+- [Daily Digest 2026-06-03: Agent Skills Discovery](daily-digests/2026-06-03.md): (https://github.com/addyosmani/agent-skills) - 23 production-grade engineering skills with workflows, quality gates, checklists.
+- [Daily Digest 2026-06-04: Agent Skills Standards, Catalogs \& Research Agents](daily-digests/2026-06-04.md): \*\*Sources ingested\*\*: 4 high-signal - agentskills.io specification (core standard) - VoltAgent/awesome-agent-skills (curated 1000+ catalog) - addyosmani/agent-skills (production engineering lifecycle skills)
+- [Daily Digest — 2026-06-05](daily-digests/2026-06-05.md): - Official spec confirms SKILL.md + folder structure as core of any bundle.
+- [Daily Digest: 2026-06-09 (Iteration 14)](daily-digests/2026-06-09.md): Iteration 14 delivers a \*\*major expansion of domain-specific and infrastructure skill bundles\*\*, adding \*\*bioinformatics (ClawBio)\*\*, \*\*production-grade engineering workflows (Addy Osmani)\*\*, \*\*conference participatio...
+- [Daily Digest — 2026-06-11](daily-digests/2026-06-11.md): \*\*Sources ingested\*\*: 3 new high-signal skill bundle repositories \*\*Focus\*\*: Agent Skills ecosystem growth (official Anthropic + community engineering + curated directories)
+- [Daily Digest — 2026-06-12](daily-digests/2026-06-12.md): - addyosmani/agent-skills: 24 engineering skills + personas + verification checklists across DEFINE-PLAN-BUILD-VERIFY-REVIEW-SHIP - anthropics/skills: Official Anthropic examples + spec/ + document skills (docx/pdf etc.)
+- [Daily Digest — 2026-06-13](daily-digests/2026-06-13.md): - Agent Skills standard (SKILL.md + progressive disclosure) is now the dominant packaging format.
+- [Daily Digest — 2026-06-14 (Iteration 17)](daily-digests/2026-06-14.md): 24-skill production engineering bundle across full SDLC (DEFINE→SHIP).
+- [Daily Digest — 2026-06-15](daily-digests/2026-06-15.md): \*\*Maintenance Run\*\* (no new high-signal sources discovered after multiple targeted searches)
+- [Daily Digest — 2026-06-16](daily-digests/2026-06-16.md): - Continued reinforcement of the core Agent Skills ecosystem (lifecycle workflows, official implementations, awesome lists, platform-specific bundles).
+- [Daily Digest — 2026-06-17](daily-digests/2026-06-17.md): - \*\*heilcheng/awesome-agent-skills\*\*: Major community catalog (5.6k stars).
+- [Daily Digest — 2026-06-18](daily-digests/2026-06-18.md): - \*\*agentskills.io/spec\*\*: Definitive open standard.
+- [Daily Digest — 2026-06-19](daily-digests/2026-06-19.md): \*\*Sources ingested\*\*: 4 (raw/2026-06-19/) - addyosmani/agent-skills (primary — 24-skill production lifecycle bundle with explicit taxonomy + verification) - agentskills.io/spec (foundational open standard)
+- [Daily Digest — 2026-06-20](daily-digests/2026-06-20.md): \*\*Sources ingested\*\*: 4 (raw/2026-06-20/) - addyosmani/agent-skills (primary — 24-skill production lifecycle bundle with explicit taxonomy + verification) - agentskills.io/spec (foundational open standard + progressiv...
+- [Daily Digest: 2026-06-21 — Skill Bundles Research](daily-digests/2026-06-21.md): - \*\*addyosmani/agent-skills\*\*: Production-grade engineering skills for AI coding agents.
+- [Daily Digest: 2026-06-22 — Skill Bundles Research](daily-digests/2026-06-22.md): - \*\*addyosmani/agent-skills\*\*: Production-grade 24-skill engineering lifecycle bundle (Define/Plan/Build/Verify/Review/Ship) with 4 personas, 6 reference checklists (testing, security, performance, etc.).
+- [Daily Digest: 2026-06-23 — Skill Bundles Research](daily-digests/2026-06-23.md): - addyosmani/agent-skills: Production-grade skills encoding senior engineer workflows/quality gates.
+- [Daily Digest — 2026-06-24 (Iteration 24)](daily-digests/2026-06-24.md): - SHACL 1.2 Core (W3C) — new agentInstruction, codeIdentifier properties relevant to LLM/agent integration.
+- [Daily Digest — 2026-06-25 (Iteration 25)](daily-digests/2026-06-25.md): - \*\*SHACL 1.2 Core (W3C)\*\* — New properties for agent/LLM integration; supports generating ontologies to inform agents, code generation, validation.
+- [Daily Digest — 2026-06-26 (Iteration 26)](daily-digests/2026-06-26.md): - No novel skill bundle examples with accompanying formal context elements (SHACL shapes, SSSOM mappings, rules, vocabularies, taxonomies, or ontologies) discovered today.
+- [Daily Digest — 2026-06-27 (Iteration 27)](daily-digests/2026-06-27.md): - \*\*SHACL 1.2 Core (W3C)\*\*: New property proposed for capturing LLM/agent input directly in shapes (#725 data-shapes).
+- [Daily Digest — 2026-06-28 (Iteration 28)](daily-digests/2026-06-28.md): - \*\*First formal analysis framework\*\* for the agentic AI skill supply chain.
+- [Daily Digest — 2026-06-29](daily-digests/2026-06-29.md): 24-skill production engineering lifecycle bundle (23 SDLC skills + meta-skill).
+- [Daily Digest — 2026-06-30 (Iteration 30)](daily-digests/2026-06-30.md): (68.1k stars) - 24 skills covering full SDLC (DEFINE/PLAN/BUILD/VERIFY/REVIEW/SHIP) + 4 specialist personas + 7 reference checklists.
+- [Daily Digest — 2026-07-01 (Iteration 31)](daily-digests/2026-07-01.md): - \*\*agentskills.io\*\* — Foundational open standard: SKILL.md + progressive disclosure (Discovery → Activation → Execution).
+- [Daily Digest — 2026-07-02 (Iteration 32)](daily-digests/2026-07-02.md): - \*\*addyosmani/agent-skills\*\* (68k stars) — Production-grade engineering skills repo.
+- [Daily Digest — 2026-07-03 (Iteration 33)](daily-digests/2026-07-03.md): Production-grade engineering skills repo (68k stars context).
+- [Daily Digest — 2026-07-04 (Iteration 34)](daily-digests/2026-07-04.md): - \*\*addyosmani/agent-skills\*\* (68.8k stars, updated yesterday) — 24 production-grade engineering skills (23 lifecycle + meta-skill).
+- [Daily Digest — 2026-07-05 (Iteration 35)](daily-digests/2026-07-05.md): - \*\*agentskills.io/specification\*\* — Definitive open standard details: SKILL.md YAML frontmatter + Markdown instructions, resource/script discovery rules (references/, scripts/, assets/), progressive disclosure, cross...
+- [Daily Digest: 2026-07-06 — Skill Bundles Research](daily-digests/2026-07-06.md): - \*\*SHACL 1.2 Core (WD 2026-06-30):\*\* New sh:agentInstruction, sh:intent, sh:codeIdentifier.
+- [Daily Digest — 2026-07-07 (Iteration 35)](daily-digests/2026-07-07.md): - agentskills.io/home (official spec + client showcase) - addyosmani/agent-skills (71.4k stars, production engineering focus) - anthropics/skills (159k stars, official Anthropic reference)
+- [Daily Digest: 2026-07-08 — Skill Bundles Research](daily-digests/2026-07-08.md): - \*\*Agent Skills standard (agentskills.io)\*\*: Core packaging format (SKILL.md + optional scripts/references/assets).
+- [Daily Digest — 2026-07-09 (Skill Bundles)](daily-digests/2026-07-09.md): - NVIDIA/skills (2.4k stars, ecosystem-wide NVIDIA agent skills + plugins) - agentskills.io/specification (updated frontmatter, progressive disclosure, allowed-tools, validation)
+- [Daily Digest — 2026-07-10 (Skill Bundles)](daily-digests/2026-07-10.md): first CAIS workshop; 103 submissions; 37% security flaw rate; SkillsBench +16.2pp data-driven analysis of \*\*40,285\*\* marketplace skills (homogeneity, safety, SE concentration)
+- [Daily Digest — 2026-07-11 (Skill Bundles)](daily-digests/2026-07-11.md): first framework for self-evolving multi-file skill packages via co-evolutionary verification; surpasses human-curated skills within 5 iterations on SkillsBench Beyond Tool Use\*\* (arXiv:2602.20867) — formal skill defin...
+- [Daily Digest — 2026-07-12 (Skill Bundles)](daily-digests/2026-07-12.md): first framework to treat skill bundles as multi-objective search objects; NSGA-II Pareto selection on pass rate + cost; pruning and substitution dominate successful edits; top rank on 11/12 SkillsBench tasks
+- [Daily Digest — 2026-07-13 (Skill Bundles)](daily-digests/2026-07-13.md): self-evolving framework that automatically discovers and refines agent skills through iterative failure analysis; three-agent architecture (Executor → Proposer → Skill-Builder); Pareto frontier selection (K=3, git-bac...
+- [Daily Digest — 2026-07-14 (Skill Bundles)](daily-digests/2026-07-14.md): Agentic Skill Programming through Iterative Robot Exploration; continual learning system for robotics in code-as-policy paradigm; three components: closed-loop execution engine with multimodal traces, continually expa...
+- [Daily Digest — 2026-07-15 (Skill Bundles)](daily-digests/2026-07-15.md): Collective skill evolution in multi-user agent ecosystems; treats cross-user and over-time interactions as primary signal for improving skills; autonomous evolver identifies recurring behavioral patterns → translates...
+- [Daily Digest — 2026-07-16 (Skill Bundles)](daily-digests/2026-07-16.md): Native-runtime long-horizon benchmark: 60 bilingual multimodal tasks in real CLI harnesses (OpenClaw, Claude Code, Codex, Hermes); hybrid grading; 19 models, best 62.2% (Opus 4.7); harness switch shifts scores up to 1...
+
+## examples
+
+- [index.md](examples/index.md): Index of examples
+- [Addy Osmani Agent Skills: Production-Grade Engineering Workflows](examples/addyosmani-engineering-skills.md): \*\*Agent Skills\*\* by Addy Osmani is a collection of \*\*workflows, quality gates, and best practices\*\* designed to force AI coding agents to follow \*\*senior-level engineering discipline\*\* across the entire development li...
+- [Agent Skills Specification](examples/agent-skills-spec.md): - Standardized skill definition format - Capability declaration patterns
+- [AgentBound: Declarative Access Control for MCP Servers](examples/agentbound-mcp-access-control.md): AgentBound is the first access control framework for \*\*MCP servers\*\*.
+- [Agentic Awesome Skills Library](examples/agentic-awesome-skills-library.md): 1,943+ \`SKILL.md\` playbooks spanning development, testing, security, infrastructure, product, and marketing.
+- [Agentic Engineering Workflow Skills](examples/agentic-engineering-workflow-skills.md): - Peer review - Merge workflows - Other engineering process skills
+- [Agentic Trust Framework (ATF) — Zero Trust Governance for Skill Bundles](examples/agentic-trust-framework-csa.md): The \*\*Agentic Trust Framework (ATF)\*\* is an open governance specification from the Cloud Security Alliance that applies Zero Trust principles to autonomous AI agents.
+- [Agents at Conferences: Infrastructure for AI Agent Scientific Participation](examples/agents-at-conferences-infrastructure.md): This repository documents a pioneering initiative to integrate \*\*AI agents as active, registered participants\*\* in scientific conferences.
+- [agentskill-sh/ags — \`/learn\` Command + Security Scoring Marketplace](examples/agentskill-sh-ags-security-scoring.md): The \`ags\` (Agent Skills) repo is the official home for the \*\*agentskill.sh\*\* CLI and skills.
+- [AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling](examples/ai-km-ontology-skills.md): - \*\*Journal:\*\* SoftwareX, Volume 35, September 2026, 102855 - \*\*Authors:\*\* Haolin Wen, Songyi Wang, Bingjie Li, Junfen Xiong, Tong Chen, Xin Liang - \*\*DOI:\*\* https://doi.org/10.1016/j.softx.2026.102855
+- [ai4curation/curation-skills — Ontology \& Biocuration Skill Bundle](examples/ai4curation-curation-skills.md): A bundle of \*\*Claude Skills\*\* (SKILL.md folders) built specifically for \*\*ontology and biocuration tasks\*\*.
+- [Anthropic Official Skills Repository](examples/anthropic-official-skills-repo.md): The official anthropics/skills repository (~140k stars) is the \*\*canonical reference implementation\*\* for agent skills.
+- [Agent Skills for LLMs — Architecture, Acquisition, Security (arXiv Survey)](examples/arxiv-agent-skills-survey.md): The first \*\*comprehensive academic survey\*\* of the Agent Skills landscape, organized along four axes: architectural foundations, skill acquisition, deployment at scale, and security.
+- [ASPIRE: Agentic Skill Programming through Iterative Robot Exploration](examples/aspire-robotics-skill-discovery.md): ASPIRE is a continual learning system for robotics that autonomously writes and refines robot control programs in a \*\*code-as-policy\*\* paradigm while compounding experience into a reusable skill library.
+- [ASSCs: Agent Skill Supply Chains \& SkillBOM](examples/assc-skill-supply-chains-skillbom.md): \*\*Skills Are Not Islands\*\* argues skills have become \*\*dependency-bearing artifacts\*\* with mixed skill–package–service dependencies that remain largely implicit.
+- [Awesome-Agent-Skill-Papers: Curated Paper Catalog](examples/awesome-agent-skill-papers-catalog.md): A curated GitHub repository accompanying the six-layer taxonomy survey paper "A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents." Serves as a \*\*discovery index\*\* for academic agent skill papers.
+- [Awesome Agent Skills Catalogs: Ecosystem Mapping](examples/awesome-agent-skills-catalogs.md): Two major \*\*awesome-list\*\* repositories catalog the agent skills ecosystem.
+- [Awesome OpenClaw Skills — 179 CLI Utilities Catalog](examples/awesome-openclaw-skills-catalog.md): A curated catalog of 179 CLI-based skills for the OpenClaw ecosystem, organized by domain category.
+- [BadSkill: Backdoor Attacks via Model-in-Skill Poisoning](examples/badskill-backdoor-model-in-skill.md): BadSkill introduces a novel backdoor attack surface: \*\*model-in-skill poisoning\*\*.
+- [Chris Ayers — Plugin Ecosystem: Skills, Plugins, and Marketplaces](examples/chris-ayers-plugin-ecosystem.md): A comprehensive guide to the \*\*three-layer agent extensibility ecosystem\*\*: Skills (atomic capabilities), Plugins (bundled distributions), and Marketplaces (discovery and versioning).
+- [Claude API Agent Skills: Official Integration Guide](examples/claude-api-skills-integration.md): This entry covers the \*\*official Claude API integration mechanism\*\* for Agent Skills via the \`container\` parameter.
+- [Claude Skills Ecosystem — 1,116 Skills from 500+ Repos](examples/claude-skills-ecosystem-1116.md): A comprehensive survey and mapping of 1,116 unique Claude Code Skills discovered across 500+ repositories.
+- [ClawBio: Bioinformatics-Native AI Agent Skill Library](examples/clawbio-bioinformatics-skills.md): \*\*ClawBio\*\* is the first \*\*bioinformatics-native skill library\*\* for AI agents.
+- [ClawHavoc Campaign: 1,184 Malicious Skills on ClawHub](examples/clawhavoc-marketplace-attack.md): ClawHavoc is a coordinated supply-chain attack that poisoned \*\*ClawHub\*\* (the official skill marketplace for OpenClaw, an open-source AI agent framework) with approximately \*\*1,184–1,200 malicious skills\*\* over approx...
+- [CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification](examples/coevoskills-self-evolving-skills.md): CoEvoSkills is the first framework to address the \*\*tool–skill gap\*\* in autonomous skill generation.
+- [DSPy Agent Skills Bundle: Production-Grade DSPy Optimization](examples/dspy-agent-skills-bundle.md): A family of three interoperable repositories that package \*\*DSPy (Declarative Self-Improving Language Model programs)\*\* expertise as agent skills.
+- [DSPy Agent Skills v0.2.3 — Production-Grade DSPy 3.2.x Bundle](examples/dspy-agent-skills-v023.md): Updated version of the dspy agent skills bundle for DSPy 3.2.x.
+- [EffiSkill: Agent Skill Based Code Efficiency Optimization](examples/effiskill-code-efficiency-optimization.md): - \*\*arXiv:\*\* 2603.27850 (submitted 29 Mar 2026) - \*\*Authors:\*\* Zimu Wang, Yuling Shi, Mengfan Li, Zijun Liu, Jie M.
+- [EvoSkill: Automated Skill Discovery for Multi-Agent Systems](examples/evoskill-automated-skill-discovery.md): EvoSkill is a self-evolving framework that automatically discovers and refines agent skills through iterative failure analysis.
+- [EXIF: Automated Skill Discovery for Language Agents through Exploration and Iterative Feedback](examples/exif-automated-skill-discovery.md): EXIF (EXploration and Iterative Feedback) is an automatic skill discovery framework for LLM-powered agents, designed to improve the \*\*feasibility\*\* of generated target behaviors while accounting for the agents' capabi...
+- [Externalization in LLM Agents: Unified Review of Memory, Skills, Protocols, and Harness](examples/externalization-llm-agents-unified-review.md): This paper provides the first \*\*unified systems-level review\*\* of how LLM agent capabilities are increasingly externalized — moved from model weights into runtime infrastructure.
+- [Genesis Skills Repository (OSTI)](examples/genesis-skills-osti.md): A large curated collection of 74 Claude Code skills following the Agent Skills open standard.
+- [GitHub CLI Agent Skills Management (\`gh skill\`)](examples/github-cli-skill-management.md): GitHub introduced the \`gh skill\` command (CLI v2.90.0+) for discovering, installing, managing, and publishing agent skills across the entire agent ecosystem.
+- [Graph of Skills (GoS): Dependency-Aware Structural Retrieval](examples/graph-of-skills-dependency-retrieval.md): Graph of Skills (GoS) (Li et al., 2026) presents an \*\*inference-time structural retrieval layer\*\* for large skill libraries.
+- [GraphGuard OS — Guardrails for Coordinating AI Agents via Knowledge Graph](examples/graphguard-os-guardrails.md): GraphGuard OS is an enterprise-grade safety layer for Agentic GraphOS, a 16-layer architecture used to govern production-ready AI agents through Knowledge Graphs.
+- [Inside the Skill Market: SE Activities as Reusable Skills](examples/inside-skill-market-se-activities.md): First \*\*activity-centric\*\* large-scale study of software-engineering skills in public skill markets.
+- [MalTool: Malicious Tool Attacks on LLM Agents](examples/maltool-malicious-tool-attacks.md): MalTool is the first systematic study of \*\*malicious tool code implementations\*\* for LLM agents.
+- [AI Agent Skills Marketplace Landscape 2026](examples/marketplace-landscape-2026.md): - \*\*Source:\*\* Agensi.io comprehensive comparison (April 2026) - \*\*Coverage:\*\* 8 major marketplaces, Q2 2026 snapshot
+- [Memento-Skills: Let Agents Design Agents](examples/memento-skills-agent-designing-agent.md): Memento-Skills is a generalist, continually-learnable LLM agent system that functions as an \*\*agent-designing agent\*\*: it autonomously constructs, adapts, and improves task-specific agents through experience.
+- [Microsoft Agent Framework — Enterprise Agent Skills Implementation](examples/microsoft-agent-framework-skills.md): Microsoft's implementation of the Agent Skills open specification within the \*\*Microsoft Agent Framework\*\*, a comprehensive enterprise agent platform.
+- [Mondoo: Agent Skills Security Risk Assessment](examples/mondoo-agent-skills-security.md): Christoph Hartmann, CTO of Mondoo, published a detailed analysis of \*\*security vulnerabilities in agent skills\*\*.
+- [NemoClaw: NVIDIA Agent Skills Security Scanner](examples/nemoclaw-security-scanner.md): NemoClaw is NVIDIA's \*\*agent skill security scanning\*\* system referenced by nvidia verified agent skills and the mondoo agent skills security analy...
+- [NORA — Night Owl Research Agent](examples/nora-gis-research-agent.md): - full-pipeline - lit-review - idea-discovery-pipeline - deploy-experiment - paper-draft
+- [NVIDIA Skills Repository — Multi-Product Catalog](examples/nvidia-skills-repo.md): NVIDIA Skills Repository — A centralized, public catalog of official, NVIDIA-verified skills for AI agents.
+- [NVIDIA-Verified Agent Skills: Capability Governance for AI Agents](examples/nvidia-verified-agent-skills-governance.md): NVIDIA-verified agent skills are portable instruction sets that help developers understand, trust, and safely deploy AI agent capabilities by providing \*\*transparency, provenance, security scanning, and cryptographic...
+- [NVIDIA Verified Agent Skills — Governance \& Verification](examples/nvidia-verified-agent-skills.md): NVIDIA Verified Agent Skills — a governed catalog of portable instruction sets for AI agents to interact with NVIDIA CUDA-X libraries, AI Blueprints, and platform tools.
+- [Onto-LLM-Mapping — SSSOM-Compliant Ontology Mapping with LLMs and RAG](examples/onto-llm-mapping.md): A framework from cns-iu for mapping concepts between ontologies (e.g., Uberon to MeSH) using LLMs and RAG, outputting results in sssom mapping protocol format.
+- [Ontologizer — OpenClaw Ontology Skill](examples/ontologizer-openclaw-ontology-skill.md): - Practical product ontology skill for OpenClaw agents
+- [Open Ontologies — GitHub Repository (Rust MCP Server)](examples/open-ontologies-github.md): Open Ontologies — a high-performance, Rust-based Model Context Protocol (MCP) server and desktop Studio for AI-native ontology engineering.
+- [Open Ontologies — Stable Matching Alignment Paper](examples/open-ontologies-paper.md): Open Ontologies — a Rust-based, open-source system for ontology engineering that bridges LLMs and formal ontology work via the Model Context Protocol (MCP).
+- [OpenAI Codex Agent Skills — Structured Skill System](examples/openai-codex-skills.md): OpenAI Agent Skills for Codex — the official skill system for OpenAI's Codex CLI agent.
+- [OpenClaw PKB Skill](examples/openclaw-pkb-skill.md): - Standardized PKB (Personal Knowledge Base) skill - Zettelkasten + Git + Ontology integration
+- [OpenClaw-Skill: Collective Skill Tree Search (CSTS)](examples/openclaw-skill-csts-tree-search.md): OpenClaw-Skill proposes \*\*Collective Skill Tree Search (CSTS)\*\* to automatically construct structured, diverse, and \*\*cross-model transferable\*\* skill trees for OpenClaw-like agents — addressing handcrafted skill cost...
+- [OpenMontage Video Production Skills](examples/openmontage-video-production-skills.md): 500+ agent skills across 12 video production pipelines and 52 tools.
+- [ORCA: Open Runtime for Capable Agents](examples/orca-cognitive-runtime.md): - \*\*GitHub:\*\* https://github.com/gfernandf/agent-skills (43 stars, 407 commits) - \*\*Author:\*\* Guillermo Fernandez (gfernandf) - \*\*License:\*\* Apache-2.0 - \*\*Language:\*\* Python (99.3%)
+- [OWASP Agentic Skills Top 10 (AST10) — Security Risk Framework for Skill Bundles](examples/owasp-agentic-skills-top-10.md): The \*\*OWASP Agentic Skills Top 10 (AST10)\*\* is the first dedicated security risk framework for the agent skill ecosystem, analogous to OWASP's Top 10 for web applications and LLM applications.
+- [OxO2 — SSSOM-Compliant Ontology Mapping Service](examples/oxo2-sssom-mapping-service.md): OxO2 is a production SSSOM-compliant ontology mapping service from EMBL-EBI's EBISPOT team.
+- [PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions](examples/prov-agent-unified-provenance.md): In agentic workflows, autonomous agents plan tasks, interact with humans and peers, and shape scientific outcomes.
+- [PurpleBox Security — AI Agent Skills Supply Chain Risk Analysis](examples/purplebox-supply-chain-security.md): PurpleBox Security published a comprehensive analysis of the security risks in the Agent Skills marketplace ecosystem.
+- [R3-Skill: Query-Conditional Skill Routing with Compatibility](examples/r3-skill-compatibility-routing.md): R3-Skill formalizes that \*\*skill retrieval is not document retrieval\*\*: top-K success depends on whether retrieved skills \*\*work together under a query\*\* (skill compatibility), not independent relevance alone.
+- [RDF Ontologies Skill — SHACL + SPARQL Integration](examples/rdf-ontologies-skill.md): RDF Ontologies — an agent skill that teaches LLMs to use Resource Description Framework (RDF) and Turtle (TTL) syntax for managing software specifications, ontologies, and knowledge graphs.
+- [From Registry to Repository: Skill Authorship, Reuse \& Maintenance](examples/registry-to-repository-skill-maintenance.md): First empirical study treating AI agent skills as \*\*engineered software artefacts\*\* — authored, reused, customized, and maintained — rather than only as agent capabilities.
+- [Schimatos — SHACL-based Knowledge Graph Editor](examples/schimatos-shacl-knowledge-graph.md): - SHACL-based web form generation - Knowledge Graph editing with validation
+- [Scientific Agent Skills (K-Dense)](examples/scientific-agent-skills-kdense.md): 148 ready-to-use scientific/research skills across bioinformatics, cheminformatics, proteomics, clinical research, medical imaging, materials, geospatial, lab automation, scientific communication, multi-omics, protein...
+- [SHACL 1.2 Core Specification — W3C Standard](examples/shacl-1-2-spec.md): SHACL 1.2 (Shapes Constraint Language) is the latest evolution of the W3C standard for describing conditions that a dataset must meet.
+- [SHACL 1.2 Data Quality Assessment — 69 Metrics as Shapes](examples/shacl-data-quality-69-metrics.md): This research paper investigates the viability of using SHACL as a comprehensive tool for assessing data quality in Knowledge Graphs.
+- [Current State of Skill Bundles Research (May 2026)](examples/skill-bundles-research-state.md): After running five daily research cycles, the following picture has emerged:
+- [Skill OS: Skills as First-Class Execution Artifacts](examples/skill-os-skills-as-apps.md): This paper surveys nearly \*\*100,000 skills\*\* from public repositories and argues that skills have become a new form of application.
+- [agent-ecosystem/skill-validator — CLI Validator + LLM-as-Judge](examples/skill-validator-cli.md): A \*\*CLI tool that validates and scores Agent Skill packages\*\* (per the agentskills.io SKILL.md spec) — going well beyond spec compliance to check link rot, token cost, content quality, cross-language contamination, an...
+- [SKILL0: In-Context Agentic RL for Skill Internalization](examples/skill0-skill-internalization.md): SKILL0 asks whether agent skills must remain \*\*external packages at inference\*\*, or can be \*\*internalized into model parameters\*\*.
+- [Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning](examples/skill1-unified-skill-evolution-rl.md): Skill1 is a framework that trains a \*\*single policy\*\* to co-evolve skill selection, utilization, and distillation toward a shared task-outcome objective.
+- [SkillClaw: Collective Skill Evolution with Agentic Evolver](examples/skillclaw-collective-skill-evolution.md): SkillClaw is a framework for \*\*collective skill evolution\*\* in multi-user agent ecosystems.
+- [SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?](examples/skillcraft-benchmark.md): - \*\*arXiv:\*\* 2603.00718 (submitted 28 Feb 2026, v2 10 Mar 2026) - \*\*Authors:\*\* Shiqi Chen, Jingze Gai, +15 others (Junxian He, Yee Whye Teh) - \*\*Code:\*\* https://github.com/shiqichen17/SkillCraft
+- [SkillFortify: Formal Analysis and Supply Chain Security for Agentic AI Skills](examples/skillfortify-formal-verification-supply-chain.md): SkillFortify is the \*\*first formal analysis framework\*\* for agent skill supply chains.
+- [SkillGenBench: Benchmarking Skill Generation Pipelines](examples/skillgenbench-skill-generation-benchmark.md): SkillGenBench is a benchmark for evaluating \*\*skill generation pipelines\*\* — not the skills themselves, not the agents that use them, but the process of distilling skills from raw source material.
+- [SkillGuard: A Permission Framework for Agent Skills](examples/skillguard-permission-framework.md): SkillGuard is a skill-centric permission framework that treats skills as \*\*permission-bearing executable artifacts\*\*.
+- [SkillJect: Automated Skill-Based Prompt Injection for Coding Agents](examples/skillject-automated-prompt-injection.md): SkillJect is the first \*\*automated\*\* framework for generating poisoned skills against skill-enabled agent systems.
+- [SkillMigrator: Cross-Domain Web Skill Transfer via Transferable Interaction Patterns](examples/skillmigrator-cross-domain-transfer.md): Web agents that use LLM skills typically can only reuse them within the same website/domain.
+- [SkillMOO: Multi-Objective Optimization of Agent Skills for SE](examples/skillmoo-multi-objective-optimization.md): - \*\*arXiv:\*\* 2604.09297 (submitted 10 Apr 2026, v2 17 May 2026) - \*\*Authors:\*\* Jingzhi Gong, Ruizhen Gu, Zhiwei Fei, Yazhuo Cao, Lukas Twist, Alina Geiger, Shuo Han, Dominik Sobania, Federica Sarro, Jie M.
+- [SkillOpt: Agent Skills as Trainable Parameters](examples/skillopt-trainable-skill-parameters.md): SkillOpt reframes the question from "how do we write a better prompt?" to "how do we train the skill?" It treats the skill file as a \*\*trainable parameter\*\* living outside a frozen target model — like LoRA for prompts...
+- [SkillReducer: Optimizing LLM Agent Skills for Token Efficiency](examples/skillreducer-token-efficiency.md): - \*\*arXiv:\*\* 2603.29919 (submitted 31 Mar 2026, v2 24 Jun 2026) - \*\*Authors:\*\* Yudong Gao, Zongjie Li, Yuanyuan Yuan, Zimo Ji, Pingchuan Ma, Shuai Wang - \*\*Study scale:\*\* 55,315 publicly available skills
+- [SkillsBench: First Benchmark for Agent Skills Effectiveness](examples/skillsbench-agent-skills-benchmark.md): SkillsBench is the \*\*first systematic benchmark\*\* designed to measure how well agent skills improve AI agent performance across diverse tasks.
+- [SkillSieve: Hierarchical Triage for Detecting Malicious Agent Skills](examples/skillsieve-malicious-skill-detection.md): - \*\*arXiv:\*\* 2604.06550 (submitted 8 Apr 2026, v2 26 May 2026) - \*\*Authors:\*\* Yinghan Hou, Zongyou Yang, Zaihu Pang, Xiujun Ma - \*\*Cited by:\*\* 17 - \*\*Data:\*\* 49,592 ClawHub skills (2026-04-04 snapshot) + adversarial s...
+- [SkillSpector: NVIDIA Security Scanner for AI Agent Skills](examples/skillspector-nvidia-security-scanner.md): SkillSpector is NVIDIA's open-source security scanner for AI agent skills.
+- [Spring AI — Generic Agent Skills for the Java Ecosystem](examples/spring-ai-agent-skills.md): Spring AI's \*\*Generic Agent Skills\*\* implementation brings the Agent Skills open specification to the Java/Spring ecosystem.
+- [SSSOM Protocol — Simple Standard for Sharing Ontological Mappings](examples/sssom-mapping-protocol.md): SSSOM (Simple Standard for Sharing Ontological Mappings) provides a TSV-based representation for ontology term mappings with a comprehensive metadata model for provenance.
+- [Superpowers: Engineering Discipline as Skills](examples/superpowers-engineering-discipline-skills.md): Superpowers by Jesse Vincent is a \*\*multi-host skills framework\*\* that encodes software engineering best practices as 14 SKILL.md files.
+- [Supply Chain Security Meets the Agentic Factory (SLSA/in-toto for Skills)](examples/supply-chain-agentic-factory-in-toto.md): The first concrete proposal to extend \*\*SLSA/in-toto provenance\*\* to the agentic code generation pipeline.
+- [SWE-Skills-Bench: Do Agent Skills Actually Help in Software Engineering?](examples/swe-skills-bench-utility-benchmark.md): SWE-Skills-Bench is the first \*\*requirement-driven\*\* benchmark that isolates the \*\*marginal utility\*\* of agent skills in real-world software engineering.
+- [citiususc/text2shacl — Multi-Agent LangGraph Pipeline for SHACL Generation](examples/text2shacl-multi-agent-shacl.md): \`text2shacl\` is an \*\*ontology-driven multi-agent system for extracting SHACL shapes from text\*\*, focused on the ERA (European Union Agency for Railways) ontology and RINF Application Guide.
+- [Tool-Use Firewall](examples/tool-use-firewall.md): - Policy enforcement proxy between agents and MCP tools - Cost caps, rate limits, safety policies
+- [Flash Brew Digital "Validate Skill" — GitHub Action for SKILL.md Spec Compliance](examples/validate-skill-github-action.md): A \*\*GitHub Action that validates SKILL.md files against the Agent Skills specification\*\* (https://agentskills.io/specification).
+- [Vercel Labs Agent Skills](examples/vercel-labs-agent-skills.md): - \`vercel-optimize\` — cost/performance/reliability audit of Vercel projects - \`react-best-practices\` — 40+ rules, 8 impact-ranked categories - \`web-design-guidelines\` — 100+ UI/a11y/UX rules
+- [Veto — Authorization Kernel for AI Agents](examples/veto-agent-authorization.md): - Authorization kernel for agent tool calls - Block, allow, or escalate decisions
+- [VS Code Copilot Agent Skills — Cross-Platform Standard](examples/vscode-copilot-skills.md): VS Code Copilot Agent Skills — Microsoft's implementation of the agentskills.io open standard for GitHub Copilot in VS Code, Copilot CLI, and Copilot cloud agent.
+- [WildClawBench: Native-Runtime Long-Horizon Agent Evaluation](examples/wildclawbench-native-runtime-evaluation.md): WildClawBench is a \*\*native-runtime\*\* benchmark for AI agents: 60 human-authored bilingual multimodal tasks run inside Docker containers hosting the \*\*actual\*\* CLI harnesses used in deployment (OpenClaw, Claude Code,...
+- [xpSHACL — Explainable SHACL Validation with RAG and LLMs](examples/xpshacl-explainable-shacl.md): xpSHACL is an open-source system that solves the "interpretability gap" in RDF data validation.
+- [Ylang Labs — Agent Skills Portable Format Overview](examples/ylang-labs-agent-skills-overview.md): Ylang Labs published a comprehensive overview of the Agent Skills open standard, explaining how it provides a portable format for teaching AI agents procedural knowledge.
+
+## papers
+
+- [index.md](papers/index.md): Index of papers
+- [Agent Skills '26 (ACM CAIS Workshop)](papers/agentskills-workshop-2026.md): - 103 submissions → 45 posters + 6 orals (non-archival) - OpenReview: ACM.org/CAIS/2026/Workshop/AgentSkills
+- [Agent Skills: A Data-Driven Analysis of Claude Skills (arXiv:2602.08004)](papers/arxiv-2602-08004-agent-skills-analysis.md): Skills are an emerging infrastructure layer.
+- [Paper: The (R)evolution of Scientific Workflows in the Agentic AI Era — Towards Autonomous Science](papers/sc25-autonomous-science-workflows.md): This paper presents a framework for the evolution of scientific workflows from traditional orchestrated pipelines to fully autonomous, distributed scientific laboratories.
+- [Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce](papers/scaince-ai-lab-automation.md): \> \*\*Source:\*\* Frontiers in Artificial Intelligence (PMC) — https://pmc.ncbi.nlm.nih.gov/articles/PMC12426084/ \> \*\*Added:\*\* 2026-05-25 (manual seed for initial research)
+- [SoK: Agentic Skills — Beyond Tool Use in LLM Agents](papers/sok-agentic-skills-beyond-tool-use.md): A comprehensive Systematization of Knowledge paper that provides the \*\*first formal definition\*\* of agentic skills, a complete lifecycle model, and dual taxonomies.
+- [A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents](papers/survey-agent-skills-procedural-infrastructure.md): The most comprehensive \*\*six-layer taxonomy\*\* of agent skills, covering ontology, representation/packaging, lifecycle, runtime integration, governance, and applications.
+
+## qa
+
+- [index.md](qa/index.md): Index of qa
+- [Complex Q\&A — Skill Bundles Wiki](qa/2026-05-24-complex-qa.md): - SHACL validation (built-in \`shacl\` tool for RDF validation) - Ontology alignment via stable matching (six-signal similarity scoring) - While not using SSSOM TSV format directly, the alignment mechanism operates at t...
+- [Q\&A and Gap Analysis — 2026-05-24 Iteration 9](qa/2026-05-24-iter9-qa.md): - Dependency graphs (DAGs): 2 examples (graph of skills dependency retrieval, graphguard os guardrails)
+- [Complex Q\&A — 2026-06-01 (Iteration 13)](qa/2026-06-01-iter13-qa.md): - \*\*Pre-commit layer:\*\* skill-validator (Go binary, 13 platform hooks) - \*\*CI/CD layer:\*\* Validate Skill Action (GitHub Action, JSON outputs) - \*\*Registry layer:\*\* agentskill.sh (12-category threat scan, 100k+ skills)
+- [Q\&A / Lint 2026-07-06](qa/2026-07-06-lint.md): Run complete.
+- [Q\&A — 2026-07-10](qa/2026-07-10-qa.md): \*\*None of today''s new examples ships SHACL or SSSOM natively\*\*, but all four use strong substitutes (schemas, taxonomies, gates, scientific data sources).
+- [Q\&A — 2026-07-11 (Iteration 36)](qa/2026-07-11-qa.md): The supply chain is now \`intent → source → binary\` (per supply chain agentic factory in toto):
+- [Q\&A — 2026-07-12 (Iteration 37)](qa/2026-07-12-qa.md): 1.
+- [Q\&A — 2026-07-13 (Skill Bundles, Iteration 38)](qa/2026-07-13-qa.md): Three independent lines of evidence from today''s sources: 1.
+- [Q\&A — 2026-07-14 (Iteration 39)](qa/2026-07-14-qa.md): The skill lifecycle security governance now has four layers: 1.
+- [Q\&A — 2026-07-15 (Iteration 40)](qa/2026-07-15-qa.md): Based on today''s ingestion of MalTool, BadSkill, and SkillJect (plus prior ClawHavoc), the attack taxonomy now spans four distinct threat surfaces:
+- [Q\&A — 2026-07-16 (Iteration 41)](qa/2026-07-16-qa.md): - \*\*External (runtime packages):\*\* SkillOpt treats SKILL.md as trainable text; Memento uses markdown skills as evolving memory; marketplace skills load on demand (agentskills.io).
+
+## tools
+
+- [index.md](tools/index.md): Index of tools
+- [AI Agent Skill Marketplace Landscape (2026)](tools/agensi-marketplace-landscape.md): The agent skill marketplace ecosystem as of April 2026, based on Agensi's comprehensive comparison.
+
+## visualizations
+
+- [index.md](visualizations/index.md): Index of visualizations

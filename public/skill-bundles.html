@@ -1,0 +1,2526 @@
+
+
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Bundles: A Living Catalog</title>
+    
+        <meta name="description" content="Living catalog of real-world skill bundle examples and composition patterns across validation, mapping, rules, and governance.">
+    
+
+    
+    <link href="assets/css/daisyui.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/themes.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/application.css" rel="stylesheet" type="text/css"/>
+
+    
+    <script src="assets/js/browser.js"></script>
+
+    
+    <link href="assets/favicon/kiso_favicon_light_32x32.svg" rel="icon" type="image/svg+xml"/>
+    <link href="assets/favicon/kiso_favicon_light_32x32.svg" rel="icon" type="image/svg+xml"/>
+    <link href="assets/favicon/kiso_favicon_light_32x32.svg" media="(prefers-color-scheme: light)"
+          rel="icon"
+          sizes="32x32" type="image/svg+xml">
+    <link href="assets/favicon/kiso_favicon_light_16x16.svg" media="(prefers-color-scheme: light)"
+          rel="icon"
+          sizes="16x16" type="image/svg+xml">
+    <link href="assets/favicon/kiso_favicon_light_180x180.svg" rel="apple-touch-icon" sizes="180x180">
+
+    <link href="assets/favicon/kiso_favicon_dark_32x32.svg" media="(prefers-color-scheme: dark)"
+          rel="icon"
+          sizes="32x32" type="image/svg+xml">
+    <link href="assets/favicon/kiso_favicon_dark_16x16.svg" media="(prefers-color-scheme: dark)"
+          rel="icon"
+          sizes="16x16" type="image/svg+xml">
+    <link href="assets/favicon/kiso_favicon_dark_180x180.svg" rel="apple-touch-icon" sizes="180x180">
+
+    
+    
+        <link rel="alternate" type="text/plain" href="skill-bundles.md">
+    
+
+</head>
+
+<body>
+
+<div class="drawer min-h-screen bg-base-200 text-base-content">
+    <input id="kiso-navigation-drawer" type="checkbox" class="drawer-toggle"/>
+
+    <div class="drawer-content min-h-screen">
+        <div class="fixed left-3 top-3 z-40 flex gap-2 sm:left-4 sm:top-4">
+            <a href="index.html"
+               aria-label="Home"
+               class="btn btn-square btn-ghost bg-base-100/90 shadow-sm backdrop-blur">
+                <span class="kiso-home-icon" aria-hidden="true"></span>
+            </a>
+            <label for="kiso-navigation-drawer"
+                   aria-label="Open navigation"
+                   class="btn btn-square btn-ghost bg-base-100/90 shadow-sm backdrop-blur">
+                <span class="kiso-hamburger" aria-hidden="true"></span>
+            </label>
+        </div>
+
+        
+        <main class="container mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:py-12">
+
+            
+
+    
+    
+    <section class="mb-8 overflow-hidden rounded-box border border-base-300 bg-base-100 shadow-sm">
+
+        
+        <div class="border-b border-base-300 bg-base-300/30 px-6 py-6 sm:px-8">
+
+            
+            
+            <div class="mb-4 flex flex-wrap items-center gap-2">
+                <span class="badge badge-primary badge-lg">Concept</span>
+                
+                    <span class="badge badge-secondary badge-lg">Publication</span>
+                
+            </div>
+
+            
+            
+            
+                <div class="max-w-4xl text-4xl font-bold leading-tight tracking-normal sm:text-5xl">
+                    Skill Bundles: A Living Catalog
+                </div>
+            
+
+            
+            
+            
+                <p class="mt-4 max-w-3xl text-lg leading-8 text-base-content/70">
+                    Living catalog of real-world skill bundle examples and composition patterns across validation, mapping, rules, and governance.
+                </p>
+            
+
+        </div>
+
+        
+        
+            
+            <div class="grid gap-0 divide-y divide-base-300 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.45fr)] md:divide-x md:divide-y-0">
+
+                
+                
+
+                
+                
+                    <div class="px-6 py-5 sm:px-8">
+                        <div class="mb-3 text-xs font-semibold uppercase text-base-content/50">Tags</div>
+                        <div class="flex flex-wrap gap-2">
+                            
+                        </div>
+                    </div>
+                
+
+            </div>
+        
+    </section>
+
+    
+    <article class="kiso-content">
+        <h1>Skill Bundles: A Living Catalog</h1>
+<p><strong>Primary Publication</strong> — Last major update: 2026-07-16 (Iteration 41)</p>
+<h2>TL;DR</h2>
+<p>Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 97 documented examples across 41 iterations of daily research.</p>
+<h2>Documented Examples (97 Total + 7 Paper Notes)</h2>
+<h3>Research &amp; Workflow</h3>
+<ul>
+<li><a href="examples/nora-gis-research-agent.html">NORA</a> — Autonomous research agent with orchestrated skills</li>
+<li><a href="examples/agentic-engineering-workflow-skills.html">Agentic Engineering Workflow Skills</a> — Multi-skill workflow patterns</li>
+<li><a href="examples/nemoclaw-security-scanner.html">NemoClaw</a> — Secure agent sandboxing and policy management (23 skills)</li>
+<li><a href="examples/superpowers-engineering-discipline-skills.html"><strong>Superpowers</strong></a> — Engineering discipline as skills: Iron Laws, Red Flags, methodology cycle (14 skills)</li>
+<li><a href="examples/nora-gis-research-agent.html"><strong>NORA Paper</strong></a> — Harness-engineered autonomous research agent (21 skills + 9 sub-agents, arXiv 2605.02092)</li>
+<li><a href="examples/ai4curation-curation-skills.html"><strong>ai4curation/curation-skills</strong></a> — Chris Mungall's ontology/biocuration bundle (7 skills: OAK, ROBOT, DOSDP, OBO editing). Production users: Mondo, Cell Ontology, Uberon, EFO</li>
+<li><a href="examples/clawbio-bioinformatics-skills.html"><strong>ClawBio</strong></a> — Bioinformatics-native library: 88 skills (29 production), 8,000+ Galaxy tools, reproducibility bundles, Corpasome reference genome (DOI: 10.5281/zenodo.19297389), 92.3% validation pass rate</li>
+<li><a href="examples/addyosmani-engineering-skills.html"><strong>Addy Osmani Agent Skills</strong></a> — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture</li>
+<li><a href="examples/scientific-agent-skills-kdense.html"><strong>Scientific Agent Skills (K-Dense)</strong></a> (NEW Iteration 35) — 148 science skills, 100+ databases, package skills, security CI, agentskills.io (~30.6k★)</li>
+<li><a href="examples/openmontage-video-production-skills.html"><strong>OpenMontage</strong></a> (NEW Iteration 35) — Agentic video production: 500+ skills, 12 pipelines, hard human approval gates + checkpoint audit trail (~36.3k★)</li>
+<li><a href="examples/coevoskills-self-evolving-skills.html"><strong>CoEvoSkills</strong></a> (NEW Iteration 36) — First self-evolving multi-file skill package framework: co-evolutionary verification (generator + surrogate verifier), surpasses human-curated skills within 5 iterations on SkillsBench (arXiv:2604.01687)</li>
+<li><a href="examples/skillmoo-multi-objective-optimization.html"><strong>SkillMOO</strong></a> (NEW Iteration 37) — First multi-objective skill bundle optimization: NSGA-II Pareto selection on pass rate + cost; pruning and substitution dominate successful edits; top rank on 11/12 SkillsBench tasks (arXiv:2604.09297)</li>
+<li><a href="examples/effiskill-code-efficiency-optimization.html"><strong>EffiSkill</strong></a> (NEW Iteration 37) — Two-tier skill hierarchy: Operator Skills (concrete transformations) + Meta Skills (strategic patterns); execution-free diagnosis; +3.69–12.52pp on EffiBench-X (arXiv:2603.27850)</li>
+<li><a href="examples/skillcraft-benchmark.html"><strong>SkillCraft</strong></a> (NEW Iteration 37) — Benchmark for skill composition and reuse: agents auto-compose atomic tools into executable Skills; 80% token savings from caching; cited by 20 (arXiv:2603.00718)</li>
+<li><a href="examples/evoskill-automated-skill-discovery.html"><strong>EvoSkill</strong></a> (NEW Iteration 38) — Self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★) (arXiv:2603.02766)</li>
+<li><a href="examples/skillopt-trainable-skill-parameters.html"><strong>SkillOpt</strong></a> (NEW Iteration 38) — Treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells (6 benchmarks × 7 models × 3 modes); +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks (Microsoft Research, June 2026)</li>
+<li><a href="examples/aspire-robotics-skill-discovery.html"><strong>ASPIRE</strong></a> (NEW Iteration 39) — NVIDIA GEAR Lab; continual learning for robotics via code-as-policy; three components (execution engine + multimodal traces, skill library, evolutionary search); +77% LIBERO-Pro, +72% Robosuite, +32% BEHAVIOR-1K; 31% zero-shot vs 4%; sim-to-real transfer evidence; authors include Linxi &quot;Jim&quot; Fan, Ken Goldberg (arXiv:2607.00272)</li>
+<li><a href="examples/memento-skills-agent-designing-agent.html"><strong>Memento-Skills</strong></a> (NEW Iteration 39) — Agent-designing agent; memory-based RL with stateful prompts; skills as structured markdown files = persistent evolving memory; Read-Write Reflective Learning (read = skill router, write = update library); continual learning without LLM parameter updates; +26.2% General AI Assistants, +116.2% Humanity's Last Exam; 27 citations (arXiv:2603.18743)</li>
+<li><a href="examples/skill1-unified-skill-evolution-rl.html"><strong>Skill1</strong></a> (NEW Iteration 39) — Unified evolution of skill-augmented agents via RL; single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; outperforms baselines; 18 citations (arXiv:2605.06130)</li>
+<li><a href="examples/exif-automated-skill-discovery.html"><strong>EXIF</strong></a> (NEW Iteration 39) — Alice-Bob dual-agent for automated skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; iterative feedback loop; self-play (Alice=Bob) enables self-evolution; Webshop + Crafter; precursor to 2026 skill discovery wave; 11 citations (arXiv:2506.04287)</li>
+<li><a href="examples/skillclaw-collective-skill-evolution.html"><strong>SkillClaw</strong></a> (NEW Iteration 40) — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★) (arXiv:2604.08377)</li>
+<li><a href="examples/skill0-skill-internalization.html"><strong>SKILL0</strong></a> (NEW Iteration 41) — First RL framework for skill internalization (&quot;skills at training, zero at inference&quot;); Dynamic Curriculum anneals skill scaffolding by on-policy helpfulness; +9.7% ALFWorld, +6.6% Search-QA, +10.1% WebShop; &lt;0.5k tokens/step; GitHub: ZJU-REAL/SkillZero (arXiv:2604.02268)</li>
+<li><a href="examples/openclaw-skill-csts-tree-search.html"><strong>OpenClaw-Skill / CSTS</strong></a> (NEW Iteration 41) — Collective Skill Tree Search: multi-model candidate generation + quality/transferability assessment; builds structured transferable skill trees; Collective Skill RL multi-skill selection; addresses fragmentation, single-model bias, poor transfer (arXiv:2606.16774)</li>
+</ul>
+<h3>Ontology &amp; Knowledge</h3>
+<ul>
+<li><a href="examples/ontologizer-openclaw-ontology-skill.html">Ontologizer</a> — OpenClaw ontology skill</li>
+<li><a href="examples/openclaw-pkb-skill.html">OpenClaw PKB Skill</a> — Personal knowledge base</li>
+<li><a href="examples/genesis-skills-osti.html">Genesis Skills Repository (OSTI)</a> — Large curated collection of Claude Code skills (OSTI/GitLab)</li>
+<li><a href="examples/rdf-ontologies-skill.html">RDF Ontologies</a> — SHACL + SPARQL integration</li>
+<li><a href="examples/open-ontologies-github.html">Open Ontologies MCP</a> — Full ontology lifecycle (43 tools, SHACL validation, 32 stored ontologies)</li>
+<li><a href="examples/open-ontologies-paper.html">Open Ontologies Paper</a> — Stable matching alignment algorithm (OAEI F1=0.832, P=0.963)</li>
+<li><a href="examples/open-ontologies-github.html">Open Ontologies GitHub</a> — Production Rust MCP server with onto_align tool, 32 standard ontologies</li>
+<li>Going Meta: Agent Skills for Ontologies — Video series on skills for ontology work <em>(no local wiki page yet)</em></li>
+<li><a href="examples/oxo2-sssom-mapping-service.html"><strong>OxO2 Mapping Service</strong></a> — SSSOM-compliant service with CLAUDE.md agent context (EBISPOT)</li>
+<li><a href="examples/onto-llm-mapping.html"><strong>Onto-LLM-Mapping</strong></a> — SSSOM mapping generation via LLM+RAG pipeline</li>
+</ul>
+<h3>Validation &amp; Rules</h3>
+<ul>
+<li><a href="examples/veto-agent-authorization.html">Veto</a> — Authorization Kernel</li>
+<li><a href="examples/tool-use-firewall.html">Tool-Use Firewall</a> —</li>
+<li><a href="examples/schimatos-shacl-knowledge-graph.html">Schimatos</a> — SHACL knowledge graph validation</li>
+<li>Agent Audit — Security scanning <em>(no local wiki page yet)</em></li>
+<li><a href="examples/graphguard-os-guardrails.html">GraphGuard OS</a> — SHACL + Cypher guardrails + Shadow Policy Manager</li>
+<li><a href="examples/xpshacl-explainable-shacl.html">xpSHACL</a> — Explainable SHACL validation with RAG + Violation Knowledge Graph (99.48% cache hit)</li>
+<li><a href="examples/shacl-data-quality-69-metrics.html">SHACL Data Quality</a> — 69 data quality metrics mapped to SHACL shapes</li>
+<li><a href="examples/nemoclaw-security-scanner.html"><strong>NemoClaw Security Scanner</strong></a> — LLM-assisted vulnerability detection for skill definitions</li>
+<li><a href="examples/text2shacl-multi-agent-shacl.html"><strong>text2shacl</strong></a> — Multi-agent LangGraph pipeline for SHACL generation from text; 5 LLMs evaluated, two merge strategies (priority-llm, restrictive)</li>
+<li><a href="examples/skill-validator-cli.html"><strong>skill-validator CLI</strong></a> — Go-based lifecycle-mapped validator: 7 commands, 13 platform pre-commit hooks, LLM-as-judge, contamination detection (151 stars)</li>
+<li><a href="examples/validate-skill-github-action.html"><strong>Validate Skill GitHub Action</strong></a> — Lightweight CI/CD layer: structural spec compliance, JSON outputs, 4 inputs/2 outputs</li>
+</ul>
+<h3>Governance &amp; Verification</h3>
+<ul>
+<li><a href="examples/nvidia-verified-agent-skills.html">NVIDIA Verified Agent Skills</a> — OpenSSF signing, SkillSpector scanning, SKILLCARD.yaml</li>
+<li><a href="examples/nvidia-skills-repo.html">NVIDIA Skills Repository</a> — 140+ skills across 13 product areas with governance pipeline</li>
+<li><a href="examples/purplebox-supply-chain-security.html"><strong>PurpleBox Security Analysis</strong></a> — Supply chain risk: 12% infection rate, 6-vector attack taxonomy, CVE-2026-25253</li>
+<li><a href="examples/github-cli-skill-management.html">GitHub CLI Skill Management</a> — Supply chain integrity (immutability, pinning, provenance)</li>
+<li><a href="examples/mondoo-agent-skills-security.html"><strong>Mondoo Security Analysis</strong></a> — 14 attack patterns, 25%+ vulnerable skills, ClawHavoc campaign</li>
+<li><a href="examples/agentskill-sh-ags-security-scoring.html"><strong>agentskill.sh / ags</strong></a> — Registry-level security scoring: 12-category threat taxonomy, 100k+ skills scanned, 0-100 security score, content-SHA versioning, 10-dim quality scoring</li>
+<li><a href="examples/clawhavoc-marketplace-attack.html"><strong>ClawHavoc Campaign</strong></a> (NEW Iteration 36) — ~1,184 malicious skills on ClawHub; 13% malicious rate; dual-vector attack (prompt injection + shell access); canonical marketplace supply-chain case study</li>
+<li><a href="examples/supply-chain-agentic-factory-in-toto.html"><strong>Supply Chain Agentic Factory</strong></a> (NEW Iteration 36) — First proposal to extend SLSA/in-toto provenance to agentic code generation; &quot;intent → source → binary&quot; trust gap; Konflux/fullsend project (Red Hat)</li>
+<li><a href="examples/skillsieve-malicious-skill-detection.html"><strong>SkillSieve</strong></a> (NEW Iteration 37) — Three-layer triage for malicious skill detection: heuristic filter (86% volume) → LLM analysis (4 sub-tasks) → LLM jury (3-LLM voting+debate); F1=0.920 at $0.006/skill; 49K ClawHub skills evaluated; cross-ecosystem (ClawHub→Feishu); open-sourced (arXiv:2604.06550)</li>
+<li><a href="examples/prov-agent-unified-provenance.html"><strong>PROV-AGENT</strong></a> (NEW Iteration 38) — Provenance model extending W3C PROV + MCP for tracking AI agent interactions in agentic workflows; agent decisions/prompts/responses as first-class provenance; near real-time capture system; cross-facility (edge/cloud/HPC); Oak Ridge + Argonne National Labs (arXiv:2508.02866)</li>
+<li><a href="examples/skillguard-permission-framework.html"><strong>SkillGuard</strong></a> (NEW Iteration 39) — Permission framework for agent skills; dual-plane governance (context plane + action plane); five components (skill manifests, runtime access control, user-mediated authorization, deny-by-default, behavior monitoring); 315 real-world skills; 99.76% taxonomy coverage; 91% F1 manifest generation; attack success reduced 32%→23%; CSIRO+ANU (arXiv:2606.03024)</li>
+<li><a href="examples/skillfortify-formal-verification-supply-chain.html"><strong>SkillFortify</strong></a> (NEW Iteration 39) — First formal analysis framework for agent skill supply chains; six contributions: DY-Skill attacker model (Dolev-Yao for 5-phase lifecycle), sound static analysis (abstract interpretation), capability-based sandboxing with confinement proof, Agent Dependency Graph with SAT resolution + lockfile semantics, trust score algebra, SkillFortifyBench (540 skills); 96.95% F1, 100% precision, 0% FP; 22 frameworks; 6,487 malicious tools catalogued (arXiv:2603.00195)</li>
+<li><a href="examples/nvidia-verified-agent-skills-governance.html"><strong>NVIDIA-Verified Agent Skills</strong></a> (NEW Iteration 39) — Industry productionization of skill governance: verified = cataloged, scanned (SkillSpector), signed (cryptographic skill.oms.sig), documented (skill cards); built on agentskills.io spec; cross-platform SKILL.md (Claude Code, Codex, Cursor); daily catalog sync; evaluation layer planned (NVIDIA, May 2026)</li>
+<li><a href="examples/skillspector-nvidia-security-scanner.html"><strong>SkillSpector</strong></a> (NEW Iteration 40) — NVIDIA's security scanner for AI agent skills; YARA rules + LLM semantic analysis; OWASP/MITRE alignment; batch scanning; CI/CD integration; Docker; MCP least-privilege; 1312 unit tests; v2.3.13; 13.2k★; 38 contributors; Apache 2.0; scanning step of NVIDIA-Verified ecosystem (GitHub: nvidia/skillspector)</li>
+<li><a href="examples/agentbound-mcp-access-control.html"><strong>AgentBound</strong></a> (NEW Iteration 40) — First access control framework for MCP servers; Android permission model inspired; declarative policy + enforcement engine; 296 most popular MCP servers; 80.9% automated policy generation from source code; blocks majority of threats; negligible overhead; no server modifications; ACM FSE 2026 (arXiv:2510.21236)</li>
+</ul>
+<h3>Security Governance Frameworks</h3>
+<ul>
+<li><a href="examples/owasp-agentic-skills-top-10.html"><strong>OWASP Agentic Skills Top 10 (AST10)</strong></a> — First dedicated security risk framework: 10-class vulnerability taxonomy, Lethal Trifecta, Universal Skill Format</li>
+<li><a href="examples/agentic-trust-framework-csa.html"><strong>Agentic Trust Framework (CSA)</strong></a> — Zero Trust governance: 4-level maturity model (Intern→Principal), 5 promotion gates, compliance mapping</li>
+<li><a href="examples/arxiv-agent-skills-survey.html"><strong>arXiv Agent Skills Survey</strong></a> — First comprehensive academic survey: 26.1% vulnerability rate, 4-axis analysis (architecture, acquisition, deployment, security)</li>
+<li><a href="papers/sok-agentic-skills-beyond-tool-use.html"><strong>SoK: Agentic Skills</strong></a> (NEW Iteration 36) — Formal skill definition S=(C,π,T,R); 7-stage lifecycle; 7 design patterns; ClawHavoc case study; 73 citations (arXiv:2602.20867)</li>
+<li><a href="examples/skillreducer-token-efficiency.html"><strong>SkillReducer</strong></a> (NEW Iteration 37) — Empirical study of 55,315 skills: 26.4% lack routing, 60%+ non-actionable; two-stage optimization (delta debugging + taxonomy + progressive disclosure); 48%+39% compression with +2.8% quality (less-is-more effect); cross-model transfer (5 models, 4 families) (arXiv:2603.29919)</li>
+<li><a href="examples/maltool-malicious-tool-attacks.html"><strong>MalTool</strong></a> (NEW Iteration 40) — First systematic study of malicious tool code implementations; CIA triad taxonomy for agent tools; coding-LLM-based synthesis (standalone + embedded); automated verifier (functional + diversity); 1,300 standalone + 5,727 embedded malicious tools; existing detection insufficient; UC Berkeley (Dawn Song) + Duke (arXiv:2602.12194)</li>
+<li><a href="examples/badskill-backdoor-model-in-skill.html"><strong>BadSkill</strong></a> (NEW Iteration 40) — Backdoor attacks via model-in-skill poisoning; semantic compositional triggers; composite training objective (classification + margin + poison); 99.5% ASR; 3% poison rate → 91.7% ASR; 8 architectures (494M–7.1B), 5 model families; 13 skills; identifies model-bearing skills as distinct supply-chain risk (arXiv:2604.09378)</li>
+<li><a href="examples/skillject-automated-prompt-injection.html"><strong>SkillJect</strong></a> (NEW Iteration 40) — First automated framework for generating poisoned skills; two-channel attack (artifact: helper script payload + instruction: front-loaded SKILL.md inducement); closed-loop multi-agent (Attack→Victim→Evaluate→refine); supports Claude Code + OpenClaw; trace-driven refinement; GitHub: jiaxiaojunQAQ/SkillJect (arXiv:2602.14211)</li>
+</ul>
+<h3>Research Meta</h3>
+<ul>
+<li><a href="examples/skill-bundles-research-state.html">Current State of Skill Bundles Research (May 2026)</a> — Snapshot note on research coverage and gaps</li>
+</ul>
+<h3>Platform Skill Systems</h3>
+<ul>
+<li><a href="examples/anthropic-official-skills-repo.html"><strong>Anthropic Official Skills</strong></a> — Canonical reference: spec, templates, production document skills (140k stars)</li>
+<li><a href="examples/ylang-labs-agent-skills-overview.html"><strong>Ylang Labs Agent Skills</strong></a> — Definitive overview: &quot;recipes vs kitchen&quot; metaphor, 3-level progressive disclosure</li>
+<li><a href="examples/claude-api-skills-integration.html"><strong>Claude API Integration</strong></a> — Container parameter, version pinning, 8 skills/request, 30MB limit</li>
+<li><a href="examples/openai-codex-skills.html">OpenAI Codex Agent Skills</a> — Progressive disclosure, MCP dependency declarations</li>
+<li><a href="examples/vscode-copilot-skills.html">VS Code Copilot Agent Skills</a> — Cross-platform agentskills.io implementation</li>
+<li><a href="examples/vercel-labs-agent-skills.html"><strong>Vercel Labs Agent Skills</strong></a> (NEW Iteration 35) — Official vendor constraint-rule skills: React best practices (40+), web design (100+), writing handbook (80+), vercel-optimize (~28.9k★)</li>
+</ul>
+<h3>Enterprise Platform Implementations</h3>
+<ul>
+<li><a href="examples/microsoft-agent-framework-skills.html"><strong>Microsoft Agent Framework Skills</strong></a> — Enterprise platform: 3 implementation types (file/inline/class), script approval, DI support, multi-source composition</li>
+<li><a href="examples/spring-ai-agent-skills.html"><strong>Spring AI Generic Agent Skills</strong></a> — Java ecosystem: LLM-agnostic, 3-core-tool architecture, Claude Code compatible</li>
+</ul>
+<h3>Distribution &amp; Marketplaces</h3>
+<ul>
+<li><a href="examples/chris-ayers-plugin-ecosystem.html"><strong>Chris Ayers Plugin Ecosystem</strong></a> — 3-layer model (Skills → Plugins → Marketplaces); cross-tool compatibility matrix proving SKILL.md universal portability</li>
+<li><a href="tools/agensi-marketplace-landscape.html"><strong>Agensi Marketplace Landscape</strong></a> — 8-marketplace comparison: skills.sh (2k), SkillsMP (800k), Agensi (200+, 8-point security scan); consolidation trends</li>
+<li><a href="examples/agentskill-sh-ags-security-scoring.html"><strong>agentskill.sh</strong></a> — 100k+ skill registry with 12-category threat scanning, content-SHA versioning, auto-rate feedback loop</li>
+<li><a href="examples/agentic-awesome-skills-library.html"><strong>Agentic Awesome Skills Library</strong></a> (NEW Iteration 35) — Installable mega-catalog: 1,943+ skills, npm installer, specialized plugins, schemas, security audit gates (~42.8k★, v14.1.0)</li>
+<li><a href="examples/awesome-agent-skill-papers-catalog.html"><strong>Awesome-Agent-Skill-Papers</strong></a> (NEW Iteration 36) — Curated paper catalog accompanying six-layer taxonomy survey; discovery index for academic agent skill research (GitHub: DataArcTech)</li>
+<li><a href="examples/marketplace-landscape-2026.html"><strong>Marketplace Landscape 2026</strong></a> (NEW Iteration 37) — 8 major marketplaces compared: SkillsMP (800K+), LobeHub (169K+), Skills.sh (2K), Agensi (200+, 8-point security scan, 70/30 creator payments); 6.3 issues/skill avg, 36% prompt injection rate; MCP-based access predicted as default</li>
+<li><a href="examples/skillmigrator-cross-domain-transfer.html"><strong>SkillMigrator</strong></a> (NEW Iteration 38) — Cross-domain web skill reuse via Transferable Interaction Patterns (TIP 4-tuple ⟨intent, template, slots, layout-skeleton⟩); accessibility-tree skeleton matching with Tree Edit Distance; 8-10% LLM call reduction; 35.4% cross-domain reuse rate (arXiv:2606.17645)</li>
+<li><a href="examples/assc-skill-supply-chains-skillbom.html"><strong>ASSCs / Skills Are Not Islands</strong></a> (NEW Iteration 41) — Agent Skill Supply Chains; SDA recovers multi-channel deps (skill/package/service); SkillBOM (SBOM-compatible); 1.43M skills analyzed; 58.73% name collisions; 71–73% packages transitive-only; 60–78% security skill deps transitive; typed manifests + lockfiles recommended (arXiv:2607.01136)</li>
+<li><a href="examples/registry-to-repository-skill-maintenance.html"><strong>From Registry to Repository</strong></a> (NEW Iteration 41) — First empirical study of skills as engineered artefacts; 18,463 registry + 23,199 personal skills; 3,709 reuse links; 6 content themes + 6 maintenance themes; reuse = one-time copy; 53% never modified after adoption (arXiv:2607.00911)</li>
+<li><a href="examples/inside-skill-market-se-activities.html"><strong>Inside the Skill Market</strong></a> (NEW Iteration 41) — First activity-centric SE skills study; 11,497 SE-related skills; SDLC coverage skewed to construction; versioning immature (most single-version); five-component skill model (arXiv:2607.09065)</li>
+</ul>
+<h3>Infrastructure &amp; Participation</h3>
+<ul>
+<li><a href="examples/agents-at-conferences-infrastructure.html"><strong>Agents at Conferences</strong></a> (NEW Iteration 14) — Infrastructure for AI agent conference participation: 6-component protocol (registration, feeds, communication, moderation, benchmarking, memory), capability schema taxonomy, SciFM26 target: 50 agents</li>
+</ul>
+<h3>Security Taxonomy</h3>
+<ul>
+<li><a href="examples/claude-skills-ecosystem-1116.html">Claude Skills Ecosystem (1,116)</a> — 754 cybersecurity skills mapped to MITRE/NIST frameworks</li>
+<li><a href="examples/awesome-openclaw-skills-catalog.html"><strong>Awesome OpenClaw Skills</strong></a> — 179 CLI utilities with implicit security/memory/development bundles</li>
+</ul>
+<h3>Framework-Specific</h3>
+<ul>
+<li><a href="examples/dspy-agent-skills-bundle.html"><strong>DSPy Agent Skills Bundle</strong></a> — Three-repo bundle: 34+ validation tests, AST checking, GEPA benchmarks, orchestration skill, exact DSPy 3.2.1 pinning</li>
+<li><a href="examples/dspy-agent-skills-v023.html"><strong>DSPy Agent Skills v0.2.3</strong></a> — Updated bundle for DSPy 3.2.x, +19.53pp RAG improvement, dual-platform install, committed benchmark artifacts</li>
+<li><a href="examples/dspy-agent-skills-bundle.html"><strong>Skills+DSPy SDK</strong></a> — SkillsReActAgent with firejail, meta-tools, YAML config for sandbox</li>
+<li><a href="examples/orca-cognitive-runtime.html"><strong>ORCA</strong></a> (NEW Iteration 37) — Open Runtime for Capable Agents: 122 YAML capabilities + 36 DAG-composed skills + policy gates + provenance tracking; 184/184 canonical taxonomy coverage; MCP support; LangChain/CrewAI/Semantic Kernel adapters (Apache-2.0, 43★)</li>
+<li><a href="examples/skill-os-skills-as-apps.html"><strong>Skill OS</strong></a> (NEW Iteration 38) — &quot;Skills are the new Apps&quot; position paper: surveys ~100K public skills; identifies 6 properties (phased procedures, semi-deterministic blocks, semantic equivalence, safety without enforcement, dependency fragility, no global management); argues for Skill OS abstraction (caching, env construction, global management, failure handling, security) (AgenticOS 2026 Workshop)</li>
+<li><a href="examples/skillgenbench-skill-generation-benchmark.html"><strong>SkillGenBench</strong></a> (NEW Iteration 38) — Benchmark for skill generation pipelines: 187 tasks × 8 domains; generator-executor decoupling; repository-grounded pass@3: 7-16% (extremely hard), document-grounded: 23-27%; auto-generated skills risk negative transfer (Zhou et al., 2026)</li>
+</ul>
+<h3>Specification &amp; Runtime</h3>
+<ul>
+<li><a href="examples/agent-skills-spec.html">Agent Skills Specification</a> — The open standard (agentskills.io)</li>
+<li><a href="examples/sssom-mapping-protocol.html">SSSOM Mapping Protocol</a> — Simple Standard for Sharing Ontological Mappings</li>
+<li><a href="examples/shacl-1-2-spec.html">SHACL 1.2 Core</a> — W3C Shapes Constraint Language specification</li>
+</ul>
+<h3>Ontology-Integrated Skill Systems</h3>
+<ul>
+<li><a href="examples/ai-km-ontology-skills.html"><strong>AI-KM</strong></a> (NEW Iteration 37) — Agent skills + ontology-driven knowledge modeling in closed loop: NL extraction builds formal ontologies; conversation-invokable skills + autonomous planning mode for novel tasks; knowledge→ontology→skills→knowledge feedback (SoftwareX, Sept 2026)</li>
+</ul>
+<h3>Dependency &amp; Retrieval</h3>
+<ul>
+<li><a href="examples/graph-of-skills-dependency-retrieval.html"><strong>Graph of Skills (GoS)</strong></a> — DAG-based skill composition, PageRank ranking, prerequisite resolution</li>
+<li><a href="examples/r3-skill-compatibility-routing.html"><strong>R3-Skill</strong></a> (NEW Iteration 41) — Query-conditional skill routing with skill compatibility; Reject-as-Resource uses LLM rejections as co-retrieval supervision; 10,246 skills; Hit@1=0.7521, NDCG@10=0.8173, Set-Compat=0.3188; Tencent R3-embedding/rerank (arXiv:2606.03565)</li>
+</ul>
+<h3>Benchmarking &amp; Catalogs</h3>
+<ul>
+<li><a href="examples/skillsbench-agent-skills-benchmark.html"><strong>SkillsBench</strong></a> — First agent skills benchmark: +16.2pp avg improvement, Healthcare +51.9pp</li>
+<li><a href="examples/swe-skills-bench-utility-benchmark.html"><strong>SWE-Skills-Bench</strong></a> (NEW Iteration 40) — First requirement-driven benchmark isolating marginal utility of agent skills in SWE; 49 skills × GitHub repos × requirement docs; ~565 task instances, 6 subdomains; deterministic verification; <strong>39/49 skills yield zero improvement</strong>; avg gain +1.2%; token overhead up to +451%; only 7 help (up to +30%), 3 degrade (up to -10%); 34 citations (arXiv:2603.15401)</li>
+<li><a href="examples/wildclawbench-native-runtime-evaluation.html"><strong>WildClawBench</strong></a> (NEW Iteration 41) — Native-runtime long-horizon benchmark: 60 bilingual multimodal tasks in real OpenClaw / Claude Code / Codex / Hermes harnesses; hybrid grading; 19 models; best 62.2% (Opus 4.7); harness switch ±18pp; skill ablations mixed (Code Intelligence +22.4 strongest model); InternLM (arXiv:2605.10912)</li>
+<li><a href="examples/awesome-agent-skills-catalogs.html"><strong>Awesome Agent Skills Catalogs</strong></a> — Ecosystem mapping: 1000+ skills, 44k+ marketplace</li>
+</ul>
+<h3>Theory &amp; Frameworks</h3>
+<ul>
+<li><a href="examples/externalization-llm-agents-unified-review.html"><strong>Externalization in LLM Agents</strong></a> (NEW Iteration 40) — Unified review of memory, skills, protocols, harness engineering; cognitive artifacts lens; four-form taxonomy (memory=state, skills=procedural expertise, protocols=interaction, harness=unification); weights→context→harness progression; parametric/externalized trade-off; self-evolving harnesses + shared infrastructure; 54 pages; 21 authors including Jun Wang (UCL), Weinan Zhang (SJTU); 35 citations (arXiv:2604.08224)</li>
+</ul>
+<h2>State of Research (After Iteration 14)</h2>
+<p>Iteration 14 adds <strong>4 new examples</strong> spanning <strong>domain-specialized bioinformatics</strong>, <strong>production-grade engineering workflows</strong>, <strong>conference participation infrastructure</strong>, and an <strong>updated DSPy optimization bundle</strong> — plus two foundational papers on autonomous scientific workflows.</p>
+<h3>Domain-Specialized Bioinformatics Skill Bundle (NEW)</h3>
+<p><a href="examples/clawbio-bioinformatics-skills.html">clawbio bioinformatics skills</a> is the richest domain-coherent bundle in the catalog: <strong>88 skills</strong> (29 production) serving genomics/bioinformatics with:</p>
+<ul>
+<li><strong>Specification layer</strong> as machine-readable contracts preventing hallucination in dosage/genetics</li>
+<li><strong>Per-execution reproducibility bundles</strong> (commands + environment + checksums) — a new context element type</li>
+<li><strong>Reference genome asset</strong> (Corpasome, DOI: 10.5281/zenodo.19297389) for deterministic testing</li>
+<li><strong>Validation leaderboard</strong> (92.3% pass rate) as public governance artifact</li>
+<li><strong>Multi-modal access</strong>: CLI, Telegram/Discord, web gateway, Claude Code</li>
+<li><strong>Galaxy Bridge</strong> to 8,000+ external tools — external tool registry mapping</li>
+</ul>
+<h3>Process-as-Skill Engineering Discipline Bundle (NEW)</h3>
+<p><a href="examples/addyosmani-engineering-skills.html">addyosmani engineering skills</a> encodes the <strong>full SDLC as 23 skills</strong> with:</p>
+<ul>
+<li><strong>Anti-rationalization tables</strong>: Explicit agent failure modes + required corrections</li>
+<li><strong>Verification gates</strong>: Non-negotiable evidence (tests, logs, runtime data)</li>
+<li><strong>7 slash commands</strong> mapping 1:1 to phases — a command taxonomy</li>
+<li><strong>Specialist personas</strong> that activate relevant skill subsets</li>
+<li><strong>Reference checklists</strong> (Testing, Security, Performance, Accessibility) as standards artifacts</li>
+<li><strong>Google engineering culture</strong> (Hyrum's Law, Chesterton's Fence) as normative artifacts</li>
+<li><strong>Session hooks</strong> for cross-cutting concerns (citation caching)</li>
+</ul>
+<h3>Conference Participation Infrastructure as Skill Bundle (NEW)</h3>
+<p><a href="examples/agents-at-conferences-infrastructure.html">agents at conferences infrastructure</a> defines <strong>6 core infrastructure capabilities</strong> as agent skills:</p>
+<ul>
+<li><strong>Capability schema</strong> (<code>capabilities[]</code>, <code>model_backbone</code>) as skill taxonomy for registration</li>
+<li><strong>Protocol contracts</strong> (WebSocket + REST in <code>ARCHITECTURE.md</code>) as interface specifications</li>
+<li><strong>Benchmark arena</strong> (GPQA, AAAR, LAB-Bench) as continuous evaluation harness</li>
+<li><strong>Communication bus</strong> with rate limiting as coordination protocol</li>
+<li><strong>Moderation layer</strong> as human-in-the-loop governance</li>
+<li><strong>Output aggregation</strong> (PDF + JSON API) as knowledge persistence + inter-agent queryability</li>
+</ul>
+<h3>DSPy Bundle Deepening (v0.2.3)</h3>
+<p><a href="examples/dspy-agent-skills-bundle.html">dspy agent skills bundle</a> now includes:</p>
+<ul>
+<li><strong>Exact dependency pinning</strong> (DSPy 3.2.1 via <code>check_dspy_surface.py</code>) — prevents API drift</li>
+<li><strong>34+ pytest validators</strong> for SKILL.md frontmatter, JSON schemas, Python AST</li>
+<li><strong>GEPA gotchas documented</strong> as protocol constraints</li>
+<li><strong>Committed performance benchmarks</strong> with specific model names and deltas</li>
+<li><strong>Offline validation</strong> (<code>--dry-run</code>) for smoke testing</li>
+</ul>
+<h3>Three-Layer Validation Stack (Iteration 13, reinforced)</h3>
+<p>The skill ecosystem is converging on a three-layer architecture:</p>
+<ul>
+<li><strong>Layer 1 (Pre-commit):</strong> <a href="examples/skill-validator-cli.html">skill validator cli</a> — deep quality + contamination + LLM-as-judge</li>
+<li><strong>Layer 2 (CI/CD):</strong> <a href="examples/validate-skill-github-action.html">validate skill github action</a> — structural spec compliance</li>
+<li><strong>Layer 3 (Registry):</strong> <a href="examples/agentskill-sh-ags-security-scoring.html">agentskill sh ags security scoring</a> — 12-category security scanning</li>
+</ul>
+<p>This mirrors the <strong>software supply chain</strong> three-layer pattern (linters → CI scanners → registry audits) and is approximately 2-3 years behind the npm/PyPI ecosystem in maturity. See <a href="concepts/three-layer-validation-stack.html">three layer validation stack</a>.</p>
+<h3>Bidirectional SHACL ↔ LLM Bridge (Iteration 13, reinforced)</h3>
+<p>With <a href="examples/text2shacl-multi-agent-shacl.html">text2shacl multi agent shacl</a> (forward generation) added, the catalog now has a complete bridge:</p>
+<ul>
+<li><strong>Forward:</strong> text2shacl turns natural-language requirements into SHACL shapes via multi-agent LangGraph pipeline with RAG</li>
+<li><strong>Reverse:</strong> <a href="examples/xpshacl-explainable-shacl.html">xpshacl explainable shacl</a> turns SHACL shapes into natural-language explanations</li>
+</ul>
+<p>Together they form a closed loop: requirements → shapes → validation → explanation → refined requirements. See <a href="concepts/bidirectional-shacl-llm-bridge.html">bidirectional shacl llm bridge</a>.</p>
+<h3>Autonomous Science Workflow Framework (Seeded Papers)</h3>
+<p>Two foundational papers provide theoretical grounding:</p>
+<ul>
+<li><strong>SC25 Revolution paper:</strong> Two-dimensional evolution matrix (Intelligence × Composition) with state machine abstraction. Maps directly to skill composition patterns (Single→Pipeline→Hierarchical→Mesh→Swarm) and skill sophistication levels (Static→Adaptive→Learning→Optimizing→Intelligent).</li>
+<li><strong>scAInce paper:</strong> Co-pilot → Lab-pilot transition; self-driving laboratories (SDLs) as ultimate skill bundles; information-gain scoring for experiment prioritization; governance frameworks (EU AI Act, ISO 42001, PRISMA-AI, STARD-AI).</li>
+</ul>
+<h2>Emerging Patterns</h2>
+<ol>
+<li><strong>Skills + Declarative Context Files</strong> (ubiquitous across all platforms)</li>
+<li><strong>Skills + Ontology</strong> (strong — 10 examples, +ai4curation, +ClawBio OBO tooling)</li>
+<li><strong>Skills + Validation + Explainability</strong> (strong — 8 examples, +text2shacl forward direction)</li>
+<li><strong>Skills + Guardrails via Interceptor</strong> (SHACL + Cypher + Shadow testing)</li>
+<li><strong>Skills + Supply Chain Provenance</strong> (immutability, pinning, content-addressed detection)</li>
+<li><strong>Skills + Taxonomy at Scale</strong> (754 skills mapped to MITRE/NIST)</li>
+<li><strong>Skills + Mapping/Alignment</strong> (mature — 4 examples: SSSOM lifecycle complete)</li>
+<li><strong>Skills + Rules/Governance</strong> (strong — 6 examples, +Iron Laws/Red Flags)</li>
+<li><strong>Skills + SHACL Validation</strong> (strong — 7 examples, +text2shacl generation)</li>
+<li><strong>Skills + MCP Dependencies</strong> (emerging — 4 examples, +conference feed API)</li>
+<li><strong>Skills + Constraint Rules</strong> (strong — Iron Laws, Red Flags, SHACL, crypto signing, authorization)</li>
+<li><strong>Skills + Dependency Graphs</strong> (stable — DAG-based composition, PageRank ranking)</li>
+<li><strong>Skills + Benchmarking</strong> (emerging — paired evaluation, delta metrics, GEPA benchmarks)</li>
+<li><strong>Orchestrator Pattern</strong> (strong — a skill that activates and sequences other skills: DSPy, NORA, Addy Osmani)</li>
+<li><strong>Implicit Bundle Discovery</strong> (new — bundles discovered by grouping related skills across taxonomy catalogs)</li>
+<li><strong>Attack → Defense Mapping</strong> (new — PurpleBox attack vectors map directly to defense bundles)</li>
+<li><strong>Agent Context as Documentation</strong> (new — CLAUDE.md + CONTEXT.md + ADR as living context)</li>
+<li><strong>Skill Security Governance Stack</strong> (new — 4-layer model: AST10 risk taxonomy → ATF maturity model → empirical data → technical controls; see <a href="concepts/skill-security-governance.html">skill security governance</a>)</li>
+<li><strong>SKILL.md as Universal Portable Unit</strong> (new — confirmed identical operation across 5 major tools)</li>
+<li><strong>Enterprise Platform Convergence</strong> (new — Microsoft + Spring AI both shipping production-grade implementations)</li>
+<li><strong>Three-Layer Validation Stack</strong> (Iteration 13 — pre-commit → CI/CD → registry; see <a href="concepts/three-layer-validation-stack.html">three layer validation stack</a>)</li>
+<li><strong>Bidirectional SHACL↔LLM Bridge</strong> (Iteration 13 — text → shapes → explanation → text; see <a href="concepts/bidirectional-shacl-llm-bridge.html">bidirectional shacl llm bridge</a>)</li>
+<li><strong>Registry-Level Security Scanning</strong> (Iteration 13 — 12-category threat taxonomy + content-SHA provenance + auto-rate feedback)</li>
+<li><strong>Domain-Specific Ontology Skills</strong> (Iteration 13 — OBO Foundry skills for ontology/biocuration work; OAK, ROBOT, DOSDP)</li>
+<li><strong>Domain-Coherent Bioinformatics Bundle</strong> (NEW Iteration 14 — 88 skills, reproducibility bundles, reference genome asset, validation leaderboard, multi-modal access; see <a href="examples/clawbio-bioinformatics-skills.html">clawbio bioinformatics skills</a>)</li>
+<li><strong>Process-as-Skill SDLC Coverage</strong> (NEW Iteration 14 — 23 skills spanning full lifecycle with anti-rationalization, verification gates, personas; see <a href="examples/addyosmani-engineering-skills.html">addyosmani engineering skills</a>)</li>
+<li><strong>Infrastructure-as-Agent-Capabilities</strong> (NEW Iteration 14 — 6-component protocol for conference participation: registration, feeds, communication, moderation, benchmarking, memory; see <a href="examples/agents-at-conferences-infrastructure.html">agents at conferences infrastructure</a>)</li>
+<li><strong>Exact Dependency Pinning + Offline Validation</strong> (NEW Iteration 14 — DSPy 3.2.1 pinned, 34+ validators, --dry-run smoke tests, committed benchmarks; see <a href="examples/dspy-agent-skills-bundle.html">dspy agent skills bundle</a>)</li>
+<li><strong>Autonomous Science Workflow Theory</strong> (NEW Iteration 14 — State machine abstraction, Intelligence×Composition matrix, co-pilot→lab-pilot, SDLs as skill bundles; see <a href="papers/sc25-autonomous-science-workflows.html">sc25 autonomous science workflows</a>, <a href="papers/scaince-ai-lab-automation.html">scaince ai lab automation</a>)</li>
+<li><strong>Formal Skill Definition S=(C,π,T,R)</strong> (NEW Iteration 36 — SoK provides canonical formal vocabulary; skills ≠ tools ≠ plans ≠ memory; simultaneously executable, reusable, governable; see <a href="papers/sok-agentic-skills-beyond-tool-use.html">sok agentic skills beyond tool use</a>)</li>
+<li><strong>Co-Evolutionary Verification</strong> (NEW Iteration 36 — Dynamic verification where the verifier co-evolves with the skill generator; generalizes static validation to adaptive feedback loops; see <a href="examples/coevoskills-self-evolving-skills.html">coevoskills self evolving skills</a>)</li>
+<li><strong>SLSA/in-toto Provenance for Skills</strong> (NEW Iteration 36 — Extending supply chain provenance to the &quot;intent → source&quot; gap; neutral observer pattern for skill generation; see <a href="examples/supply-chain-agentic-factory-in-toto.html">supply chain agentic factory in toto</a>)</li>
+<li><strong>Marketplace Supply-Chain Attack Quantification</strong> (NEW Iteration 36 — ClawHavoc: ~13% malicious rate; SoK: 26.1% vulnerable; workshop: 37% flaw rate; convergent quantification of marketplace risk; see <a href="examples/clawhavoc-marketplace-attack.html">clawhavoc marketplace attack</a>)</li>
+<li><strong>Dependency-Aware Retrieval Validated</strong> (NEW Iteration 36 — GoS v3: +25.55% reward, -56.72% tokens on SkillsBench; dependency-aware bundle retrieval outperforms flat in both quality and efficiency; see <a href="examples/graph-of-skills-dependency-retrieval.html">graph of skills dependency retrieval</a>)</li>
+<li><strong>Six-Layer Skill Taxonomy</strong> (NEW Iteration 36 — Ontology→Representation→Lifecycle→Runtime→Governance→Applications; comprehensive structural framework; see <a href="papers/survey-agent-skills-procedural-infrastructure.html">survey agent skills procedural infrastructure</a>)</li>
+<li><strong>Skill Optimization Triad</strong> (NEW Iteration 37 — Three distinct optimization approaches: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction); address configuration, content+verifier, and token efficiency axes; could compose; see <a href="examples/skillmoo-multi-objective-optimization.html">skillmoo multi objective optimization</a>, <a href="examples/skillreducer-token-efficiency.html">skillreducer token efficiency</a>)</li>
+<li><strong>Less-Is-More Effect</strong> (NEW Iteration 37 — Removing non-essential skill content <em>improves</em> functional quality by 2.8%; progressive disclosure (load on demand) is the architectural pattern; challenges &quot;more context = better&quot; assumption; see <a href="examples/skillreducer-token-efficiency.html">skillreducer token efficiency</a>)</li>
+<li><strong>Skill Composition as Core Capability</strong> (NEW Iteration 37 — SkillCraft validates that composing tools into reusable skills strongly correlates with agent success; 80% token savings from caching; auto-composition by agents (inverse of static bundles); see <a href="examples/skillcraft-benchmark.html">skillcraft benchmark</a>)</li>
+<li><strong>Hierarchical Security Triage with LLM Jury</strong> (NEW Iteration 37 — Three-layer pipeline: heuristic→LLM analysis→LLM jury (3-LLM voting+debate); production-ready at $0.006/skill; cross-ecosystem portable; see <a href="examples/skillsieve-malicious-skill-detection.html">skillsieve malicious skill detection</a>)</li>
+<li><strong>Skills + Ontology Closed Loop</strong> (NEW Iteration 37 — Knowledge→ontology→skills→knowledge feedback; NL extraction builds ontologies; conversation-invokable skills; autonomous planning for novel tasks; see <a href="examples/ai-km-ontology-skills.html">ai km ontology skills</a>)</li>
+<li><strong>DAG-Based Skill Composition Runtime</strong> (NEW Iteration 37 — Declarative YAML capabilities composed as DAGs with policy gates, provenance, and deterministic baselines; 122 capabilities, 36 skills; see <a href="examples/orca-cognitive-runtime.html">orca cognitive runtime</a>)</li>
+<li><strong>Marketplace Consolidation</strong> (NEW Iteration 37 — 8 marketplaces → 3-4 within a year; security scanning + creator payments becoming table stakes; MCP-based access replacing downloads; see <a href="examples/marketplace-landscape-2026.html">marketplace landscape 2026</a>)</li>
+<li><strong>Skill Optimization Taxonomy Completing</strong> (NEW Iteration 38 — Five approaches mapped: SkillMOO (search/NSGA-II), CoEvoSkills (evolution), SkillReducer (content reduction), SkillOpt (training/gradient-like text optimization), EvoSkill (failure-driven discovery); SkillOpt outperforms all on 52/52 cells; see <a href="examples/skillopt-trainable-skill-parameters.html">skillopt trainable skill parameters</a>, <a href="examples/evoskill-automated-skill-discovery.html">evoskill automated skill discovery</a>)</li>
+<li><strong>Skill Transfer Quantified</strong> (NEW Iteration 38 — EvoSkill zero-shot task→task +5.3%, SkillOpt cross-harness Codex→Claude Code +59.7 + cross-model-scale, SkillMigrator cross-domain 35.4%; skills capture reusable workflow knowledge, not benchmark-specific instructions; see <a href="examples/evoskill-automated-skill-discovery.html">evoskill automated skill discovery</a>, <a href="examples/skillopt-trainable-skill-parameters.html">skillopt trainable skill parameters</a>, <a href="examples/skillmigrator-cross-domain-transfer.html">skillmigrator cross domain transfer</a>)</li>
+<li><strong>Skill Generation Is the Bottleneck</strong> (NEW Iteration 38 — SkillGenBench: 7-27% pass@3 for auto-generation; 2-3x harder than skill use; negative transfer risk; shifts research frontier from use to creation; see <a href="examples/skillgenbench-skill-generation-benchmark.html">skillgenbench skill generation benchmark</a>)</li>
+<li><strong>Skills Need OS-Level Management</strong> (NEW Iteration 38 — Skill OS paper: ~100K skill analysis reveals 6 properties; OS abstractions needed (caching, env construction, global management, failure handling, security); ORCA is early implementation; see <a href="examples/skill-os-skills-as-apps.html">skill os skills as apps</a>, <a href="examples/orca-cognitive-runtime.html">orca cognitive runtime</a>)</li>
+<li><strong>Provenance Standards Converging</strong> (NEW Iteration 38 — PROV-AGENT (W3C PROV + MCP) + SLSA/in-toto + W3C Agent Protocol CG; provenance becoming standard context element for skill bundles; see <a href="examples/prov-agent-unified-provenance.html">prov agent unified provenance</a>)</li>
+<li><strong>Cross-Domain Transfer via Structural Layout</strong> (NEW Iteration 38 — SkillMigrator's TIP abstraction (accessibility-tree skeleton + slot schema) enables cross-domain skill transfer by matching layout structure, not element IDs; novel architectural pattern; see <a href="examples/skillmigrator-cross-domain-transfer.html">skillmigrator cross domain transfer</a>)</li>
+</ol>
+<h2>Context Element Coverage</h2>
+<table>
+<thead>
+<tr>
+<th>Context Element</th>
+<th>Examples</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SHACL Validation</td>
+<td>7</td>
+<td><strong>Strong</strong></td>
+</tr>
+<tr>
+<td>Constraint Rules</td>
+<td>7</td>
+<td><strong>Strong</strong> (+1: Iron Laws/Red Flags)</td>
+</tr>
+<tr>
+<td>Rules / Authorization</td>
+<td>5</td>
+<td><strong>Strong</strong></td>
+</tr>
+<tr>
+<td>Ontology / Taxonomy</td>
+<td>10</td>
+<td><strong>Strong</strong> (+1: ai4curation OBO tooling, +1: ClawBio bioinformatics)</td>
+</tr>
+<tr>
+<td>Governance / Verification</td>
+<td>9</td>
+<td><strong>Strong</strong> (+1: conference moderation layer)</td>
+</tr>
+<tr>
+<td>Security Framework / Certification</td>
+<td>4</td>
+<td><strong>Growing</strong></td>
+</tr>
+<tr>
+<td>Platform Implementation</td>
+<td>6</td>
+<td><strong>Growing</strong> (+1: Addy Osmani cross-platform)</td>
+</tr>
+<tr>
+<td>Plugin / Distribution</td>
+<td>4</td>
+<td><strong>Growing</strong> (+1: Agentic Awesome Skills installable mega-catalog)</td>
+</tr>
+<tr>
+<td>Academic Survey</td>
+<td>2</td>
+<td><strong>Growing</strong> (+1: arXiv:2602.08004; Agent Skills '26 workshop)</td>
+</tr>
+<tr>
+<td>Universal Skill Format</td>
+<td>1</td>
+<td><strong>Emerging</strong></td>
+</tr>
+<tr>
+<td>Dependency Graphs</td>
+<td>2</td>
+<td><strong>Stable</strong></td>
+</tr>
+<tr>
+<td>YAML Configuration</td>
+<td>9+</td>
+<td><strong>Ubiquitous</strong></td>
+</tr>
+<tr>
+<td>MCP Dependencies</td>
+<td>4</td>
+<td><strong>Emerging</strong> (+1: conference feed API)</td>
+</tr>
+<tr>
+<td>SSSOM Mapping</td>
+<td>4</td>
+<td><strong>Mature</strong></td>
+</tr>
+<tr>
+<td>Supply Chain / Provenance</td>
+<td>6</td>
+<td><strong>Growing</strong> (+1: OpenMontage checkpoint audit trail)</td>
+</tr>
+<tr>
+<td>Benchmarking</td>
+<td>2</td>
+<td><strong>Emerging</strong> (+1: DSPy GEPA; SkillsBench at workshop)</td>
+</tr>
+<tr>
+<td>LLM-as-Judge Quality Scoring</td>
+<td>1</td>
+<td><strong>NEW</strong> (skill-validator)</td>
+</tr>
+<tr>
+<td>Multi-Agent SHACL Generation</td>
+<td>1</td>
+<td><strong>NEW</strong> (text2shacl)</td>
+</tr>
+<tr>
+<td>Content-Addressed Versioning</td>
+<td>1</td>
+<td><strong>NEW</strong> (agentskill.sh)</td>
+</tr>
+<tr>
+<td>Pre-commit Multi-Platform Hooks</td>
+<td>1</td>
+<td><strong>NEW</strong> (skill-validator, 13 platforms)</td>
+</tr>
+<tr>
+<td><strong>Reproducibility Bundles</strong></td>
+<td><strong>2</strong></td>
+<td><strong>NEW</strong> (ClawBio per-execution, DSPy pinned deps + benchmarks)</td>
+</tr>
+<tr>
+<td><strong>Reference Data Assets</strong></td>
+<td><strong>3</strong></td>
+<td><strong>Growing</strong> (+1: K-Dense 100+ scientific DBs)</td>
+</tr>
+<tr>
+<td><strong>Infrastructure Protocols</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (Agents at Conferences 6-component protocol)</td>
+</tr>
+<tr>
+<td><strong>Specification Layer Contracts</strong></td>
+<td><strong>2</strong></td>
+<td><strong>NEW</strong> (ClawBio SKILL.md contracts, Addy Osmani Iron Laws)</td>
+</tr>
+<tr>
+<td><strong>Human Approval Gates</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (OpenMontage checkpoint gates)</td>
+</tr>
+<tr>
+<td><strong>Vendor Constraint Handbooks</strong></td>
+<td><strong>2</strong></td>
+<td><strong>Growing</strong> (+1: Vercel Labs rule catalogs)</td>
+</tr>
+<tr>
+<td><strong>Co-Evolutionary Verification</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (CoEvoSkills surrogate verifier)</td>
+</tr>
+<tr>
+<td><strong>SLSA/in-toto Provenance</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (Supply Chain Agentic Factory)</td>
+</tr>
+<tr>
+<td><strong>Formal Skill Definition</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SoK S=(C,π,T,R))</td>
+</tr>
+<tr>
+<td><strong>Six-Layer Taxonomy</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (Procedural Infrastructure survey)</td>
+</tr>
+<tr>
+<td><strong>Paper Catalog</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (Awesome-Agent-Skill-Papers)</td>
+</tr>
+<tr>
+<td><strong>Multi-Objective Optimization</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillMOO NSGA-II Pareto)</td>
+</tr>
+<tr>
+<td><strong>Delta Debugging</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillReducer adversarial delta)</td>
+</tr>
+<tr>
+<td><strong>Progressive Disclosure</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillReducer on-demand loading)</td>
+</tr>
+<tr>
+<td><strong>DAG Scheduler + Policy Gates</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (ORCA runtime)</td>
+</tr>
+<tr>
+<td><strong>Canonical Capability Taxonomy</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (ORCA 184/184 coverage)</td>
+</tr>
+<tr>
+<td><strong>Closed-Loop Knowledge↔Skills</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (AI-KM)</td>
+</tr>
+<tr>
+<td><strong>LLM Jury Voting</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillSieve 3-LLM debate)</td>
+</tr>
+<tr>
+<td><strong>Two-Tier Skill Hierarchy</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (EffiSkill Operator+Meta)</td>
+</tr>
+<tr>
+<td><strong>Auto-Composition Protocol</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillCraft agent-authored)</td>
+</tr>
+<tr>
+<td><strong>Pareto Frontier Governance</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (EvoSkill K=3 git-backed)</td>
+</tr>
+<tr>
+<td><strong>Textual Learning Rate</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillOpt per-step edit budget)</td>
+</tr>
+<tr>
+<td><strong>Validation Gating + Rejected-Edit Buffer</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillOpt training-style optimization)</td>
+</tr>
+<tr>
+<td><strong>Transferable Interaction Pattern (TIP)</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillMigrator 4-tuple)</td>
+</tr>
+<tr>
+<td><strong>Accessibility-Tree Skeleton Matching</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillMigrator TED layout)</td>
+</tr>
+<tr>
+<td><strong>W3C PROV + MCP Provenance</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (PROV-AGENT)</td>
+</tr>
+<tr>
+<td><strong>Skill OS Abstraction</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (Skill OS 100K analysis)</td>
+</tr>
+<tr>
+<td><strong>Generator-Executor Decoupling</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillGenBench)</td>
+</tr>
+<tr>
+<td><strong>Negative Transfer Detection</strong></td>
+<td><strong>1</strong></td>
+<td><strong>NEW</strong> (SkillGenBench auto-skill risk)</td>
+</tr>
+</tbody>
+</table>
+<p>See also:</p>
+<ul>
+<li><a href="concepts/skill-security-governance.html">skill security governance</a> — Complete governance stack synthesis</li>
+<li><a href="concepts/three-layer-validation-stack.html">three layer validation stack</a> — The validation architecture pattern</li>
+<li><a href="concepts/bidirectional-shacl-llm-bridge.html">bidirectional shacl llm bridge</a> — The SHACL↔LLM closed loop</li>
+<li><a href="concepts/skill-bundle-patterns.html">skill bundle patterns</a> — Foundation patterns</li>
+<li><a href="concepts/sssom-mapping-as-context.html">sssom mapping as context</a> — Mappings as context</li>
+<li><a href="concepts/constraint-rules-as-context.html">constraint rules as context</a> — Rules as context</li>
+<li><a href="concepts/validator-explanation-pattern.html">validator explanation pattern</a> — Validation + explanation pattern</li>
+</ul>
+
+        <div class="kiso-source-file">
+            <span class="kiso-source-file-label">Markdown file</span>
+            <span class="kiso-source-file-name">
+                <a class="link link-hover font-mono" href="skill-bundles.md">
+                    skill-bundles.md
+                </a>
+            </span>
+        </div>
+    </article>
+
+    
+    
+
+
+        </main>
+    </div>
+
+    <div class="drawer-side z-50">
+        <label for="kiso-navigation-drawer" aria-label="Close navigation" class="drawer-overlay"></label>
+        <aside class="flex min-h-full w-80 max-w-[85vw] flex-col bg-base-100 p-4 text-base-content">
+            <div class="mb-6 px-2 pt-2">
+                <div class="mt-1 text-lg font-semibold">Bundle content</div>
+            </div>
+            <nav class="kiso-navigation-menu flex-1">
+                
+
+    <ul class="menu menu-sm w-full gap-1 p-0">
+        
+            <li>
+                <a class=""
+                   href="index.html">
+                    <span class="kiso-navigation-menu-label">Index</span>
+                </a>
+            </li>
+        
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">case-studies</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="case-studies/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">concepts</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="concepts/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/bidirectional-shacl-llm-bridge.html">
+                            <span class="kiso-navigation-menu-label">Bidirectional SHACL ↔ LLM Bridge</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/constraint-rules-as-context.html">
+                            <span class="kiso-navigation-menu-label">Constraint Rules as Skill Context</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/okf-knowledge-bundle.html">
+                            <span class="kiso-navigation-menu-label">OKF Knowledge Bundle — Format Rules for this Wiki</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/skill-bundle-patterns.html">
+                            <span class="kiso-navigation-menu-label">Skill Bundle Patterns</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/skill-security-governance.html">
+                            <span class="kiso-navigation-menu-label">Skill Security Governance — The Emergence of Formalized Risk Management</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/sssom-mapping-as-context.html">
+                            <span class="kiso-navigation-menu-label">SSSOM Mapping as Skill Bundle Context</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/three-layer-validation-stack.html">
+                            <span class="kiso-navigation-menu-label">Three-Layer Validation Stack for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/validator-explanation-pattern.html">
+                            <span class="kiso-navigation-menu-label">Validator + Explanation Bundle Pattern</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="concepts/verified-skill-governance.html">
+                            <span class="kiso-navigation-menu-label">Verified Skill Governance Patterns</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">daily-digests</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="daily-digests/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-23-iter6.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Iteration 6)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-23-iter7-manual.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-23.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Iteration 5)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-24-iter9.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-25.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-26.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-05-28.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-05-28 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-01.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-01 — Skill Bundles Research (Iteration 13)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-02.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-02</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-03.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest 2026-06-03: Agent Skills Discovery</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-04.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest 2026-06-04: Agent Skills Standards, Catalogs &amp; Research Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-05.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-05</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-09.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-09 (Iteration 14)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-11.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-11</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-12.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-12</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-13.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-13</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-14.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-14 (Iteration 17)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-15.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-15</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-16.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-16</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-17.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-17</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-18.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-18</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-19.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-19</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-20.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-20</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-21.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-21 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-22.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-22 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-23.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-23 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-24 (Iteration 24)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-25.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-25 (Iteration 25)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-26.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-26 (Iteration 26)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-27.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-27 (Iteration 27)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-28.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-28 (Iteration 28)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-29.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-29</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-06-30.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-30 (Iteration 30)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-01.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-01 (Iteration 31)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-02.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-02 (Iteration 32)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-03.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-03 (Iteration 33)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-04.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-04 (Iteration 34)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-05.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-05 (Iteration 35)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-06.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-07-06 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-07.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-07 (Iteration 35)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-08.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-07-08 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-09.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-09 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-10.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-10 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-11.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-11 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-12.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-12 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-13.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-13 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-14.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-14 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-15.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-15 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-16.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-16 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">examples</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="examples/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/addyosmani-engineering-skills.html">
+                            <span class="kiso-navigation-menu-label">Addy Osmani Agent Skills: Production-Grade Engineering Workflows</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agent-skills-spec.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills Specification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentbound-mcp-access-control.html">
+                            <span class="kiso-navigation-menu-label">AgentBound: Declarative Access Control for MCP Servers</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentic-awesome-skills-library.html">
+                            <span class="kiso-navigation-menu-label">Agentic Awesome Skills Library</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentic-engineering-workflow-skills.html">
+                            <span class="kiso-navigation-menu-label">Agentic Engineering Workflow Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentic-trust-framework-csa.html">
+                            <span class="kiso-navigation-menu-label">Agentic Trust Framework (ATF) — Zero Trust Governance for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agents-at-conferences-infrastructure.html">
+                            <span class="kiso-navigation-menu-label">Agents at Conferences: Infrastructure for AI Agent Scientific Participation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentskill-sh-ags-security-scoring.html">
+                            <span class="kiso-navigation-menu-label">agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/ai-km-ontology-skills.html">
+                            <span class="kiso-navigation-menu-label">AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/ai4curation-curation-skills.html">
+                            <span class="kiso-navigation-menu-label">ai4curation/curation-skills — Ontology &amp; Biocuration Skill Bundle</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/anthropic-official-skills-repo.html">
+                            <span class="kiso-navigation-menu-label">Anthropic Official Skills Repository</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/arxiv-agent-skills-survey.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills for LLMs — Architecture, Acquisition, Security (arXiv Survey)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/aspire-robotics-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">ASPIRE: Agentic Skill Programming through Iterative Robot Exploration</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/assc-skill-supply-chains-skillbom.html">
+                            <span class="kiso-navigation-menu-label">ASSCs: Agent Skill Supply Chains &amp; SkillBOM</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/awesome-agent-skill-papers-catalog.html">
+                            <span class="kiso-navigation-menu-label">Awesome-Agent-Skill-Papers: Curated Paper Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/awesome-agent-skills-catalogs.html">
+                            <span class="kiso-navigation-menu-label">Awesome Agent Skills Catalogs: Ecosystem Mapping</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/awesome-openclaw-skills-catalog.html">
+                            <span class="kiso-navigation-menu-label">Awesome OpenClaw Skills — 179 CLI Utilities Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/badskill-backdoor-model-in-skill.html">
+                            <span class="kiso-navigation-menu-label">BadSkill: Backdoor Attacks via Model-in-Skill Poisoning</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/chris-ayers-plugin-ecosystem.html">
+                            <span class="kiso-navigation-menu-label">Chris Ayers — Plugin Ecosystem: Skills, Plugins, and Marketplaces</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/claude-api-skills-integration.html">
+                            <span class="kiso-navigation-menu-label">Claude API Agent Skills: Official Integration Guide</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/claude-skills-ecosystem-1116.html">
+                            <span class="kiso-navigation-menu-label">Claude Skills Ecosystem — 1,116 Skills from 500+ Repos</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/clawbio-bioinformatics-skills.html">
+                            <span class="kiso-navigation-menu-label">ClawBio: Bioinformatics-Native AI Agent Skill Library</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/clawhavoc-marketplace-attack.html">
+                            <span class="kiso-navigation-menu-label">ClawHavoc Campaign: 1,184 Malicious Skills on ClawHub</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/coevoskills-self-evolving-skills.html">
+                            <span class="kiso-navigation-menu-label">CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/dspy-agent-skills-bundle.html">
+                            <span class="kiso-navigation-menu-label">DSPy Agent Skills Bundle: Production-Grade DSPy Optimization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/dspy-agent-skills-v023.html">
+                            <span class="kiso-navigation-menu-label">DSPy Agent Skills v0.2.3 — Production-Grade DSPy 3.2.x Bundle</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/effiskill-code-efficiency-optimization.html">
+                            <span class="kiso-navigation-menu-label">EffiSkill: Agent Skill Based Code Efficiency Optimization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/evoskill-automated-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">EvoSkill: Automated Skill Discovery for Multi-Agent Systems</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/exif-automated-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">EXIF: Automated Skill Discovery for Language Agents through Exploration and Iterative Feedback</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/externalization-llm-agents-unified-review.html">
+                            <span class="kiso-navigation-menu-label">Externalization in LLM Agents: Unified Review of Memory, Skills, Protocols, and Harness</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/genesis-skills-osti.html">
+                            <span class="kiso-navigation-menu-label">Genesis Skills Repository (OSTI)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/github-cli-skill-management.html">
+                            <span class="kiso-navigation-menu-label">GitHub CLI Agent Skills Management (`gh skill`)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/graph-of-skills-dependency-retrieval.html">
+                            <span class="kiso-navigation-menu-label">Graph of Skills (GoS): Dependency-Aware Structural Retrieval</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/graphguard-os-guardrails.html">
+                            <span class="kiso-navigation-menu-label">GraphGuard OS — Guardrails for Coordinating AI Agents via Knowledge Graph</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/inside-skill-market-se-activities.html">
+                            <span class="kiso-navigation-menu-label">Inside the Skill Market: SE Activities as Reusable Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/maltool-malicious-tool-attacks.html">
+                            <span class="kiso-navigation-menu-label">MalTool: Malicious Tool Attacks on LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/marketplace-landscape-2026.html">
+                            <span class="kiso-navigation-menu-label">AI Agent Skills Marketplace Landscape 2026</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/memento-skills-agent-designing-agent.html">
+                            <span class="kiso-navigation-menu-label">Memento-Skills: Let Agents Design Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/microsoft-agent-framework-skills.html">
+                            <span class="kiso-navigation-menu-label">Microsoft Agent Framework — Enterprise Agent Skills Implementation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/mondoo-agent-skills-security.html">
+                            <span class="kiso-navigation-menu-label">Mondoo: Agent Skills Security Risk Assessment</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/nemoclaw-security-scanner.html">
+                            <span class="kiso-navigation-menu-label">NemoClaw: NVIDIA Agent Skills Security Scanner</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/nora-gis-research-agent.html">
+                            <span class="kiso-navigation-menu-label">NORA — Night Owl Research Agent</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/nvidia-skills-repo.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA Skills Repository — Multi-Product Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/nvidia-verified-agent-skills-governance.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA-Verified Agent Skills: Capability Governance for AI Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/nvidia-verified-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA Verified Agent Skills — Governance &amp; Verification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/onto-llm-mapping.html">
+                            <span class="kiso-navigation-menu-label">Onto-LLM-Mapping — SSSOM-Compliant Ontology Mapping with LLMs and RAG</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/ontologizer-openclaw-ontology-skill.html">
+                            <span class="kiso-navigation-menu-label">Ontologizer — OpenClaw Ontology Skill</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/open-ontologies-github.html">
+                            <span class="kiso-navigation-menu-label">Open Ontologies — GitHub Repository (Rust MCP Server)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/open-ontologies-paper.html">
+                            <span class="kiso-navigation-menu-label">Open Ontologies — Stable Matching Alignment Paper</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/openai-codex-skills.html">
+                            <span class="kiso-navigation-menu-label">OpenAI Codex Agent Skills — Structured Skill System</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/openclaw-pkb-skill.html">
+                            <span class="kiso-navigation-menu-label">OpenClaw PKB Skill</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/openclaw-skill-csts-tree-search.html">
+                            <span class="kiso-navigation-menu-label">OpenClaw-Skill: Collective Skill Tree Search (CSTS)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/openmontage-video-production-skills.html">
+                            <span class="kiso-navigation-menu-label">OpenMontage Video Production Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/orca-cognitive-runtime.html">
+                            <span class="kiso-navigation-menu-label">ORCA: Open Runtime for Capable Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/owasp-agentic-skills-top-10.html">
+                            <span class="kiso-navigation-menu-label">OWASP Agentic Skills Top 10 (AST10) — Security Risk Framework for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/oxo2-sssom-mapping-service.html">
+                            <span class="kiso-navigation-menu-label">OxO2 — SSSOM-Compliant Ontology Mapping Service</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/prov-agent-unified-provenance.html">
+                            <span class="kiso-navigation-menu-label">PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/purplebox-supply-chain-security.html">
+                            <span class="kiso-navigation-menu-label">PurpleBox Security — AI Agent Skills Supply Chain Risk Analysis</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/r3-skill-compatibility-routing.html">
+                            <span class="kiso-navigation-menu-label">R3-Skill: Query-Conditional Skill Routing with Compatibility</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/rdf-ontologies-skill.html">
+                            <span class="kiso-navigation-menu-label">RDF Ontologies Skill — SHACL + SPARQL Integration</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/registry-to-repository-skill-maintenance.html">
+                            <span class="kiso-navigation-menu-label">From Registry to Repository: Skill Authorship, Reuse &amp; Maintenance</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/schimatos-shacl-knowledge-graph.html">
+                            <span class="kiso-navigation-menu-label">Schimatos — SHACL-based Knowledge Graph Editor</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/scientific-agent-skills-kdense.html">
+                            <span class="kiso-navigation-menu-label">Scientific Agent Skills (K-Dense)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/shacl-1-2-spec.html">
+                            <span class="kiso-navigation-menu-label">SHACL 1.2 Core Specification — W3C Standard</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/shacl-data-quality-69-metrics.html">
+                            <span class="kiso-navigation-menu-label">SHACL 1.2 Data Quality Assessment — 69 Metrics as Shapes</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skill-bundles-research-state.html">
+                            <span class="kiso-navigation-menu-label">Current State of Skill Bundles Research (May 2026)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skill-os-skills-as-apps.html">
+                            <span class="kiso-navigation-menu-label">Skill OS: Skills as First-Class Execution Artifacts</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skill-validator-cli.html">
+                            <span class="kiso-navigation-menu-label">agent-ecosystem/skill-validator — CLI Validator + LLM-as-Judge</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skill0-skill-internalization.html">
+                            <span class="kiso-navigation-menu-label">SKILL0: In-Context Agentic RL for Skill Internalization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skill1-unified-skill-evolution-rl.html">
+                            <span class="kiso-navigation-menu-label">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillclaw-collective-skill-evolution.html">
+                            <span class="kiso-navigation-menu-label">SkillClaw: Collective Skill Evolution with Agentic Evolver</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillcraft-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillfortify-formal-verification-supply-chain.html">
+                            <span class="kiso-navigation-menu-label">SkillFortify: Formal Analysis and Supply Chain Security for Agentic AI Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillgenbench-skill-generation-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillGenBench: Benchmarking Skill Generation Pipelines</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillguard-permission-framework.html">
+                            <span class="kiso-navigation-menu-label">SkillGuard: A Permission Framework for Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillject-automated-prompt-injection.html">
+                            <span class="kiso-navigation-menu-label">SkillJect: Automated Skill-Based Prompt Injection for Coding Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillmigrator-cross-domain-transfer.html">
+                            <span class="kiso-navigation-menu-label">SkillMigrator: Cross-Domain Web Skill Transfer via Transferable Interaction Patterns</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillmoo-multi-objective-optimization.html">
+                            <span class="kiso-navigation-menu-label">SkillMOO: Multi-Objective Optimization of Agent Skills for SE</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillopt-trainable-skill-parameters.html">
+                            <span class="kiso-navigation-menu-label">SkillOpt: Agent Skills as Trainable Parameters</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillreducer-token-efficiency.html">
+                            <span class="kiso-navigation-menu-label">SkillReducer: Optimizing LLM Agent Skills for Token Efficiency</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillsbench-agent-skills-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillsBench: First Benchmark for Agent Skills Effectiveness</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillsieve-malicious-skill-detection.html">
+                            <span class="kiso-navigation-menu-label">SkillSieve: Hierarchical Triage for Detecting Malicious Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillspector-nvidia-security-scanner.html">
+                            <span class="kiso-navigation-menu-label">SkillSpector: NVIDIA Security Scanner for AI Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/spring-ai-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">Spring AI — Generic Agent Skills for the Java Ecosystem</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/sssom-mapping-protocol.html">
+                            <span class="kiso-navigation-menu-label">SSSOM Protocol — Simple Standard for Sharing Ontological Mappings</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/superpowers-engineering-discipline-skills.html">
+                            <span class="kiso-navigation-menu-label">Superpowers: Engineering Discipline as Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/supply-chain-agentic-factory-in-toto.html">
+                            <span class="kiso-navigation-menu-label">Supply Chain Security Meets the Agentic Factory (SLSA/in-toto for Skills)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/swe-skills-bench-utility-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SWE-Skills-Bench: Do Agent Skills Actually Help in Software Engineering?</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/text2shacl-multi-agent-shacl.html">
+                            <span class="kiso-navigation-menu-label">citiususc/text2shacl — Multi-Agent LangGraph Pipeline for SHACL Generation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/tool-use-firewall.html">
+                            <span class="kiso-navigation-menu-label">Tool-Use Firewall</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/validate-skill-github-action.html">
+                            <span class="kiso-navigation-menu-label">Flash Brew Digital "Validate Skill" — GitHub Action for SKILL.md Spec Compliance</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/vercel-labs-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">Vercel Labs Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/veto-agent-authorization.html">
+                            <span class="kiso-navigation-menu-label">Veto — Authorization Kernel for AI Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/vscode-copilot-skills.html">
+                            <span class="kiso-navigation-menu-label">VS Code Copilot Agent Skills — Cross-Platform Standard</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/wildclawbench-native-runtime-evaluation.html">
+                            <span class="kiso-navigation-menu-label">WildClawBench: Native-Runtime Long-Horizon Agent Evaluation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/xpshacl-explainable-shacl.html">
+                            <span class="kiso-navigation-menu-label">xpSHACL — Explainable SHACL Validation with RAG and LLMs</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/ylang-labs-agent-skills-overview.html">
+                            <span class="kiso-navigation-menu-label">Ylang Labs — Agent Skills Portable Format Overview</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">papers</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="papers/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/agentskills-workshop-2026.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills '26 (ACM CAIS Workshop)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/arxiv-2602-08004-agent-skills-analysis.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills: A Data-Driven Analysis of Claude Skills (arXiv:2602.08004)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/sc25-autonomous-science-workflows.html">
+                            <span class="kiso-navigation-menu-label">Paper: The (R)evolution of Scientific Workflows in the Agentic AI Era — Towards Autonomous Science</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/scaince-ai-lab-automation.html">
+                            <span class="kiso-navigation-menu-label">Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/sok-agentic-skills-beyond-tool-use.html">
+                            <span class="kiso-navigation-menu-label">SoK: Agentic Skills — Beyond Tool Use in LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="papers/survey-agent-skills-procedural-infrastructure.html">
+                            <span class="kiso-navigation-menu-label">A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">qa</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="qa/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-05-24-complex-qa.html">
+                            <span class="kiso-navigation-menu-label">Complex Q&amp;A — Skill Bundles Wiki</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-05-24-iter9-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A and Gap Analysis — 2026-05-24 Iteration 9</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-06-01-iter13-qa.html">
+                            <span class="kiso-navigation-menu-label">Complex Q&amp;A — 2026-06-01 (Iteration 13)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-06-lint.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A / Lint 2026-07-06</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-10-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-10</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-11-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-11 (Iteration 36)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-12-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-12 (Iteration 37)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-13-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-13 (Skill Bundles, Iteration 38)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-14-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-14 (Iteration 39)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-15-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-15 (Iteration 40)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-16-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-16 (Iteration 41)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">tools</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="tools/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="tools/agensi-marketplace-landscape.html">
+                            <span class="kiso-navigation-menu-label">AI Agent Skill Marketplace Landscape (2026)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">visualizations</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="visualizations/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+        
+            
+        
+            
+                <li>
+                    <a class=""
+                       href="log.html">
+                        <span class="kiso-navigation-menu-label">log.md</span>
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a class=""
+                       href="metrics.html">
+                        <span class="kiso-navigation-menu-label">Skill Bundles — Metrics &amp; Progress</span>
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a class="font-semibold"
+                       href="skill-bundles.html">
+                        <span class="kiso-navigation-menu-label">Skill Bundles: A Living Catalog</span>
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+            </nav>
+            <div class="mt-6 border-t border-base-300 px-2 pt-4 text-xs text-base-content/60">
+                Generated with
+                <a class="link link-hover font-semibold"
+                   href="https://oak-invest.github.io/kiso"
+                   target="kiso">
+                    Kiso
+                </a>
+            </div>
+        </aside>
+    </div>
+</div>
+
+</body>
+
+</html>

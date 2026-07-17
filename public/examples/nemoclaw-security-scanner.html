@@ -1,0 +1,2018 @@
+
+
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NemoClaw: NVIDIA Agent Skills Security Scanner</title>
+    
+        <meta name="description" content="NemoClaw is NVIDIA&#39;s **agent skill security scanning** system referenced by nvidia verified agent skills and the mondoo agent skills security analy...">
+    
+
+    
+    <link href="../assets/css/daisyui.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/themes.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/application.css" rel="stylesheet" type="text/css"/>
+
+    
+    <script src="../assets/js/browser.js"></script>
+
+    
+    <link href="../assets/favicon/kiso_favicon_light_32x32.svg" rel="icon" type="image/svg+xml"/>
+    <link href="../assets/favicon/kiso_favicon_light_32x32.svg" rel="icon" type="image/svg+xml"/>
+    <link href="../assets/favicon/kiso_favicon_light_32x32.svg" media="(prefers-color-scheme: light)"
+          rel="icon"
+          sizes="32x32" type="image/svg+xml">
+    <link href="../assets/favicon/kiso_favicon_light_16x16.svg" media="(prefers-color-scheme: light)"
+          rel="icon"
+          sizes="16x16" type="image/svg+xml">
+    <link href="../assets/favicon/kiso_favicon_light_180x180.svg" rel="apple-touch-icon" sizes="180x180">
+
+    <link href="../assets/favicon/kiso_favicon_dark_32x32.svg" media="(prefers-color-scheme: dark)"
+          rel="icon"
+          sizes="32x32" type="image/svg+xml">
+    <link href="../assets/favicon/kiso_favicon_dark_16x16.svg" media="(prefers-color-scheme: dark)"
+          rel="icon"
+          sizes="16x16" type="image/svg+xml">
+    <link href="../assets/favicon/kiso_favicon_dark_180x180.svg" rel="apple-touch-icon" sizes="180x180">
+
+    
+    
+        <link rel="alternate" type="text/plain" href="nemoclaw-security-scanner.md">
+    
+
+</head>
+
+<body>
+
+<div class="drawer min-h-screen bg-base-200 text-base-content">
+    <input id="kiso-navigation-drawer" type="checkbox" class="drawer-toggle"/>
+
+    <div class="drawer-content min-h-screen">
+        <div class="fixed left-3 top-3 z-40 flex gap-2 sm:left-4 sm:top-4">
+            <a href="../index.html"
+               aria-label="Home"
+               class="btn btn-square btn-ghost bg-base-100/90 shadow-sm backdrop-blur">
+                <span class="kiso-home-icon" aria-hidden="true"></span>
+            </a>
+            <label for="kiso-navigation-drawer"
+                   aria-label="Open navigation"
+                   class="btn btn-square btn-ghost bg-base-100/90 shadow-sm backdrop-blur">
+                <span class="kiso-hamburger" aria-hidden="true"></span>
+            </label>
+        </div>
+
+        
+        <main class="container mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:py-12">
+
+            
+
+    
+    
+    <section class="mb-8 overflow-hidden rounded-box border border-base-300 bg-base-100 shadow-sm">
+
+        
+        <div class="border-b border-base-300 bg-base-300/30 px-6 py-6 sm:px-8">
+
+            
+            
+            <div class="mb-4 flex flex-wrap items-center gap-2">
+                <span class="badge badge-primary badge-lg">Concept</span>
+                
+                    <span class="badge badge-secondary badge-lg">Skill Bundle Example</span>
+                
+            </div>
+
+            
+            
+            
+                <div class="max-w-4xl text-4xl font-bold leading-tight tracking-normal sm:text-5xl">
+                    NemoClaw: NVIDIA Agent Skills Security Scanner
+                </div>
+            
+
+            
+            
+            
+                <p class="mt-4 max-w-3xl text-lg leading-8 text-base-content/70">
+                    NemoClaw is NVIDIA's **agent skill security scanning** system referenced by nvidia verified agent skills and the mondoo agent skills security analy...
+                </p>
+            
+
+        </div>
+
+        
+        
+            
+            <div class="grid gap-0 divide-y divide-base-300 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.45fr)] md:divide-x md:divide-y-0">
+
+                
+                
+                    <div class="px-6 py-5 sm:px-8">
+                        <div class="text-xs font-semibold uppercase text-base-content/50">Resource</div>
+                        <a class="mt-2 block break-words font-mono text-sm text-primary underline-offset-4 hover:underline"
+                           href="https://mondoo.com/blog/agent-skills-real-power-real-risk">
+                            https://mondoo.com/blog/agent-skills-real-power-real-risk
+                        </a>
+                    </div>
+                
+
+                
+                
+                    <div class="px-6 py-5 sm:px-8">
+                        <div class="mb-3 text-xs font-semibold uppercase text-base-content/50">Tags</div>
+                        <div class="flex flex-wrap gap-2">
+                            
+                        </div>
+                    </div>
+                
+
+            </div>
+        
+    </section>
+
+    
+    <article class="kiso-content">
+        <h1>NemoClaw: NVIDIA Agent Skills Security Scanner</h1>
+<h2>Overview</h2>
+<p>NemoClaw is NVIDIA's <strong>agent skill security scanning</strong> system referenced by <a href="nvidia-verified-agent-skills.html">nvidia verified agent skills</a> and the <a href="mondoo-agent-skills-security.html">mondoo agent skills security</a> analysis. It provides LLM-assisted security review of skill definitions, scripts, and bundled resources to detect vulnerabilities, prompt injections, and malicious patterns that traditional static analysis misses.</p>
+<p><strong>Context Elements:</strong> LLM-assisted reasoning for security review · Vulnerability detection patterns · SKILL.md analysis · Script scanning · Prompt injection detection</p>
+<h2>Capabilities</h2>
+<p>Based on NVIDIA's verified agent skills ecosystem:</p>
+<ul>
+<li>Detects hidden instructions (HTML comments, Unicode invisible text)</li>
+<li>Identifies credential harvesting patterns in bundled scripts</li>
+<li>Flags suspicious network calls in <code>scripts/</code> directories</li>
+<li>Validates that allowed-tools constraints are appropriate for the skill's stated purpose</li>
+<li>Analyzes SKILL.md instructions for manipulation patterns</li>
+</ul>
+<h2>Relationship to Other Context Elements</h2>
+<p>NemoClaw scanning represents the <strong>LLM-assisted validation</strong> pattern complementing the cryptographic signing in <a href="nvidia-verified-agent-skills.html">nvidia verified agent skills</a>:</p>
+<ul>
+<li><strong>OpenSSF signing</strong> verifies authenticity (who published this skill)</li>
+<li><strong>NemoClaw scanning</strong> verifies intent (what does this skill actually do)</li>
+<li>Together they form the two pillars of <a href="../concepts/verified-skill-governance.html">verified skill governance</a></li>
+</ul>
+<h2>Confidence</h2>
+<p>7/10 — Referenced in both NVIDIA verified agents docs and Mondoo security analysis as an active tool.</p>
+<h2>Sources</h2>
+<ul>
+<li>Referenced in <a href="https://mondoo.com/blog/agent-skills-real-power-real-risk">https://mondoo.com/blog/agent-skills-real-power-real-risk</a></li>
+<li>Referenced in NVIDIA verified agent skills ecosystem documentation</li>
+</ul>
+
+        <div class="kiso-source-file">
+            <span class="kiso-source-file-label">Markdown file</span>
+            <span class="kiso-source-file-name">
+                <a class="link link-hover font-mono" href="nemoclaw-security-scanner.md">
+                    nemoclaw-security-scanner.md
+                </a>
+            </span>
+        </div>
+    </article>
+
+    
+    
+
+
+        </main>
+    </div>
+
+    <div class="drawer-side z-50">
+        <label for="kiso-navigation-drawer" aria-label="Close navigation" class="drawer-overlay"></label>
+        <aside class="flex min-h-full w-80 max-w-[85vw] flex-col bg-base-100 p-4 text-base-content">
+            <div class="mb-6 px-2 pt-2">
+                <div class="mt-1 text-lg font-semibold">Bundle content</div>
+            </div>
+            <nav class="kiso-navigation-menu flex-1">
+                
+
+    <ul class="menu menu-sm w-full gap-1 p-0">
+        
+            <li>
+                <a class=""
+                   href="../index.html">
+                    <span class="kiso-navigation-menu-label">Index</span>
+                </a>
+            </li>
+        
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">case-studies</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../case-studies/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">concepts</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../concepts/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/bidirectional-shacl-llm-bridge.html">
+                            <span class="kiso-navigation-menu-label">Bidirectional SHACL ↔ LLM Bridge</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/constraint-rules-as-context.html">
+                            <span class="kiso-navigation-menu-label">Constraint Rules as Skill Context</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/okf-knowledge-bundle.html">
+                            <span class="kiso-navigation-menu-label">OKF Knowledge Bundle — Format Rules for this Wiki</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/skill-bundle-patterns.html">
+                            <span class="kiso-navigation-menu-label">Skill Bundle Patterns</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/skill-security-governance.html">
+                            <span class="kiso-navigation-menu-label">Skill Security Governance — The Emergence of Formalized Risk Management</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/sssom-mapping-as-context.html">
+                            <span class="kiso-navigation-menu-label">SSSOM Mapping as Skill Bundle Context</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/three-layer-validation-stack.html">
+                            <span class="kiso-navigation-menu-label">Three-Layer Validation Stack for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/validator-explanation-pattern.html">
+                            <span class="kiso-navigation-menu-label">Validator + Explanation Bundle Pattern</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../concepts/verified-skill-governance.html">
+                            <span class="kiso-navigation-menu-label">Verified Skill Governance Patterns</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">daily-digests</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../daily-digests/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-23-iter6.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Iteration 6)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-23-iter7-manual.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-23.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-05-23 (Iteration 5)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-24-iter9.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-25.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-26.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-05-28.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-05-28 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-01.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-01 — Skill Bundles Research (Iteration 13)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-02.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-02</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-03.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest 2026-06-03: Agent Skills Discovery</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-04.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest 2026-06-04: Agent Skills Standards, Catalogs &amp; Research Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-05.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-05</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-09.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-09 (Iteration 14)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-11.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-11</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-12.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-12</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-13.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-13</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-14.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-14 (Iteration 17)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-15.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-15</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-16.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-16</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-17.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-17</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-18.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-18</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-19.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-19</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-20.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-20</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-21.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-21 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-22.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-22 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-23.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-06-23 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-24 (Iteration 24)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-25.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-25 (Iteration 25)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-26.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-26 (Iteration 26)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-27.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-27 (Iteration 27)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-28.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-28 (Iteration 28)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-29.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-29</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-06-30.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-06-30 (Iteration 30)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-01.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-01 (Iteration 31)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-02.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-02 (Iteration 32)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-03.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-03 (Iteration 33)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-04.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-04 (Iteration 34)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-05.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-05 (Iteration 35)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-06.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-07-06 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-07.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-07 (Iteration 35)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-08.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest: 2026-07-08 — Skill Bundles Research</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-09.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-09 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-10.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-10 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-11.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-11 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-12.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-12 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-13.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-13 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-14.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-14 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-15.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-15 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../daily-digests/2026-07-16.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-16 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details open>
+        <summary
+                class="menu-active"><span class="kiso-navigation-menu-label">examples</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../examples/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/addyosmani-engineering-skills.html">
+                            <span class="kiso-navigation-menu-label">Addy Osmani Agent Skills: Production-Grade Engineering Workflows</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agent-skills-spec.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills Specification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agentbound-mcp-access-control.html">
+                            <span class="kiso-navigation-menu-label">AgentBound: Declarative Access Control for MCP Servers</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agentic-awesome-skills-library.html">
+                            <span class="kiso-navigation-menu-label">Agentic Awesome Skills Library</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agentic-engineering-workflow-skills.html">
+                            <span class="kiso-navigation-menu-label">Agentic Engineering Workflow Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agentic-trust-framework-csa.html">
+                            <span class="kiso-navigation-menu-label">Agentic Trust Framework (ATF) — Zero Trust Governance for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agents-at-conferences-infrastructure.html">
+                            <span class="kiso-navigation-menu-label">Agents at Conferences: Infrastructure for AI Agent Scientific Participation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/agentskill-sh-ags-security-scoring.html">
+                            <span class="kiso-navigation-menu-label">agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/ai-km-ontology-skills.html">
+                            <span class="kiso-navigation-menu-label">AI-KM: Agent Skills and Ontology-Driven Knowledge Modeling</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/ai4curation-curation-skills.html">
+                            <span class="kiso-navigation-menu-label">ai4curation/curation-skills — Ontology &amp; Biocuration Skill Bundle</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/anthropic-official-skills-repo.html">
+                            <span class="kiso-navigation-menu-label">Anthropic Official Skills Repository</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/arxiv-agent-skills-survey.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills for LLMs — Architecture, Acquisition, Security (arXiv Survey)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/aspire-robotics-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">ASPIRE: Agentic Skill Programming through Iterative Robot Exploration</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/assc-skill-supply-chains-skillbom.html">
+                            <span class="kiso-navigation-menu-label">ASSCs: Agent Skill Supply Chains &amp; SkillBOM</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/awesome-agent-skill-papers-catalog.html">
+                            <span class="kiso-navigation-menu-label">Awesome-Agent-Skill-Papers: Curated Paper Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/awesome-agent-skills-catalogs.html">
+                            <span class="kiso-navigation-menu-label">Awesome Agent Skills Catalogs: Ecosystem Mapping</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/awesome-openclaw-skills-catalog.html">
+                            <span class="kiso-navigation-menu-label">Awesome OpenClaw Skills — 179 CLI Utilities Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/badskill-backdoor-model-in-skill.html">
+                            <span class="kiso-navigation-menu-label">BadSkill: Backdoor Attacks via Model-in-Skill Poisoning</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/chris-ayers-plugin-ecosystem.html">
+                            <span class="kiso-navigation-menu-label">Chris Ayers — Plugin Ecosystem: Skills, Plugins, and Marketplaces</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/claude-api-skills-integration.html">
+                            <span class="kiso-navigation-menu-label">Claude API Agent Skills: Official Integration Guide</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/claude-skills-ecosystem-1116.html">
+                            <span class="kiso-navigation-menu-label">Claude Skills Ecosystem — 1,116 Skills from 500+ Repos</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/clawbio-bioinformatics-skills.html">
+                            <span class="kiso-navigation-menu-label">ClawBio: Bioinformatics-Native AI Agent Skill Library</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/clawhavoc-marketplace-attack.html">
+                            <span class="kiso-navigation-menu-label">ClawHavoc Campaign: 1,184 Malicious Skills on ClawHub</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/coevoskills-self-evolving-skills.html">
+                            <span class="kiso-navigation-menu-label">CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/dspy-agent-skills-bundle.html">
+                            <span class="kiso-navigation-menu-label">DSPy Agent Skills Bundle: Production-Grade DSPy Optimization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/dspy-agent-skills-v023.html">
+                            <span class="kiso-navigation-menu-label">DSPy Agent Skills v0.2.3 — Production-Grade DSPy 3.2.x Bundle</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/effiskill-code-efficiency-optimization.html">
+                            <span class="kiso-navigation-menu-label">EffiSkill: Agent Skill Based Code Efficiency Optimization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/evoskill-automated-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">EvoSkill: Automated Skill Discovery for Multi-Agent Systems</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/exif-automated-skill-discovery.html">
+                            <span class="kiso-navigation-menu-label">EXIF: Automated Skill Discovery for Language Agents through Exploration and Iterative Feedback</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/externalization-llm-agents-unified-review.html">
+                            <span class="kiso-navigation-menu-label">Externalization in LLM Agents: Unified Review of Memory, Skills, Protocols, and Harness</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/genesis-skills-osti.html">
+                            <span class="kiso-navigation-menu-label">Genesis Skills Repository (OSTI)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/github-cli-skill-management.html">
+                            <span class="kiso-navigation-menu-label">GitHub CLI Agent Skills Management (`gh skill`)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/graph-of-skills-dependency-retrieval.html">
+                            <span class="kiso-navigation-menu-label">Graph of Skills (GoS): Dependency-Aware Structural Retrieval</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/graphguard-os-guardrails.html">
+                            <span class="kiso-navigation-menu-label">GraphGuard OS — Guardrails for Coordinating AI Agents via Knowledge Graph</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/inside-skill-market-se-activities.html">
+                            <span class="kiso-navigation-menu-label">Inside the Skill Market: SE Activities as Reusable Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/maltool-malicious-tool-attacks.html">
+                            <span class="kiso-navigation-menu-label">MalTool: Malicious Tool Attacks on LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/marketplace-landscape-2026.html">
+                            <span class="kiso-navigation-menu-label">AI Agent Skills Marketplace Landscape 2026</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/memento-skills-agent-designing-agent.html">
+                            <span class="kiso-navigation-menu-label">Memento-Skills: Let Agents Design Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/microsoft-agent-framework-skills.html">
+                            <span class="kiso-navigation-menu-label">Microsoft Agent Framework — Enterprise Agent Skills Implementation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/mondoo-agent-skills-security.html">
+                            <span class="kiso-navigation-menu-label">Mondoo: Agent Skills Security Risk Assessment</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class="font-semibold"
+                           href="../examples/nemoclaw-security-scanner.html">
+                            <span class="kiso-navigation-menu-label">NemoClaw: NVIDIA Agent Skills Security Scanner</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/nora-gis-research-agent.html">
+                            <span class="kiso-navigation-menu-label">NORA — Night Owl Research Agent</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/nvidia-skills-repo.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA Skills Repository — Multi-Product Catalog</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/nvidia-verified-agent-skills-governance.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA-Verified Agent Skills: Capability Governance for AI Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/nvidia-verified-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">NVIDIA Verified Agent Skills — Governance &amp; Verification</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/onto-llm-mapping.html">
+                            <span class="kiso-navigation-menu-label">Onto-LLM-Mapping — SSSOM-Compliant Ontology Mapping with LLMs and RAG</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/ontologizer-openclaw-ontology-skill.html">
+                            <span class="kiso-navigation-menu-label">Ontologizer — OpenClaw Ontology Skill</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/open-ontologies-github.html">
+                            <span class="kiso-navigation-menu-label">Open Ontologies — GitHub Repository (Rust MCP Server)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/open-ontologies-paper.html">
+                            <span class="kiso-navigation-menu-label">Open Ontologies — Stable Matching Alignment Paper</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/openai-codex-skills.html">
+                            <span class="kiso-navigation-menu-label">OpenAI Codex Agent Skills — Structured Skill System</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/openclaw-pkb-skill.html">
+                            <span class="kiso-navigation-menu-label">OpenClaw PKB Skill</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/openclaw-skill-csts-tree-search.html">
+                            <span class="kiso-navigation-menu-label">OpenClaw-Skill: Collective Skill Tree Search (CSTS)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/openmontage-video-production-skills.html">
+                            <span class="kiso-navigation-menu-label">OpenMontage Video Production Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/orca-cognitive-runtime.html">
+                            <span class="kiso-navigation-menu-label">ORCA: Open Runtime for Capable Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/owasp-agentic-skills-top-10.html">
+                            <span class="kiso-navigation-menu-label">OWASP Agentic Skills Top 10 (AST10) — Security Risk Framework for Skill Bundles</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/oxo2-sssom-mapping-service.html">
+                            <span class="kiso-navigation-menu-label">OxO2 — SSSOM-Compliant Ontology Mapping Service</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/prov-agent-unified-provenance.html">
+                            <span class="kiso-navigation-menu-label">PROV-AGENT: Unified Provenance for Tracking AI Agent Interactions</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/purplebox-supply-chain-security.html">
+                            <span class="kiso-navigation-menu-label">PurpleBox Security — AI Agent Skills Supply Chain Risk Analysis</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/r3-skill-compatibility-routing.html">
+                            <span class="kiso-navigation-menu-label">R3-Skill: Query-Conditional Skill Routing with Compatibility</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/rdf-ontologies-skill.html">
+                            <span class="kiso-navigation-menu-label">RDF Ontologies Skill — SHACL + SPARQL Integration</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/registry-to-repository-skill-maintenance.html">
+                            <span class="kiso-navigation-menu-label">From Registry to Repository: Skill Authorship, Reuse &amp; Maintenance</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/schimatos-shacl-knowledge-graph.html">
+                            <span class="kiso-navigation-menu-label">Schimatos — SHACL-based Knowledge Graph Editor</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/scientific-agent-skills-kdense.html">
+                            <span class="kiso-navigation-menu-label">Scientific Agent Skills (K-Dense)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/shacl-1-2-spec.html">
+                            <span class="kiso-navigation-menu-label">SHACL 1.2 Core Specification — W3C Standard</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/shacl-data-quality-69-metrics.html">
+                            <span class="kiso-navigation-menu-label">SHACL 1.2 Data Quality Assessment — 69 Metrics as Shapes</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skill-bundles-research-state.html">
+                            <span class="kiso-navigation-menu-label">Current State of Skill Bundles Research (May 2026)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skill-os-skills-as-apps.html">
+                            <span class="kiso-navigation-menu-label">Skill OS: Skills as First-Class Execution Artifacts</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skill-validator-cli.html">
+                            <span class="kiso-navigation-menu-label">agent-ecosystem/skill-validator — CLI Validator + LLM-as-Judge</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skill0-skill-internalization.html">
+                            <span class="kiso-navigation-menu-label">SKILL0: In-Context Agentic RL for Skill Internalization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skill1-unified-skill-evolution-rl.html">
+                            <span class="kiso-navigation-menu-label">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillclaw-collective-skill-evolution.html">
+                            <span class="kiso-navigation-menu-label">SkillClaw: Collective Skill Evolution with Agentic Evolver</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillcraft-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillCraft: Can LLM Agents Learn to Use Tools Skillfully?</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillfortify-formal-verification-supply-chain.html">
+                            <span class="kiso-navigation-menu-label">SkillFortify: Formal Analysis and Supply Chain Security for Agentic AI Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillgenbench-skill-generation-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillGenBench: Benchmarking Skill Generation Pipelines</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillguard-permission-framework.html">
+                            <span class="kiso-navigation-menu-label">SkillGuard: A Permission Framework for Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillject-automated-prompt-injection.html">
+                            <span class="kiso-navigation-menu-label">SkillJect: Automated Skill-Based Prompt Injection for Coding Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillmigrator-cross-domain-transfer.html">
+                            <span class="kiso-navigation-menu-label">SkillMigrator: Cross-Domain Web Skill Transfer via Transferable Interaction Patterns</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillmoo-multi-objective-optimization.html">
+                            <span class="kiso-navigation-menu-label">SkillMOO: Multi-Objective Optimization of Agent Skills for SE</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillopt-trainable-skill-parameters.html">
+                            <span class="kiso-navigation-menu-label">SkillOpt: Agent Skills as Trainable Parameters</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillreducer-token-efficiency.html">
+                            <span class="kiso-navigation-menu-label">SkillReducer: Optimizing LLM Agent Skills for Token Efficiency</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillsbench-agent-skills-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SkillsBench: First Benchmark for Agent Skills Effectiveness</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillsieve-malicious-skill-detection.html">
+                            <span class="kiso-navigation-menu-label">SkillSieve: Hierarchical Triage for Detecting Malicious Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/skillspector-nvidia-security-scanner.html">
+                            <span class="kiso-navigation-menu-label">SkillSpector: NVIDIA Security Scanner for AI Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/spring-ai-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">Spring AI — Generic Agent Skills for the Java Ecosystem</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/sssom-mapping-protocol.html">
+                            <span class="kiso-navigation-menu-label">SSSOM Protocol — Simple Standard for Sharing Ontological Mappings</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/superpowers-engineering-discipline-skills.html">
+                            <span class="kiso-navigation-menu-label">Superpowers: Engineering Discipline as Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/supply-chain-agentic-factory-in-toto.html">
+                            <span class="kiso-navigation-menu-label">Supply Chain Security Meets the Agentic Factory (SLSA/in-toto for Skills)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/swe-skills-bench-utility-benchmark.html">
+                            <span class="kiso-navigation-menu-label">SWE-Skills-Bench: Do Agent Skills Actually Help in Software Engineering?</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/text2shacl-multi-agent-shacl.html">
+                            <span class="kiso-navigation-menu-label">citiususc/text2shacl — Multi-Agent LangGraph Pipeline for SHACL Generation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/tool-use-firewall.html">
+                            <span class="kiso-navigation-menu-label">Tool-Use Firewall</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/validate-skill-github-action.html">
+                            <span class="kiso-navigation-menu-label">Flash Brew Digital "Validate Skill" — GitHub Action for SKILL.md Spec Compliance</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/vercel-labs-agent-skills.html">
+                            <span class="kiso-navigation-menu-label">Vercel Labs Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/veto-agent-authorization.html">
+                            <span class="kiso-navigation-menu-label">Veto — Authorization Kernel for AI Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/vscode-copilot-skills.html">
+                            <span class="kiso-navigation-menu-label">VS Code Copilot Agent Skills — Cross-Platform Standard</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/wildclawbench-native-runtime-evaluation.html">
+                            <span class="kiso-navigation-menu-label">WildClawBench: Native-Runtime Long-Horizon Agent Evaluation</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/xpshacl-explainable-shacl.html">
+                            <span class="kiso-navigation-menu-label">xpSHACL — Explainable SHACL Validation with RAG and LLMs</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../examples/ylang-labs-agent-skills-overview.html">
+                            <span class="kiso-navigation-menu-label">Ylang Labs — Agent Skills Portable Format Overview</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">papers</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../papers/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/agentskills-workshop-2026.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills '26 (ACM CAIS Workshop)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/arxiv-2602-08004-agent-skills-analysis.html">
+                            <span class="kiso-navigation-menu-label">Agent Skills: A Data-Driven Analysis of Claude Skills (arXiv:2602.08004)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/sc25-autonomous-science-workflows.html">
+                            <span class="kiso-navigation-menu-label">Paper: The (R)evolution of Scientific Workflows in the Agentic AI Era — Towards Autonomous Science</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/scaince-ai-lab-automation.html">
+                            <span class="kiso-navigation-menu-label">Paper: AI, Agentic Models and Lab Automation for Scientific Discovery — The Beginning of scAInce</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/sok-agentic-skills-beyond-tool-use.html">
+                            <span class="kiso-navigation-menu-label">SoK: Agentic Skills — Beyond Tool Use in LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../papers/survey-agent-skills-procedural-infrastructure.html">
+                            <span class="kiso-navigation-menu-label">A Survey of Agent Skills: Toward Procedural Infrastructure for LLM Agents</span>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">qa</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../qa/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-05-24-complex-qa.html">
+                            <span class="kiso-navigation-menu-label">Complex Q&amp;A — Skill Bundles Wiki</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-05-24-iter9-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A and Gap Analysis — 2026-05-24 Iteration 9</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-06-01-iter13-qa.html">
+                            <span class="kiso-navigation-menu-label">Complex Q&amp;A — 2026-06-01 (Iteration 13)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-06-lint.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A / Lint 2026-07-06</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-10-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-10</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-11-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-11 (Iteration 36)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-12-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-12 (Iteration 37)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-13-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-13 (Skill Bundles, Iteration 38)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-14-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-14 (Iteration 39)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-15-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-15 (Iteration 40)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="../qa/2026-07-16-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-16 (Iteration 41)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">tools</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../tools/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+                    <li>
+                        <a class=""
+                           href="../tools/agensi-marketplace-landscape.html">
+                            <span class="kiso-navigation-menu-label">AI Agent Skill Marketplace Landscape (2026)</span>
+                        </a>
+                    </li>
+                
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+            
+                
+<li>
+    <details>
+        <summary
+                class=""><span class="kiso-navigation-menu-label">visualizations</span></summary>
+        <ul>
+            
+                <li>
+                    <a class=""
+                       href="../visualizations/index.html">
+                        <span class="kiso-navigation-menu-label">Index</span>
+                    </a>
+                </li>
+            
+            
+            
+                
+            
+        </ul>
+    </details>
+</li>
+
+            
+        
+        
+            
+        
+            
+                <li>
+                    <a class=""
+                       href="../log.html">
+                        <span class="kiso-navigation-menu-label">log.md</span>
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a class=""
+                       href="../metrics.html">
+                        <span class="kiso-navigation-menu-label">Skill Bundles — Metrics &amp; Progress</span>
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a class=""
+                       href="../skill-bundles.html">
+                        <span class="kiso-navigation-menu-label">Skill Bundles: A Living Catalog</span>
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+
+            </nav>
+            <div class="mt-6 border-t border-base-300 px-2 pt-4 text-xs text-base-content/60">
+                Generated with
+                <a class="link link-hover font-semibold"
+                   href="https://oak-invest.github.io/kiso"
+                   target="kiso">
+                    Kiso
+                </a>
+            </div>
+        </aside>
+    </div>
+</div>
+
+</body>
+
+</html>
