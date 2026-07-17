@@ -219,6 +219,38 @@ git log --oneline -3
 
 **Hard rule:** if `git push` fails for any reason (auth, network, non-fast-forward, etc.), report the exact error in the report and do NOT mark the run as successful. A failed push is a critical alert.
 
+### Phase 6: Post-Processing & Visualization (MANDATORY after successful Phase 5)
+
+**Only run this phase after a successful git push in Phase 5.**  
+Load the `skill-bundles-postprocess` skill and execute both steps below.
+
+**Order is critical:** `kiso-cli` rebuilds/clears `public/` (it removed `viz.html` when run after visualize in dry-run 2026-07-17). Always run kiso **first**, then visualize.
+
+#### Step 1: Static OKF Site Build
+```bash
+cd ~
+./bin/kiso-cli-linux-x64 build \
+  -s=./projects/skill-bundles/wiki \
+  -d=./projects/skill-bundles/public
+```
+
+#### Step 2: Interactive Visualization
+```bash
+cd /home/hermes/src/visualize-okf/src
+python3 -m visualize_okf \
+  --bundle ~/projects/skill-bundles/wiki \
+  --out ~/projects/skill-bundles/public/viz.html \
+  --name "Skill Bundle"
+```
+
+**Verification (always perform):**
+- Confirm `public/index.html` (and related site files) exist after kiso.
+- Confirm `public/viz.html` exists and is non-empty **after** visualize (not only before kiso).
+- Report file sizes and any errors/warnings.
+- If either command fails, report the exact error — do **not** mark the run as successful.
+
+**Reporting requirement:** Include a short “Phase 6” subsection in the final report with the commands run and verification output.
+
 ---
 
 ## 4. Recurring Search Queries & Sources to Monitor
