@@ -1,5 +1,9 @@
 # Directory Update Log
 
+## 2026-07-24
+* **Update**: [Daily Digest — 2026-07-24 (Skill Bundles)](daily-digests/2026-07-24.md) — Catch-up Iteration 42: SkillOps library maintenance, SkillRouter body-aware 80K routing, AgentSkillOS capability-tree+DAG, SkillC/Skill0.5/SLIM internalization design space, SkillCorpus 821K→96K curation (+7 examples).
+
+
 ## 2026-07-16
 * **Update**: [Daily Digest — 2026-07-16 (Skill Bundles)](daily-digests/2026-07-16.md) — Native-runtime long-horizon benchmark: 60 bilingual multimodal tasks in real CLI harnesses (OpenClaw, Claude Code, Codex, Hermes); hybrid grading; 19 models, best 62.2% (Opus 4.7); harness switch shifts scores up to 1...
 

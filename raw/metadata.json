@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-16",
-  "iteration": 41,
+  "last_updated": "2026-07-24",
+  "iteration": 42,
   "daily_runs": {
     "2026-07-16": {
       "sources": 7,
@@ -29,7 +29,7 @@
         "Supply chain moves from incident to inventory science",
         "Native multi-harness evaluation standard",
         "Maintenance science arrives (copy-fork skills)",
-        "Collective construction \u2260 collective evolution"
+        "Collective construction ≠ collective evolution"
       ]
     },
     "2026-07-15": {
@@ -248,8 +248,39 @@
         "Skills+ontologies integrated",
         "Marketplace consolidation"
       ]
+    },
+    "2026-07-24": {
+      "sources": 7,
+      "examples": [
+        "skillops-library-maintenance",
+        "skillrouter-body-aware-routing",
+        "agentskillos-capability-tree-dag",
+        "skillc-contrastive-internalization",
+        "skill05-joint-internalization-utilization",
+        "slim-dynamic-skill-lifecycle",
+        "skillcorpus-open-ecosystem-curation"
+      ],
+      "queries_used": [
+        "SkillOps skill technical debt library maintenance arXiv 2605.13716",
+        "SkillRouter body-aware skill routing 80K arXiv 2603.22455",
+        "AgentSkillOS capability tree DAG orchestration arXiv 2603.02176",
+        "SkillC contrastive skill internalization arXiv 2605.27899",
+        "Skill0.5 joint skill internalization utilization arXiv 2605.28424",
+        "SLIM dynamic skill lifecycle management arXiv 2605.10923",
+        "SkillCorpus open skill ecosystem 821000 arXiv 2607.15557",
+        "gh search repos agent skills --sort updated",
+        "OWASP Agentic Skills Top 10 AST10 2026"
+      ],
+      "patterns": [
+        "Library-time vs task-time vs train-time layers",
+        "Body-aware routing mandatory at registry scale",
+        "Orchestration ≠ retrieval (DAG > flat oracle)",
+        "Internalization spectrum as design space",
+        "Open ecosystem value is curated not raw",
+        "Skill technical debt as real software debt"
+      ]
     }
   },
-  "cumulative_sources": 99,
-  "note": "2026-07-16: WildClawBench native multi-harness eval, SKILL0 internalization, OpenClaw-Skill CSTS tree search, R3-Skill compatibility routing, ASSC SkillBOM 1.43M supply chains, Registry\u2192Repository maintenance study, Inside Skill Market SE activities"
+  "cumulative_sources": 106,
+  "note": "2026-07-16: WildClawBench native multi-harness eval, SKILL0 internalization, OpenClaw-Skill CSTS tree search, R3-Skill compatibility routing, ASSC SkillBOM 1.43M supply chains, Registry→Repository maintenance study, Inside Skill Market SE activities"
 }
