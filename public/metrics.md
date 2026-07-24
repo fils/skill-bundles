@@ -6,20 +6,29 @@ description: 'Tracked KPIs for the skill-bundles research wiki: example counts, 
 
 # Skill Bundles — Metrics & Progress
 
-|**Last Updated: 2026-07-16 (Iteration 41)**|
+|**Last Updated: 2026-07-24 (Iteration 42)**|
+
+
+## 2026-07-24 Run Notes (Iteration 42)
+
+- **Gap fill:** First research content since 2026-07-16; intermediate commits were Phase 6 site/Pages only.
+- **+7 examples:** SkillOps, SkillRouter, AgentSkillOS, SkillC, Skill0.5, SLIM, SkillCorpus.
+- **Focus shift:** library ops + scale routing/orchestration + internalization design space + open corpus curation.
+- **Anti-stagnation:** followed 07-16 priority queries (SkillOps/SkillRouter/AgentSkillOS/internalization) + fresh Jul SkillCorpus paper; avoided re-scraping OWASP (already cataloged).
+- **Novel sources:** SkillCorpus (v4 Jul 23), SkillRouter v5 (Jul 20) not in prior digests.
 
 ## KPIs
 
 || Metric | Value | Previous | Change |
 |--------|-------|----------|--------|
-| Documented Examples | 97 | 90 | +7 |
-| Raw Sources (daily folders) | 53 days | 52 | +1 (2026-07-16) |
-| Wiki Example Files | 97 | 90 | +7 |
+| Documented Examples | 104 | 97 | +7 |
+| Raw Sources (daily folders) | 54 days | 53 | +1 (2026-07-24) |
+| Wiki Example Files | 104 | 97 | +7 |
 | Paper Notes | 7 | 7 | Unchanged |
 | Concept Articles | 8 | 8 | Unchanged |
-| Daily Digests | +1 (2026-07-16) | — | +1 |
-| Q&A Passes | +1 (2026-07-16-qa) | — | +1 |
-| Context Element Types Covered | 62+ | 55+ | +7 (Native multi-harness protocol, Skill internalization/Dynamic Curriculum, Collective Skill Tree Search + transfer scoring, Skill compatibility / Reject-as-Resource, ASSC SkillBOM multi-channel deps, One-time copy reuse model, SE activity→skill mapping) |
+| Daily Digests | +1 (2026-07-24) | — | +1 |
+| Q&A Passes | +1 (2026-07-24-qa) | — | +1 |
+| Context Element Types Covered | 69+ | 62+ | +7 (Skill Contract/HSEG/technical debt, Body-aware routing, Capability-tree + DAG orchestration, Contrastive credit internalization, General vs task-specific skill split, LOSO retain–retire–expand lifecycle, Open ecosystem curation + coverage/harness boundaries) |
 
 ## Context Element Coverage (summary)
 
@@ -159,3 +168,12 @@ description: 'Tracked KPIs for the skill-bundles research wiki: example counts, 
 | 14 | SkillGenBench | 187 tasks × 8 domains × 2 source types × generator-executor decoupling × pass@3 |
 | 15 | SkillMigrator | TIP 4-tuple × TED layout matching × Hungarian slot binding × 35.4% cross-domain reuse |
 | 16 | PROV-AGENT | W3C PROV + MCP × edge/cloud/HPC × near real-time × agent-centric provenance |
+
+| Skill Contract / HSEG / Technical Debt | New (SkillOps) |
+| Body-Aware Large-Pool Routing | New (SkillRouter) |
+| Capability Tree + DAG Orchestration | New (AgentSkillOS) |
+| Contrastive Internalization Credit | New (SkillC) |
+| General vs Task-Specific Skill Treatment | New (Skill0.5) |
+| Dynamic External Skill Boundary (LOSO) | New (SLIM) |
+| Open Ecosystem Curation + Quality Facets | New (SkillCorpus) |
+

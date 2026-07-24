@@ -97,8 +97,8 @@
     
     <article class="kiso-content">
         <h1>Skill Bundles Knowledge Base</h1>
-<p>|<strong>Last Updated:</strong> 2026-07-16 (Iteration 41)|
-|<strong>Status:</strong> Active research — 7 new examples (WildClawBench native multi-harness eval, SKILL0 internalization, OpenClaw-Skill CSTS, R3-Skill compatibility routing, ASSC SkillBOM supply chains, Registry→Repository maintenance, Inside Skill Market SE activities)|</p>
+<p>|<strong>Last Updated:</strong> 2026-07-24 (Iteration 42)|
+|<strong>Status:</strong> Active research — 7 new examples (SkillOps library maintenance, SkillRouter body-aware 80K routing, AgentSkillOS tree+DAG, SkillC contrastive internalization, Skill0.5 hybrid, SLIM lifecycle, SkillCorpus 821K→96K)|</p>
 <h2>Overview</h2>
 <p>This wiki catalogs real-world examples of <strong>skill bundles</strong> — collections of agent skills packaged together with supporting context elements such as validation (SHACL), mapping (SSSOM), rules, vocabularies, taxonomies, and ontologies.</p>
 <h2>Quick Links</h2>
@@ -106,6 +106,7 @@
 <li><a href="skill-bundles.html">Main Publication</a></li>
 <li><a href="daily-digests/">Daily Digests</a>
 <ul>
+<li><a href="daily-digests/2026-07-24.html">2026-07-24 (Iteration 42)</a></li>
 <li><a href="daily-digests/2026-07-16.html">2026-07-16 (Iteration 41)</a></li>
 <li><a href="daily-digests/2026-07-15.html">2026-07-15 (Iteration 40)</a></li>
 <li><a href="daily-digests/2026-07-14.html">2026-07-14 (Iteration 39)</a></li>
@@ -134,6 +135,9 @@
 </li>
 <li>
 <p><a href="qa/2026-05-24-complex-qa.html">Complex Q&amp;A — Skill Bundles Wiki</a></p>
+</li>
+<li>
+<p><a href="qa/2026-07-24-qa.html">Q&amp;A — 2026-07-24 (Iteration 42)</a></p>
 </li>
 <li>
 <p><a href="qa/2026-07-16-qa.html">Q&amp;A — 2026-07-16 (Iteration 41)</a></p>
@@ -184,25 +188,24 @@
 <li><a href="metrics.html">Metrics</a> - KPIs and coverage tracking</li>
 <li><a href="log.html">Update Log</a> - Chronological change history</li>
 </ul>
-<h2>Current Status (Iteration 41 — 2026-07-16)</h2>
-<p>Seven major new skill-bundle examples covering native multi-harness evaluation, skill internalization into weights, collective tree-search construction, composition-aware retrieval, ecosystem supply-chain inventory (1.43M skills), and empirical maintenance science:</p>
+<h2>Current Status (Iteration 42 — 2026-07-24)</h2>
+<p>Catch-up after 8-day research gap (prior commits were Phase 6/Pages). Seven examples spanning library ops, scale routing/orchestration, and the internalization design space:</p>
 <ul>
-<li><strong><a href="examples/wildclawbench-native-runtime-evaluation.html">wildclawbench native runtime evaluation</a></strong> — 60 bilingual multimodal tasks in real OpenClaw / Claude Code / Codex / Hermes harnesses; hybrid grading; 19 models; best 62.2%; harness switch ±18pp; skill ablations mixed (Code Intelligence +22.4 strongest model); InternLM (arXiv:2605.10912)</li>
-<li><strong><a href="examples/skill0-skill-internalization.html">skill0 skill internalization</a></strong> — First RL skill-internalization framework (&quot;skills@train, zero@infer&quot;); Dynamic Curriculum on-policy helpfulness annealing; +9.7% ALFWorld / +10.1% WebShop; &lt;0.5k tokens/step; ZJU-REAL/SkillZero (arXiv:2604.02268)</li>
-<li><strong><a href="examples/openclaw-skill-csts-tree-search.html">openclaw skill csts tree search</a></strong> — Collective Skill Tree Search: multi-model gen + quality/transferability assess; tree-of-skills anti-fragmentation; Collective Skill RL multi-skill selection (arXiv:2606.16774)</li>
-<li><strong><a href="examples/r3-skill-compatibility-routing.html">r3 skill compatibility routing</a></strong> — Skill retrieval ≠ document retrieval; Reject-as-Resource compatibility supervision; 10,246 skills; Hit@1=0.7521; Tencent R3-Skill (arXiv:2606.03565)</li>
-<li><strong><a href="examples/assc-skill-supply-chains-skillbom.html">assc skill supply chains skillbom</a></strong> — Agent Skill Supply Chains; SDA + SkillBOM; 1.43M skills; 58.73% name collisions; 71–73% packages transitive-only; lockfile/manifest recommendations; PKU (arXiv:2607.01136)</li>
-<li><strong><a href="examples/registry-to-repository-skill-maintenance.html">registry to repository skill maintenance</a></strong> — First skill-as-artefact empirical study; 18k registry + 23k personal skills; one-time copy reuse; 53% never modified; 6 content + 6 maintenance themes (arXiv:2607.00911)</li>
-<li><strong><a href="examples/inside-skill-market-se-activities.html">inside skill market se activities</a></strong> — Activity-centric SE skills market study; 11,497 SE skills; construction-heavy lifecycle skew; weak version maturity signals (arXiv:2607.09065)</li>
+<li><strong><a href="examples/skillops-self-maintaining-skill-libraries.html">skillops self maintaining skill libraries</a></strong> — Skill technical debt; Contract (P,O,A,V,F) + HSEG; ALFWorld 79.5% (+8.8pp); plug-in gains; ~0 library-time LLM (arXiv:2605.13716)</li>
+<li><strong><a href="examples/skillrouter-body-aware-routing.html">skillrouter body aware routing</a></strong> — Body hide −37–44pp @~80K; 1.2B Hit@1 74.0%; e2e coding-agent transfer (arXiv:2603.22455 v5)</li>
+<li><strong><a href="examples/agentskillos-capability-tree-dag.html">agentskillos capability tree dag</a></strong> — Capability tree + DAG @200K; DAG &gt; flat even with oracle skills (arXiv:2603.02176)</li>
+<li><strong><a href="examples/skillc-contrastive-internalization.html">skillc contrastive internalization</a></strong> — CSCA dual-stream advantages; +5.5% / +4.4% vs prior internalization (arXiv:2605.27899)</li>
+<li><strong><a href="examples/skill05-joint-internalization-utilization.html">skill05 joint internalization utilization</a></strong> — General-internalize + task-utilize mastery tiers (arXiv:2605.28424)</li>
+<li><strong><a href="examples/slim-dynamic-skill-lifecycle.html">slim dynamic skill lifecycle</a></strong> — Retain–retire–expand; +7.1pp; non-empty compact boundary (arXiv:2605.10923)</li>
+<li><strong><a href="examples/skillcorpus-open-ecosystem-curation.html">skillcorpus open ecosystem curation</a></strong> — 821K→96K curated corpus; +7.5pp SkillsBench; coverage+harness boundaries (arXiv:2607.15557 v4)</li>
 </ul>
 <p><strong>Convergence signals:</strong></p>
 <ol>
-<li><strong>Internalization ↔ externalization spectrum</strong> — SKILL0 (weights) vs SkillOpt/Memento (external packages) vs Externalization theory.</li>
-<li><strong>Composition-aware retrieval required</strong> — R3-Skill Set-Compat explains negative skill deltas beyond content quality.</li>
-<li><strong>Supply chain becomes inventory science</strong> — ASSC SkillBOM at 1.43M scale; transitive dark matter dominates risk.</li>
-<li><strong>Native multi-harness is the evaluation bar</strong> — WildClawBench: harness choice can rival model choice.</li>
-<li><strong>Maintenance science for copy-fork skills</strong> — Registry→Repository + SE market: additive local evolution, stable behavioral contracts.</li>
-<li><strong>Collective construction ≠ collective evolution</strong> — CSTS (build trees multi-model) vs SkillClaw (runtime multi-user trajectories).</li>
+<li><strong>Full stack emerges</strong> — library maintain (SkillOps) · route (SkillRouter/R3) · orchestrate (AgentSkillOS) · train boundary (SLIM/SkillC/Skill0.5) · curate corpus (SkillCorpus).</li>
+<li><strong>Body-aware routing + set-compatibility</strong> jointly required at marketplace scale.</li>
+<li><strong>Orchestration is not retrieval</strong> — DAG composition is a separate unlock.</li>
+<li><strong>Internalization is a spectrum</strong>, not a boolean — general vs task-specific endpoints differ.</li>
+<li><strong>Curation bounds open-ecosystem value</strong> — raw crawl mass under-delivers without facets and harness fit.</li>
 </ol>
 <h2>Iteration History (recent)</h2>
 <table>
@@ -215,6 +218,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>42</strong></td>
+<td><strong>2026-07-24</strong></td>
+<td><strong>Library ops + body-aware 80K routing + tree/DAG orchestration + internalization spectrum + open corpus curation</strong></td>
+<td><strong>SkillOps, SkillRouter, AgentSkillOS, SkillC, Skill0.5, SLIM, SkillCorpus</strong></td>
+</tr>
 <tr>
 <td><strong>41</strong></td>
 <td><strong>2026-07-16</strong></td>
@@ -279,14 +288,14 @@
 </table>
 <h2>Tomorrow Priority Searches</h2>
 <ol>
+<li><strong>Anthropic-Cybersecurity-Skills</strong> (mukul975, ~26k★) — 817 skills × 6 security frameworks</li>
 <li><strong>SkillBOM / SDA tooling releases</strong> — open-source SkillDepAnalyzer or SkillBOM exporters</li>
-<li><strong>SDAR / Skill-GRPO absorption</strong> — follow-on internalization beyond SKILL0</li>
-<li><strong>SkillRouter</strong> — large-pool body-ablation routing (cited by R3)</li>
-<li><strong>AgentSkillOS</strong> — 280K+ skills ecosystem orchestration</li>
-<li><strong>SkillOps</strong> (arXiv:2605.13716) — self-maintaining skill libraries</li>
+<li><strong>skillflag</strong> — package-embedded skill distribution without registries</li>
+<li><strong>HASP / SIRI / UCOB</strong> — internalization variants beyond SkillC/SLIM/Skill0.5</li>
+<li><strong>OWASP AST10</strong> v1 publication + scanner integration refresh</li>
+<li><strong>SkillCorpus</strong> code/data release tracking</li>
 <li><strong>ToxicSkills remediation</strong> — automated quarantine beyond scanning</li>
 <li><strong>Hermes multi-harness skill governance</strong> — WildClawBench implications</li>
-<li><strong>SE requirements/design skills</strong> — marketplace gap (Inside the Skill Market)</li>
 </ol>
 
         <div class="kiso-source-file">
@@ -922,6 +931,24 @@
                 
             
                 
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-24 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/README.html">
+                            <span class="kiso-navigation-menu-label">Daily Digests README</span>
+                        </a>
+                    </li>
+                
+            
+                
             
         </ul>
     </details>
@@ -1014,6 +1041,15 @@
                         <a class=""
                            href="examples/agentskill-sh-ags-security-scoring.html">
                             <span class="kiso-navigation-menu-label">agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentskillos-capability-tree-dag.html">
+                            <span class="kiso-navigation-menu-label">AgentSkillOS: Capability-Tree Organization + DAG Orchestration</span>
                         </a>
                     </li>
                 
@@ -1572,6 +1608,15 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skill05-joint-internalization-utilization.html">
+                            <span class="kiso-navigation-menu-label">Skill0.5: Joint Internalization of General Skills + Utilization of Task Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skill1-unified-skill-evolution-rl.html">
                             <span class="kiso-navigation-menu-label">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</span>
                         </a>
@@ -1581,8 +1626,26 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skillc-contrastive-internalization.html">
+                            <span class="kiso-navigation-menu-label">SkillC: Contrastive Skill Credit Assignment for Internalization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skillclaw-collective-skill-evolution.html">
                             <span class="kiso-navigation-menu-label">SkillClaw: Collective Skill Evolution with Agentic Evolver</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillcorpus-open-ecosystem-curation.html">
+                            <span class="kiso-navigation-menu-label">SkillCorpus: Curating ~821K Open Skills \u2192 96K Deployable Corpus</span>
                         </a>
                     </li>
                 
@@ -1653,6 +1716,15 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skillops-self-maintaining-skill-libraries.html">
+                            <span class="kiso-navigation-menu-label">SkillOps: Self-Maintaining Skill Libraries (Skill Technical Debt)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skillopt-trainable-skill-parameters.html">
                             <span class="kiso-navigation-menu-label">SkillOpt: Agent Skills as Trainable Parameters</span>
                         </a>
@@ -1664,6 +1736,15 @@
                         <a class=""
                            href="examples/skillreducer-token-efficiency.html">
                             <span class="kiso-navigation-menu-label">SkillReducer: Optimizing LLM Agent Skills for Token Efficiency</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillrouter-body-aware-routing.html">
+                            <span class="kiso-navigation-menu-label">SkillRouter: Body-Aware Retrieve-and-Rerank at ~80K Scale</span>
                         </a>
                     </li>
                 
@@ -1691,6 +1772,15 @@
                         <a class=""
                            href="examples/skillspector-nvidia-security-scanner.html">
                             <span class="kiso-navigation-menu-label">SkillSpector: NVIDIA Security Scanner for AI Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/slim-dynamic-skill-lifecycle.html">
+                            <span class="kiso-navigation-menu-label">SLIM: Dynamic Skill Lifecycle Management (Retain\u2013Retire\u2013Expand)</span>
                         </a>
                     </li>
                 
@@ -2018,6 +2108,15 @@
                         <a class=""
                            href="qa/2026-07-16-qa.html">
                             <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-16 (Iteration 41)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-24-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-24 (Iteration 42)</span>
                         </a>
                     </li>
                 

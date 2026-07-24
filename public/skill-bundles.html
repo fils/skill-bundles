@@ -130,35 +130,102 @@
     
     <article class="kiso-content">
         <h1>Skill Bundles: A Living Catalog</h1>
-<p><strong>Primary Publication</strong> — Last major update: 2026-07-16 (Iteration 41)</p>
+<p><strong>Primary Publication</strong> — Last major update: 2026-07-24 (Iteration 42)</p>
 <h2>TL;DR</h2>
-<p>Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 97 documented examples across 41 iterations of daily research.</p>
+<p>Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 104 documented examples across 42 iterations of daily research.</p>
 <h2>Documented Examples (97 Total + 7 Paper Notes)</h2>
 <h3>Research &amp; Workflow</h3>
 <ul>
-<li><a href="examples/nora-gis-research-agent.html">NORA</a> — Autonomous research agent with orchestrated skills</li>
-<li><a href="examples/agentic-engineering-workflow-skills.html">Agentic Engineering Workflow Skills</a> — Multi-skill workflow patterns</li>
-<li><a href="examples/nemoclaw-security-scanner.html">NemoClaw</a> — Secure agent sandboxing and policy management (23 skills)</li>
-<li><a href="examples/superpowers-engineering-discipline-skills.html"><strong>Superpowers</strong></a> — Engineering discipline as skills: Iron Laws, Red Flags, methodology cycle (14 skills)</li>
-<li><a href="examples/nora-gis-research-agent.html"><strong>NORA Paper</strong></a> — Harness-engineered autonomous research agent (21 skills + 9 sub-agents, arXiv 2605.02092)</li>
-<li><a href="examples/ai4curation-curation-skills.html"><strong>ai4curation/curation-skills</strong></a> — Chris Mungall's ontology/biocuration bundle (7 skills: OAK, ROBOT, DOSDP, OBO editing). Production users: Mondo, Cell Ontology, Uberon, EFO</li>
-<li><a href="examples/clawbio-bioinformatics-skills.html"><strong>ClawBio</strong></a> — Bioinformatics-native library: 88 skills (29 production), 8,000+ Galaxy tools, reproducibility bundles, Corpasome reference genome (DOI: 10.5281/zenodo.19297389), 92.3% validation pass rate</li>
-<li><a href="examples/addyosmani-engineering-skills.html"><strong>Addy Osmani Agent Skills</strong></a> — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture</li>
-<li><a href="examples/scientific-agent-skills-kdense.html"><strong>Scientific Agent Skills (K-Dense)</strong></a> (NEW Iteration 35) — 148 science skills, 100+ databases, package skills, security CI, agentskills.io (~30.6k★)</li>
-<li><a href="examples/openmontage-video-production-skills.html"><strong>OpenMontage</strong></a> (NEW Iteration 35) — Agentic video production: 500+ skills, 12 pipelines, hard human approval gates + checkpoint audit trail (~36.3k★)</li>
-<li><a href="examples/coevoskills-self-evolving-skills.html"><strong>CoEvoSkills</strong></a> (NEW Iteration 36) — First self-evolving multi-file skill package framework: co-evolutionary verification (generator + surrogate verifier), surpasses human-curated skills within 5 iterations on SkillsBench (arXiv:2604.01687)</li>
-<li><a href="examples/skillmoo-multi-objective-optimization.html"><strong>SkillMOO</strong></a> (NEW Iteration 37) — First multi-objective skill bundle optimization: NSGA-II Pareto selection on pass rate + cost; pruning and substitution dominate successful edits; top rank on 11/12 SkillsBench tasks (arXiv:2604.09297)</li>
-<li><a href="examples/effiskill-code-efficiency-optimization.html"><strong>EffiSkill</strong></a> (NEW Iteration 37) — Two-tier skill hierarchy: Operator Skills (concrete transformations) + Meta Skills (strategic patterns); execution-free diagnosis; +3.69–12.52pp on EffiBench-X (arXiv:2603.27850)</li>
-<li><a href="examples/skillcraft-benchmark.html"><strong>SkillCraft</strong></a> (NEW Iteration 37) — Benchmark for skill composition and reuse: agents auto-compose atomic tools into executable Skills; 80% token savings from caching; cited by 20 (arXiv:2603.00718)</li>
-<li><a href="examples/evoskill-automated-skill-discovery.html"><strong>EvoSkill</strong></a> (NEW Iteration 38) — Self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★) (arXiv:2603.02766)</li>
-<li><a href="examples/skillopt-trainable-skill-parameters.html"><strong>SkillOpt</strong></a> (NEW Iteration 38) — Treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells (6 benchmarks × 7 models × 3 modes); +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks (Microsoft Research, June 2026)</li>
-<li><a href="examples/aspire-robotics-skill-discovery.html"><strong>ASPIRE</strong></a> (NEW Iteration 39) — NVIDIA GEAR Lab; continual learning for robotics via code-as-policy; three components (execution engine + multimodal traces, skill library, evolutionary search); +77% LIBERO-Pro, +72% Robosuite, +32% BEHAVIOR-1K; 31% zero-shot vs 4%; sim-to-real transfer evidence; authors include Linxi &quot;Jim&quot; Fan, Ken Goldberg (arXiv:2607.00272)</li>
-<li><a href="examples/memento-skills-agent-designing-agent.html"><strong>Memento-Skills</strong></a> (NEW Iteration 39) — Agent-designing agent; memory-based RL with stateful prompts; skills as structured markdown files = persistent evolving memory; Read-Write Reflective Learning (read = skill router, write = update library); continual learning without LLM parameter updates; +26.2% General AI Assistants, +116.2% Humanity's Last Exam; 27 citations (arXiv:2603.18743)</li>
-<li><a href="examples/skill1-unified-skill-evolution-rl.html"><strong>Skill1</strong></a> (NEW Iteration 39) — Unified evolution of skill-augmented agents via RL; single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; outperforms baselines; 18 citations (arXiv:2605.06130)</li>
-<li><a href="examples/exif-automated-skill-discovery.html"><strong>EXIF</strong></a> (NEW Iteration 39) — Alice-Bob dual-agent for automated skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; iterative feedback loop; self-play (Alice=Bob) enables self-evolution; Webshop + Crafter; precursor to 2026 skill discovery wave; 11 citations (arXiv:2506.04287)</li>
-<li><a href="examples/skillclaw-collective-skill-evolution.html"><strong>SkillClaw</strong></a> (NEW Iteration 40) — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★) (arXiv:2604.08377)</li>
-<li><a href="examples/skill0-skill-internalization.html"><strong>SKILL0</strong></a> (NEW Iteration 41) — First RL framework for skill internalization (&quot;skills at training, zero at inference&quot;); Dynamic Curriculum anneals skill scaffolding by on-policy helpfulness; +9.7% ALFWorld, +6.6% Search-QA, +10.1% WebShop; &lt;0.5k tokens/step; GitHub: ZJU-REAL/SkillZero (arXiv:2604.02268)</li>
-<li><a href="examples/openclaw-skill-csts-tree-search.html"><strong>OpenClaw-Skill / CSTS</strong></a> (NEW Iteration 41) — Collective Skill Tree Search: multi-model candidate generation + quality/transferability assessment; builds structured transferable skill trees; Collective Skill RL multi-skill selection; addresses fragmentation, single-model bias, poor transfer (arXiv:2606.16774)</li>
+<li>
+<p><a href="examples/nora-gis-research-agent.html">NORA</a> — Autonomous research agent with orchestrated skills</p>
+</li>
+<li>
+<p><a href="examples/agentic-engineering-workflow-skills.html">Agentic Engineering Workflow Skills</a> — Multi-skill workflow patterns</p>
+</li>
+<li>
+<p><a href="examples/nemoclaw-security-scanner.html">NemoClaw</a> — Secure agent sandboxing and policy management (23 skills)</p>
+</li>
+<li>
+<p><a href="examples/superpowers-engineering-discipline-skills.html"><strong>Superpowers</strong></a> — Engineering discipline as skills: Iron Laws, Red Flags, methodology cycle (14 skills)</p>
+</li>
+<li>
+<p><a href="examples/nora-gis-research-agent.html"><strong>NORA Paper</strong></a> — Harness-engineered autonomous research agent (21 skills + 9 sub-agents, arXiv 2605.02092)</p>
+</li>
+<li>
+<p><a href="examples/ai4curation-curation-skills.html"><strong>ai4curation/curation-skills</strong></a> — Chris Mungall's ontology/biocuration bundle (7 skills: OAK, ROBOT, DOSDP, OBO editing). Production users: Mondo, Cell Ontology, Uberon, EFO</p>
+</li>
+<li>
+<p><a href="examples/clawbio-bioinformatics-skills.html"><strong>ClawBio</strong></a> — Bioinformatics-native library: 88 skills (29 production), 8,000+ Galaxy tools, reproducibility bundles, Corpasome reference genome (DOI: 10.5281/zenodo.19297389), 92.3% validation pass rate</p>
+</li>
+<li>
+<p><a href="examples/addyosmani-engineering-skills.html"><strong>Addy Osmani Agent Skills</strong></a> — 23 production-grade engineering workflow skills across full SDLC, 3 specialist personas, 7 slash commands, Iron Laws/Red Flags constraint rules, Google engineering culture</p>
+</li>
+<li>
+<p><a href="examples/scientific-agent-skills-kdense.html"><strong>Scientific Agent Skills (K-Dense)</strong></a> (NEW Iteration 35) — 148 science skills, 100+ databases, package skills, security CI, agentskills.io (~30.6k★)</p>
+</li>
+<li>
+<p><a href="examples/openmontage-video-production-skills.html"><strong>OpenMontage</strong></a> (NEW Iteration 35) — Agentic video production: 500+ skills, 12 pipelines, hard human approval gates + checkpoint audit trail (~36.3k★)</p>
+</li>
+<li>
+<p><a href="examples/coevoskills-self-evolving-skills.html"><strong>CoEvoSkills</strong></a> (NEW Iteration 36) — First self-evolving multi-file skill package framework: co-evolutionary verification (generator + surrogate verifier), surpasses human-curated skills within 5 iterations on SkillsBench (arXiv:2604.01687)</p>
+</li>
+<li>
+<p><a href="examples/skillmoo-multi-objective-optimization.html"><strong>SkillMOO</strong></a> (NEW Iteration 37) — First multi-objective skill bundle optimization: NSGA-II Pareto selection on pass rate + cost; pruning and substitution dominate successful edits; top rank on 11/12 SkillsBench tasks (arXiv:2604.09297)</p>
+</li>
+<li>
+<p><a href="examples/effiskill-code-efficiency-optimization.html"><strong>EffiSkill</strong></a> (NEW Iteration 37) — Two-tier skill hierarchy: Operator Skills (concrete transformations) + Meta Skills (strategic patterns); execution-free diagnosis; +3.69–12.52pp on EffiBench-X (arXiv:2603.27850)</p>
+</li>
+<li>
+<p><a href="examples/skillcraft-benchmark.html"><strong>SkillCraft</strong></a> (NEW Iteration 37) — Benchmark for skill composition and reuse: agents auto-compose atomic tools into executable Skills; 80% token savings from caching; cited by 20 (arXiv:2603.00718)</p>
+</li>
+<li>
+<p><a href="examples/evoskill-automated-skill-discovery.html"><strong>EvoSkill</strong></a> (NEW Iteration 38) — Self-evolving framework for auto-discovering agent skills via failure analysis; three-agent architecture (Executor→Proposer→Skill-Builder); Pareto frontier K=3; git-backed lineage; +7.3% OfficeQA, +12.1% SealQA; zero-shot transfer to BrowseComp (+5.3%); open-sourced (1k★) (arXiv:2603.02766)</p>
+</li>
+<li>
+<p><a href="examples/skillopt-trainable-skill-parameters.html"><strong>SkillOpt</strong></a> (NEW Iteration 38) — Treats skill files as trainable parameters; forward-backward-update in text space; frozen model + optimizer; textual learning rate + validation gating; best/tied-best on all 52 evaluation cells (6 benchmarks × 7 models × 3 modes); +23.5 points on GPT-5.5; skills transfer across model scales, harnesses, and tasks (Microsoft Research, June 2026)</p>
+</li>
+<li>
+<p><a href="examples/aspire-robotics-skill-discovery.html"><strong>ASPIRE</strong></a> (NEW Iteration 39) — NVIDIA GEAR Lab; continual learning for robotics via code-as-policy; three components (execution engine + multimodal traces, skill library, evolutionary search); +77% LIBERO-Pro, +72% Robosuite, +32% BEHAVIOR-1K; 31% zero-shot vs 4%; sim-to-real transfer evidence; authors include Linxi &quot;Jim&quot; Fan, Ken Goldberg (arXiv:2607.00272)</p>
+</li>
+<li>
+<p><a href="examples/memento-skills-agent-designing-agent.html"><strong>Memento-Skills</strong></a> (NEW Iteration 39) — Agent-designing agent; memory-based RL with stateful prompts; skills as structured markdown files = persistent evolving memory; Read-Write Reflective Learning (read = skill router, write = update library); continual learning without LLM parameter updates; +26.2% General AI Assistants, +116.2% Humanity's Last Exam; 27 citations (arXiv:2603.18743)</p>
+</li>
+<li>
+<p><a href="examples/skill1-unified-skill-evolution-rl.html"><strong>Skill1</strong></a> (NEW Iteration 39) — Unified evolution of skill-augmented agents via RL; single policy co-evolves skill selection, utilization, distillation; frequency decomposition credit assignment (low-freq = selection, high-freq = distillation); ALFWorld + WebShop; outperforms baselines; 18 citations (arXiv:2605.06130)</p>
+</li>
+<li>
+<p><a href="examples/exif-automated-skill-discovery.html"><strong>EXIF</strong></a> (NEW Iteration 39) — Alice-Bob dual-agent for automated skill discovery; exploration-first strategy; retrospective skill dataset from environment interaction; iterative feedback loop; self-play (Alice=Bob) enables self-evolution; Webshop + Crafter; precursor to 2026 skill discovery wave; 11 citations (arXiv:2506.04287)</p>
+</li>
+<li>
+<p><a href="examples/skillclaw-collective-skill-evolution.html"><strong>SkillClaw</strong></a> (NEW Iteration 40) — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★) (arXiv:2604.08377)</p>
+</li>
+<li>
+<p><a href="examples/skill0-skill-internalization.html"><strong>SKILL0</strong></a> (NEW Iteration 41) — First RL framework for skill internalization (&quot;skills at training, zero at inference&quot;); Dynamic Curriculum anneals skill scaffolding by on-policy helpfulness; +9.7% ALFWorld, +6.6% Search-QA, +10.1% WebShop; &lt;0.5k tokens/step; GitHub: ZJU-REAL/SkillZero (arXiv:2604.02268)</p>
+</li>
+<li>
+<p><a href="examples/openclaw-skill-csts-tree-search.html"><strong>OpenClaw-Skill / CSTS</strong></a> (NEW Iteration 41) — Collective Skill Tree Search: multi-model candidate generation + quality/transferability assessment; builds structured transferable skill trees; Collective Skill RL multi-skill selection; addresses fragmentation, single-model bias, poor transfer (arXiv:2606.16774)</p>
+</li>
+<li>
+<p><a href="examples/skillops-self-maintaining-skill-libraries.html"><strong>SkillOps</strong></a> (NEW Iteration 42) — Library-time <strong>skill technical debt</strong> maintenance; Skill Contract (P,O,A,V,F) + HSEG; merge/repair/retire/validators; ALFWorld 79.5% (+8.8pp); plug-in +0.68–2.90pp; ~0 library-time LLM (arXiv:2605.13716)</p>
+</li>
+<li>
+<p><a href="examples/skillrouter-body-aware-routing.html"><strong>SkillRouter</strong></a> (NEW Iteration 42) — Body-aware retrieve-and-rerank at ~80K; progressive-disclosure body hide −37–44pp; 1.2B Hit@1 <strong>74.0%</strong>; 13× smaller / 5.8× faster than strongest 16B base (arXiv:2603.22455 v5)</p>
+</li>
+<li>
+<p><a href="examples/agentskillos-capability-tree-dag.html"><strong>AgentSkillOS</strong></a> (NEW Iteration 42) — Capability tree + DAG multi-skill orchestration at 200→<strong>200K</strong>; DAG beats flat invocation even with oracle skill set; 30 artifact tasks (arXiv:2603.02176)</p>
+</li>
+<li>
+<p><a href="examples/skillc-contrastive-internalization.html"><strong>SkillC</strong></a> (NEW Iteration 42) — Contrastive Skill Credit Assignment for internalization; dual-stream advantages; +5.5% ALFWorld / +4.4% WebShop vs prior internalization RL (arXiv:2605.27899)</p>
+</li>
+<li>
+<p><a href="examples/skill05-joint-internalization-utilization.html"><strong>Skill0.5</strong></a> (NEW Iteration 42) — Joint general-skill internalization + task-specific utilization via difficulty-aware mastery tiers; ID+OOD (arXiv:2605.28424)</p>
+</li>
+<li>
+<p><a href="examples/slim-dynamic-skill-lifecycle.html"><strong>SLIM</strong></a> (NEW Iteration 42) — Retain–retire–expand lifecycle via leave-one-skill-out; +7.1pp; compact <strong>non-empty</strong> active skill boundary (arXiv:2605.10923)</p>
+</li>
+<li>
+<p><a href="examples/skillcorpus-open-ecosystem-curation.html"><strong>SkillCorpus</strong></a> (NEW Iteration 42) — Curates ~821K open skills → 96,401 with 16-class taxonomy + utility/robustness/safety; +7.5pp SkillsBench; coverage+harness boundaries (arXiv:2607.15557 v4)</p>
+</li>
 </ul>
 <h3>Ontology &amp; Knowledge</h3>
 <ul>
@@ -662,6 +729,17 @@
 </tr>
 </tbody>
 </table>
+<p>| <strong>Skill Contract (P,O,A,V,F)</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillOps) |
+| <strong>Skill Technical Debt</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillOps) |
+| <strong>Hierarchical Skill Ecosystem Graph</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillOps HSEG) |
+| <strong>Body-Aware Skill Routing</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillRouter) |
+| <strong>Capability-Tree Organization</strong> | <strong>1</strong> | <strong>NEW</strong> (AgentSkillOS) |
+| <strong>DAG Multi-Skill Orchestration</strong> | <strong>1</strong> | <strong>NEW</strong> (AgentSkillOS) |
+| <strong>Contrastive Skill Credit Assignment</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillC) |
+| <strong>General vs Task-Specific Skill Split</strong> | <strong>1</strong> | <strong>NEW</strong> (Skill0.5) |
+| <strong>Leave-One-Skill-Out Lifecycle</strong> | <strong>1</strong> | <strong>NEW</strong> (SLIM retain–retire–expand) |
+| <strong>Open Ecosystem Curation Pipeline</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillCorpus 821K→96K) |
+| <strong>Coverage + Harness Boundaries</strong> | <strong>1</strong> | <strong>NEW</strong> (SkillCorpus) |</p>
 <p>See also:</p>
 <ul>
 <li><a href="concepts/skill-security-governance.html">skill security governance</a> — Complete governance stack synthesis</li>
@@ -1308,6 +1386,24 @@
                 
             
                 
+                    <li>
+                        <a class=""
+                           href="daily-digests/2026-07-24.html">
+                            <span class="kiso-navigation-menu-label">Daily Digest — 2026-07-24 (Skill Bundles)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="daily-digests/README.html">
+                            <span class="kiso-navigation-menu-label">Daily Digests README</span>
+                        </a>
+                    </li>
+                
+            
+                
             
         </ul>
     </details>
@@ -1400,6 +1496,15 @@
                         <a class=""
                            href="examples/agentskill-sh-ags-security-scoring.html">
                             <span class="kiso-navigation-menu-label">agentskill-sh/ags — `/learn` Command + Security Scoring Marketplace</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/agentskillos-capability-tree-dag.html">
+                            <span class="kiso-navigation-menu-label">AgentSkillOS: Capability-Tree Organization + DAG Orchestration</span>
                         </a>
                     </li>
                 
@@ -1958,6 +2063,15 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skill05-joint-internalization-utilization.html">
+                            <span class="kiso-navigation-menu-label">Skill0.5: Joint Internalization of General Skills + Utilization of Task Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skill1-unified-skill-evolution-rl.html">
                             <span class="kiso-navigation-menu-label">Skill1: Unified Evolution of Skill-Augmented Agents via Reinforcement Learning</span>
                         </a>
@@ -1967,8 +2081,26 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skillc-contrastive-internalization.html">
+                            <span class="kiso-navigation-menu-label">SkillC: Contrastive Skill Credit Assignment for Internalization</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skillclaw-collective-skill-evolution.html">
                             <span class="kiso-navigation-menu-label">SkillClaw: Collective Skill Evolution with Agentic Evolver</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillcorpus-open-ecosystem-curation.html">
+                            <span class="kiso-navigation-menu-label">SkillCorpus: Curating ~821K Open Skills \u2192 96K Deployable Corpus</span>
                         </a>
                     </li>
                 
@@ -2039,6 +2171,15 @@
                 
                     <li>
                         <a class=""
+                           href="examples/skillops-self-maintaining-skill-libraries.html">
+                            <span class="kiso-navigation-menu-label">SkillOps: Self-Maintaining Skill Libraries (Skill Technical Debt)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
                            href="examples/skillopt-trainable-skill-parameters.html">
                             <span class="kiso-navigation-menu-label">SkillOpt: Agent Skills as Trainable Parameters</span>
                         </a>
@@ -2050,6 +2191,15 @@
                         <a class=""
                            href="examples/skillreducer-token-efficiency.html">
                             <span class="kiso-navigation-menu-label">SkillReducer: Optimizing LLM Agent Skills for Token Efficiency</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/skillrouter-body-aware-routing.html">
+                            <span class="kiso-navigation-menu-label">SkillRouter: Body-Aware Retrieve-and-Rerank at ~80K Scale</span>
                         </a>
                     </li>
                 
@@ -2077,6 +2227,15 @@
                         <a class=""
                            href="examples/skillspector-nvidia-security-scanner.html">
                             <span class="kiso-navigation-menu-label">SkillSpector: NVIDIA Security Scanner for AI Agent Skills</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="examples/slim-dynamic-skill-lifecycle.html">
+                            <span class="kiso-navigation-menu-label">SLIM: Dynamic Skill Lifecycle Management (Retain\u2013Retire\u2013Expand)</span>
                         </a>
                     </li>
                 
@@ -2404,6 +2563,15 @@
                         <a class=""
                            href="qa/2026-07-16-qa.html">
                             <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-16 (Iteration 41)</span>
+                        </a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a class=""
+                           href="qa/2026-07-24-qa.html">
+                            <span class="kiso-navigation-menu-label">Q&amp;A — 2026-07-24 (Iteration 42)</span>
                         </a>
                     </li>
                 

@@ -52,4 +52,4 @@ Progressive disclosure listing for this directory.
 * [Daily Digest — 2026-05-23 (Iteration 5)](2026-05-23.md) - - Synthesis of findings across all previous iterations - Updated gap analysis - Creation of a "Current State of Research" document
 * [Daily Digest — 2026-05-23 (Manual Seed: SSSOM/Mapping)](2026-05-23-iter7-manual.md) - - **URL:** https://arxiv.org/html/2605.09184v1 - **Author:** Fabio Rovai (The Tesseract Academy, London) - **Type:** Peer-reviewed preprint with empirical benchmarks
 * [Daily Digest — 2026-05-23 (Iteration 6)](2026-05-23-iter6.md) - - Major discovery phase with formal platform skill systems - NVIDIA Verified Agent Skills (governance, signing, scanning, skill cards) - OpenAI Codex Agent Skills (progressive disclosure, MCP depen...
-
+* [2026-07-24 (Iteration 42)](2026-07-24.md) — SkillOps, SkillRouter, AgentSkillOS, SkillC, Skill0.5, SLIM, SkillCorpus

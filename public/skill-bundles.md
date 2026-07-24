@@ -6,11 +6,11 @@ description: Living catalog of real-world skill bundle examples and composition 
 
 # Skill Bundles: A Living Catalog
 
-**Primary Publication** — Last major update: 2026-07-16 (Iteration 41)
+**Primary Publication** — Last major update: 2026-07-24 (Iteration 42)
 
 ## TL;DR
 
-Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 97 documented examples across 41 iterations of daily research.
+Skill bundles are reusable packages that combine agent skills with formal context artifacts (validation, mapping, rules, vocabularies, taxonomies, and ontologies). This catalog tracks 104 documented examples across 42 iterations of daily research.
 
 ## Documented Examples (97 Total + 7 Paper Notes)
 
@@ -38,6 +38,14 @@ Skill bundles are reusable packages that combine agent skills with formal contex
 - [**SkillClaw**](examples/skillclaw-collective-skill-evolution.md) (NEW Iteration 40) — Collective skill evolution in multi-user agent ecosystems; cross-user + over-time trajectory aggregation; autonomous evolver (pattern recognition → skill update); shared synchronized repository; supports OpenClaw + Hermes; WildClawBench + Qwen3-Max; 42 citations; GitHub: AMAP-ML/SkillClaw (2.1k★) (arXiv:2604.08377)
 - [**SKILL0**](examples/skill0-skill-internalization.md) (NEW Iteration 41) — First RL framework for skill internalization ("skills at training, zero at inference"); Dynamic Curriculum anneals skill scaffolding by on-policy helpfulness; +9.7% ALFWorld, +6.6% Search-QA, +10.1% WebShop; <0.5k tokens/step; GitHub: ZJU-REAL/SkillZero (arXiv:2604.02268)
 - [**OpenClaw-Skill / CSTS**](examples/openclaw-skill-csts-tree-search.md) (NEW Iteration 41) — Collective Skill Tree Search: multi-model candidate generation + quality/transferability assessment; builds structured transferable skill trees; Collective Skill RL multi-skill selection; addresses fragmentation, single-model bias, poor transfer (arXiv:2606.16774)
+
+- [**SkillOps**](examples/skillops-self-maintaining-skill-libraries.md) (NEW Iteration 42) — Library-time **skill technical debt** maintenance; Skill Contract (P,O,A,V,F) + HSEG; merge/repair/retire/validators; ALFWorld 79.5% (+8.8pp); plug-in +0.68–2.90pp; ~0 library-time LLM (arXiv:2605.13716)
+- [**SkillRouter**](examples/skillrouter-body-aware-routing.md) (NEW Iteration 42) — Body-aware retrieve-and-rerank at ~80K; progressive-disclosure body hide −37–44pp; 1.2B Hit@1 **74.0%**; 13× smaller / 5.8× faster than strongest 16B base (arXiv:2603.22455 v5)
+- [**AgentSkillOS**](examples/agentskillos-capability-tree-dag.md) (NEW Iteration 42) — Capability tree + DAG multi-skill orchestration at 200→**200K**; DAG beats flat invocation even with oracle skill set; 30 artifact tasks (arXiv:2603.02176)
+- [**SkillC**](examples/skillc-contrastive-internalization.md) (NEW Iteration 42) — Contrastive Skill Credit Assignment for internalization; dual-stream advantages; +5.5% ALFWorld / +4.4% WebShop vs prior internalization RL (arXiv:2605.27899)
+- [**Skill0.5**](examples/skill05-joint-internalization-utilization.md) (NEW Iteration 42) — Joint general-skill internalization + task-specific utilization via difficulty-aware mastery tiers; ID+OOD (arXiv:2605.28424)
+- [**SLIM**](examples/slim-dynamic-skill-lifecycle.md) (NEW Iteration 42) — Retain–retire–expand lifecycle via leave-one-skill-out; +7.1pp; compact **non-empty** active skill boundary (arXiv:2605.10923)
+- [**SkillCorpus**](examples/skillcorpus-open-ecosystem-curation.md) (NEW Iteration 42) — Curates ~821K open skills → 96,401 with 16-class taxonomy + utility/robustness/safety; +7.5pp SkillsBench; coverage+harness boundaries (arXiv:2607.15557 v4)
 
 ### Ontology & Knowledge
 - [Ontologizer](examples/ontologizer-openclaw-ontology-skill.md) — OpenClaw ontology skill
@@ -318,6 +326,19 @@ Two foundational papers provide theoretical grounding:
 | **Skill OS Abstraction** | **1** | **NEW** (Skill OS 100K analysis) |
 | **Generator-Executor Decoupling** | **1** | **NEW** (SkillGenBench) |
 | **Negative Transfer Detection** | **1** | **NEW** (SkillGenBench auto-skill risk) |
+
+
+| **Skill Contract (P,O,A,V,F)** | **1** | **NEW** (SkillOps) |
+| **Skill Technical Debt** | **1** | **NEW** (SkillOps) |
+| **Hierarchical Skill Ecosystem Graph** | **1** | **NEW** (SkillOps HSEG) |
+| **Body-Aware Skill Routing** | **1** | **NEW** (SkillRouter) |
+| **Capability-Tree Organization** | **1** | **NEW** (AgentSkillOS) |
+| **DAG Multi-Skill Orchestration** | **1** | **NEW** (AgentSkillOS) |
+| **Contrastive Skill Credit Assignment** | **1** | **NEW** (SkillC) |
+| **General vs Task-Specific Skill Split** | **1** | **NEW** (Skill0.5) |
+| **Leave-One-Skill-Out Lifecycle** | **1** | **NEW** (SLIM retain–retire–expand) |
+| **Open Ecosystem Curation Pipeline** | **1** | **NEW** (SkillCorpus 821K→96K) |
+| **Coverage + Harness Boundaries** | **1** | **NEW** (SkillCorpus) |
 
 See also:
 - [skill security governance](concepts/skill-security-governance.md) — Complete governance stack synthesis
